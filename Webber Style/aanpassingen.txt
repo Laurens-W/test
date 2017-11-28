@@ -1,0 +1,17 @@
+v6.0
+textonpath aangezet 10k-300k
+
+v5.0
+Bij alle EPS icons in Poi's en Road Numbers SVG toegevoegd.
+
+V4.0 GDB
+300k: streetnames en street name group uit vanwege te weinig geplaatst voor relatief teveel tijd.
+
+V3.0 GDB
+Railways sation en metro station voor after road geplaatst.
+
+V2.0 GDB
+Railways sation en metro station voor after road geplaatst.
+
+V1.0 GDB
+-op 100m en 200m stonden de citynames op right dat vaker lelijke resultaten oplevert: dus op left gezet.

@@ -1,0 +1,5 @@
+v2.0
+vanaf 2m tot 300m zijn de country boundary polygons weer aangezet op verzoek van de klant.
+
+v1.0
+https://trello.com/c/r117a4CK

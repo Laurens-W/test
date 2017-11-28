@@ -1,0 +1,5 @@
+v2.0
+Railway station en metro station symbol voor after road geplaatst.
+
+v1.0
+Provinciegrenzen in andere laag gezet (na After Roads) zodat namen de provinciegrens niet meer onderbreken.

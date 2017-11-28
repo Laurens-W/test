@@ -1,0 +1,18 @@
+v1.0
+vanaf 40m ongewijzigd.
+
+VAN 0-5_3m:
+
+Belangrijste wijzingen:
+Aadmypolygons werken niet meer...die uitgezet
+Toegevoegd
+Vectorpolygons met verwijzing naar "kaartlagen".
+Deze staan aan.
+
+Wanneer je deze laag uit vinkt , en de kaartlaag in MOL kiest, komen deze lagen in de eps met de tekenstijl die in de mapstyle staat.
+Echter de kaarten worden tergend traag. Dus voorlopig nog af te raden dit te gebruiken.
+
+
+14-3-2016
+aangepast: after roads layers verplaatst
+country namen overprint gedisabled

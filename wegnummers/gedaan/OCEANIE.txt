@@ -1,0 +1,930 @@
+roadnumber	country
+001	American Samoa
+1	Australia
+10	Australia
+102	Australia
+107	Australia
+11	Australia
+12	Australia
+120	Australia
+123	Australia
+13	Australia
+136	Australia
+138	Australia
+14	Australia
+15	Australia
+16	Australia
+17	Australia
+18	Australia
+19	Australia
+2	Australia
+20	Australia
+201	Australia
+202	Australia
+203	Australia
+204	Australia
+21	Australia
+214	Australia
+22	Australia
+23	Australia
+24	Australia
+25	Australia
+251	Australia
+255	Australia
+257	Australia
+258	Australia
+259	Australia
+26	Australia
+260	Australia
+27	Australia
+28	Australia
+29	Australia
+3	Australia
+30	Australia
+31	Australia
+32	Australia
+33	Australia
+34	Australia
+35	Australia
+359	Australia
+36	Australia
+37	Australia
+38	Australia
+39	Australia
+4	Australia
+40	Australia
+41	Australia
+42	Australia
+43	Australia
+44	Australia
+45	Australia
+46	Australia
+47	Australia
+48	Australia
+49	Australia
+5	Australia
+50	Australia
+51	Australia
+52	Australia
+53	Australia
+54	Australia
+55	Australia
+56	Australia
+57	Australia
+58	Australia
+59	Australia
+6	Australia
+60	Australia
+61	Australia
+62	Australia
+63	Australia
+64	Australia
+65	Australia
+66	Australia
+67	Australia
+68	Australia
+69	Australia
+7	Australia
+70	Australia
+71	Australia
+72	Australia
+73	Australia
+74	Australia
+75	Australia
+76	Australia
+77	Australia
+78	Australia
+79	Australia
+8	Australia
+80	Australia
+81	Australia
+82	Australia
+83	Australia
+84	Australia
+85	Australia
+86	Australia
+87	Australia
+88	Australia
+89	Australia
+9	Australia
+90	Australia
+91	Australia
+92	Australia
+93	Australia
+94	Australia
+95	Australia
+96	Australia
+97	Australia
+98	Australia
+99	Australia
+A1	Australia
+A10	Australia
+A11	Australia
+A13	Australia
+A14	Australia
+A15	Australia
+A16	Australia
+A17	Australia
+A18	Australia
+A2	Australia
+A20	Australia
+A200	Australia
+A21	Australia
+A22	Australia
+A23	Australia
+A25	Australia
+A28	Australia
+A3	Australia
+A300	Australia
+A31	Australia
+A32	Australia
+A34	Australia
+A36	Australia
+A37	Australia
+A38	Australia
+A39	Australia
+A4	Australia
+A40	Australia
+A41	Australia
+A420	Australia
+A43	Australia
+A44	Australia
+A440	Australia
+A48	Australia
+A49	Australia
+A5	Australia
+A52	Australia
+A55	Australia
+A6	Australia
+A66	Australia
+A7	Australia
+A71	Australia
+A780	Australia
+A79	Australia
+A790	Australia
+A8	Australia
+A87	Australia
+A9	Australia
+B1	Australia
+B10	Australia
+B100	Australia
+B101	Australia
+B11	Australia
+B110	Australia
+B12	Australia
+B120	Australia
+B13	Australia
+B14	Australia
+B140	Australia
+B15	Australia
+B16	Australia
+B160	Australia
+B17	Australia
+B18	Australia
+B180	Australia
+B184	Australia
+B19	Australia
+B200	Australia
+B201	Australia
+B21	Australia
+B210	Australia
+B22	Australia
+B220	Australia
+B23	Australia
+B24	Australia
+B240	Australia
+B25	Australia
+B26	Australia
+B260	Australia
+B27	Australia
+B28	Australia
+B280	Australia
+B300	Australia
+B31	Australia
+B32	Australia
+B320	Australia
+B33	Australia
+B34	Australia
+B340	Australia
+B35	Australia
+B36	Australia
+B360	Australia
+B37	Australia
+B380	Australia
+B400	Australia
+B41	Australia
+B410	Australia
+B42	Australia
+B420	Australia
+B43	Australia
+B45	Australia
+B460	Australia
+B500	Australia
+B51	Australia
+B52	Australia
+B53	Australia
+B54	Australia
+B55	Australia
+B56	Australia
+B57	Australia
+B58	Australia
+B59	Australia
+B60	Australia
+B61	Australia
+B62	Australia
+B63	Australia
+B64	Australia
+B65	Australia
+B66	Australia
+B68	Australia
+B69	Australia
+B70	Australia
+B71	Australia
+B72	Australia
+B73	Australia
+B74	Australia
+B75	Australia
+B76	Australia
+B78	Australia
+B79	Australia
+B80	Australia
+B81	Australia
+B82	Australia
+B83	Australia
+B84	Australia
+B85	Australia
+B86	Australia
+B87	Australia
+B88	Australia
+B89	Australia
+B90	Australia
+B91	Australia
+B94	Australia
+B95	Australia
+B97	Australia
+C101	Australia
+C102	Australia
+C103	Australia
+C104	Australia
+C105	Australia
+C106	Australia
+C107	Australia
+C108	Australia
+C109	Australia
+C110	Australia
+C111	Australia
+C112	Australia
+C113	Australia
+C114	Australia
+C115	Australia
+C116	Australia
+C117	Australia
+C118	Australia
+C119	Australia
+C121	Australia
+C123	Australia
+C124	Australia
+C125	Australia
+C126	Australia
+C127	Australia
+C128	Australia
+C129	Australia
+C132	Australia
+C133	Australia
+C134	Australia
+C135	Australia
+C136	Australia
+C137	Australia
+C138	Australia
+C139	Australia
+C140	Australia
+C141	Australia
+C142	Australia
+C143	Australia
+C144	Australia
+C145	Australia
+C146	Australia
+C147	Australia
+C148	Australia
+C149	Australia
+C150	Australia
+C151	Australia
+C152	Australia
+C153	Australia
+C154	Australia
+C155	Australia
+C156	Australia
+C157	Australia
+C158	Australia
+C159	Australia
+C160	Australia
+C161	Australia
+C162	Australia
+C163	Australia
+C164	Australia
+C165	Australia
+C166	Australia
+C167	Australia
+C168	Australia
+C169	Australia
+C170	Australia
+C171	Australia
+C172	Australia
+C173	Australia
+C174	Australia
+C175	Australia
+C176	Australia
+C177	Australia
+C178	Australia
+C179	Australia
+C181	Australia
+C182	Australia
+C183	Australia
+C184	Australia
+C185	Australia
+C186	Australia
+C187	Australia
+C188	Australia
+C189	Australia
+C191	Australia
+C192	Australia
+C193	Australia
+C194	Australia
+C195	Australia
+C196	Australia
+C198	Australia
+C201	Australia
+C202	Australia
+C203	Australia
+C204	Australia
+C205	Australia
+C206	Australia
+C207	Australia
+C208	Australia
+C211	Australia
+C212	Australia
+C213	Australia
+C214	Australia
+C215	Australia
+C216	Australia
+C217	Australia
+C218	Australia
+C219	Australia
+C220	Australia
+C221	Australia
+C222	Australia
+C223	Australia
+C224	Australia
+C225	Australia
+C226	Australia
+C227	Australia
+C229	Australia
+C230	Australia
+C231	Australia
+C232	Australia
+C233	Australia
+C234	Australia
+C235	Australia
+C236	Australia
+C237	Australia
+C238	Australia
+C239	Australia
+C240	Australia
+C241	Australia
+C242	Australia
+C243	Australia
+C244	Australia
+C245	Australia
+C246	Australia
+C247	Australia
+C248	Australia
+C249	Australia
+C250	Australia
+C251	Australia
+C252	Australia
+C253	Australia
+C254	Australia
+C255	Australia
+C256	Australia
+C257	Australia
+C261	Australia
+C262	Australia
+C263	Australia
+C264	Australia
+C265	Australia
+C266	Australia
+C267	Australia
+C268	Australia
+C271	Australia
+C272	Australia
+C273	Australia
+C274	Australia
+C275	Australia
+C276	Australia
+C277	Australia
+C278	Australia
+C282	Australia
+C283	Australia
+C285	Australia
+C287	Australia
+C288	Australia
+C291	Australia
+C292	Australia
+C294	Australia
+C295	Australia
+C296	Australia
+C301	Australia
+C302	Australia
+C305	Australia
+C306	Australia
+C307	Australia
+C309	Australia
+C310	Australia
+C311	Australia
+C312	Australia
+C313	Australia
+C314	Australia
+C315	Australia
+C316	Australia
+C317	Australia
+C318	Australia
+C319	Australia
+C320	Australia
+C321	Australia
+C322	Australia
+C323	Australia
+C324	Australia
+C325	Australia
+C326	Australia
+C327	Australia
+C328	Australia
+C329	Australia
+C330	Australia
+C331	Australia
+C332	Australia
+C333	Australia
+C334	Australia
+C335	Australia
+C336	Australia
+C337	Australia
+C338	Australia
+C340	Australia
+C341	Australia
+C342	Australia
+C343	Australia
+C344	Australia
+C345	Australia
+C346	Australia
+C347	Australia
+C348	Australia
+C349	Australia
+C350	Australia
+C351	Australia
+C352	Australia
+C353	Australia
+C354	Australia
+C355	Australia
+C356	Australia
+C357	Australia
+C358	Australia
+C359	Australia
+C361	Australia
+C362	Australia
+C363	Australia
+C364	Australia
+C365	Australia
+C366	Australia
+C367	Australia
+C368	Australia
+C369	Australia
+C370	Australia
+C371	Australia
+C372	Australia
+C373	Australia
+C374	Australia
+C375	Australia
+C376	Australia
+C377	Australia
+C378	Australia
+C381	Australia
+C382	Australia
+C383	Australia
+C384	Australia
+C391	Australia
+C392	Australia
+C401	Australia
+C402	Australia
+C403	Australia
+C404	Australia
+C405	Australia
+C406	Australia
+C407	Australia
+C411	Australia
+C412	Australia
+C413	Australia
+C414	Australia
+C415	Australia
+C416	Australia
+C417	Australia
+C418	Australia
+C419	Australia
+C420	Australia
+C421	Australia
+C422	Australia
+C423	Australia
+C424	Australia
+C425	Australia
+C426	Australia
+C427	Australia
+C428	Australia
+C429	Australia
+C430	Australia
+C431	Australia
+C432	Australia
+C433	Australia
+C434	Australia
+C435	Australia
+C436	Australia
+C437	Australia
+C441	Australia
+C442	Australia
+C443	Australia
+C444	Australia
+C445	Australia
+C446	Australia
+C447	Australia
+C449	Australia
+C451	Australia
+C452	Australia
+C453	Australia
+C454	Australia
+C455	Australia
+C456	Australia
+C457	Australia
+C458	Australia
+C459	Australia
+C461	Australia
+C462	Australia
+C463	Australia
+C464	Australia
+C465	Australia
+C466	Australia
+C467	Australia
+C468	Australia
+C469	Australia
+C471	Australia
+C472	Australia
+C473	Australia
+C474	Australia
+C475	Australia
+C476	Australia
+C477	Australia
+C478	Australia
+C481	Australia
+C482	Australia
+C483	Australia
+C484	Australia
+C485	Australia
+C486	Australia
+C487	Australia
+C488	Australia
+C491	Australia
+C492	Australia
+C493	Australia
+C494	Australia
+C495	Australia
+C496	Australia
+C497	Australia
+C501	Australia
+C502	Australia
+C503	Australia
+C504	Australia
+C505	Australia
+C506	Australia
+C507	Australia
+C508	Australia
+C510	Australia
+C511	Australia
+C512	Australia
+C513	Australia
+C514	Australia
+C515	Australia
+C516	Australia
+C517	Australia
+C518	Australia
+C519	Australia
+C520	Australia
+C521	Australia
+C522	Australia
+C523	Australia
+C524	Australia
+C525	Australia
+C526	Australia
+C527	Australia
+C528	Australia
+C529	Australia
+C531	Australia
+C532	Australia
+C533	Australia
+C534	Australia
+C535	Australia
+C536	Australia
+C537	Australia
+C541	Australia
+C542	Australia
+C543	Australia
+C544	Australia
+C545	Australia
+C546	Australia
+C547	Australia
+C548	Australia
+C601	Australia
+C602	Australia
+C603	Australia
+C604	Australia
+C605	Australia
+C606	Australia
+C607	Australia
+C608	Australia
+C609	Australia
+C610	Australia
+C611	Australia
+C612	Australia
+C613	Australia
+C615	Australia
+C616	Australia
+C617	Australia
+C618	Australia
+C619	Australia
+C620	Australia
+C621	Australia
+C622	Australia
+C623	Australia
+C624	Australia
+C625	Australia
+C626	Australia
+C627	Australia
+C628	Australia
+C629	Australia
+C630	Australia
+C631	Australia
+C632	Australia
+C634	Australia
+C635	Australia
+C636	Australia
+C637	Australia
+C638	Australia
+C639	Australia
+C640	Australia
+C641	Australia
+C643	Australia
+C644	Australia
+C645	Australia
+C646	Australia
+C701	Australia
+C702	Australia
+C703	Australia
+C704	Australia
+C705	Australia
+C706	Australia
+C707	Australia
+C708	Australia
+C709	Australia
+C710	Australia
+C711	Australia
+C713	Australia
+C714	Australia
+C715	Australia
+C716	Australia
+C717	Australia
+C718	Australia
+C720	Australia
+C721	Australia
+C722	Australia
+C723	Australia
+C724	Australia
+C725	Australia
+C726	Australia
+C727	Australia
+C728	Australia
+C729	Australia
+C730	Australia
+C731	Australia
+C732	Australia
+C733	Australia
+C734	Australia
+C735	Australia
+C738	Australia
+C739	Australia
+C740	Australia
+C741	Australia
+C742	Australia
+C743	Australia
+C746	Australia
+C754	Australia
+C777	Australia
+C781	Australia
+C782	Australia
+C783	Australia
+C784	Australia
+C785	Australia
+C786	Australia
+C787	Australia
+C788	Australia
+C789	Australia
+C791	Australia
+C792	Australia
+C793	Australia
+C794	Australia
+C798	Australia
+C801	Australia
+C802	Australia
+C803	Australia
+C805	Australia
+C806	Australia
+C807	Australia
+C808	Australia
+C809	Australia
+C810	Australia
+C811	Australia
+C812	Australia
+C813	Australia
+C814	Australia
+C815	Australia
+C816	Australia
+C817	Australia
+C818	Australia
+C819	Australia
+C820	Australia
+C821	Australia
+C822	Australia
+C823	Australia
+C824	Australia
+C826	Australia
+C827	Australia
+C828	Australia
+C829	Australia
+C830	Australia
+C831	Australia
+C832	Australia
+C834	Australia
+C835	Australia
+C836	Australia
+C839	Australia
+C840	Australia
+C841	Australia
+C843	Australia
+C844	Australia
+C845	Australia
+C846	Australia
+C848	Australia
+C849	Australia
+C850	Australia
+C851	Australia
+C852	Australia
+C853	Australia
+C854	Australia
+M1	Australia
+M11	Australia
+M15	Australia
+M2	Australia
+M20	Australia
+M23	Australia
+M3	Australia
+M31	Australia
+M39	Australia
+M4	Australia
+M420	Australia
+M5	Australia
+M7	Australia
+M780	Australia
+M79	Australia
+M8	Australia
+M80	Australia
+10	New Zealand
+10A	New Zealand
+10B	New Zealand
+11	New Zealand
+12	New Zealand
+13	New Zealand
+14	New Zealand
+15	New Zealand
+17	New Zealand
+19	New Zealand
+19A	New Zealand
+2	New Zealand
+21	New Zealand
+23	New Zealand
+25	New Zealand
+26	New Zealand
+27	New Zealand
+28	New Zealand
+29	New Zealand
+3	New Zealand
+30	New Zealand
+31	New Zealand
+4	New Zealand
+5	New Zealand
+6	New Zealand
+6A	New Zealand
+7	New Zealand
+70	New Zealand
+72	New Zealand
+8	New Zealand
+9	New Zealand
+SH 1	New Zealand
+SH 10	New Zealand
+SH 11	New Zealand
+SH 12	New Zealand
+SH 14	New Zealand
+SH 15A	New Zealand
+SH 16	New Zealand
+SH 18	New Zealand
+SH 1B	New Zealand
+SH 2	New Zealand
+SH 20	New Zealand
+SH 20A	New Zealand
+SH 20B	New Zealand
+SH 21	New Zealand
+SH 22	New Zealand
+SH 23	New Zealand
+SH 24	New Zealand
+SH 25	New Zealand
+SH 25A	New Zealand
+SH 26	New Zealand
+SH 27	New Zealand
+SH 28	New Zealand
+SH 29	New Zealand
+SH 2A	New Zealand
+SH 2B	New Zealand
+SH 3	New Zealand
+SH 30	New Zealand
+SH 30A	New Zealand
+SH 31	New Zealand
+SH 32	New Zealand
+SH 33	New Zealand
+SH 34	New Zealand
+SH 35	New Zealand
+SH 36	New Zealand
+SH 37	New Zealand
+SH 38	New Zealand
+SH 39	New Zealand
+SH 3A	New Zealand
+SH 4	New Zealand
+SH 41	New Zealand
+SH 43	New Zealand
+SH 44	New Zealand
+SH 45	New Zealand
+SH 46	New Zealand
+SH 47	New Zealand
+SH 48	New Zealand
+SH 49	New Zealand
+SH 5	New Zealand
+SH 50	New Zealand
+SH 50A	New Zealand
+SH 53	New Zealand
+SH 54	New Zealand
+SH 56	New Zealand
+SH 57	New Zealand
+SH 58	New Zealand
+SH 6	New Zealand
+SH 60	New Zealand
+SH 62	New Zealand
+SH 63	New Zealand
+SH 65	New Zealand
+SH 67	New Zealand
+SH 67A	New Zealand
+SH 69	New Zealand
+SH 6A	New Zealand
+SH 7	New Zealand
+SH 71	New Zealand
+SH 73	New Zealand
+SH 73A	New Zealand
+SH 74	New Zealand
+SH 74A	New Zealand
+SH 75	New Zealand
+SH 76	New Zealand
+SH 77	New Zealand
+SH 78	New Zealand
+SH 79	New Zealand
+SH 7A	New Zealand
+SH 8	New Zealand
+SH 80	New Zealand
+SH 82	New Zealand
+SH 83	New Zealand
+SH 84	New Zealand
+SH 85	New Zealand
+SH 86	New Zealand
+SH 87	New Zealand
+SH 88	New Zealand
+SH 8A	New Zealand
+SH 8B	New Zealand
+SH 90	New Zealand
+SH 92	New Zealand
+SH 93	New Zealand
+SH 94	New Zealand
+SH 95	New Zealand
+SH 96	New Zealand
+SH 97	New Zealand
+SH 98	New Zealand
+SH 99	New Zealand

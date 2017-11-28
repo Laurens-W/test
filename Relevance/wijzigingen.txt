@@ -1,0 +1,15 @@
+v5.0
+1) Hauptstädte sind mit einem Stern in einem Kreis gekennzeichnet. Den Kreis bitte entfernen und den Stern etwas vergrößern.
+2) Farbe der Landmaße: Alten Farbcode C10 M15 Y25 K0 bitte in C0 M20 Y40 K0 ändern.
+
+v4.0
+Wijzigingen tov de mapstyles in de map 2.0 gdb volgens "ADACU_Maps4News_Dokumentation_L6.pdf" (zie map 'bron klant')
+
+Op de fonts Trade Gothic Medium & Trade Gothic Light. Die moeten nog gedaan worden zodra de klant deie betreffende fonts stuurt.
+
+
+v2.0
+font waternamen gewijzigd
+font province namen gewijzigd
+font capital cities gewijzigd
+(zie opm email 09-12-2015)

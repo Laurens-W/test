@@ -1,0 +1,11 @@
+v4.0
+https://trello.com/c/jTkpboz6
+
+v3.0
+Changed Sloc projection to projectOnCritChains for 10, 10_b, 20, 20_b, 40, 40_b
+
+v2.0
+-
+v1.0
+Dit is hetzlefde als Le Soir 1.0 GDB maar dan zonder tekst.
+https://trello.com/c/r117a4CK

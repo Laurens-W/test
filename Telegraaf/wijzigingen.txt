@@ -1,0 +1,5 @@
+v1.0 GDB
+https://trello.com/c/r117a4CK
+
+v2.0 GDB
+roadnummer-aantallen voor nederlandse wegnummers aangepast waar mogelijk

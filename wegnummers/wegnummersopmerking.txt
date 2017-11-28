@@ -1,0 +1,2 @@
+Dit zijn alleen de wegnummer nodes die je in een xml kan plakken onder de slocname nodes
+Dit zijn dus geen MapStyles! Enkel voor copy paste bedoeld.

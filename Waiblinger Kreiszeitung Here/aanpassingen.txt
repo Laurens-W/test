@@ -1,0 +1,17 @@
+v1.1
+Font van alle plaatsen boven Village Name verandert naar Helvetica Bold.
+
+v1.0
+Parkeer garage en plaats op 5k alleen en op 10k alleen parkeer garage, voor de rest uitgezet.
+Alle svg tags verwijdert.
+
+v0.4
+POi's EPS naar illistrator 8 veranderd.
+
+v0.3
+Poi's aangepast naar de gewenste poi's.
+
+v0.2
+Mapstyle inherent van de Here mapstyle.
+Through road fill kleuren veranderd.
+Village name font is helvetica Bold en de size van Village name en alles daarboven veranderd naar 10 points.

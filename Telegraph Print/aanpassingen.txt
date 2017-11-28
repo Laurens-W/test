@@ -1,0 +1,42 @@
+Deze mapstyle is zoals de Daily Telegraph Digital echter: de sizes in de digital mapstyle zijn 2 keer zo groot/klein?
+Daarbij zijn de kleuren zoals hieronder (afgerond):
+
+Highlight - C0, M100, Y30, K40  <<< niet hoeven doen: niet van belang voor mapstyle
+
+Hospitals & schools- C0, M20, Y6, K8   Done
+ 
+Parks/forests - C22.5, M7.5, Y30, K0 
+
+Water - C25, M6, Y0, K16.25
+
+Water name - C65, M15.6, Y0, K42.25   
+ 
+City/Country name - C0, M0, Y0, K70
+ 
+Street/park name - C0, M0, Y0, K70
+ 
+Railway line - C0, M0, Y0, K50
+
+ 
+River - C25, M6, Y0, K16.25   
+ 
+Border - C0, M0, Y0, K50
+ 
+Disputed border - C0, M0, Y0, K50 
+ 
+Base1 - C0, M1.1, Y2, K4.7 <<< niet hoeven doen: niet van belang voor mapstyle
+
+ 
+Base2 - C0, M2.2, Y4, K9.4 <<< dit is de digarea en islands
+
+ 
+Base3 - C0, M3.3, Y6, K14.1 <<< niet hoeven doen: niet van belang voor mapstyle
+
+ 
+Base4 - C0, M4.4, Y8, K18.8 <<< niet hoeven doen: niet van belang voor mapstyle
+
+ 
+Base5 - C0, M5.5, Y10, K23.5 <<< niet hoeven doen: niet van belang voor mapstyle
+
+ 
+Buildings - C14.55, M12.3, Y11.52, K3.6

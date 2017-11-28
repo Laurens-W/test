@@ -1,0 +1,9 @@
+v1.0 ANP_empty
+
+T.o.v. de 'gewone' ANP mapstyle zijn hier voornamelijk threehouses, hamlet, small villages, villages en small cities uitgezet.
+
+v2.0
+lake/sea namen op 2m, 5m en 10m op fully inside gezet
+ANP10_empty.xml: grijze lijn van zeepolygoon uitgezet
+Country Name: overwrite class op motorway gezet voor 2m t/m 300m
+ANP_empty300k.xml: groenvlakken aangezet en main road enabled

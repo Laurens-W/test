@@ -1,0 +1,2 @@
+v2.0 GDB
+Alle labels (behalve water) hebben nu een witte outline van 1 pt.

@@ -1,0 +1,12 @@
+v3.0
+Changed Sloc projection of Metro Station Symbol to projextoncritchains for files: 10k
+
+Moved Metro Station Symbols and Railway Station Symbols above After Roads for the files: 10k, 20k
+
+Moved Railway Station Symbols above After Roads for the files: 40k, 75k
+
+
+v2.0
+-
+v1.0
+https://trello.com/c/r117a4CK

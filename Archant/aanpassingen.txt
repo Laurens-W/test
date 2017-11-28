@@ -1,0 +1,7 @@
+versie 1.0:
+
+font van straatnamen en plaatsnamen naar Guardian Bold 
+
+versie 2.0:
+
+In 10k_b "Railway Station Symbol" boven "After Roads" geplaatst. 

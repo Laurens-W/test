@@ -1,0 +1,2 @@
+V2.0
+nav een error in mol onderzocht: dy van cemetery was kleiner dan symbol height in 200k. Enkel die MapStyle geupdate.

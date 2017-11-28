@@ -1,0 +1,17 @@
+v4.0
+400: 4x perdb aangezet (error door perdb sea)
+
+
+v3.0
+zie beta 4655 en 4657: soms gaat het fout met de 800 en 400 mapstyle rondom eilanden. Mogelijk ook andere mapstyles: alles checken en oplossen.
+(hierover is email gestuurd aan Paul door Patrick op 19-2-2015)
+
+
+Verbeterd alle mapstyles:
+
+plaatsnamen
+Waternamen
+Wegnummers
+meer wegcategorien kleine schalen
+landboundaries
+text o path

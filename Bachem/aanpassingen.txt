@@ -1,0 +1,10 @@
+v3.0
+5-150k "Railway Station Symbol" boven afteroads geplaatst.
+
+v2.0
+province boundary polygon toegevoegd op 1m (request of Dirk 5 juni 2015)
+
+v1.0
+Bachem Mapstyle gebaseerd op de Here mapstyle
+Industriefill RGB 140, 140, 140
+Straatnamen naast de wegen

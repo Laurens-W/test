@@ -1,0 +1,15 @@
+v3.0 GDB
+Railway station symbol boven after roads geplaatst.
+
+kleuren aangepast op verzoek klant:
+Meer und Flüsse (ob Fläche oder Kontur): 40/0/0/0 (also 40% Cyan)
+Grünflächen: 15/0/25/0
+Hintergrund/Landflächen: 0/0/8/9
+Staatsgrenzen: 0/0/0/30 und 0,7 pt dick
+Gebäude oder Ortsgebiete: 0/0/10/15
+
+Wir bräuchten keine Unterscheidung von Gewerbegebiete und bewohnten Gebieten.
+
+v1.0 GDB
+https://trello.com/c/r117a4CK
+Smaller then hamlet symbol : in node draw order geplaatst boven citys

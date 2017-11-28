@@ -3024,6 +3024,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
+		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above name" layerId="AfterNames" KindMain="Landuse" KindSub="Extras above name" id="includelayer.extraabovename"/>

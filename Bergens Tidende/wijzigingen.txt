@@ -1,0 +1,9 @@
+v3.0
+-
+v2.0
+-
+v1.0
+40k: 3houses uitgezet nav opm. klant
+long names prio aan
+street names local en minor uitgezet.
+roadnrs no vanuit here40k gekopieerd.

@@ -1,0 +1,5 @@
+v3.0 
+Railway station en metro station symbol boven after roads gezet. Metro station symbol veradnerd naar OnCritChange.
+
+v1.0 GDB
+https://trello.com/c/r117a4CK
