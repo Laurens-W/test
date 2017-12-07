@@ -3,7 +3,7 @@
 <mapStyle includeBackgrounddatabases="false" scale="300000" fileVersion="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<roadAlgorithm splitKetens="false"/>
 	<nameAlgorithm unplacableEnabled="false" textOnPath="true" unplacableBlockOrder="grid Nr Name" unplacableAbbreviate="false" unplacableWithLines="true" unplacableNumbersUnique="false" lineSpacing="98">
-		<unplacableBlockText xsi:type="textDraw" enabled="false" alignment="downleft" capitalMode="noCaps" font="helvetica" relHeight="140" spacing="50" slant="0" underline="false">
+		<unplacableBlockText xsi:type="textDraw" enabled="false" alignment="downleft" capitalMode="noCaps" font="bentonSans-Medium" relHeight="140" spacing="50" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -38,7 +38,7 @@
 		<lineGeneralization size="0" units="meter" isRelative="true"/>
 		<polygonGeneralization size="0" units="meter" isRelative="true"/>
 	</generalization>
-	<layer xsi:type="epsLayer" enabled="true" name="Digarea" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.1"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Digarea" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.1"/>
 	<polygongroup name="Landphase 0" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase0">
 		<polygonstyle enabled="true" name="Digarea" KindMain="Landuse" KindSub="Digarea" id="landuse.digareas.fill">
 			<criteria>
@@ -54,9 +54,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 0" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.2"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="afterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Island" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.3"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 0" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.2"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="AfterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Island" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.3"/>
 	<polygongroup name="Landphase 1" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase1">
 		<polygonstyle enabled="true" name="Island" KindMain="Landuse" KindSub="Islands" id="landuse.islands.fill">
 			<criteria>
@@ -72,13 +72,42 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 1" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.4"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="afterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 2" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.6"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="afterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Urban Area" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.7"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 1" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.4"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Forest / State Park" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.5"/>
+	<polygongroup name="Landphase 2" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase2">
+		<polygonstyle enabled="false" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
+			<criteria>
+				<equation oper="eq" fieldname="Categ" value="Forest"/>
+			</criteria>
+			<polyDraw>
+				<line enabled="false">
+					<color r="84" g="84" b="84" overprint="false"/>
+					<size size="1" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="217" g="255" b="89" overprint="false"/>
+			</polyDraw>
+		</polygonstyle>
+		<polygonstyle enabled="false" name="State Park" KindMain="Landuse" KindSub="State Parks" id="landuse.stateparks.fill">
+			<criteria>
+				<equation oper="eq" fieldname="Categ" value="State park"/>
+			</criteria>
+			<polyDraw>
+				<line enabled="false">
+					<color r="33" g="237" b="71" overprint="false"/>
+					<size size="1" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="217" g="255" b="89" overprint="false"/>
+			</polyDraw>
+		</polygonstyle>
+	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 2" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.6"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Urban Area" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.7"/>
 	<polygongroup name="Landphase 3" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase3">
-		<polygonstyle enabled="true" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
+		<polygonstyle enabled="false" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="Residential"/>
 			</criteria>
@@ -88,20 +117,21 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="217" g="217" b="217" overprint="false"/>
+				<fillColor enabled="true" r="229" g="229" b="229" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="polygonVectorLayer" enabled="true" name="Urban Area USA" id="landuse.residentials.fill" KindMain="Landuse" KindSub="Urban Area" source="Here\buausa.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="Urban Area USA" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.8"/>
+	<layer xsi:type="polygonVectorLayer" enabled="false" name="Urban Area USA" id="landuse.residential.OSM.fill" KindMain="Landuse" KindSub="Urban Area" source="Here\buausa.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="226" g="233" b="237" overprint="false"/>
 				<size size="100" units="micrometer" isRelative="false"/>
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</line>
-			<fillColor enabled="true" r="217" g="217" b="217" overprint="false"/>
+			<fillColor enabled="true" r="229" g="229" b="229" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="nYTFranklin-Medium" relHeight="255" spacing="255" slant="255" underline="false">
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="255" spacing="255" slant="255" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -123,11 +153,36 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 3" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.8"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="afterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 4" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.10"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="afterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Water Sea/Ocean" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.11"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 3" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.9"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Land / Sea / Lake Contour" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.10"/>
+	<polygongroup name="Landphase wateroutlines" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.wateroutlines">
+		<polygonstyle enabled="false" name="Land / Sea / Lake Contour" KindMain="Water contour land / sea / Lake / River" KindSub="" id="landuse.waters.line">
+			<criteria>
+				<inset fieldname="Categ">
+					<item value="Lake"/>
+					<item value="River outline"/>
+					<item value="Harbour outline"/>
+					<item value="Yacht-basin"/>
+					<item value="Bay"/>
+					<item value="Delta"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</criteria>
+			<polyDraw>
+				<line enabled="true">
+					<color r="13" g="140" b="140" overprint="false"/>
+					<size size="176" units="micrometer" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="127" g="255" b="255" overprint="false"/>
+			</polyDraw>
+		</polygonstyle>
+	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 4" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.11"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="AfterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Water Sea/Ocean" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.12"/>
 	<polygongroup name="Landphase sea ocean" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphaseseaocean">
 		<polygonstyle enabled="true" name="Water Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.seas.fill">
 			<criteria>
@@ -146,19 +201,19 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 5" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.12"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="afterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 6" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.13"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="afterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 7" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.14"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="afterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 8" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.15"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="afterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 9" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.16"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="afterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 10" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.17"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="afterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Water no Sea/Ocean" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.18"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 5" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.13"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="AfterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 6" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.14"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 7" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.15"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 8" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.16"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 9" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.17"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="AfterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 10" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.18"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="AfterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Water no Sea/Ocean" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.19"/>
 	<polygongroup name="Landphase11" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase11">
 		<polygonstyle enabled="true" name="Water no Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.noseas.fill">
 			<criteria>
@@ -182,10 +237,12 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.19"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="afterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.408" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Province Boundary Outline" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.20"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poly" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.21"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Outline" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.22"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="false" name="Province Boundary Outline" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
 			<and>
@@ -193,18 +250,36 @@
 					<item value="Harbour outline"/>
 					<item value="Sea   ."/>
 					<item value="Ocean"/>
-					<item value="Island"/>
 				</inset>
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="115" g="115" b="115" overprint="false"/>
-			<size size="3" units="1/10th millimeter" isRelative="false"/>
+			<size size="1" units="1/10th millimeter" isRelative="false"/>
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Boundary Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.410" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Fill" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.23"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="false" name="Province Boundary Fill" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="217" g="217" b="217" overprint="false"/>
+			<size size="2" units="1/10th millimeter" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Country Boundary Outline" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.24"/>
 	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Outline" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
@@ -218,13 +293,114 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="115" g="115" b="115" overprint="false"/>
-			<size size="5" units="1/10th millimeter" isRelative="false"/>
+			<size size="353" units="micrometer" isRelative="false"/>
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Highway Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.24"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="Country Boundary Fill" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.25"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="false" name="Country Boundary Fill" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="217" g="217" b="217" overprint="false"/>
+			<size size="2" units="1/10th millimeter" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Highway Outline" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.26"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Highway Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<inset fieldname="Access" negate="true">
+				<item value="{th}"/>
+				<item value="{hw}"/>
+				<item value="{mt}"/>
+			</inset>
+			<and>
+				<inset fieldname="Roadclass">
+					<item value="Motorway"/>
+					<item value="Highway"/>
+				</inset>
+				<and>
+					<equation oper="eq" fieldname="Roaduse" value="Car"/>
+					<and>
+						<inset fieldname="Roadtype" negate="true">
+							<item value="MotorType"/>
+							<item value="Bosweg/pad"/>
+							<item value="Ferry"/>
+							<item value="Pedestrian Zone"/>
+						</inset>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="204" g="204" b="204" overprint="false"/>
+			<size size="176" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="25" units="micrometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.line">
+				<criteria>
+					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
+				</criteria>
+				<style size="15" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			</modifier>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Motorway Outline" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.27"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<inset fieldname="Access" negate="true">
+				<item value="{th}"/>
+				<item value="{hw}"/>
+				<item value="{mt}"/>
+			</inset>
+			<and>
+				<equation oper="eq" fieldname="Roaduse" value="Car"/>
+				<and>
+					<equation oper="eq" fieldname="Roadtype" value="Motortype"/>
+					<and>
+						<equation oper="eq" fieldname="Roadclass" value="Motorway"/>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="204" g="204" b="204" overprint="false"/>
+			<size size="176" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="25" units="micrometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.line">
+				<criteria>
+					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
+				</criteria>
+				<style size="15" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			</modifier>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Highway Fill" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.28"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -251,10 +427,10 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="179" g="179" b="179" overprint="false"/>
-			<size size="88" units="micrometer" isRelative="false"/>
+			<size size="75" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="3" units="micrometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.line">
+			<extension size="0" units="kilometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.highways.construction.fill">
 				<criteria>
 					<equation oper="eq" fieldname="Construction" value="true"/>
 					<or>
@@ -268,8 +444,8 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Motorway Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.25"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="Motorway Fill" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.29"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Motorway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -285,10 +461,10 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="179" g="179" b="179" overprint="false"/>
-			<size size="176" units="micrometer" isRelative="false"/>
+			<size size="100" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="3" units="micrometer" isRelative="true"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.line">
+			<extension size="0" units="kilometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.motorways.construction.fill">
 				<criteria>
 					<equation oper="eq" fieldname="Construction" value="true"/>
 					<or>
@@ -302,15 +478,13 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poly" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.31"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="vectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Line" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.32"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="vectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poi" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.33"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="vectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.34"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="afterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="epsLayer" enabled="true" name="CityNames Group" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.35"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Line" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.30"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poi" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.31"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.32"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
+	<layer xsi:type="epsLayer" enabled="true" name="CityNames Group" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.33"/>
 	<slocgroup maxFillpercentage="15" name="CityNames Group" KindMain="Placenames" KindSub="Placenames POIs" id="pois.placenamesgroup">
 		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
@@ -322,7 +496,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -335,25 +509,25 @@
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="7" units="1/10th millimeter" isRelative="false"/>
+				<height size="7" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -371,7 +545,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -384,25 +558,25 @@
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="4" units="1/10th millimeter" isRelative="false"/>
+				<height size="4" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -420,7 +594,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -433,25 +607,25 @@
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="7" units="1/10th millimeter" isRelative="false"/>
+				<height size="7" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -469,7 +643,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -478,29 +652,29 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="4" units="1/10th millimeter" isRelative="false"/>
+				<height size="4" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -518,7 +692,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -531,25 +705,25 @@
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="7" units="1/10th millimeter" isRelative="false"/>
+				<height size="7" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -567,7 +741,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -576,29 +750,29 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="4" units="1/10th millimeter" isRelative="false"/>
+				<height size="4" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -616,7 +790,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSansCond-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -629,25 +803,25 @@
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="7" units="1/10th millimeter" isRelative="false"/>
+				<height size="7" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -665,7 +839,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -674,29 +848,29 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="4" units="1/10th millimeter" isRelative="false"/>
+				<height size="4" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -714,7 +888,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSansCond-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -727,25 +901,25 @@
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="7" units="1/10th millimeter" isRelative="false"/>
+				<height size="7" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -763,7 +937,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -772,29 +946,29 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="4" units="1/10th millimeter" isRelative="false"/>
+				<height size="4" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -812,7 +986,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSansCond-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -825,25 +999,25 @@
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="7" units="1/10th millimeter" isRelative="false"/>
+				<height size="7" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -861,7 +1035,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -870,29 +1044,29 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="4" units="1/10th millimeter" isRelative="false"/>
+				<height size="4" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -910,7 +1084,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSansCond-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -923,25 +1097,25 @@
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="7" units="1/10th millimeter" isRelative="false"/>
+				<height size="7" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -959,7 +1133,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Book" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -968,29 +1142,29 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
-							<color r="95" g="95" b="95" overprint="false"/>
+							<color r="0" g="0" b="0" overprint="false"/>
 							<size size="0" units="1/10th millimeter" isRelative="false"/>
 							<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 						</line>
-						<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+						<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 					</shape>
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
+						<color r="0" g="0" b="0" overprint="false"/>
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
-				<width size="1" units="millimeter" isRelative="false"/>
-				<height size="1" units="millimeter" isRelative="false"/>
+				<width size="4" units="1/10th millimeter" isRelative="false"/>
+				<height size="4" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -999,7 +1173,7 @@
 			</lineDraw>
 		</slocstyle>
 	</slocgroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.36"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Country Name" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.34"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Country Name" KindMain="Boundaries and Area's" KindSub="Countries" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Country boundary"/>
@@ -1031,7 +1205,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Island Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.37"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Island Name" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.35"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Island Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Islands" id="landuse.islands.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Island"/>
@@ -1039,14 +1213,14 @@
 				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="bentonSans-Medium" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+				<fillColor enabled="true" r="127" g="127" b="127" overprint="false"/>
 			</fontDraw>
 			<size size="6" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -1056,14 +1230,14 @@
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="95" g="95" b="95" overprint="false"/>
+					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</shape>
 			</boxDraw>
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Lake / Sea Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.38"/>
-	<userstyle xsi:type="wateruserstyle" enabled="true" name="Lake / Sea Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.label" deduplicateNames="true">
+	<layer xsi:type="epsLayer" enabled="true" name="Sea Name" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.36"/>
+	<userstyle xsi:type="wateruserstyle" enabled="true" name="Sea Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.seas.label" deduplicateNames="true">
 		<criteria>
 			<inset fieldname="Categ">
 				<item value="Sea   ."/>
@@ -1080,7 +1254,7 @@
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="0" g="255" b="255" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="6" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -1090,13 +1264,13 @@
 						<size size="1" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+					<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
 				</shape>
 			</boxDraw>
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="After Names" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.39"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="afterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
-	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.40"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Names" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.37"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
+	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.38"/>
 </mapStyle>

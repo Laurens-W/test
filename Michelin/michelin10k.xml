@@ -22081,7 +22081,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Region Boundary Line" KindMain="Boundaries" KindSub="Regions" id="boundaries.regions.line.1">
 		<criteria>

@@ -984,7 +984,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name="Patch" KindMain="Unknown" id="epslayer.generic.17" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Outline" KindMain="Unknown" id="epslayer.generic.56" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Railway Lines" KindMain="Unknown" id="epslayer.generic.56" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
@@ -1002,7 +1002,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Cargo Outline" KindMain="Unknown" id="epslayer.generic.52" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Cargo Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
@@ -1017,7 +1016,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Secundary Outline" KindMain="Unknown" id="epslayer.generic.54" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Secundary Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
@@ -1039,7 +1037,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro lines" KindMain="Unknown" id="epslayer.generic.51" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Metro Lines" KindMain="Unknown" id="epslayer.generic.51" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="lineVectorLayer" enabled="false" name="OSM Subway Line" id="railways.subway.OSM.line" KindMain="Rails" KindSub="Subway OSM" source="OSM\latest\Subway.lim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<lineDraw enabled="true">
 			<color r="85" g="85" b="85" overprint="false"/>
@@ -1047,10 +1045,18 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="S-Train lines" KindMain="Unknown" id="epslayer.generic.51" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="S-Train Lines" KindMain="Unknown" id="epslayer.generic.51" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="lineVectorLayer" enabled="false" name="OSM Lightrail Line" id="railways.light_rail.OSM.line" KindMain="Rails" KindSub="Subway OSM" source="OSM\latest\railways\light_rail.lim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<lineDraw enabled="true">
 			<color r="85" g="85" b="85" overprint="false"/>
+			<size size="3" units="1/10th millimeter" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Tram Lines" KindMain="Unknown" id="epslayer.generic.51" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="lineVectorLayer" enabled="false" name="OSM Tram Line" id="railways.tram.OSM.line" KindMain="Rails" KindSub="Subway OSM" source="OSM\latest\tram.lim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<lineDraw enabled="true">
+			<color r="162" g="162" b="162" overprint="false"/>
 			<size size="3" units="1/10th millimeter" isRelative="false"/>
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
@@ -1248,6 +1254,525 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Grid Layer" KindMain="Unknown" id="epslayer.generic.60" KindSub=""/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Railway Stations" KindMain="Unknown" id="epslayer.generic.61" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<slocstyle enabled="false" name="Railway Station" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Railway station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="hererailwaystation" width="597" height="597" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 597.144 597.144&quot; xml:space=&quot;preserve&quot;&gt;&#xA;&lt;rect x=&quot;137.566&quot; y=&quot;515.626&quot; fill=&quot;#A7A9AC&quot; width=&quot;321.234&quot; height=&quot;21.254&quot;/&gt;&#xA;&lt;rect x=&quot;99.031&quot; y=&quot;559.517&quot; fill=&quot;#A7A9AC&quot; width=&quot;407.635&quot; height=&quot;18.49&quot;/&gt;&#xA;&lt;polygon points=&quot;51.023,588.898 190.616,453.245 203.921,467.761 89.7,595.286 &quot;/&gt;&#xA;&lt;polygon points=&quot;546.909,587.444 409.552,455.837 396.42,470.525 509.833,596 &quot;/&gt;&#xA;&lt;path d=&quot;M506.667,305.156v66.355c0,57.369-41.299,104.198-91.757,104.198H185.259c-50.285,0-91.584-46.829-91.584-104.198v-66.355&#xA; l1.383-32.487l21.254-11.924h369.101l21.254,11.924V305.156z&quot;/&gt;&#xA;&lt;path fill=&quot;#FFFFFF&quot; d=&quot;M180.075,431.99c19.008,0,34.387-15.552,34.387-34.56c0-19.008-15.38-34.56-34.387-34.56&#xA; c-19.181,0-34.56,15.552-34.56,34.56C145.515,416.438,160.893,431.99,180.075,431.99z&quot;/&gt;&#xA;&lt;path fill=&quot;#FFFFFF&quot; d=&quot;M417.675,431.99c19.008,0,34.387-15.552,34.387-34.56c0-19.008-15.38-34.56-34.387-34.56&#xA; c-19.008,0-34.56,15.552-34.56,34.56C383.115,416.438,398.667,431.99,417.675,431.99z&quot;/&gt;&#xA;&lt;path d=&quot;M137.566,84.144h329.183c10.887,0,19.873,8.986,19.873,19.873v152.755c0,10.887-8.986,19.872-19.873,19.872H137.566&#xA; c-11.06,0-20.045-8.985-20.045-19.872V104.017C117.521,93.13,126.506,84.144,137.566,84.144z&quot;/&gt;&#xA;&lt;path fill=&quot;#FFFFFF&quot; d=&quot;M175.927,114.558h249.696c15.379,0,27.82,12.614,27.82,27.993v83.635c0,15.38-12.442,27.994-27.82,27.994&#xA; H175.927c-15.206,0-27.821-12.614-27.821-27.994V142.55C148.106,127.172,160.721,114.558,175.927,114.558z&quot;/&gt;&#xA;&lt;path d=&quot;M149.489,42.845h301.363c7.258,0,13.306,6.048,13.306,13.306v31.969c0,7.257-6.048,13.305-13.306,13.305H149.489&#xA; c-7.43,0-13.305-6.048-13.305-13.305V56.15C136.183,48.893,142.059,42.845,149.489,42.845z&quot;/&gt;&#xA;&lt;rect x=&quot;234.506&quot; y=&quot;64.099&quot; fill=&quot;#FFFFFF&quot; width=&quot;135.303&quot; height=&quot;30.586&quot;/&gt;&#xA;&lt;path fill=&quot;none&quot; stroke=&quot;#020405&quot; stroke-width=&quot;4&quot; d=&quot;M595.144,511.895c0,45.976-37.272,83.249-83.248,83.249H85.248&#xA; C39.272,595.144,2,557.871,2,511.895V85.247C2,39.271,39.272,2,85.248,2h426.648c45.976,0,83.248,37.271,83.248,83.247V511.895&#xA; L595.144,511.895z&quot;/&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="hererailwaystation" width="597" height="597" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 2 122 600 720&#xA;%%HiResBoundingBox: 2 122.856 599.1441 720&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 297.5 420.5 297.5 420.5&#xA;%AI8_OpenToView: -411.1806 877.1932 0.6667 801 756 26 0 0 352 318 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0 0 0 0.4 k&#xA;0 J 0 j 1 w 4 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;139.5659 183.1198 m&#xA;460.8004 183.1198 L&#xA;460.8004 204.3742 L&#xA;139.5659 204.3742 L&#xA;139.5659 183.1198 L&#xA;f&#xA;%Plot f&#xA;101.0313 141.9929 m&#xA;508.6667 141.9929 L&#xA;508.6667 160.4827 L&#xA;101.0313 160.4827 L&#xA;101.0313 141.9929 L&#xA;f&#xA;0 0 0 1 k&#xA;%Plot f&#xA;53.0228 131.1015 m&#xA;192.6157 266.7554 L&#xA;205.9211 252.2393 L&#xA;91.6996 124.7136 L&#xA;53.0228 131.1015 L&#xA;f&#xA;%Plot f&#xA;548.9093 132.5562 m&#xA;411.5524 264.1632 L&#xA;398.4203 249.475 L&#xA;511.8333 124 L&#xA;548.9093 132.5562 L&#xA;f&#xA;%Plot f&#xA;508.6667 414.8441 m&#xA;508.6667 348.4889 l&#xA;508.6667 291.1198 467.3675 244.2905 416.9101 244.2905 c&#xA;187.2589 244.2905 l&#xA;136.9739 244.2905 95.6747 291.1198 95.6747 348.4889 c&#xA;95.6747 414.8441 L&#xA;97.0573 447.3307 L&#xA;118.3117 459.2546 L&#xA;487.4125 459.2546 L&#xA;508.6667 447.3307 L&#xA;508.6667 414.8441 L&#xA;f&#xA;0 0 0 0 k&#xA;%Plot f&#xA;182.0747 288.0096 m&#xA;201.0825 288.0096 216.4621 303.5616 216.4621 322.5694 c&#xA;216.4621 341.5771 201.0825 357.1291 182.0747 357.1291 c&#xA;162.8934 357.1291 147.5149 341.5771 147.5149 322.5694 c&#xA;147.5149 303.5616 162.8934 288.0096 182.0747 288.0096 c&#xA;f&#xA;%Plot f&#xA;419.6747 288.0096 m&#xA;438.6825 288.0096 454.0621 303.5616 454.0621 322.5694 c&#xA;454.0621 341.5771 438.6825 357.1291 419.6747 357.1291 c&#xA;400.6667 357.1291 385.1149 341.5771 385.1149 322.5694 c&#xA;385.1149 303.5616 400.6667 288.0096 419.6747 288.0096 c&#xA;f&#xA;0 0 0 1 k&#xA;%Plot f&#xA;139.5659 635.8562 m&#xA;468.7492 635.8562 l&#xA;479.6358 635.8562 488.6219 626.8702 488.6219 615.9835 c&#xA;488.6219 463.2283 l&#xA;488.6219 452.3417 479.6358 443.3568 468.7492 443.3568 c&#xA;139.5659 443.3568 l&#xA;128.506 443.3568 119.5211 452.3417 119.5211 463.2283 c&#xA;119.5211 615.9835 l&#xA;119.5211 626.8702 128.506 635.8562 139.5659 635.8562 c&#xA;f&#xA;0 0 0 0 k&#xA;%Plot f&#xA;177.9273 605.4425 m&#xA;427.6235 605.4425 l&#xA;443.002 605.4425 455.4438 592.8283 455.4438 577.4498 c&#xA;455.4438 493.8144 l&#xA;455.4438 478.4347 443.002 465.8206 427.6235 465.8206 c&#xA;177.9273 465.8206 l&#xA;162.7211 465.8206 150.106 478.4347 150.106 493.8144 c&#xA;150.106 577.4498 l&#xA;150.106 592.8283 162.7211 605.4425 177.9273 605.4425 c&#xA;f&#xA;0 0 0 1 k&#xA;%Plot f&#xA;151.4886 677.1554 m&#xA;452.8516 677.1554 l&#xA;460.1101 677.1554 466.1581 671.1072 466.1581 663.8498 c&#xA;466.1581 631.8811 l&#xA;466.1581 624.6238 460.1101 618.5758 452.8516 618.5758 c&#xA;151.4886 618.5758 l&#xA;144.0589 618.5758 138.1833 624.6238 138.1833 631.8811 c&#xA;138.1833 663.8498 l&#xA;138.1833 671.1072 144.0589 677.1554 151.4886 677.1554 c&#xA;f&#xA;0 0 0 0 k&#xA;%Plot f&#xA;236.506 625.3152 m&#xA;371.8093 625.3152 L&#xA;371.8093 655.901 L&#xA;236.506 655.901 L&#xA;236.506 625.3152 L&#xA;f&#xA;0 R&#xA;0.6941 0.5765 0.5765 0.949 K&#xA;4 w&#xA;%Plot s&#xA;597.1441 208.105 m&#xA;597.1441 162.1291 559.8726 124.856 513.8961 124.856 c&#xA;87.2481 124.856 l&#xA;41.272 124.856 4 162.1291 4 208.105 c&#xA;4 634.7529 l&#xA;4 680.7288 41.272 718 87.2481 718 c&#xA;513.8961 718 l&#xA;559.8726 718 597.1441 680.7288 597.1441 634.7529 c&#xA;597.1441 208.105 l&#xA;597.1441 208.105 l&#xA;s&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2000" units="micrometer" isRelative="false"/>
+			<height size="2000" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="S-Train Stations" KindMain="Unknown" id="epslayer.generic.62" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<slocstyle enabled="false" name="Metro Station Name ger s" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.s" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="S-Bahn*"/>
+					<and>
+						<inset fieldname="Countrychar">
+							<item value="de"/>
+						</inset>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="S_Bahn_Bild" width="168.589" height="167.928" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 168.589 167.928&quot; enable-background=&quot;new 0 0 168.589 167.928&quot; xml:space=&quot;preserve&quot; xmlns:x=&quot;http://ns.adobe.com/Extensibility/1.0/&quot; xmlns:i=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; xmlns:graph=&quot;http://ns.adobe.com/Graphs/1.0/&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;switch&gt;&#xA; &lt;foreignObject requiredExtensions=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;&#xA;  &lt;i:pgfRef xlink:href=&quot;#adobe_illustrator_pgf&quot;&gt;&#xA;  &lt;/i:pgfRef&gt;&#xA; &lt;/foreignObject&gt;&#xA; &lt;g i:extraneous=&quot;self&quot;&gt;&#xA;  &lt;circle fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; fill=&quot;#FFFFFF&quot; cx=&quot;84.417&quot; cy=&quot;82.586&quot; r=&quot;78.5&quot;/&gt;&#xA;  &lt;g&gt;&#xA;   &lt;path fill-rule=&quot;evenodd&quot; clip-rule=&quot;evenodd&quot; d=&quot;M0,83.963C0,37.616,37.73,0,84.28,0c46.578,0,84.31,37.616,84.31,83.963     c0,46.389-37.732,83.965-84.31,83.965C37.73,167.928,0,130.352,0,83.963L0,83.963z M127.642,56.117V33.171     c-34.514-22.868-63.165-17.62-77.644-7.01c-22.553,16.472-27.915,53.244,7.507,68.106c17.161,7.201,31.526,8.082,39.684,11.605     c9.461,4.061,14.978,22.754-8.963,26.93c-18.808,3.256-38.726-7.852-54.576-27.273c0.154,0.344,0,26.469,0,26.469     c26.459,22.065,72.693,31.18,96.864-5.057c11.529-17.275,3.716-41.522-10.955-49.682c-25.817-14.363-39.915-7.623-54.048-21.219     c-8.504-8.16-3.755-22.984,14.86-22.371C105.54,34.475,127.642,56.117,127.642,56.117L127.642,56.117z&quot;/&gt;&#xA;  &lt;/g&gt;&#xA; &lt;/g&gt;&#xA;&lt;/switch&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="S_Bahn_Bild" width="169" height="168" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 175 298 344 467&#xA;%%HiResBoundingBox: 175.0835 298.6582 343.6729 466.5864&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 259.5835 382.0864 259.5835 382.0864&#xA;%AI8_OpenToView: -427 820.5 1 1230 908 26 0 0 -1275 137 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;1 Ap&#xA;0 O&#xA;0 0 0 0 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;1 XR&#xA;%Plot f&#xA;338 384 m&#xA;338 340.6455 302.8545 305.5 259.5 305.5 c&#xA;216.1455 305.5 181 340.6455 181 384 c&#xA;181 427.3545 216.1455 462.5 259.5 462.5 c&#xA;302.8545 462.5 338 427.3545 338 384 c&#xA;f&#xA;u&#xA;*u&#xA;0 Ap&#xA;0 0 0 1 k&#xA;%Plot f&#xA;175.0835 382.623 m&#xA;175.0835 428.9707 212.8135 466.5864 259.3633 466.5864 c&#xA;305.9414 466.5864 343.6729 428.9707 343.6729 382.623 c&#xA;343.6729 336.2344 305.9414 298.6582 259.3633 298.6582 c&#xA;212.8135 298.6582 175.0835 336.2344 175.0835 382.623 c&#xA;175.0835 382.623 l&#xA;f&#xA;1 D&#xA;%Plot f&#xA;302.7256 410.4692 m&#xA;302.7256 433.415 l&#xA;268.2119 456.2827 239.5605 451.0347 225.0815 440.4248 c&#xA;202.5288 423.9531 197.166 387.1807 232.5884 372.3184 c&#xA;249.7495 365.1172 264.1143 364.2363 272.2725 360.7129 c&#xA;281.7334 356.6523 287.25 337.959 263.3096 333.7832 c&#xA;244.5015 330.5273 224.5835 341.6348 208.7339 361.0566 c&#xA;208.8877 360.7129 208.7339 334.5879 y&#xA;235.1929 312.5234 281.4268 303.4082 305.5977 339.6445 c&#xA;317.127 356.9199 309.3135 381.166 294.6426 389.3262 c&#xA;268.8252 403.6895 254.728 396.9492 240.5947 410.5454 c&#xA;232.0908 418.7051 236.8398 433.5298 255.4551 432.916 c&#xA;280.623 432.1118 302.7256 410.4692 y&#xA;302.7256 410.4692 l&#xA;f&#xA;*U&#xA;U&#xA;/BBAccumRotation (0.000000) XT&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2000" units="micrometer" isRelative="false"/>
+			<height size="2000" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Metro Stations" KindMain="Unknown" id="epslayer.generic.65" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<slocstyle enabled="false" name="Metro Station Name ger u" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.u" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="U-Bahn*"/>
+					<and>
+						<inset fieldname="Countrychar">
+							<item value="de"/>
+						</inset>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="U_Bahn_Bild" width="216.8907" height="216.8907" data="&lt;svg version=&quot;1.1&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;216.890686px&quot; height=&quot;216.8907013px&quot; viewBox=&quot;0 0 216.890686 216.8907013&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;rect x=&quot;29.3840961&quot; y=&quot;21.170599&quot; fill-rule=&quot;evenodd&quot; fill=&quot;#FFFFFF&quot; width=&quot;163.6667023&quot; height=&quot;173&quot;/&gt;&#xA;&lt;g&gt;&#xA; &lt;path fill-rule=&quot;evenodd&quot; d=&quot;M15.0507956,201.9246979V14.8372993H202.125v187.0874023H15.0507956L15.0507956,201.9246979z    M42.7001953,29.1555996h28.5240021v95.6362991c2.2670975,49.2362976,72.4487,49.753891,74.4691925,0   c-0.3945007,0,0-95.6362991,0-95.6362991h28.8809052v95.6362991c-4.8798981,88.7870941-128.5966949,87.777298-131.972702,0   L42.7001953,29.1555996L42.7001953,29.1555996z&quot;/&gt;&#xA;&lt;/g&gt;&#xA;&lt;polygon fill=&quot;none&quot; points=&quot;0,0 216.890686,0 216.8774872,216.8774872 0,216.8907013 0,0 &quot;/&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="U_Bahn_Bild" width="217" height="217" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%Creator: Adobe Illustrator(R) 8.0&#xA;%%AI8_CreatorVersion: 21.1.0&#xA;%%For: (Patrick van Hoeijen) ()&#xA;%%Title: (U_Bahn_Bild.eps)&#xA;%%CreationDate: 6/23/2017 2:11 PM&#xA;%%Canvassize: 16383&#xA;%%BoundingBox: 148 255 366 473&#xA;%%HiResBoundingBox: 148.79 255.1121 365.6807 472.0028&#xA;%%DocumentProcessColors: Black&#xA;%%DocumentNeededResources: procset Adobe_level2_AI5 1.2 0&#xA;%%+ procset Adobe_screens_AI5 1.0 0&#xA;%%+ procset Adobe_ColorImage_AI6 1.3 0&#xA;%%+ procset Adobe_Illustrator_AI5 1.3 0&#xA;%%+ procset Adobe_cshow 2.0 8&#xA;%%+ procset Adobe_shading_AI8 1.0 0&#xA;%AI5_FileFormat 4.0&#xA;%AI3_ColorUsage: Color&#xA;%AI7_ImageSettings: 0&#xA;%%CMYKProcessColor: 1 1 1 1 ([Registration])&#xA;%%AI6_ColorSeparationSet: 1 1 (AI6 Default Color Separation Set) &#xA;%%+ Options: 1 16 0 1 1 1 0 0 0 0 1 1 1 18 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 2 3 4&#xA;%%+ PPD: 1 21 0 0 60 45 2 2 1 0 0 1 0 0 0 0 0 0 0 0 1 0 () &#xA;%AI3_TemplateBox: 4129.8408 -3508.8345 4129.8408 -3508.8345&#xA;%AI3_TileBox: 3843.8608 -3917.3545 4414.8207 -3099.3145&#xA;%AI3_DocumentPreview: Header&#xA;%AI5_ArtSize: 612 792&#xA;%AI5_RulerUnits: 1&#xA;%AI5_ArtFlags: 0 0 0 1 0 0 0 0 0&#xA;%AI5_TargetResolution: 800&#xA;%AI5_NumLayers: 1&#xA;%AI8_OpenToView: -45.6592 599.3322 1.5 1557 885 26 0 0 78 120 0 0&#xA;%AI5_OpenViewLayers: 7&#xA;%%PageOrigin:0 0&#xA;%AI7_GridSettings: 72 8 72 8 1 0 0.8 0.8 0.8 0.9 0.9 0.9&#xA;%AI9_Flatten: 0&#xA;%AI12_CMSettings: 00.MS&#xA;%%EndComments&#xA;%%BeginProlog&#xA;%%IncludeResource: procset Adobe_level2_AI5 1.2 0&#xA;%%IncludeResource: procset Adobe_screens_AI5 1.2 0&#xA;%%IncludeResource: procset Adobe_Illustrator_AI5 1.3 0&#xA;%%IncludeResource: procset Adobe_cshow 2.0 8&#xA;%%IncludeResource: procset Adobe_shading_AI8 1.0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;userdict /_useSmoothShade false put&#xA;userdict /_aicmykps false put&#xA;userdict /_forceToCMYK false put&#xA;Adobe_level2_AI5 /initialize get exec&#xA;Adobe_cshow /initialize get exec&#xA;Adobe_screens_AI5 /initialize get exec&#xA;Adobe_ColorImage_AI6 /initialize get exec&#xA;Adobe_shading_AI8 /initialize get exec&#xA;Adobe_Illustrator_AI5 /initialize get exec&#xA;%AI5_BeginPalette&#xA;0 0 Pb&#xA;1 1 1 1 ([Registration]) 0 Xs&#xA;([Registration])&#xA;Pc&#xA;PB&#xA;%AI5_EndPalette&#xA;%%EndSetup&#xA;0 A&#xA;1 Ap&#xA;0 O&#xA;0 0 0 0 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;1 XR&#xA;%Plot f&#xA;341.8408 277.8322 m&#xA;178.1741 277.8322 L&#xA;178.1741 450.8322 L&#xA;341.8408 450.8322 L&#xA;341.8408 277.8322 L&#xA;f&#xA;u&#xA;*u&#xA;0 Ap&#xA;0 0 0 1 k&#xA;%Plot f&#xA;163.8408 270.0781 m&#xA;163.8408 457.1655 l&#xA;350.915 457.1655 l&#xA;350.915 270.0781 l&#xA;163.8408 270.0781 l&#xA;163.8408 270.0781 l&#xA;f&#xA;%Plot f&#xA;191.4902 442.8472 m&#xA;220.0142 442.8472 l&#xA;220.0142 347.2109 l&#xA;222.2813 297.9746 292.4629 297.457 294.4834 347.2109 c&#xA;294.0889 347.2109 294.4834 442.8472 y&#xA;323.3643 442.8472 l&#xA;323.3643 347.2109 l&#xA;318.4844 258.4238 194.7676 259.4336 191.3916 347.2109 c&#xA;191.4902 442.8472 l&#xA;191.4902 442.8472 l&#xA;f&#xA;*U&#xA;U&#xA;300 Ar&#xA;0 XR&#xA;%Plot n&#xA;148.79 472.0028 m&#xA;365.6807 472.0028 l&#xA;365.6675 255.1253 l&#xA;148.79 255.1121 l&#xA;148.79 472.0028 l&#xA;148.79 472.0028 l&#xA;n&#xA;/BBAccumRotation (5.497787) XT&#xA;%%PageTrailer&#xA;gsave annotatepage grestore showpage&#xA;%%Trailer&#xA;Adobe_Illustrator_AI5 /terminate get exec&#xA;Adobe_shading_AI8 /terminate get exec&#xA;Adobe_ColorImage_AI6 /terminate get exec&#xA;Adobe_screens_AI5 /terminate get exec&#xA;Adobe_cshow /terminate get exec&#xA;Adobe_level2_AI5 /terminate get exec&#xA;%%EOF&#xA;"/>
+			<width size="2200" units="micrometer" isRelative="false"/>
+			<height size="2200" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="false" name="Metro Station Name" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matchnot" fieldname="Name" value="*tro-*"/>
+					<and>
+						<equation oper="matchnot" fieldname="Name" value="Underground*"/>
+						<and>
+							<equation oper="matchnot" fieldname="Name" value="Metro*"/>
+							<and>
+								<equation oper="matchnot" fieldname="Name" value="Dlr*"/>
+								<and>
+									<equation oper="matchnot" fieldname="Name" value="S-tog*"/>
+									<and>
+										<inset fieldname="Countrychar" negate="true">
+											<item value="de"/>
+										</inset>
+									</and>
+								</and>
+							</and>
+						</and>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="metro_Bild" width="28.416" height="28.418" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; enable-background=&quot;new 0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot; xmlns:x=&quot;http://ns.adobe.com/Extensibility/1.0/&quot; xmlns:i=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; xmlns:graph=&quot;http://ns.adobe.com/Graphs/1.0/&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;switch&gt;&#xA; &lt;foreignObject requiredExtensions=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;&#xA;  &lt;i:pgfRef xlink:href=&quot;#adobe_illustrator_pgf&quot;&gt;&#xA;  &lt;/i:pgfRef&gt;&#xA; &lt;/foreignObject&gt;&#xA; &lt;g i:extraneous=&quot;self&quot;&gt;&#xA;  &lt;path d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208C6.413,28.418,0,22.005,0,14.21    C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;  &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246    S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;  &lt;polygon points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 19.991,22.027     23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366   &quot;/&gt;&#xA; &lt;/g&gt;&#xA;&lt;/switch&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="metro_Bild" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 284.8828 429.1763 284.8828 429.1763&#xA;%AI8_OpenToView: 254.9103 453.0957 19.2116 1230 908 26 0 0 -1275 137 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0 0 0 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0 0 0 1 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2000" units="micrometer" isRelative="false"/>
+			<height size="2000" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="false" name="Metro Station Name fre" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="*tro-*"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="metro_Bild" width="28.416" height="28.418" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; enable-background=&quot;new 0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot; xmlns:x=&quot;http://ns.adobe.com/Extensibility/1.0/&quot; xmlns:i=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; xmlns:graph=&quot;http://ns.adobe.com/Graphs/1.0/&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;switch&gt;&#xA; &lt;foreignObject requiredExtensions=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;&#xA;  &lt;i:pgfRef xlink:href=&quot;#adobe_illustrator_pgf&quot;&gt;&#xA;  &lt;/i:pgfRef&gt;&#xA; &lt;/foreignObject&gt;&#xA; &lt;g i:extraneous=&quot;self&quot;&gt;&#xA;  &lt;path d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208C6.413,28.418,0,22.005,0,14.21    C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;  &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246    S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;  &lt;polygon points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 19.991,22.027     23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366   &quot;/&gt;&#xA; &lt;/g&gt;&#xA;&lt;/switch&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="metro_Bild" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 284.8828 429.1763 284.8828 429.1763&#xA;%AI8_OpenToView: 254.9103 453.0957 19.2116 1230 908 26 0 0 -1275 137 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0 0 0 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0 0 0 1 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2000" units="micrometer" isRelative="false"/>
+			<height size="2000" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="false" name="Metro Station Name spa" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="Metro*"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="metro_Bild" width="28.416" height="28.418" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; enable-background=&quot;new 0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot; xmlns:x=&quot;http://ns.adobe.com/Extensibility/1.0/&quot; xmlns:i=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; xmlns:graph=&quot;http://ns.adobe.com/Graphs/1.0/&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;switch&gt;&#xA; &lt;foreignObject requiredExtensions=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;&#xA;  &lt;i:pgfRef xlink:href=&quot;#adobe_illustrator_pgf&quot;&gt;&#xA;  &lt;/i:pgfRef&gt;&#xA; &lt;/foreignObject&gt;&#xA; &lt;g i:extraneous=&quot;self&quot;&gt;&#xA;  &lt;path d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208C6.413,28.418,0,22.005,0,14.21    C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;  &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246    S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;  &lt;polygon points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 19.991,22.027     23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366   &quot;/&gt;&#xA; &lt;/g&gt;&#xA;&lt;/switch&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="metro_Bild" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 284.8828 429.1763 284.8828 429.1763&#xA;%AI8_OpenToView: 254.9103 453.0957 19.2116 1230 908 26 0 0 -1275 137 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0 0 0 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0 0 0 1 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2000" units="micrometer" isRelative="false"/>
+			<height size="2000" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="false" name="Metro Station Name eng dlr" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="Underground*"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="metro_Bild" width="28.416" height="28.418" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; enable-background=&quot;new 0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot; xmlns:x=&quot;http://ns.adobe.com/Extensibility/1.0/&quot; xmlns:i=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; xmlns:graph=&quot;http://ns.adobe.com/Graphs/1.0/&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;switch&gt;&#xA; &lt;foreignObject requiredExtensions=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;&#xA;  &lt;i:pgfRef xlink:href=&quot;#adobe_illustrator_pgf&quot;&gt;&#xA;  &lt;/i:pgfRef&gt;&#xA; &lt;/foreignObject&gt;&#xA; &lt;g i:extraneous=&quot;self&quot;&gt;&#xA;  &lt;path d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208C6.413,28.418,0,22.005,0,14.21    C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;  &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246    S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;  &lt;polygon points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 19.991,22.027     23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366   &quot;/&gt;&#xA; &lt;/g&gt;&#xA;&lt;/switch&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="metro_Bild" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 284.8828 429.1763 284.8828 429.1763&#xA;%AI8_OpenToView: 254.9103 453.0957 19.2116 1230 908 26 0 0 -1275 137 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0 0 0 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0 0 0 1 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2000" units="micrometer" isRelative="false"/>
+			<height size="2000" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="false" name="Metro Station Name s-tog-" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-tog-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="s-tog*"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="metro_Bild" width="28.416" height="28.418" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; enable-background=&quot;new 0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot; xmlns:x=&quot;http://ns.adobe.com/Extensibility/1.0/&quot; xmlns:i=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; xmlns:graph=&quot;http://ns.adobe.com/Graphs/1.0/&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;switch&gt;&#xA; &lt;foreignObject requiredExtensions=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;&#xA;  &lt;i:pgfRef xlink:href=&quot;#adobe_illustrator_pgf&quot;&gt;&#xA;  &lt;/i:pgfRef&gt;&#xA; &lt;/foreignObject&gt;&#xA; &lt;g i:extraneous=&quot;self&quot;&gt;&#xA;  &lt;path d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208C6.413,28.418,0,22.005,0,14.21    C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;  &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246    S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;  &lt;polygon points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 19.991,22.027     23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366   &quot;/&gt;&#xA; &lt;/g&gt;&#xA;&lt;/switch&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="metro_Bild" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 284.8828 429.1763 284.8828 429.1763&#xA;%AI8_OpenToView: 254.9103 453.0957 19.2116 1230 908 26 0 0 -1275 137 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0 0 0 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0 0 0 1 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2000" units="micrometer" isRelative="false"/>
+			<height size="2000" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="false" name="Metro Station Name eng underground" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="Dlr-*"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="metro_Bild" width="28.416" height="28.418" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; enable-background=&quot;new 0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot; xmlns:x=&quot;http://ns.adobe.com/Extensibility/1.0/&quot; xmlns:i=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; xmlns:graph=&quot;http://ns.adobe.com/Graphs/1.0/&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;switch&gt;&#xA; &lt;foreignObject requiredExtensions=&quot;http://ns.adobe.com/AdobeIllustrator/10.0/&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;1&quot; height=&quot;1&quot;&gt;&#xA;  &lt;i:pgfRef xlink:href=&quot;#adobe_illustrator_pgf&quot;&gt;&#xA;  &lt;/i:pgfRef&gt;&#xA; &lt;/foreignObject&gt;&#xA; &lt;g i:extraneous=&quot;self&quot;&gt;&#xA;  &lt;path d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208C6.413,28.418,0,22.005,0,14.21    C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;  &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246    S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;  &lt;polygon points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 19.991,22.027     23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366   &quot;/&gt;&#xA; &lt;/g&gt;&#xA;&lt;/switch&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+			<eps name="metro_Bild" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 284.8828 429.1763 284.8828 429.1763&#xA;%AI8_OpenToView: 254.9103 453.0957 19.2116 1230 908 26 0 0 -1275 137 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0 0 0 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0 0 0 1 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2000" units="micrometer" isRelative="false"/>
+			<height size="2000" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<layer enabled="true" name="Bus Stations" id="epslayer.pois.symbol" KindMain="POIs" KindSub="" xsi:type="epsLayer" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="pointVectorLayer" enabled="false" name="Bus Stations" id="pois.busstations" KindMain="POIs" KindSub="" source="OSM\latest\busstation.lim" maxFillpercentage="0" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<svg xsi:type="symbolBase" name="Bus" width="30" height="29" data="&lt;svg version=&quot;1.1&quot; baseProfile=&quot;basic&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;30px&quot; height=&quot;29px&quot; viewBox=&quot;0 0 30 29&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;g&gt;&#xA; &lt;circle fill=&quot;#010101&quot; cx=&quot;15.0325222&quot; cy=&quot;13.9750395&quot; r=&quot;2.1784749&quot;/&gt;&#xA; &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M16.2147961,12.9037399c-0.0200996-0.0840006-0.0541-0.1479006-0.1020985-0.1920004   c-0.0480003-0.0439997-0.118001-0.0840998-0.210001-0.1199999c-0.0921001-0.04-0.2241001-0.0760002-0.3961-0.1079998   c-0.1719999-0.0321007-0.3291998-0.0481005-0.4710999-0.0481005s-0.2990999,0.0159998-0.4709997,0.0481005   c-0.1722002,0.0320997-0.3042002,0.0679998-0.3962002,0.1079998c-0.092,0.0359001-0.1619997,0.0760002-0.2098999,0.1199999   c-0.0481005,0.0439997-0.0801001,0.1079998-0.0960999,0.1920004l-0.1201935,0.9602995v1.3383999h0.1859999v0.1199999   c0,0.0799999,0.0249996,0.1360006,0.0749998,0.1681004c0.0500937,0.0319996,0.1009998,0.0319996,0.1530933,0   c0.0521002-0.0320997,0.0780001-0.0881004,0.0780001-0.1681004v-0.1199999h1.5363998v0.1199999   c0,0.0799999,0.0311003,0.1360006,0.0931005,0.1681004c0.0620003,0.0319996,0.1229,0.0319996,0.1830006,0   c0.0599995-0.0320997,0.0900002-0.0881004,0.0900002-0.1681004v-0.1199999h0.1861v-1.3383999L16.2147961,12.9037399z    M14.3961973,12.6666393c0.0160999-0.0299997,0.0439997-0.0450001,0.0840998-0.0450001h1.2302999v0.1800003h-1.2302999   c-0.04,0-0.0679998-0.0150003-0.0840998-0.0450001C14.3801966,12.7266397,14.3801966,12.6967392,14.3961973,12.6666393z    M13.9581966,13.8399315l0.1020002-0.7320919c0.0080004-0.04,0.0419998-0.0600004,0.1020002-0.0600004h1.7585001   c0.0599995,0,0.0938997,0.0200005,0.1020002,0.0600004l0.1019993,0.7441998   c0.0041008,0.0120001,0.0060005,0.0200005,0.0060005,0.0240002c0,0.0279999-0.0100002,0.0510998-0.0300007,0.0691004   c-0.0200005,0.0178995-0.0459995,0.0269995-0.0779991,0.0269995h-1.9625006c-0.032093,0-0.0580931-0.0101004-0.0780001-0.0299997   c-0.0199995-0.0201006-0.0299997-0.0461006-0.0299997-0.0780001   C13.9521971,13.8559313,13.9541969,13.8479309,13.9581966,13.8399315z M14.2761965,14.7371397   c-0.0398998,0.0380993-0.0869999,0.0570993-0.1409998,0.0570993c-0.0540934,0-0.1009998-0.0190001-0.1410933-0.0570993   c-0.0399065-0.0380001-0.0600004-0.0840006-0.0600004-0.1380005s0.0200939-0.0999002,0.0600004-0.1379995   c0.04-0.0380001,0.0869999-0.0571003,0.1410933-0.0571003c0.0539999,0,0.1009998,0.0191002,0.1409998,0.0571003   c0.04,0.0380993,0.0600004,0.0839996,0.0600004,0.1379995C14.3361969,14.6532393,14.3161964,14.6993399,14.2761965,14.7371397z    M16.0886974,14.7371397c-0.0398998,0.0380993-0.0869999,0.0570993-0.1410007,0.0570993   c-0.0539999,0-0.1011-0.0190001-0.1410999-0.0570993c-0.04-0.0380001-0.0599995-0.0840006-0.0599995-0.1380005   s0.0199995-0.0999002,0.0599995-0.1379995c0.0398998-0.0380001,0.0871-0.0571003,0.1410999-0.0571003   c0.0540009,0,0.1009998,0.0191002,0.1410007,0.0571003c0.0401001,0.0380993,0.0599995,0.0839996,0.0599995,0.1379995   C16.1486969,14.6532393,16.1287975,14.6993399,16.0886974,14.7371397z&quot;/&gt;&#xA;&lt;/g&gt;&#xA;&lt;/svg&gt;"/>
+			<eps name="Bus" width="4" height="4" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%Creator: Adobe Illustrator(R) 8.0&#xA;%%AI8_CreatorVersion: 21.1.0&#xA;%%For: (Patrick van Hoeijen) ()&#xA;%%Title: (Bus.eps)&#xA;%%CreationDate: 6/23/2017 9:54 AM&#xA;%%Canvassize: 16383&#xA;%%BoundingBox: 303 -396 309 -390&#xA;%%HiResBoundingBox: 303.854 -395.1535 308.2109 -390.7965&#xA;%%DocumentProcessColors: Cyan Magenta Yellow Black&#xA;%%DocumentNeededResources: procset Adobe_level2_AI5 1.2 0&#xA;%%+ procset Adobe_screens_AI5 1.0 0&#xA;%%+ procset AGM_Gradient 1.0 0&#xA;%%+ procset Adobe_ColorImage_AI6 1.3 0&#xA;%%+ procset Adobe_Illustrator_AI5 1.3 0&#xA;%%+ procset Adobe_pattern_AI5 1.0 0&#xA;%%+ procset Adobe_cshow 2.0 8&#xA;%%+ procset Adobe_shading_AI8 1.0 0&#xA;%AI5_FileFormat 4.0&#xA;%AI3_ColorUsage: Color&#xA;%AI7_ImageSettings: 0&#xA;%%CMYKProcessColor: 1 1 1 1 ([Registration])&#xA;%%AI6_ColorSeparationSet: 1 1 (AI6 Default Color Separation Set) &#xA;%%+ Options: 1 16 0 1 1 1 0 0 0 0 1 1 1 18 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 2 3 4&#xA;%%+ PPD: 1 21 0 0 60 45 2 2 1 0 0 1 0 0 0 0 0 0 0 0 1 0 () &#xA;%AI3_TemplateBox: 306.5 -393.5 306.5 -393.5&#xA;%AI3_TileBox: -103.02 -678.98 715.02 -108.0201&#xA;%AI3_DocumentPreview: Header&#xA;%AI5_ArtSize: 30 29&#xA;%AI5_RulerUnits: 1&#xA;%AI5_ArtFlags: 0 0 0 1 0 0 0 0 0&#xA;%AI5_TargetResolution: 800&#xA;%AI5_NumLayers: 1&#xA;%AI8_OpenToView: 289.5 -379.9375 32 1557 885 18 0 0 78 120 0 0&#xA;%AI5_OpenViewLayers: 7&#xA;%%PageOrigin:0 -792&#xA;%AI7_GridSettings: 72 8 72 8 1 0 0.8 0.8 0.8 0.9 0.9 0.9&#xA;%AI9_Flatten: 0&#xA;%AI12_CMSettings: 00.MS&#xA;%%EndComments&#xA;%%BeginProlog&#xA;%%IncludeResource: procset Adobe_level2_AI5 1.2 0&#xA;%%IncludeResource: procset Adobe_screens_AI5 1.2 0&#xA;%%IncludeResource: procset AGM_Gradient_Sep 1.0 0&#xA;%%IncludeResource: procset AGM_Gradient 1.0 0&#xA;%%IncludeResource: procset Adobe_Illustrator_AI5 1.3 0&#xA;%%IncludeResource: procset Adobe_pattern_AI5 1.1 0&#xA;%%IncludeResource: procset Adobe_cshow 2.0 8&#xA;%%IncludeResource: procset Adobe_shading_AI8 1.0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;userdict /_useSmoothShade true put&#xA;userdict /_aicmykps false put&#xA;userdict /_forceToCMYK false put&#xA;Adobe_level2_AI5 /initialize get exec&#xA;Adobe_cshow /initialize get exec&#xA;Adobe_screens_AI5 /initialize get exec&#xA;Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 AGM_Gradient /initializeAI get exec&#xA;Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_pattern_AI5 /initialize get exec&#xA;Adobe_ColorImage_AI6 /initialize get exec&#xA;Adobe_shading_AI8 /initialize get exec&#xA;Adobe_Illustrator_AI5 /initialize get exec&#xA;%AI5_BeginPalette&#xA;0 0 Pb&#xA;1 1 1 1 ([Registration]) 0 Xs&#xA;([Registration])&#xA;Pc&#xA;0 0 0 0 k&#xA;(White)&#xA;Pc&#xA;0 0 0 1 k&#xA;(Black)&#xA;Pc&#xA;0 1 1 0 k&#xA;(CMYK Red)&#xA;Pc&#xA;0 0 1 0 k&#xA;(CMYK Yellow)&#xA;Pc&#xA;1 0 1 0 k&#xA;(CMYK Green)&#xA;Pc&#xA;1 0 0 0 k&#xA;(CMYK Cyan)&#xA;Pc&#xA;1 1 0 0 k&#xA;(CMYK Blue)&#xA;Pc&#xA;0 1 0 0 k&#xA;(CMYK Magenta)&#xA;Pc&#xA;0.15 1 0.9 0.1 k&#xA;(C=15 M=100 Y=90 K=10)&#xA;Pc&#xA;0 0.9 0.85 0 k&#xA;(C=0 M=90 Y=85 K=0)&#xA;Pc&#xA;0 0.8 0.95 0 k&#xA;(C=0 M=80 Y=95 K=0)&#xA;Pc&#xA;0 0.5 1 0 k&#xA;(C=0 M=50 Y=100 K=0)&#xA;Pc&#xA;0 0.35 0.85 0 k&#xA;(C=0 M=35 Y=85 K=0)&#xA;Pc&#xA;0.05 0 0.9 0 k&#xA;(C=5 M=0 Y=90 K=0)&#xA;Pc&#xA;0.2 0 1 0 k&#xA;(C=20 M=0 Y=100 K=0)&#xA;Pc&#xA;0.5 0 1 0 k&#xA;(C=50 M=0 Y=100 K=0)&#xA;Pc&#xA;0.75 0 1 0 k&#xA;(C=75 M=0 Y=100 K=0)&#xA;Pc&#xA;0.85 0.1 1 0.1 k&#xA;(C=85 M=10 Y=100 K=10)&#xA;Pc&#xA;0.9 0.3 0.95 0.3 k&#xA;(C=90 M=30 Y=95 K=30)&#xA;Pc&#xA;0.75 0 0.75 0 k&#xA;(C=75 M=0 Y=75 K=0)&#xA;Pc&#xA;0.8 0.1 0.45 0 k&#xA;(C=80 M=10 Y=45 K=0)&#xA;Pc&#xA;0.7 0.15 0 0 k&#xA;(C=70 M=15 Y=0 K=0)&#xA;Pc&#xA;0.85 0.5 0 0 k&#xA;(C=85 M=50 Y=0 K=0)&#xA;Pc&#xA;1 0.95 0.05 0 k&#xA;(C=100 M=95 Y=5 K=0)&#xA;Pc&#xA;1 1 0.25 0.25 k&#xA;(C=100 M=100 Y=25 K=25)&#xA;Pc&#xA;0.75 1 0 0 k&#xA;(C=75 M=100 Y=0 K=0)&#xA;Pc&#xA;0.5 1 0 0 k&#xA;(C=50 M=100 Y=0 K=0)&#xA;Pc&#xA;0.35 1 0.35 0.1 k&#xA;(C=35 M=100 Y=35 K=10)&#xA;Pc&#xA;0.1 1 0.5 0 k&#xA;(C=10 M=100 Y=50 K=0)&#xA;Pc&#xA;0 0.95 0.2 0 k&#xA;(C=0 M=95 Y=20 K=0)&#xA;Pc&#xA;0.25 0.25 0.4 0 k&#xA;(C=25 M=25 Y=40 K=0)&#xA;Pc&#xA;0.4 0.45 0.5 0.05 k&#xA;(C=40 M=45 Y=50 K=5)&#xA;Pc&#xA;0.5 0.5 0.6 0.25 k&#xA;(C=50 M=50 Y=60 K=25)&#xA;Pc&#xA;0.55 0.6 0.65 0.4 k&#xA;(C=55 M=60 Y=65 K=40)&#xA;Pc&#xA;0.25 0.4 0.65 0 k&#xA;(C=25 M=40 Y=65 K=0)&#xA;Pc&#xA;0.3 0.5 0.75 0.1 k&#xA;(C=30 M=50 Y=75 K=10)&#xA;Pc&#xA;0.35 0.6 0.8 0.25 k&#xA;(C=35 M=60 Y=80 K=25)&#xA;Pc&#xA;0.4 0.65 0.9 0.35 k&#xA;(C=40 M=65 Y=90 K=35)&#xA;Pc&#xA;0.4 0.7 1 0.5 k&#xA;(C=40 M=70 Y=100 K=50)&#xA;Pc&#xA;0.5 0.7 0.8 0.7 k&#xA;(C=50 M=70 Y=80 K=70)&#xA;Pc&#xA;Bb&#xA;2 (White, Black) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(White, Black)&#xA;Pc&#xA;Bb&#xA;2 (Orange, Yellow) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Orange, Yellow)&#xA;Pc&#xA;Bb&#xA;2 (Fading Sky) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Fading Sky)&#xA;Pc&#xA;Bb&#xA;0 0 0 0 Bh&#xA;2 (Super Soft Black Vignette) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Super Soft Black Vignette)&#xA;Pc&#xA;(Pompadour) 0 0 1 1 0 0 0 0 0 [1 0 0 1 0 0] p&#xA;(Pompadour)&#xA;Pc&#xA;0 0 0 1 k&#xA;(C=0 M=0 Y=0 K=100)&#xA;Pc&#xA;0 0 0 0.899994 k&#xA;(C=0 M=0 Y=0 K=90)&#xA;Pc&#xA;0 0 0 0.799988 k&#xA;(C=0 M=0 Y=0 K=80)&#xA;Pc&#xA;0 0 0 0.699997 k&#xA;(C=0 M=0 Y=0 K=70)&#xA;Pc&#xA;0 0 0 0.599991 k&#xA;(C=0 M=0 Y=0 K=60)&#xA;Pc&#xA;0 0 0 0.5 k&#xA;(C=0 M=0 Y=0 K=50)&#xA;Pc&#xA;0 0 0 0.399994 k&#xA;(C=0 M=0 Y=0 K=40)&#xA;Pc&#xA;0 0 0 0.299988 k&#xA;(C=0 M=0 Y=0 K=30)&#xA;Pc&#xA;0 0 0 0.199997 k&#xA;(C=0 M=0 Y=0 K=20)&#xA;Pc&#xA;0 0 0 0.099991 k&#xA;(C=0 M=0 Y=0 K=10)&#xA;Pc&#xA;0 0 0 0.049988 k&#xA;(C=0 M=0 Y=0 K=5)&#xA;Pc&#xA;0 1 1 0 k&#xA;(C=0 M=100 Y=100 K=0)&#xA;Pc&#xA;0 0.75 1 0 k&#xA;(C=0 M=75 Y=100 K=0)&#xA;Pc&#xA;0 0.1 0.95 0 k&#xA;(C=0 M=10 Y=95 K=0)&#xA;Pc&#xA;0.85 0.1 1 0 k&#xA;(C=85 M=10 Y=100 K=0)&#xA;Pc&#xA;1 0.9 0 0 k&#xA;(C=100 M=90 Y=0 K=0)&#xA;Pc&#xA;0.6 0.9 0.000031 0.000031 k&#xA;(C=60 M=90 Y=0 K=0)&#xA;Pc&#xA;PB&#xA;%AI5_EndPalette&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;1 D&#xA;0 O&#xA;0.746094 0.675781 0.667969 0.898438 k&#xA;0 J 0 j 0.1307 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;306.0326 -390.7965 m&#xA;304.8295 -390.7965 303.854 -391.772 303.854 -392.975 c&#xA;303.854 -394.1781 304.8295 -395.1535 306.0326 -395.1535 c&#xA;307.2353 -395.1535 308.2109 -394.1781 308.2109 -392.975 c&#xA;308.2109 -391.772 307.2353 -390.7965 306.0326 -390.7965 c&#xA;f&#xA;*u&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.2148 -391.9037 m&#xA;307.1947 -391.8197 307.1607 -391.7558 307.1127 -391.7117 C&#xA;307.0647 -391.6677 306.9947 -391.6276 306.9027 -391.5917 C&#xA;306.8106 -391.5517 306.6786 -391.5157 306.5066 -391.4837 c&#xA;306.3346 -391.4516 306.1774 -391.4356 306.0355 -391.4356 c&#xA;305.8936 -391.4356 305.7364 -391.4516 305.5645 -391.4837 C&#xA;305.3923 -391.5158 305.2603 -391.5517 305.1683 -391.5917 C&#xA;305.0763 -391.6276 305.0063 -391.6677 304.9584 -391.7117 C&#xA;304.9103 -391.7557 304.8783 -391.8197 304.8623 -391.9037 C&#xA;304.7421 -392.864 L&#xA;304.7421 -394.2024 L&#xA;304.9281 -394.2024 L&#xA;304.9281 -394.3224 L&#xA;304.9281 -394.4024 304.9531 -394.4584 305.0031 -394.4905 C&#xA;305.0532 -394.5225 305.1041 -394.5225 305.1562 -394.4905 C&#xA;305.2083 -394.4584 305.2342 -394.4024 305.2342 -394.3224 C&#xA;305.2342 -394.2024 L&#xA;306.7706 -394.2024 L&#xA;306.7706 -394.3224 L&#xA;306.7706 -394.4024 306.8017 -394.4584 306.8637 -394.4905 C&#xA;306.9257 -394.5225 306.9866 -394.5225 307.0467 -394.4905 C&#xA;307.1067 -394.4584 307.1367 -394.4024 307.1367 -394.3224 C&#xA;307.1367 -394.2024 L&#xA;307.3228 -394.2024 L&#xA;307.3228 -392.864 L&#xA;307.2148 -391.9037 L&#xA;f&#xA;0 D&#xA;%Plot f&#xA;305.3962 -391.6666 m&#xA;305.4123 -391.6366 305.4402 -391.6216 305.4803 -391.6216 C&#xA;306.7106 -391.6216 L&#xA;306.7106 -391.8016 L&#xA;305.4803 -391.8016 L&#xA;305.4403 -391.8016 305.4123 -391.7866 305.3962 -391.7566 c&#xA;305.3802 -391.7266 305.3802 -391.6967 305.3962 -391.6666 c&#xA;f&#xA;%Plot f&#xA;304.9582 -392.8399 m&#xA;305.0602 -392.1078 L&#xA;305.0682 -392.0678 305.1022 -392.0478 305.1622 -392.0478 C&#xA;306.9207 -392.0478 L&#xA;306.9807 -392.0478 307.0146 -392.0678 307.0227 -392.1078 C&#xA;307.1247 -392.852 L&#xA;307.1288 -392.864 307.1307 -392.872 307.1307 -392.876 c&#xA;307.1307 -392.904 307.1207 -392.9271 307.1007 -392.9451 c&#xA;307.0807 -392.963 307.0547 -392.9721 307.0227 -392.9721 C&#xA;305.0602 -392.9721 L&#xA;305.0281 -392.9721 305.0021 -392.962 304.9822 -392.9421 C&#xA;304.9622 -392.922 304.9522 -392.896 304.9522 -392.8641 c&#xA;304.9522 -392.8559 304.9542 -392.8479 304.9582 -392.8399 C&#xA;f&#xA;%Plot f&#xA;305.2762 -393.7371 m&#xA;305.2363 -393.7752 305.1892 -393.7942 305.1352 -393.7942 c&#xA;305.0811 -393.7942 305.0342 -393.7752 304.9941 -393.7371 C&#xA;304.9542 -393.6991 304.9341 -393.6531 304.9341 -393.5991 c&#xA;304.9341 -393.5451 304.9542 -393.4992 304.9941 -393.4611 C&#xA;305.0341 -393.4231 305.0811 -393.404 305.1352 -393.404 c&#xA;305.1892 -393.404 305.2362 -393.4231 305.2762 -393.4611 C&#xA;305.3162 -393.4992 305.3362 -393.5451 305.3362 -393.5991 c&#xA;305.3362 -393.6532 305.3162 -393.6993 305.2762 -393.7371 C&#xA;f&#xA;%Plot f&#xA;307.0887 -393.7371 m&#xA;307.0488 -393.7752 307.0017 -393.7942 306.9477 -393.7942 c&#xA;306.8937 -393.7942 306.8466 -393.7752 306.8066 -393.7371 C&#xA;306.7666 -393.6991 306.7466 -393.6531 306.7466 -393.5991 c&#xA;306.7466 -393.5451 306.7666 -393.4992 306.8066 -393.4611 C&#xA;306.8465 -393.4231 306.8937 -393.404 306.9477 -393.404 c&#xA;307.0017 -393.404 307.0487 -393.4231 307.0887 -393.4611 C&#xA;307.1288 -393.4992 307.1487 -393.5451 307.1487 -393.5991 c&#xA;307.1487 -393.6532 307.1288 -393.6993 307.0887 -393.7371 C&#xA;f&#xA;*U&#xA;U&#xA;%%PageTrailer&#xA;gsave annotatepage grestore showpage&#xA;%%Trailer&#xA;Adobe_Illustrator_AI5 /terminate get exec&#xA;Adobe_shading_AI8 /terminate get exec&#xA;Adobe_ColorImage_AI6 /terminate get exec&#xA;Adobe_pattern_AI5 /terminate get exec&#xA;AGM_Gradient /terminate get exec&#xA;Adobe_screens_AI5 /terminate get exec&#xA;Adobe_cshow /terminate get exec&#xA;Adobe_level2_AI5 /terminate get exec&#xA;%%EOF&#xA;"/>
+			<width size="2100" units="micrometer" isRelative="false"/>
+			<height size="2100" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</layer>
+	<layer enabled="true" name="Bus Stops" id="epslayer.pois.symbol" KindMain="POIs" KindSub="" xsi:type="epsLayer" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="pointVectorLayer" enabled="false" name="Bus Stops" id="transport.bus_stop.OSM.symbol" KindMain="POIs" KindSub="" source="OSM\latest\pois\busstop.lim" maxFillpercentage="0" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<svg xsi:type="symbolBase" name="Bus" width="30" height="29" data="&lt;svg version=&quot;1.1&quot; baseProfile=&quot;basic&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;30px&quot; height=&quot;29px&quot; viewBox=&quot;0 0 30 29&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;g&gt;&#xA; &lt;circle fill=&quot;#010101&quot; cx=&quot;15.0325222&quot; cy=&quot;13.9750395&quot; r=&quot;2.1784749&quot;/&gt;&#xA; &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M16.2147961,12.9037399c-0.0200996-0.0840006-0.0541-0.1479006-0.1020985-0.1920004   c-0.0480003-0.0439997-0.118001-0.0840998-0.210001-0.1199999c-0.0921001-0.04-0.2241001-0.0760002-0.3961-0.1079998   c-0.1719999-0.0321007-0.3291998-0.0481005-0.4710999-0.0481005s-0.2990999,0.0159998-0.4709997,0.0481005   c-0.1722002,0.0320997-0.3042002,0.0679998-0.3962002,0.1079998c-0.092,0.0359001-0.1619997,0.0760002-0.2098999,0.1199999   c-0.0481005,0.0439997-0.0801001,0.1079998-0.0960999,0.1920004l-0.1201935,0.9602995v1.3383999h0.1859999v0.1199999   c0,0.0799999,0.0249996,0.1360006,0.0749998,0.1681004c0.0500937,0.0319996,0.1009998,0.0319996,0.1530933,0   c0.0521002-0.0320997,0.0780001-0.0881004,0.0780001-0.1681004v-0.1199999h1.5363998v0.1199999   c0,0.0799999,0.0311003,0.1360006,0.0931005,0.1681004c0.0620003,0.0319996,0.1229,0.0319996,0.1830006,0   c0.0599995-0.0320997,0.0900002-0.0881004,0.0900002-0.1681004v-0.1199999h0.1861v-1.3383999L16.2147961,12.9037399z    M14.3961973,12.6666393c0.0160999-0.0299997,0.0439997-0.0450001,0.0840998-0.0450001h1.2302999v0.1800003h-1.2302999   c-0.04,0-0.0679998-0.0150003-0.0840998-0.0450001C14.3801966,12.7266397,14.3801966,12.6967392,14.3961973,12.6666393z    M13.9581966,13.8399315l0.1020002-0.7320919c0.0080004-0.04,0.0419998-0.0600004,0.1020002-0.0600004h1.7585001   c0.0599995,0,0.0938997,0.0200005,0.1020002,0.0600004l0.1019993,0.7441998   c0.0041008,0.0120001,0.0060005,0.0200005,0.0060005,0.0240002c0,0.0279999-0.0100002,0.0510998-0.0300007,0.0691004   c-0.0200005,0.0178995-0.0459995,0.0269995-0.0779991,0.0269995h-1.9625006c-0.032093,0-0.0580931-0.0101004-0.0780001-0.0299997   c-0.0199995-0.0201006-0.0299997-0.0461006-0.0299997-0.0780001   C13.9521971,13.8559313,13.9541969,13.8479309,13.9581966,13.8399315z M14.2761965,14.7371397   c-0.0398998,0.0380993-0.0869999,0.0570993-0.1409998,0.0570993c-0.0540934,0-0.1009998-0.0190001-0.1410933-0.0570993   c-0.0399065-0.0380001-0.0600004-0.0840006-0.0600004-0.1380005s0.0200939-0.0999002,0.0600004-0.1379995   c0.04-0.0380001,0.0869999-0.0571003,0.1410933-0.0571003c0.0539999,0,0.1009998,0.0191002,0.1409998,0.0571003   c0.04,0.0380993,0.0600004,0.0839996,0.0600004,0.1379995C14.3361969,14.6532393,14.3161964,14.6993399,14.2761965,14.7371397z    M16.0886974,14.7371397c-0.0398998,0.0380993-0.0869999,0.0570993-0.1410007,0.0570993   c-0.0539999,0-0.1011-0.0190001-0.1410999-0.0570993c-0.04-0.0380001-0.0599995-0.0840006-0.0599995-0.1380005   s0.0199995-0.0999002,0.0599995-0.1379995c0.0398998-0.0380001,0.0871-0.0571003,0.1410999-0.0571003   c0.0540009,0,0.1009998,0.0191002,0.1410007,0.0571003c0.0401001,0.0380993,0.0599995,0.0839996,0.0599995,0.1379995   C16.1486969,14.6532393,16.1287975,14.6993399,16.0886974,14.7371397z&quot;/&gt;&#xA;&lt;/g&gt;&#xA;&lt;/svg&gt;"/>
+			<eps name="Bus" width="4" height="4" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%Creator: Adobe Illustrator(R) 8.0&#xA;%%AI8_CreatorVersion: 21.1.0&#xA;%%For: (Patrick van Hoeijen) ()&#xA;%%Title: (Bus.eps)&#xA;%%CreationDate: 6/23/2017 9:54 AM&#xA;%%Canvassize: 16383&#xA;%%BoundingBox: 303 -396 309 -390&#xA;%%HiResBoundingBox: 303.854 -395.1535 308.2109 -390.7965&#xA;%%DocumentProcessColors: Cyan Magenta Yellow Black&#xA;%%DocumentNeededResources: procset Adobe_level2_AI5 1.2 0&#xA;%%+ procset Adobe_screens_AI5 1.0 0&#xA;%%+ procset AGM_Gradient 1.0 0&#xA;%%+ procset Adobe_ColorImage_AI6 1.3 0&#xA;%%+ procset Adobe_Illustrator_AI5 1.3 0&#xA;%%+ procset Adobe_pattern_AI5 1.0 0&#xA;%%+ procset Adobe_cshow 2.0 8&#xA;%%+ procset Adobe_shading_AI8 1.0 0&#xA;%AI5_FileFormat 4.0&#xA;%AI3_ColorUsage: Color&#xA;%AI7_ImageSettings: 0&#xA;%%CMYKProcessColor: 1 1 1 1 ([Registration])&#xA;%%AI6_ColorSeparationSet: 1 1 (AI6 Default Color Separation Set) &#xA;%%+ Options: 1 16 0 1 1 1 0 0 0 0 1 1 1 18 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 2 3 4&#xA;%%+ PPD: 1 21 0 0 60 45 2 2 1 0 0 1 0 0 0 0 0 0 0 0 1 0 () &#xA;%AI3_TemplateBox: 306.5 -393.5 306.5 -393.5&#xA;%AI3_TileBox: -103.02 -678.98 715.02 -108.0201&#xA;%AI3_DocumentPreview: Header&#xA;%AI5_ArtSize: 30 29&#xA;%AI5_RulerUnits: 1&#xA;%AI5_ArtFlags: 0 0 0 1 0 0 0 0 0&#xA;%AI5_TargetResolution: 800&#xA;%AI5_NumLayers: 1&#xA;%AI8_OpenToView: 289.5 -379.9375 32 1557 885 18 0 0 78 120 0 0&#xA;%AI5_OpenViewLayers: 7&#xA;%%PageOrigin:0 -792&#xA;%AI7_GridSettings: 72 8 72 8 1 0 0.8 0.8 0.8 0.9 0.9 0.9&#xA;%AI9_Flatten: 0&#xA;%AI12_CMSettings: 00.MS&#xA;%%EndComments&#xA;%%BeginProlog&#xA;%%IncludeResource: procset Adobe_level2_AI5 1.2 0&#xA;%%IncludeResource: procset Adobe_screens_AI5 1.2 0&#xA;%%IncludeResource: procset AGM_Gradient_Sep 1.0 0&#xA;%%IncludeResource: procset AGM_Gradient 1.0 0&#xA;%%IncludeResource: procset Adobe_Illustrator_AI5 1.3 0&#xA;%%IncludeResource: procset Adobe_pattern_AI5 1.1 0&#xA;%%IncludeResource: procset Adobe_cshow 2.0 8&#xA;%%IncludeResource: procset Adobe_shading_AI8 1.0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;userdict /_useSmoothShade true put&#xA;userdict /_aicmykps false put&#xA;userdict /_forceToCMYK false put&#xA;Adobe_level2_AI5 /initialize get exec&#xA;Adobe_cshow /initialize get exec&#xA;Adobe_screens_AI5 /initialize get exec&#xA;Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 AGM_Gradient /initializeAI get exec&#xA;Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_pattern_AI5 /initialize get exec&#xA;Adobe_ColorImage_AI6 /initialize get exec&#xA;Adobe_shading_AI8 /initialize get exec&#xA;Adobe_Illustrator_AI5 /initialize get exec&#xA;%AI5_BeginPalette&#xA;0 0 Pb&#xA;1 1 1 1 ([Registration]) 0 Xs&#xA;([Registration])&#xA;Pc&#xA;0 0 0 0 k&#xA;(White)&#xA;Pc&#xA;0 0 0 1 k&#xA;(Black)&#xA;Pc&#xA;0 1 1 0 k&#xA;(CMYK Red)&#xA;Pc&#xA;0 0 1 0 k&#xA;(CMYK Yellow)&#xA;Pc&#xA;1 0 1 0 k&#xA;(CMYK Green)&#xA;Pc&#xA;1 0 0 0 k&#xA;(CMYK Cyan)&#xA;Pc&#xA;1 1 0 0 k&#xA;(CMYK Blue)&#xA;Pc&#xA;0 1 0 0 k&#xA;(CMYK Magenta)&#xA;Pc&#xA;0.15 1 0.9 0.1 k&#xA;(C=15 M=100 Y=90 K=10)&#xA;Pc&#xA;0 0.9 0.85 0 k&#xA;(C=0 M=90 Y=85 K=0)&#xA;Pc&#xA;0 0.8 0.95 0 k&#xA;(C=0 M=80 Y=95 K=0)&#xA;Pc&#xA;0 0.5 1 0 k&#xA;(C=0 M=50 Y=100 K=0)&#xA;Pc&#xA;0 0.35 0.85 0 k&#xA;(C=0 M=35 Y=85 K=0)&#xA;Pc&#xA;0.05 0 0.9 0 k&#xA;(C=5 M=0 Y=90 K=0)&#xA;Pc&#xA;0.2 0 1 0 k&#xA;(C=20 M=0 Y=100 K=0)&#xA;Pc&#xA;0.5 0 1 0 k&#xA;(C=50 M=0 Y=100 K=0)&#xA;Pc&#xA;0.75 0 1 0 k&#xA;(C=75 M=0 Y=100 K=0)&#xA;Pc&#xA;0.85 0.1 1 0.1 k&#xA;(C=85 M=10 Y=100 K=10)&#xA;Pc&#xA;0.9 0.3 0.95 0.3 k&#xA;(C=90 M=30 Y=95 K=30)&#xA;Pc&#xA;0.75 0 0.75 0 k&#xA;(C=75 M=0 Y=75 K=0)&#xA;Pc&#xA;0.8 0.1 0.45 0 k&#xA;(C=80 M=10 Y=45 K=0)&#xA;Pc&#xA;0.7 0.15 0 0 k&#xA;(C=70 M=15 Y=0 K=0)&#xA;Pc&#xA;0.85 0.5 0 0 k&#xA;(C=85 M=50 Y=0 K=0)&#xA;Pc&#xA;1 0.95 0.05 0 k&#xA;(C=100 M=95 Y=5 K=0)&#xA;Pc&#xA;1 1 0.25 0.25 k&#xA;(C=100 M=100 Y=25 K=25)&#xA;Pc&#xA;0.75 1 0 0 k&#xA;(C=75 M=100 Y=0 K=0)&#xA;Pc&#xA;0.5 1 0 0 k&#xA;(C=50 M=100 Y=0 K=0)&#xA;Pc&#xA;0.35 1 0.35 0.1 k&#xA;(C=35 M=100 Y=35 K=10)&#xA;Pc&#xA;0.1 1 0.5 0 k&#xA;(C=10 M=100 Y=50 K=0)&#xA;Pc&#xA;0 0.95 0.2 0 k&#xA;(C=0 M=95 Y=20 K=0)&#xA;Pc&#xA;0.25 0.25 0.4 0 k&#xA;(C=25 M=25 Y=40 K=0)&#xA;Pc&#xA;0.4 0.45 0.5 0.05 k&#xA;(C=40 M=45 Y=50 K=5)&#xA;Pc&#xA;0.5 0.5 0.6 0.25 k&#xA;(C=50 M=50 Y=60 K=25)&#xA;Pc&#xA;0.55 0.6 0.65 0.4 k&#xA;(C=55 M=60 Y=65 K=40)&#xA;Pc&#xA;0.25 0.4 0.65 0 k&#xA;(C=25 M=40 Y=65 K=0)&#xA;Pc&#xA;0.3 0.5 0.75 0.1 k&#xA;(C=30 M=50 Y=75 K=10)&#xA;Pc&#xA;0.35 0.6 0.8 0.25 k&#xA;(C=35 M=60 Y=80 K=25)&#xA;Pc&#xA;0.4 0.65 0.9 0.35 k&#xA;(C=40 M=65 Y=90 K=35)&#xA;Pc&#xA;0.4 0.7 1 0.5 k&#xA;(C=40 M=70 Y=100 K=50)&#xA;Pc&#xA;0.5 0.7 0.8 0.7 k&#xA;(C=50 M=70 Y=80 K=70)&#xA;Pc&#xA;Bb&#xA;2 (White, Black) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(White, Black)&#xA;Pc&#xA;Bb&#xA;2 (Orange, Yellow) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Orange, Yellow)&#xA;Pc&#xA;Bb&#xA;2 (Fading Sky) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Fading Sky)&#xA;Pc&#xA;Bb&#xA;0 0 0 0 Bh&#xA;2 (Super Soft Black Vignette) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Super Soft Black Vignette)&#xA;Pc&#xA;(Pompadour) 0 0 1 1 0 0 0 0 0 [1 0 0 1 0 0] p&#xA;(Pompadour)&#xA;Pc&#xA;0 0 0 1 k&#xA;(C=0 M=0 Y=0 K=100)&#xA;Pc&#xA;0 0 0 0.899994 k&#xA;(C=0 M=0 Y=0 K=90)&#xA;Pc&#xA;0 0 0 0.799988 k&#xA;(C=0 M=0 Y=0 K=80)&#xA;Pc&#xA;0 0 0 0.699997 k&#xA;(C=0 M=0 Y=0 K=70)&#xA;Pc&#xA;0 0 0 0.599991 k&#xA;(C=0 M=0 Y=0 K=60)&#xA;Pc&#xA;0 0 0 0.5 k&#xA;(C=0 M=0 Y=0 K=50)&#xA;Pc&#xA;0 0 0 0.399994 k&#xA;(C=0 M=0 Y=0 K=40)&#xA;Pc&#xA;0 0 0 0.299988 k&#xA;(C=0 M=0 Y=0 K=30)&#xA;Pc&#xA;0 0 0 0.199997 k&#xA;(C=0 M=0 Y=0 K=20)&#xA;Pc&#xA;0 0 0 0.099991 k&#xA;(C=0 M=0 Y=0 K=10)&#xA;Pc&#xA;0 0 0 0.049988 k&#xA;(C=0 M=0 Y=0 K=5)&#xA;Pc&#xA;0 1 1 0 k&#xA;(C=0 M=100 Y=100 K=0)&#xA;Pc&#xA;0 0.75 1 0 k&#xA;(C=0 M=75 Y=100 K=0)&#xA;Pc&#xA;0 0.1 0.95 0 k&#xA;(C=0 M=10 Y=95 K=0)&#xA;Pc&#xA;0.85 0.1 1 0 k&#xA;(C=85 M=10 Y=100 K=0)&#xA;Pc&#xA;1 0.9 0 0 k&#xA;(C=100 M=90 Y=0 K=0)&#xA;Pc&#xA;0.6 0.9 0.000031 0.000031 k&#xA;(C=60 M=90 Y=0 K=0)&#xA;Pc&#xA;PB&#xA;%AI5_EndPalette&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;1 D&#xA;0 O&#xA;0.746094 0.675781 0.667969 0.898438 k&#xA;0 J 0 j 0.1307 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;306.0326 -390.7965 m&#xA;304.8295 -390.7965 303.854 -391.772 303.854 -392.975 c&#xA;303.854 -394.1781 304.8295 -395.1535 306.0326 -395.1535 c&#xA;307.2353 -395.1535 308.2109 -394.1781 308.2109 -392.975 c&#xA;308.2109 -391.772 307.2353 -390.7965 306.0326 -390.7965 c&#xA;f&#xA;*u&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.2148 -391.9037 m&#xA;307.1947 -391.8197 307.1607 -391.7558 307.1127 -391.7117 C&#xA;307.0647 -391.6677 306.9947 -391.6276 306.9027 -391.5917 C&#xA;306.8106 -391.5517 306.6786 -391.5157 306.5066 -391.4837 c&#xA;306.3346 -391.4516 306.1774 -391.4356 306.0355 -391.4356 c&#xA;305.8936 -391.4356 305.7364 -391.4516 305.5645 -391.4837 C&#xA;305.3923 -391.5158 305.2603 -391.5517 305.1683 -391.5917 C&#xA;305.0763 -391.6276 305.0063 -391.6677 304.9584 -391.7117 C&#xA;304.9103 -391.7557 304.8783 -391.8197 304.8623 -391.9037 C&#xA;304.7421 -392.864 L&#xA;304.7421 -394.2024 L&#xA;304.9281 -394.2024 L&#xA;304.9281 -394.3224 L&#xA;304.9281 -394.4024 304.9531 -394.4584 305.0031 -394.4905 C&#xA;305.0532 -394.5225 305.1041 -394.5225 305.1562 -394.4905 C&#xA;305.2083 -394.4584 305.2342 -394.4024 305.2342 -394.3224 C&#xA;305.2342 -394.2024 L&#xA;306.7706 -394.2024 L&#xA;306.7706 -394.3224 L&#xA;306.7706 -394.4024 306.8017 -394.4584 306.8637 -394.4905 C&#xA;306.9257 -394.5225 306.9866 -394.5225 307.0467 -394.4905 C&#xA;307.1067 -394.4584 307.1367 -394.4024 307.1367 -394.3224 C&#xA;307.1367 -394.2024 L&#xA;307.3228 -394.2024 L&#xA;307.3228 -392.864 L&#xA;307.2148 -391.9037 L&#xA;f&#xA;0 D&#xA;%Plot f&#xA;305.3962 -391.6666 m&#xA;305.4123 -391.6366 305.4402 -391.6216 305.4803 -391.6216 C&#xA;306.7106 -391.6216 L&#xA;306.7106 -391.8016 L&#xA;305.4803 -391.8016 L&#xA;305.4403 -391.8016 305.4123 -391.7866 305.3962 -391.7566 c&#xA;305.3802 -391.7266 305.3802 -391.6967 305.3962 -391.6666 c&#xA;f&#xA;%Plot f&#xA;304.9582 -392.8399 m&#xA;305.0602 -392.1078 L&#xA;305.0682 -392.0678 305.1022 -392.0478 305.1622 -392.0478 C&#xA;306.9207 -392.0478 L&#xA;306.9807 -392.0478 307.0146 -392.0678 307.0227 -392.1078 C&#xA;307.1247 -392.852 L&#xA;307.1288 -392.864 307.1307 -392.872 307.1307 -392.876 c&#xA;307.1307 -392.904 307.1207 -392.9271 307.1007 -392.9451 c&#xA;307.0807 -392.963 307.0547 -392.9721 307.0227 -392.9721 C&#xA;305.0602 -392.9721 L&#xA;305.0281 -392.9721 305.0021 -392.962 304.9822 -392.9421 C&#xA;304.9622 -392.922 304.9522 -392.896 304.9522 -392.8641 c&#xA;304.9522 -392.8559 304.9542 -392.8479 304.9582 -392.8399 C&#xA;f&#xA;%Plot f&#xA;305.2762 -393.7371 m&#xA;305.2363 -393.7752 305.1892 -393.7942 305.1352 -393.7942 c&#xA;305.0811 -393.7942 305.0342 -393.7752 304.9941 -393.7371 C&#xA;304.9542 -393.6991 304.9341 -393.6531 304.9341 -393.5991 c&#xA;304.9341 -393.5451 304.9542 -393.4992 304.9941 -393.4611 C&#xA;305.0341 -393.4231 305.0811 -393.404 305.1352 -393.404 c&#xA;305.1892 -393.404 305.2362 -393.4231 305.2762 -393.4611 C&#xA;305.3162 -393.4992 305.3362 -393.5451 305.3362 -393.5991 c&#xA;305.3362 -393.6532 305.3162 -393.6993 305.2762 -393.7371 C&#xA;f&#xA;%Plot f&#xA;307.0887 -393.7371 m&#xA;307.0488 -393.7752 307.0017 -393.7942 306.9477 -393.7942 c&#xA;306.8937 -393.7942 306.8466 -393.7752 306.8066 -393.7371 C&#xA;306.7666 -393.6991 306.7466 -393.6531 306.7466 -393.5991 c&#xA;306.7466 -393.5451 306.7666 -393.4992 306.8066 -393.4611 C&#xA;306.8465 -393.4231 306.8937 -393.404 306.9477 -393.404 c&#xA;307.0017 -393.404 307.0487 -393.4231 307.0887 -393.4611 C&#xA;307.1288 -393.4992 307.1487 -393.5451 307.1487 -393.5991 c&#xA;307.1487 -393.6532 307.1288 -393.6993 307.0887 -393.7371 C&#xA;f&#xA;*U&#xA;U&#xA;%%PageTrailer&#xA;gsave annotatepage grestore showpage&#xA;%%Trailer&#xA;Adobe_Illustrator_AI5 /terminate get exec&#xA;Adobe_shading_AI8 /terminate get exec&#xA;Adobe_ColorImage_AI6 /terminate get exec&#xA;Adobe_pattern_AI5 /terminate get exec&#xA;AGM_Gradient /terminate get exec&#xA;Adobe_screens_AI5 /terminate get exec&#xA;Adobe_cshow /terminate get exec&#xA;Adobe_level2_AI5 /terminate get exec&#xA;%%EOF&#xA;"/>
+			<width size="2100" units="micrometer" isRelative="false"/>
+			<height size="2100" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</layer>
+	<layer enabled="true" name="Tram Stops" id="epslayer.pois.symbol" KindMain="POIs" KindSub="" xsi:type="epsLayer" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="pointVectorLayer" enabled="false" name="Tram Stops" id="transport.tram_stop.OSM.symbol" KindMain="POIs" KindSub="" source="OSM\latest\pois\tramstop.lim" maxFillpercentage="0" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<svg xsi:type="symbolBase" name="Bus" width="30" height="29" data="&lt;svg version=&quot;1.1&quot; baseProfile=&quot;basic&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;30px&quot; height=&quot;29px&quot; viewBox=&quot;0 0 30 29&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;g&gt;&#xA; &lt;circle fill=&quot;#010101&quot; cx=&quot;15.0325222&quot; cy=&quot;13.9750395&quot; r=&quot;2.1784749&quot;/&gt;&#xA; &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M16.2147961,12.9037399c-0.0200996-0.0840006-0.0541-0.1479006-0.1020985-0.1920004   c-0.0480003-0.0439997-0.118001-0.0840998-0.210001-0.1199999c-0.0921001-0.04-0.2241001-0.0760002-0.3961-0.1079998   c-0.1719999-0.0321007-0.3291998-0.0481005-0.4710999-0.0481005s-0.2990999,0.0159998-0.4709997,0.0481005   c-0.1722002,0.0320997-0.3042002,0.0679998-0.3962002,0.1079998c-0.092,0.0359001-0.1619997,0.0760002-0.2098999,0.1199999   c-0.0481005,0.0439997-0.0801001,0.1079998-0.0960999,0.1920004l-0.1201935,0.9602995v1.3383999h0.1859999v0.1199999   c0,0.0799999,0.0249996,0.1360006,0.0749998,0.1681004c0.0500937,0.0319996,0.1009998,0.0319996,0.1530933,0   c0.0521002-0.0320997,0.0780001-0.0881004,0.0780001-0.1681004v-0.1199999h1.5363998v0.1199999   c0,0.0799999,0.0311003,0.1360006,0.0931005,0.1681004c0.0620003,0.0319996,0.1229,0.0319996,0.1830006,0   c0.0599995-0.0320997,0.0900002-0.0881004,0.0900002-0.1681004v-0.1199999h0.1861v-1.3383999L16.2147961,12.9037399z    M14.3961973,12.6666393c0.0160999-0.0299997,0.0439997-0.0450001,0.0840998-0.0450001h1.2302999v0.1800003h-1.2302999   c-0.04,0-0.0679998-0.0150003-0.0840998-0.0450001C14.3801966,12.7266397,14.3801966,12.6967392,14.3961973,12.6666393z    M13.9581966,13.8399315l0.1020002-0.7320919c0.0080004-0.04,0.0419998-0.0600004,0.1020002-0.0600004h1.7585001   c0.0599995,0,0.0938997,0.0200005,0.1020002,0.0600004l0.1019993,0.7441998   c0.0041008,0.0120001,0.0060005,0.0200005,0.0060005,0.0240002c0,0.0279999-0.0100002,0.0510998-0.0300007,0.0691004   c-0.0200005,0.0178995-0.0459995,0.0269995-0.0779991,0.0269995h-1.9625006c-0.032093,0-0.0580931-0.0101004-0.0780001-0.0299997   c-0.0199995-0.0201006-0.0299997-0.0461006-0.0299997-0.0780001   C13.9521971,13.8559313,13.9541969,13.8479309,13.9581966,13.8399315z M14.2761965,14.7371397   c-0.0398998,0.0380993-0.0869999,0.0570993-0.1409998,0.0570993c-0.0540934,0-0.1009998-0.0190001-0.1410933-0.0570993   c-0.0399065-0.0380001-0.0600004-0.0840006-0.0600004-0.1380005s0.0200939-0.0999002,0.0600004-0.1379995   c0.04-0.0380001,0.0869999-0.0571003,0.1410933-0.0571003c0.0539999,0,0.1009998,0.0191002,0.1409998,0.0571003   c0.04,0.0380993,0.0600004,0.0839996,0.0600004,0.1379995C14.3361969,14.6532393,14.3161964,14.6993399,14.2761965,14.7371397z    M16.0886974,14.7371397c-0.0398998,0.0380993-0.0869999,0.0570993-0.1410007,0.0570993   c-0.0539999,0-0.1011-0.0190001-0.1410999-0.0570993c-0.04-0.0380001-0.0599995-0.0840006-0.0599995-0.1380005   s0.0199995-0.0999002,0.0599995-0.1379995c0.0398998-0.0380001,0.0871-0.0571003,0.1410999-0.0571003   c0.0540009,0,0.1009998,0.0191002,0.1410007,0.0571003c0.0401001,0.0380993,0.0599995,0.0839996,0.0599995,0.1379995   C16.1486969,14.6532393,16.1287975,14.6993399,16.0886974,14.7371397z&quot;/&gt;&#xA;&lt;/g&gt;&#xA;&lt;/svg&gt;"/>
+			<eps name="Bus" width="4" height="4" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%Creator: Adobe Illustrator(R) 8.0&#xA;%%AI8_CreatorVersion: 21.1.0&#xA;%%For: (Patrick van Hoeijen) ()&#xA;%%Title: (Bus.eps)&#xA;%%CreationDate: 6/23/2017 9:54 AM&#xA;%%Canvassize: 16383&#xA;%%BoundingBox: 303 -396 309 -390&#xA;%%HiResBoundingBox: 303.854 -395.1535 308.2109 -390.7965&#xA;%%DocumentProcessColors: Cyan Magenta Yellow Black&#xA;%%DocumentNeededResources: procset Adobe_level2_AI5 1.2 0&#xA;%%+ procset Adobe_screens_AI5 1.0 0&#xA;%%+ procset AGM_Gradient 1.0 0&#xA;%%+ procset Adobe_ColorImage_AI6 1.3 0&#xA;%%+ procset Adobe_Illustrator_AI5 1.3 0&#xA;%%+ procset Adobe_pattern_AI5 1.0 0&#xA;%%+ procset Adobe_cshow 2.0 8&#xA;%%+ procset Adobe_shading_AI8 1.0 0&#xA;%AI5_FileFormat 4.0&#xA;%AI3_ColorUsage: Color&#xA;%AI7_ImageSettings: 0&#xA;%%CMYKProcessColor: 1 1 1 1 ([Registration])&#xA;%%AI6_ColorSeparationSet: 1 1 (AI6 Default Color Separation Set) &#xA;%%+ Options: 1 16 0 1 1 1 0 0 0 0 1 1 1 18 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 2 3 4&#xA;%%+ PPD: 1 21 0 0 60 45 2 2 1 0 0 1 0 0 0 0 0 0 0 0 1 0 () &#xA;%AI3_TemplateBox: 306.5 -393.5 306.5 -393.5&#xA;%AI3_TileBox: -103.02 -678.98 715.02 -108.0201&#xA;%AI3_DocumentPreview: Header&#xA;%AI5_ArtSize: 30 29&#xA;%AI5_RulerUnits: 1&#xA;%AI5_ArtFlags: 0 0 0 1 0 0 0 0 0&#xA;%AI5_TargetResolution: 800&#xA;%AI5_NumLayers: 1&#xA;%AI8_OpenToView: 289.5 -379.9375 32 1557 885 18 0 0 78 120 0 0&#xA;%AI5_OpenViewLayers: 7&#xA;%%PageOrigin:0 -792&#xA;%AI7_GridSettings: 72 8 72 8 1 0 0.8 0.8 0.8 0.9 0.9 0.9&#xA;%AI9_Flatten: 0&#xA;%AI12_CMSettings: 00.MS&#xA;%%EndComments&#xA;%%BeginProlog&#xA;%%IncludeResource: procset Adobe_level2_AI5 1.2 0&#xA;%%IncludeResource: procset Adobe_screens_AI5 1.2 0&#xA;%%IncludeResource: procset AGM_Gradient_Sep 1.0 0&#xA;%%IncludeResource: procset AGM_Gradient 1.0 0&#xA;%%IncludeResource: procset Adobe_Illustrator_AI5 1.3 0&#xA;%%IncludeResource: procset Adobe_pattern_AI5 1.1 0&#xA;%%IncludeResource: procset Adobe_cshow 2.0 8&#xA;%%IncludeResource: procset Adobe_shading_AI8 1.0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;userdict /_useSmoothShade true put&#xA;userdict /_aicmykps false put&#xA;userdict /_forceToCMYK false put&#xA;Adobe_level2_AI5 /initialize get exec&#xA;Adobe_cshow /initialize get exec&#xA;Adobe_screens_AI5 /initialize get exec&#xA;Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 AGM_Gradient /initializeAI get exec&#xA;Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_pattern_AI5 /initialize get exec&#xA;Adobe_ColorImage_AI6 /initialize get exec&#xA;Adobe_shading_AI8 /initialize get exec&#xA;Adobe_Illustrator_AI5 /initialize get exec&#xA;%AI5_BeginPalette&#xA;0 0 Pb&#xA;1 1 1 1 ([Registration]) 0 Xs&#xA;([Registration])&#xA;Pc&#xA;0 0 0 0 k&#xA;(White)&#xA;Pc&#xA;0 0 0 1 k&#xA;(Black)&#xA;Pc&#xA;0 1 1 0 k&#xA;(CMYK Red)&#xA;Pc&#xA;0 0 1 0 k&#xA;(CMYK Yellow)&#xA;Pc&#xA;1 0 1 0 k&#xA;(CMYK Green)&#xA;Pc&#xA;1 0 0 0 k&#xA;(CMYK Cyan)&#xA;Pc&#xA;1 1 0 0 k&#xA;(CMYK Blue)&#xA;Pc&#xA;0 1 0 0 k&#xA;(CMYK Magenta)&#xA;Pc&#xA;0.15 1 0.9 0.1 k&#xA;(C=15 M=100 Y=90 K=10)&#xA;Pc&#xA;0 0.9 0.85 0 k&#xA;(C=0 M=90 Y=85 K=0)&#xA;Pc&#xA;0 0.8 0.95 0 k&#xA;(C=0 M=80 Y=95 K=0)&#xA;Pc&#xA;0 0.5 1 0 k&#xA;(C=0 M=50 Y=100 K=0)&#xA;Pc&#xA;0 0.35 0.85 0 k&#xA;(C=0 M=35 Y=85 K=0)&#xA;Pc&#xA;0.05 0 0.9 0 k&#xA;(C=5 M=0 Y=90 K=0)&#xA;Pc&#xA;0.2 0 1 0 k&#xA;(C=20 M=0 Y=100 K=0)&#xA;Pc&#xA;0.5 0 1 0 k&#xA;(C=50 M=0 Y=100 K=0)&#xA;Pc&#xA;0.75 0 1 0 k&#xA;(C=75 M=0 Y=100 K=0)&#xA;Pc&#xA;0.85 0.1 1 0.1 k&#xA;(C=85 M=10 Y=100 K=10)&#xA;Pc&#xA;0.9 0.3 0.95 0.3 k&#xA;(C=90 M=30 Y=95 K=30)&#xA;Pc&#xA;0.75 0 0.75 0 k&#xA;(C=75 M=0 Y=75 K=0)&#xA;Pc&#xA;0.8 0.1 0.45 0 k&#xA;(C=80 M=10 Y=45 K=0)&#xA;Pc&#xA;0.7 0.15 0 0 k&#xA;(C=70 M=15 Y=0 K=0)&#xA;Pc&#xA;0.85 0.5 0 0 k&#xA;(C=85 M=50 Y=0 K=0)&#xA;Pc&#xA;1 0.95 0.05 0 k&#xA;(C=100 M=95 Y=5 K=0)&#xA;Pc&#xA;1 1 0.25 0.25 k&#xA;(C=100 M=100 Y=25 K=25)&#xA;Pc&#xA;0.75 1 0 0 k&#xA;(C=75 M=100 Y=0 K=0)&#xA;Pc&#xA;0.5 1 0 0 k&#xA;(C=50 M=100 Y=0 K=0)&#xA;Pc&#xA;0.35 1 0.35 0.1 k&#xA;(C=35 M=100 Y=35 K=10)&#xA;Pc&#xA;0.1 1 0.5 0 k&#xA;(C=10 M=100 Y=50 K=0)&#xA;Pc&#xA;0 0.95 0.2 0 k&#xA;(C=0 M=95 Y=20 K=0)&#xA;Pc&#xA;0.25 0.25 0.4 0 k&#xA;(C=25 M=25 Y=40 K=0)&#xA;Pc&#xA;0.4 0.45 0.5 0.05 k&#xA;(C=40 M=45 Y=50 K=5)&#xA;Pc&#xA;0.5 0.5 0.6 0.25 k&#xA;(C=50 M=50 Y=60 K=25)&#xA;Pc&#xA;0.55 0.6 0.65 0.4 k&#xA;(C=55 M=60 Y=65 K=40)&#xA;Pc&#xA;0.25 0.4 0.65 0 k&#xA;(C=25 M=40 Y=65 K=0)&#xA;Pc&#xA;0.3 0.5 0.75 0.1 k&#xA;(C=30 M=50 Y=75 K=10)&#xA;Pc&#xA;0.35 0.6 0.8 0.25 k&#xA;(C=35 M=60 Y=80 K=25)&#xA;Pc&#xA;0.4 0.65 0.9 0.35 k&#xA;(C=40 M=65 Y=90 K=35)&#xA;Pc&#xA;0.4 0.7 1 0.5 k&#xA;(C=40 M=70 Y=100 K=50)&#xA;Pc&#xA;0.5 0.7 0.8 0.7 k&#xA;(C=50 M=70 Y=80 K=70)&#xA;Pc&#xA;Bb&#xA;2 (White, Black) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(White, Black)&#xA;Pc&#xA;Bb&#xA;2 (Orange, Yellow) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Orange, Yellow)&#xA;Pc&#xA;Bb&#xA;2 (Fading Sky) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Fading Sky)&#xA;Pc&#xA;Bb&#xA;0 0 0 0 Bh&#xA;2 (Super Soft Black Vignette) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Super Soft Black Vignette)&#xA;Pc&#xA;(Pompadour) 0 0 1 1 0 0 0 0 0 [1 0 0 1 0 0] p&#xA;(Pompadour)&#xA;Pc&#xA;0 0 0 1 k&#xA;(C=0 M=0 Y=0 K=100)&#xA;Pc&#xA;0 0 0 0.899994 k&#xA;(C=0 M=0 Y=0 K=90)&#xA;Pc&#xA;0 0 0 0.799988 k&#xA;(C=0 M=0 Y=0 K=80)&#xA;Pc&#xA;0 0 0 0.699997 k&#xA;(C=0 M=0 Y=0 K=70)&#xA;Pc&#xA;0 0 0 0.599991 k&#xA;(C=0 M=0 Y=0 K=60)&#xA;Pc&#xA;0 0 0 0.5 k&#xA;(C=0 M=0 Y=0 K=50)&#xA;Pc&#xA;0 0 0 0.399994 k&#xA;(C=0 M=0 Y=0 K=40)&#xA;Pc&#xA;0 0 0 0.299988 k&#xA;(C=0 M=0 Y=0 K=30)&#xA;Pc&#xA;0 0 0 0.199997 k&#xA;(C=0 M=0 Y=0 K=20)&#xA;Pc&#xA;0 0 0 0.099991 k&#xA;(C=0 M=0 Y=0 K=10)&#xA;Pc&#xA;0 0 0 0.049988 k&#xA;(C=0 M=0 Y=0 K=5)&#xA;Pc&#xA;0 1 1 0 k&#xA;(C=0 M=100 Y=100 K=0)&#xA;Pc&#xA;0 0.75 1 0 k&#xA;(C=0 M=75 Y=100 K=0)&#xA;Pc&#xA;0 0.1 0.95 0 k&#xA;(C=0 M=10 Y=95 K=0)&#xA;Pc&#xA;0.85 0.1 1 0 k&#xA;(C=85 M=10 Y=100 K=0)&#xA;Pc&#xA;1 0.9 0 0 k&#xA;(C=100 M=90 Y=0 K=0)&#xA;Pc&#xA;0.6 0.9 0.000031 0.000031 k&#xA;(C=60 M=90 Y=0 K=0)&#xA;Pc&#xA;PB&#xA;%AI5_EndPalette&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;1 D&#xA;0 O&#xA;0.746094 0.675781 0.667969 0.898438 k&#xA;0 J 0 j 0.1307 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;306.0326 -390.7965 m&#xA;304.8295 -390.7965 303.854 -391.772 303.854 -392.975 c&#xA;303.854 -394.1781 304.8295 -395.1535 306.0326 -395.1535 c&#xA;307.2353 -395.1535 308.2109 -394.1781 308.2109 -392.975 c&#xA;308.2109 -391.772 307.2353 -390.7965 306.0326 -390.7965 c&#xA;f&#xA;*u&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.2148 -391.9037 m&#xA;307.1947 -391.8197 307.1607 -391.7558 307.1127 -391.7117 C&#xA;307.0647 -391.6677 306.9947 -391.6276 306.9027 -391.5917 C&#xA;306.8106 -391.5517 306.6786 -391.5157 306.5066 -391.4837 c&#xA;306.3346 -391.4516 306.1774 -391.4356 306.0355 -391.4356 c&#xA;305.8936 -391.4356 305.7364 -391.4516 305.5645 -391.4837 C&#xA;305.3923 -391.5158 305.2603 -391.5517 305.1683 -391.5917 C&#xA;305.0763 -391.6276 305.0063 -391.6677 304.9584 -391.7117 C&#xA;304.9103 -391.7557 304.8783 -391.8197 304.8623 -391.9037 C&#xA;304.7421 -392.864 L&#xA;304.7421 -394.2024 L&#xA;304.9281 -394.2024 L&#xA;304.9281 -394.3224 L&#xA;304.9281 -394.4024 304.9531 -394.4584 305.0031 -394.4905 C&#xA;305.0532 -394.5225 305.1041 -394.5225 305.1562 -394.4905 C&#xA;305.2083 -394.4584 305.2342 -394.4024 305.2342 -394.3224 C&#xA;305.2342 -394.2024 L&#xA;306.7706 -394.2024 L&#xA;306.7706 -394.3224 L&#xA;306.7706 -394.4024 306.8017 -394.4584 306.8637 -394.4905 C&#xA;306.9257 -394.5225 306.9866 -394.5225 307.0467 -394.4905 C&#xA;307.1067 -394.4584 307.1367 -394.4024 307.1367 -394.3224 C&#xA;307.1367 -394.2024 L&#xA;307.3228 -394.2024 L&#xA;307.3228 -392.864 L&#xA;307.2148 -391.9037 L&#xA;f&#xA;0 D&#xA;%Plot f&#xA;305.3962 -391.6666 m&#xA;305.4123 -391.6366 305.4402 -391.6216 305.4803 -391.6216 C&#xA;306.7106 -391.6216 L&#xA;306.7106 -391.8016 L&#xA;305.4803 -391.8016 L&#xA;305.4403 -391.8016 305.4123 -391.7866 305.3962 -391.7566 c&#xA;305.3802 -391.7266 305.3802 -391.6967 305.3962 -391.6666 c&#xA;f&#xA;%Plot f&#xA;304.9582 -392.8399 m&#xA;305.0602 -392.1078 L&#xA;305.0682 -392.0678 305.1022 -392.0478 305.1622 -392.0478 C&#xA;306.9207 -392.0478 L&#xA;306.9807 -392.0478 307.0146 -392.0678 307.0227 -392.1078 C&#xA;307.1247 -392.852 L&#xA;307.1288 -392.864 307.1307 -392.872 307.1307 -392.876 c&#xA;307.1307 -392.904 307.1207 -392.9271 307.1007 -392.9451 c&#xA;307.0807 -392.963 307.0547 -392.9721 307.0227 -392.9721 C&#xA;305.0602 -392.9721 L&#xA;305.0281 -392.9721 305.0021 -392.962 304.9822 -392.9421 C&#xA;304.9622 -392.922 304.9522 -392.896 304.9522 -392.8641 c&#xA;304.9522 -392.8559 304.9542 -392.8479 304.9582 -392.8399 C&#xA;f&#xA;%Plot f&#xA;305.2762 -393.7371 m&#xA;305.2363 -393.7752 305.1892 -393.7942 305.1352 -393.7942 c&#xA;305.0811 -393.7942 305.0342 -393.7752 304.9941 -393.7371 C&#xA;304.9542 -393.6991 304.9341 -393.6531 304.9341 -393.5991 c&#xA;304.9341 -393.5451 304.9542 -393.4992 304.9941 -393.4611 C&#xA;305.0341 -393.4231 305.0811 -393.404 305.1352 -393.404 c&#xA;305.1892 -393.404 305.2362 -393.4231 305.2762 -393.4611 C&#xA;305.3162 -393.4992 305.3362 -393.5451 305.3362 -393.5991 c&#xA;305.3362 -393.6532 305.3162 -393.6993 305.2762 -393.7371 C&#xA;f&#xA;%Plot f&#xA;307.0887 -393.7371 m&#xA;307.0488 -393.7752 307.0017 -393.7942 306.9477 -393.7942 c&#xA;306.8937 -393.7942 306.8466 -393.7752 306.8066 -393.7371 C&#xA;306.7666 -393.6991 306.7466 -393.6531 306.7466 -393.5991 c&#xA;306.7466 -393.5451 306.7666 -393.4992 306.8066 -393.4611 C&#xA;306.8465 -393.4231 306.8937 -393.404 306.9477 -393.404 c&#xA;307.0017 -393.404 307.0487 -393.4231 307.0887 -393.4611 C&#xA;307.1288 -393.4992 307.1487 -393.5451 307.1487 -393.5991 c&#xA;307.1487 -393.6532 307.1288 -393.6993 307.0887 -393.7371 C&#xA;f&#xA;*U&#xA;U&#xA;%%PageTrailer&#xA;gsave annotatepage grestore showpage&#xA;%%Trailer&#xA;Adobe_Illustrator_AI5 /terminate get exec&#xA;Adobe_shading_AI8 /terminate get exec&#xA;Adobe_ColorImage_AI6 /terminate get exec&#xA;Adobe_pattern_AI5 /terminate get exec&#xA;AGM_Gradient /terminate get exec&#xA;Adobe_screens_AI5 /terminate get exec&#xA;Adobe_cshow /terminate get exec&#xA;Adobe_level2_AI5 /terminate get exec&#xA;%%EOF&#xA;"/>
+			<width size="2100" units="micrometer" isRelative="false"/>
+			<height size="2100" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<textDraw enabled="false" alignment="center" capitalMode="as_is" font="gothamXNarrow-Book" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="Unknown" id="epslayer.generic.653" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocgroup maxFillpercentage="10" name="City Names Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
 		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.label" deduplicateNames="false" storeExtraSlocs="0">

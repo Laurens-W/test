@@ -1090,7 +1090,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer Extra above name" KindMain="epslayers" id="epslayer.generic.40"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above name" layerId="AfterNames" KindMain="Landuse" KindSub="Extras above name" id="includelayer.extraabovename"/>

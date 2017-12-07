@@ -1689,7 +1689,13 @@
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="bridge &amp; oneway symbols" KindMain="EPS-layers" KindSub="" id="epslayer.bridge&amp;onewaysymbols"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Bridge Patch" kind="bridge" KindMain="Special Constructions" KindSub="Bridges" id="patch.bridges"/>
-	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="false">
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
+	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
+	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois"/>
+	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="false" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
 			<and>
@@ -1735,12 +1741,6 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
-	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois"/>
 	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport terminal"/>
@@ -2873,7 +2873,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative boundaries" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundaries"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="City Boundary Line" KindMain="Boundaries" KindSub="Cities" id="boundaries.cities.line.1">

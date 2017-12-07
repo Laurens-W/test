@@ -1092,7 +1092,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Boundary" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.2">
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Outline Line" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
 			<and>
@@ -1107,7 +1107,7 @@
 		<lineDraw enabled="true">
 			<color r="159" g="157" b="136" overprint="false"/>
 			<size size="212" units="micrometer" isRelative="false"/>
-			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
@@ -1301,7 +1301,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="2103" units="micrometer" isRelative="false"/>
+			<size size="3" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -1328,7 +1328,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="2103" units="micrometer" isRelative="false"/>
+			<size size="3" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -1366,7 +1366,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="2103" units="micrometer" isRelative="false"/>
+			<size size="3" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -1401,7 +1401,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="2103" units="micrometer" isRelative="false"/>
+			<size size="3" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -1436,7 +1436,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="2103" units="micrometer" isRelative="false"/>
+			<size size="3" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -1471,7 +1471,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="2103" units="micrometer" isRelative="false"/>
+			<size size="3" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">

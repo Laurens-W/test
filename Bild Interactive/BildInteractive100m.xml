@@ -172,7 +172,38 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="Unknown" id="epslayer.generic.59" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Country Names" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundaries" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Country Names" KindMain="Boundaries" KindSub="Countries" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Country boundary"/>
+			<and>
+				<equation oper="neq" fieldname="Name" value="nn"/>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="gothamXNarrow-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="3" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="8" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</userstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames" alwaysOutput="false"/>
 	<slocgroup maxFillpercentage="20" name="CityNames Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
 		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
@@ -421,37 +452,6 @@
 		</slocstyle>
 	</slocgroup>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Names" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundaries" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Country Names" KindMain="Boundaries" KindSub="Countries" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Country boundary"/>
-			<and>
-				<equation oper="neq" fieldname="Name" value="nn"/>
-			</and>
-		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="gothamXNarrow-Bold" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="true">
-					<color r="255" g="255" b="255" overprint="false"/>
-					<size size="3" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="kilometer" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
-			</fontDraw>
-			<size size="8" units="points" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="10">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="255" g="255" b="255" overprint="true"/>
-						<size size="0" units="kilometer" isRelative="false"/>
-						<style size="0" units="kilometer" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="255" g="255" b="255" overprint="true"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<namePosition name="fullyInside"/>
-	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Bundeslaender Names" KindMain="EPS-layers" alwaysOutput="false" KindSub="" id="epslayer.generic.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="polygonVectorLayer" enabled="false" name="Bundeslaender Names" id="boundaries.provinces.label" KindMain="Boundaries" source="Here\Admin\Province.lim" deduplicateNames="true" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>

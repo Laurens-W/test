@@ -22076,7 +22076,6 @@
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
 		<namePosition name="onCenterLine"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="partlyInside"/>
 		<namePosition name="fullyInside"/>
 	</userstyle>
@@ -22109,7 +22108,6 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Neighbourhood Boundary Polygon Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>

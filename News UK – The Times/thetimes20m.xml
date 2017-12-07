@@ -179,7 +179,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Motorway Normal Outline" KindMain="EPS-layers" KindSub="" id="epslayer.roads" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -289,7 +289,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -387,7 +387,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>

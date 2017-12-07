@@ -2223,7 +2223,6 @@
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 	</userstyle>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="River / Channel Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="River / Channel Names" id="landuse.waters.rivers.label" deduplicateNames="false">
 		<criteria>
@@ -2252,7 +2251,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative boundaries" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundaries"/>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative boundary names" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundarynames"/>

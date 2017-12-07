@@ -87,12 +87,12 @@
 				</inset>
 			</criteria>
 			<polyDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="13" g="140" b="140" overprint="false"/>
 					<size size="176" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="false" r="212" g="235" b="242" overprint="false"/>
+				<fillColor enabled="false" r="212" g="237" b="245" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
@@ -105,12 +105,12 @@
 				</inset>
 			</criteria>
 			<polyDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="13" g="140" b="140" overprint="false"/>
 					<size size="176" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="false" r="212" g="235" b="242" overprint="false"/>
+				<fillColor enabled="true" r="212" g="237" b="245" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
@@ -137,7 +137,7 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Forest" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.8"/>
 	<polygongroup name="Landphase 2" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase2">
-		<polygonstyle enabled="true" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
+		<polygonstyle enabled="false" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="Forest"/>
 			</criteria>
@@ -215,7 +215,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.21"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary" KindMain="Boundaries" KindSub="Provinces" id="boundaries.provinces.line.2">
+	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="false" name="Province Boundary" KindMain="Boundaries" KindSub="Provinces" id="boundaries.provinces.line.2">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
 			<and>
@@ -227,14 +227,14 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="89" g="127" b="127" overprint="false"/>
+			<color r="89" g="60" b="17" overprint="false"/>
 			<size size="2" units="1/10th millimeter" isRelative="false"/>
 			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Motorway Normal Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.22"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -252,7 +252,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="242" g="153" b="242" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="300" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="2" units="micrometer" isRelative="false"/>
@@ -265,7 +265,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Motorway Normal Fill" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.23"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -369,7 +369,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -467,7 +467,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -565,7 +565,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Small City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>

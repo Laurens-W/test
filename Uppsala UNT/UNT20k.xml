@@ -51,7 +51,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 0" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.2"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="afterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="AfterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Island" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.3"/>
 	<polygongroup name="Landphase 1" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase1">
 		<polygonstyle enabled="true" name="Island" KindMain="Landuse" KindSub="Islands" id="landuse.islands.fill">
@@ -69,7 +69,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 1" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.4"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="afterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer enabled="true" name="nature reserve" id="epslayer.landuse.fill" KindMain="Landuse" KindSub="nature reserve" xsi:type="epsLayer" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer enabled="true" name="nature reserve" id="landuse.nature_reserve.OSM.fill" KindMain="Landuse" KindSub="nature reserve" source="osm\latest\landuse\nature_reserve.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
@@ -139,7 +139,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Forest/park" KindMain="Unknown" id="epslayer.generic.3" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer enabled="true" name="forest OSM" id="landuse.forest.OSM.fill" KindMain="Landuse" KindSub="Forests" source="osm\latest\landuse\forest.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer enabled="false" name="forest OSM" id="landuse.forest.OSM.fill" KindMain="Landuse" KindSub="Forests" source="osm\latest\landuse\forest.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -202,7 +202,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 2" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.6"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="afterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Urban Area / Urban Area Construction / Bungalow Park / Amusement Park" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.7"/>
 	<polygongroup name="Landphase 3" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase3">
 		<polygonstyle enabled="true" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
@@ -264,11 +264,11 @@
 		</textDraw>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 3" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.8"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="afterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 4" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.10"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="afterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="AfterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 5" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.12"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="afterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="AfterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Hospital / University / Shopping Center / Airport" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.13"/>
 	<polygongroup name="Landphase 6" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase6">
 		<polygonstyle enabled="false" name="University" KindMain="Landuse" KindSub="Universities" id="landuse.universities.fill">
@@ -312,8 +312,8 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 6" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.14"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="afterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
-	<layer enabled="true" name="cemetry" id="epslayer.landuse.fill" KindMain="Landuse" KindSub="Cemeteries" xsi:type="epsLayer" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
+	<layer enabled="false" name="cemetry" id="epslayer.landuse.fill" KindMain="Landuse" KindSub="Cemeteries" xsi:type="epsLayer" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer enabled="true" name="cemetry" id="landuse.cemetery.OSM.fill" KindMain="Landuse" KindSub="Cemeteries" source="osm\latest\landuse\cemetery.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -383,7 +383,7 @@
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="City Park / Cemetery / Sports Ground / Village Green / Vegetable Garden / Golf Course / Moor / Orchard / Recreation Area / Match Area" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.15"/>
 	<polygongroup name="Landphase 7" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase7">
-		<polygonstyle enabled="false" name="City Park" KindMain="Landuse" KindSub="City Parks" id="landuse.cityparks.fill">
+		<polygonstyle enabled="true" name="City Park" KindMain="Landuse" KindSub="City Parks" id="landuse.cityparks.fill">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City Park"/>
 			</criteria>
@@ -450,7 +450,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 7" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.16"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="afterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Glass House / Special Buildings / Parking House / Municipal Building / Parking Garage / Runway" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.17"/>
 	<polygongroup name="Landphase 8" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase8">
 		<polygonstyle enabled="true" name="Runway" KindMain="Landuse" KindSub="Runways" id="landuse.runways.fill">
@@ -468,16 +468,16 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 8" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.18"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="afterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Buildings OSM" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.19"/>
 	<layer xsi:type="polygonVectorLayer" enabled="false" name="Buildings OSM" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings OSM" source=" OSM\latest\buildings.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
-			<line enabled="true">
+			<line enabled="false">
 				<color r="226" g="233" b="237" overprint="false"/>
 				<size size="100" units="micrometer" isRelative="false"/>
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</line>
-			<fillColor enabled="true" r="242" g="250" b="250" overprint="false"/>
+			<fillColor enabled="true" r="153" g="153" b="153" overprint="false"/>
 		</polyDraw>
 		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="nYTFranklin-Medium" relHeight="255" spacing="255" slant="255" underline="false">
 			<fontDraw>
@@ -502,7 +502,7 @@
 		</textDraw>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 9" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.21"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="afterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="AfterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Water Linear Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.23"/>
 	<chainstyle enabled="true" name="Water Linear Outline" KindMain="Water" KindSub="River / Channel" id="landuse.waters.linear.line">
 		<criteria>
@@ -569,10 +569,10 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 10" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.22"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="afterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="vectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="AfterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.27"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="afterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.428" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Province Boundary Outline" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
@@ -663,7 +663,7 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="265" units="micrometer" isRelative="false"/>
+			<size size="176" units="micrometer" isRelative="false"/>
 			<style size="20" units="1/10th millimeter" isRelative="false" style="dash3_7"/>
 			<extension size="50" units="micrometer" isRelative="false"/>
 		</lineDraw>
@@ -758,7 +758,7 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="265" units="micrometer" isRelative="false"/>
+			<size size="176" units="micrometer" isRelative="false"/>
 			<style size="20" units="1/10th millimeter" isRelative="false" style="dash3_7"/>
 			<extension size="50" units="micrometer" isRelative="false"/>
 		</lineDraw>
@@ -1471,7 +1471,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Line" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.87"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="vectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Grid Layer" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.88"/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.89"/>
@@ -1532,7 +1532,7 @@
 				</and>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1581,7 +1581,7 @@
 				</and>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1630,7 +1630,7 @@
 				</and>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1676,7 +1676,7 @@
 				</and>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1722,7 +1722,7 @@
 				</and>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1768,7 +1768,7 @@
 				</and>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1814,7 +1814,7 @@
 				</and>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="myriad-Roman" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1848,9 +1848,9 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poi" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.98"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="vectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.99"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="afterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Lightrail Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.100"/>
 	<slocstyle enabled="false" name="Lightrail Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Lightrails" id="pois.lightrails.symbol">
 		<criteria>
@@ -3793,7 +3793,7 @@
 		</symbolDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.172"/>
-	<slocstyle enabled="true" name="Railway Station Name" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Railway Station Name" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
 			<and>
@@ -26617,7 +26617,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Forest Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.380" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="true" name="Forest Name" id="landuse.forest.OSM.label" KindMain="Landuse" KindSub="Forests" source="OSM\latest\landuse\forest.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="false" name="Forest Name" id="landuse.forest.OSM.label" KindMain="Landuse" KindSub="Forests" source="OSM\latest\landuse\forest.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="226" g="233" b="237" overprint="false"/>
@@ -26651,7 +26651,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="City Park Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.381" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="true" name="Park name" id="landuse.park.OSM.label" KindMain="Landuse" KindSub="Park / Garden" source="osm\latest\landuse\park.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Park name" id="landuse.park.OSM.label" KindMain="Landuse" KindSub="Park / Garden" source="OSM\latest\landuse\park.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="226" g="233" b="237" overprint="false"/>
@@ -26682,10 +26682,9 @@
 			</boxDraw>
 		</textDraw>
 		<namePosition name="fullyInside"/>
-		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Cemetery Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.382" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="true" name="Cemetery Name" id="landuse.cemetery.OSM.label" KindMain="Landuse" KindSub="Cemeteries" source="OSM\latest\landuse\cemetery.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="false" name="Cemetery Name" id="landuse.cemetery.OSM.label" KindMain="Landuse" KindSub="Cemeteries" source="OSM\latest\landuse\cemetery.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="226" g="233" b="237" overprint="false"/>
@@ -27491,6 +27490,6 @@
 		<namePosition name="partlyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="After Names" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.419"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="afterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
 	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.420"/>
 </mapStyle>

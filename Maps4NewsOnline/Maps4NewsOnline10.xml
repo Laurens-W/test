@@ -1091,7 +1091,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="road numbers" KindMain="EPS-layers" KindSub="" id="epslayer.roadnumbers"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr All" overwriteRoadclass="motorway" namePattern="(\d+)" distance="0" minRoadLength="12000" onlyOne="false" lowestIntersectionClass="motorway" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries" id="roads.roadnumber.a.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

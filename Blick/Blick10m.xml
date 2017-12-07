@@ -50,12 +50,12 @@
 					<size size="0" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="235" g="235" b="224" overprint="false"/>
+				<fillColor enabled="true" r="240" g="240" b="229" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 0" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="afterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="AfterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Island" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 1" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase1">
 		<polygonstyle enabled="true" name="Island" KindMain="Landuse" KindSub="Islands" id="landuse.islands.fill">
@@ -68,14 +68,14 @@
 					<size size="0" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="235" g="235" b="224" overprint="false"/>
+				<fillColor enabled="true" r="240" g="240" b="229" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 1" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="afterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 2" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="afterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Urban Area" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 3" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase3">
 		<polygonstyle enabled="true" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
@@ -88,7 +88,7 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="224" g="222" b="207" overprint="false"/>
+				<fillColor enabled="true" r="224" g="224" b="212" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
@@ -100,7 +100,7 @@
 				<size size="100" units="micrometer" isRelative="false"/>
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</line>
-			<fillColor enabled="true" r="224" g="222" b="207" overprint="false"/>
+			<fillColor enabled="true" r="224" g="224" b="212" overprint="false"/>
 		</polyDraw>
 		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="helveticaNeueLTStd-Cn" relHeight="255" spacing="255" slant="255" underline="false">
 			<fontDraw>
@@ -125,7 +125,7 @@
 		</textDraw>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 3" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="afterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Land / Sea / Lake Contour" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase wateroutlines" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.wateroutlines">
 		<polygonstyle enabled="true" name="Land / Sea / Lake Contour" KindMain="Water contour land / sea / Lake / River" KindSub="" id="landuse.waters.line">
@@ -138,7 +138,7 @@
 			<polyDraw>
 				<line enabled="true">
 					<color r="166" g="224" b="255" overprint="false"/>
-					<size size="176" units="micrometer" isRelative="false"/>
+					<size size="106" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
 				<fillColor enabled="false" r="212" g="235" b="242" overprint="false"/>
@@ -146,7 +146,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 4" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="afterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="AfterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Water Sea/Ocean" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase sea ocean" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphaseseaocean">
 		<polygonstyle enabled="true" name="Water Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.seas.fill">
@@ -167,17 +167,17 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 5" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="afterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="AfterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 6" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="afterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 7" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="afterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 8" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="afterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 9" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="afterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="AfterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 10" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="afterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="AfterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Water no Sea/Ocean" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase11" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase11">
 		<polygonstyle enabled="true" name="Water no Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.noseas.fill">
@@ -203,9 +203,9 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="afterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poly" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="vectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Outline" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Province Boundary Outline" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
@@ -219,7 +219,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="153" g="153" b="153" overprint="false"/>
+			<color r="191" g="191" b="191" overprint="false"/>
 			<size size="1" units="1/10th millimeter" isRelative="false"/>
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
@@ -257,7 +257,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="127" g="127" b="127" overprint="false"/>
+			<color r="153" g="153" b="153" overprint="false"/>
 			<size size="3" units="1/10th millimeter" isRelative="false"/>
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
@@ -357,11 +357,11 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Line" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="vectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poi" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="vectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Roads" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="afterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name="CityNames Group" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 	<slocgroup maxFillpercentage="15" name="CityNames Group" KindMain="Placenames" KindSub="Placenames POIs" id="pois.placenamesgroup">
 		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
@@ -1059,7 +1059,7 @@
 				<equation oper="neq" fieldname="Name" value="nn"/>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helveticaNeueLTStd-Cn" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helveticaNeueLTStd-ThCn" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1117,6 +1117,6 @@
 		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="After Names" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="afterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
 	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 </mapStyle>

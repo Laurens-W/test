@@ -1869,7 +1869,6 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative boundaries" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundaries" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Boundary Line" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.1">

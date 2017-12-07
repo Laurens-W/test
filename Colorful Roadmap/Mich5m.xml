@@ -115,7 +115,7 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
 	<layer xsi:type="epsLayer" enabled="true" name="green areas" KindMain="EPS-layers" KindSub="" id="epslayer.greenareas"/>
 	<polygongroup name="Landphase 7" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase7">
-		<polygonstyle enabled="true" name="City Park" KindMain="Landuse" KindSub="City Parks" id="landuse.cityparks.fill">
+		<polygonstyle enabled="false" name="City Park" KindMain="Landuse" KindSub="City Parks" id="landuse.cityparks.fill">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City Park"/>
 			</criteria>
@@ -128,7 +128,7 @@
 				<fillColor enabled="true" r="212" g="217" b="201" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
-		<polygonstyle enabled="true" name="City Park Rood" KindMain="Landuse" KindSub="City Parks">
+		<polygonstyle enabled="false" name="City Park Rood" KindMain="Landuse" KindSub="City Parks">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City Park"/>
 			</criteria>
@@ -145,7 +145,7 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
 	<polygongroup name="Landphase 9" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase9">
-		<polygonstyle enabled="true" name="Unused Area Fill" KindMain="Landuse" KindSub="Unused Areas" id="landuse.unusedareas.fill">
+		<polygonstyle enabled="false" name="Unused Area Fill" KindMain="Landuse" KindSub="Unused Areas" id="landuse.unusedareas.fill">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="waste land"/>
 			</criteria>

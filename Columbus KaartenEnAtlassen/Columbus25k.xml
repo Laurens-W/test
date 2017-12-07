@@ -22009,7 +22009,6 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="River / Channel Name" overwriteRoadclass="local road" KindMain="Water" KindSub="River / Channel Names" namePattern="(.*)" id="landuse.waters.rivers.label">
@@ -22040,7 +22039,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above name" layerId="AfterNames" KindMain="Landuse" KindSub="Extras above name" id="includelayer.extraabovename"/>
 	<layer xsi:type="epsLayer" enabled="true" name="ADMINSTRATIVE BOUNDARIES" KindMain="epslayers" KindSub="" id="epslayer.generic.23"/>

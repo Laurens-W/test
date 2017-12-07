@@ -1433,7 +1433,68 @@
 	</chainstyle>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<layer xsi:type="epsLayer" enabled="false" name="rails" KindMain="EPS-layers" KindSub="" id="epslayer.rails" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="rails" KindMain="EPS-layers" KindSub="" id="epslayer.rails" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Tunnel" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.tunnel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserPresent" value="Rail:gs"/>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="200" units="micrometer" isRelative="false"/>
+			<style size="2000" units="micrometer" isRelative="false" style="dash5_5"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Tunnel" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.tunnel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserCatPresent" value="Rail"/>
+					<and>
+						<inset fieldname="UserPresent" negate="true">
+							<item value="Rail:gs"/>
+							<item value="Rail:nn"/>
+							<item value="Rail:tram"/>
+						</inset>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="200" units="micrometer" isRelative="false"/>
+			<style size="2000" units="micrometer" isRelative="false" style="dash5_5"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Tunnel" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.tunnel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserPresent" value="Rail:nn"/>
+					<or>
+						<equation oper="neq" fieldname="UserCatPresent" value="Rail"/>
+					</or>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="200" units="micrometer" isRelative="false"/>
+			<style size="2000" units="micrometer" isRelative="false" style="dash5_5"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1451,7 +1512,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
 			<and>
@@ -1468,7 +1529,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
 			<and>
@@ -1488,7 +1549,7 @@
 		<lineDraw enabled="true">
 			<color r="77" g="77" b="77" overprint="false"/>
 			<size size="600" units="micrometer" isRelative="false"/>
-			<style size="2987" units="micrometer" isRelative="false" style="solid"/>
+			<style size="7500" units="micrometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
@@ -1516,7 +1577,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
 			<and>
@@ -1532,7 +1593,7 @@
 		<lineDraw enabled="true">
 			<color r="77" g="77" b="77" overprint="false"/>
 			<size size="600" units="micrometer" isRelative="false"/>
-			<style size="2987" units="micrometer" isRelative="false" style="solid"/>
+			<style size="7500" units="micrometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>

@@ -291,7 +291,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Outline Line" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.1">
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Outline Line" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
 			<and>
@@ -306,7 +306,7 @@
 		<lineDraw enabled="true">
 			<color r="159" g="157" b="136" overprint="false"/>
 			<size size="212" units="micrometer" isRelative="false"/>
-			<style size="6000" units="micrometer" isRelative="false" style="solid"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
@@ -875,7 +875,7 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
 			</fontDraw>
 			<size size="2646" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -914,7 +914,7 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="102" g="102" b="102" overprint="false"/>
+				<fillColor enabled="true" r="128" g="130" b="133" overprint="false"/>
 			</fontDraw>
 			<size size="2646" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -949,7 +949,7 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="102" g="102" b="102" overprint="false"/>
+				<fillColor enabled="true" r="128" g="130" b="133" overprint="false"/>
 			</fontDraw>
 			<size size="2646" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -984,7 +984,7 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="102" g="102" b="102" overprint="false"/>
+				<fillColor enabled="true" r="128" g="130" b="133" overprint="false"/>
 			</fontDraw>
 			<size size="2646" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -1019,7 +1019,7 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="102" g="102" b="102" overprint="false"/>
+				<fillColor enabled="true" r="128" g="130" b="133" overprint="false"/>
 			</fontDraw>
 			<size size="2646" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">

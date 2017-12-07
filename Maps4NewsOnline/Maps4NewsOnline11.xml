@@ -1263,7 +1263,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr A fr" KindMain="EPS-layers" KindSub="" id="epslayer.generic.66"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr A fr" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="6000" onlyOne="false" lowestIntersectionClass="motorway" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|Fr" id="roads.roadnumber.a.fr.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

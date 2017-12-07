@@ -38,6 +38,142 @@
 		<lineGeneralization size="0" units="meter" isRelative="false"/>
 		<polygonGeneralization size="0" units="meter" isRelative="false"/>
 	</generalization>
+	<layer xsi:type="epsLayer" enabled="true" name="Country Boundary Polygon Vector Layer" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeshapescountries" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Country Boundary Polygon fill" id="boundaries.countries.chloro" KindMain="Boundaries and Area's" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="true">
+				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="1" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="1" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+		<namePosition name="partlyInside"/>
+	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Polygon Vector Layer" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeshapesprovinces" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Province Boundary Polygon fill" id="boundaries.provinces.chloro" KindMain="Boundaries and Area's" KindSub="Provinces" source="Here\Admin\Province.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="true">
+				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="1" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="1" units="points" isRelative="false"/>
+			<boxDraw enabled="true" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="true">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+		<namePosition name="partlyInside"/>
+	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Region Boundary Polygon Vector Layer" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeshapesnamesregions" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Region Boundary Polygon fill" id="boundaries.regions.chloro" KindMain="Boundaries and Area's" KindSub="Regions" source="Here\Admin\Region.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="true">
+				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="1" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="1" units="points" isRelative="false"/>
+			<boxDraw enabled="true" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="true">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+		<namePosition name="partlyInside"/>
+	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="City Boundary Polygon Vector Layer" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeshapesnamescities" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="City  Boundary Polygon fill" id="boundaries.cities.chloro" KindMain="Boundaries and Area's" KindSub="Cities" source="Here\Admin\City.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="true">
+				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="1" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="1" units="points" isRelative="false"/>
+			<boxDraw enabled="true" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="true">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+		<namePosition name="partlyInside"/>
+	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Dig area" KindMain="Unknown" id="epslayer.generic.1" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<polygongroup name="Landphase 0" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase0">
 		<polygonstyle enabled="true" name="Digarea" KindMain="Landuse" KindSub="Digarea" id="landuse.digareas.fill">
@@ -164,7 +300,7 @@
 			</line>
 			<fillColor enabled="true" r="179" g="255" b="127" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="false" alignment="center" capitalMode="as_is" font="nYTFranklin-Medium" relHeight="255" spacing="255" slant="255" underline="false">
+		<textDraw enabled="false" alignment="center" capitalMode="as_is" font="myriadPro-Regular" relHeight="255" spacing="255" slant="255" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -362,6 +498,39 @@
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="Buildings/Runway" KindMain="Unknown" id="epslayer.generic.9" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Buildings" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings" source="OSM\latest\boi.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="212" g="232" b="230" overprint="false"/>
+				<size size="150" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="204" g="153" b="255" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="5" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+		<namePosition name="partlyInside"/>
+	</layer>
 	<polygongroup name="Landphase 8" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase8">
 		<polygonstyle enabled="true" name="Runway" KindMain="Landuse" KindSub="Runways" id="landuse.runways.fill">
 			<criteria>
@@ -379,37 +548,6 @@
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="Waste land" KindMain="Unknown" id="epslayer.generic.10" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Buildings" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings" source="OSM\latest\boi.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-		<polyDraw>
-			<line enabled="false">
-				<color r="226" g="233" b="237" overprint="false"/>
-				<size size="150" units="micrometer" isRelative="false"/>
-				<style size="0" units="kilometer" isRelative="false" style="solid"/>
-			</line>
-			<fillColor enabled="true" r="242" g="250" b="250" overprint="false"/>
-		</polyDraw>
-		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="nYTFranklin-Medium" relHeight="255" spacing="255" slant="255" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="255" g="255" b="255" overprint="false"/>
-					<size size="0" units="kilometer" isRelative="false"/>
-					<style size="0" units="kilometer" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
-			</fontDraw>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="10">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="255" g="255" b="255" overprint="true"/>
-						<size size="0" units="kilometer" isRelative="false"/>
-						<style size="0" units="kilometer" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-	</layer>
 	<polygongroup name="Landphase 9" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase9">
 		<polygonstyle enabled="true" name="waste land" KindMain="Landuse" KindSub="Waste Land" id="landuse.unusedareas.fill">
 			<criteria>
@@ -487,7 +625,6 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
@@ -522,7 +659,6 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
@@ -557,7 +693,6 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
@@ -592,7 +727,6 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
@@ -20107,7 +20241,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="9" units="points" isRelative="false"/>
+				<size size="2293" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -20141,7 +20275,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="8" units="points" isRelative="false"/>
+				<size size="2293" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -20175,7 +20309,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="8" units="points" isRelative="false"/>
+				<size size="2293" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -20205,7 +20339,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="2293" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -20236,7 +20370,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="2293" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -20503,7 +20637,7 @@
 		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Streetnames" KindMain="Unknown" id="epslayer.generic.660" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<streetNamegroup enabled="true" nameMargin="5" maxSyllableDistance="1" nameCompression="0" longNamesFirst="false" abbrAllStanEnd="false" abbreviations="true" textOutside="false" forceAllNames="all" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="false" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="All" prohibitEmptyLineAtStackedNames="true" KindMain="Roads" KindSub="Setting" id="streetnamegroup" languageMode="none">
+	<streetNamegroup enabled="true" nameMargin="5" maxSyllableDistance="1" nameCompression="0" longNamesFirst="false" abbrAllStanEnd="true" abbreviations="true" textOutside="false" forceAllNames="all" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="false" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="All" prohibitEmptyLineAtStackedNames="true" KindMain="Roads" KindSub="Setting" id="streetnamegroup" languageMode="none">
 		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Regular" relHeight="130" spacing="0" slant="10" underline="false" name="Roads not for Car Name" KindMain="Roads" KindSub="Roads not for Car" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.roadnotcars.label">
 			<fontDraw>
 				<line enabled="true">
@@ -20513,7 +20647,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20556,7 +20690,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20583,7 +20717,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20621,7 +20755,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20656,7 +20790,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20691,7 +20825,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20726,7 +20860,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20771,7 +20905,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20795,7 +20929,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -20822,7 +20956,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -21018,7 +21152,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer enabled="true" name="Water_RiverOSM" id="landuse.waters.rivers.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\river.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>

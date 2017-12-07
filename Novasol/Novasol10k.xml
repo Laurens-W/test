@@ -22038,7 +22038,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Afternames" KindMain="Unknown" id="epslayer.generic.665" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>

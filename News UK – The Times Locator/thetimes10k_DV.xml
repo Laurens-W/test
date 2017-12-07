@@ -20942,7 +20942,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Line" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.607"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary Line" KindMain="Boundaries" KindSub="Provinces" id="boundaries.provinces.line.1">

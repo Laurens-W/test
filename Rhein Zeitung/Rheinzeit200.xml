@@ -1624,7 +1624,6 @@
 			<flexSize min="100" max="300"/>
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="straight Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" deduplicateNames="false">
@@ -1689,7 +1688,7 @@
 			<flexSize min="0" max="0"/>
 			<flexSpacing min="0" max="0"/>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Outline" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.2">

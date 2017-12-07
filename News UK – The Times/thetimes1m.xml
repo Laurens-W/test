@@ -138,6 +138,38 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="Urban Area USA" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Urban Area USA" id="landuse.residential.OSM.fill" KindMain="Landuse" KindSub="Urban Area" source="Here\buausa.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="74" g="74" b="74" overprint="false"/>
+				<size size="100" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="230" g="230" b="209" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="helvetica" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+			</fontDraw>
+			<size size="2187" units="micrometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 3" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.9"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Land 4" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.10"/>
@@ -333,7 +365,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Throughway Normal Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.24"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Throughway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -395,7 +427,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="242" g="153" b="242" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="2" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="83" units="micrometer" isRelative="false"/>
@@ -423,7 +455,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="13" g="140" b="140" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="811" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="3" units="micrometer" isRelative="false"/>
@@ -506,7 +538,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="13" g="140" b="140" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="88" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
@@ -529,26 +561,6 @@
 			<color r="153" g="153" b="153" overprint="false"/>
 			<size size="88" units="micrometer" isRelative="false"/>
 			<style size="333" units="micrometer" isRelative="false" style="solid"/>
-			<extension size="0" units="kilometer" isRelative="false"/>
-		</lineDraw>
-	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-		<criteria>
-			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
-			<and>
-				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
-				<and>
-					<equation oper="eq" fieldname="UserPresent" value="Rail:nn"/>
-					<or>
-						<equation oper="neq" fieldname="UserCatPresent" value="Rail"/>
-					</or>
-				</and>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="300" units="micrometer" isRelative="false"/>
-			<style size="40" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>

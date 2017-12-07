@@ -1211,7 +1211,7 @@
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
 	<layer xsi:type="epsLayer" enabled="false" name="rails" KindMain="EPS-layers" KindSub="" id="epslayer.rails" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
 			<and>
@@ -1224,14 +1224,14 @@
 				</and>
 			</and>
 		</criteria>
-		<lineDraw enabled="false">
+		<lineDraw enabled="true">
 			<color r="161" g="161" b="161" overprint="false"/>
-			<size size="347" units="micrometer" isRelative="false"/>
+			<size size="200" units="micrometer" isRelative="false"/>
 			<style size="2987" units="micrometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Fill" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.fill">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
 			<and>
@@ -1244,9 +1244,9 @@
 				</and>
 			</and>
 		</criteria>
-		<lineDraw enabled="false">
+		<lineDraw enabled="true">
 			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="240" units="micrometer" isRelative="false"/>
+			<size size="350" units="micrometer" isRelative="false"/>
 			<style size="2987" units="micrometer" isRelative="false" style="dash5_5"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>

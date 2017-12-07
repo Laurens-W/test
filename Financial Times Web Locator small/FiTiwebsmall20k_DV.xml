@@ -1245,7 +1245,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Boundary Line" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.1">
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Outline Line" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
 			<and>
@@ -1260,11 +1260,10 @@
 		<lineDraw enabled="true">
 			<color r="159" g="157" b="136" overprint="false"/>
 			<size size="212" units="micrometer" isRelative="false"/>
-			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="additional map layers" KindMain="EPS-layers" KindSub="" id="epslayer.bridge&amp;onewaysymbols" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>

@@ -54,7 +54,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand0" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand0" KindMain="Other" KindSub="Extras above land"/>
 	<admiPolygonstyle enabled="true" name="Dim Other Munis" KindMain="Other" KindSub="Dim Other Munis">
 		<criteria>
 			<equation oper="eq" fieldname="Level" value="8192"/>
@@ -86,7 +86,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand1" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand1" KindMain="Other" KindSub="Extras above land"/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="National park" id="landuse.national_park.OSM.fill" KindMain="Landuse" KindSub="National park" source="OSM\latest\landuse\national_park.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -212,7 +212,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand2" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand2" KindMain="Other" KindSub="Extras above land"/>
 	<polygongroup name="Landphase" perDb="false" KindMain="Other" KindSub="Landuse">
 		<polygonstyle enabled="true" name="Urban Area nn" KindMain="Landuse" KindSub="Urban Area">
 			<criteria>
@@ -290,7 +290,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand3" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand3" KindMain="Other" KindSub="Extras above land"/>
 	<polygongroup name="Landphase" perDb="false" KindMain="Other" KindSub="Landuse">
 		<polygonstyle enabled="true" name="Beach Fill" KindMain="Landuse" KindSub="Beaches">
 			<criteria>
@@ -319,7 +319,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand4" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand4" KindMain="Other" KindSub="Extras above land"/>
 	<polygongroup name="Landphase" perDb="false" KindMain="Other" KindSub="Landuse">
 		<polygonstyle enabled="true" name="Industry" KindMain="Landuse" KindSub="Industry">
 			<criteria>
@@ -348,7 +348,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand5" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand5" KindMain="Other" KindSub="Extras above land"/>
 	<polygongroup name="Landphase" perDb="false" KindMain="Other" KindSub="Landuse">
 		<polygonstyle enabled="true" name="Hospital" KindMain="Landuse" KindSub="Hospitals">
 			<criteria>
@@ -390,7 +390,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand6" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand6" KindMain="Other" KindSub="Extras above land"/>
 	<layer enabled="true" name="park" id="landuse.park.OSM.fill" KindMain="Landuse" KindSub="Park / Garden" source="OSM\latest\landuse\park.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -550,7 +550,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand7" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand7" KindMain="Other" KindSub="Extras above land"/>
 	<polygongroup name="Landphase" perDb="false" KindMain="Other" KindSub="Landuse">
 		<polygonstyle enabled="true" name="Glass House" KindMain="Landuse" KindSub="Glass Houses">
 			<criteria>
@@ -579,7 +579,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand8" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand8" KindMain="Other" KindSub="Extras above land"/>
 	<polygongroup name="Landphase" perDb="false" KindMain="Other" KindSub="Landuse">
 		<polygonstyle enabled="true" name="Unused Area Fill" KindMain="Landuse" KindSub="Unused Areas">
 			<criteria>
@@ -595,7 +595,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand9" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand9" KindMain="Other" KindSub="Extras above land"/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="Buildings OSM" id="st_b_1" KindMain="Landuse" KindSub="Special Buildings OSM" source="OSM\latest\buildings.lim" deduplicateNames="false">
 		<polyDraw>
 			<line enabled="false">
@@ -710,7 +710,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLand10" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLand10" KindMain="Other" KindSub="Extras above land"/>
 	<layer enabled="true" name="Waterways_CanalOSM" id="landuse.waters.linear.canals.OSM" KindMain="Water" source="OSM\latest\waterways\canal.lim" KindSub="" xsi:type="lineVectorLayer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<lineDraw enabled="true">
 			<color r="115" g="204" b="204" overprint="false"/>
@@ -1023,7 +1023,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</layer>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterLanduse" KindMain="Other" KindSub="Extras above land"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterLanduse" KindMain="Other" KindSub="Extras above land"/>
 	<layer xsi:type="epsLayer" enabled="true" name="LAAG LIJNEN" KindMain="Layers" KindSub=""/>
 	<patch xsi:type="dbPatch" enabled="true" name="Roundabout Patch" kind="roundabout" KindMain="Special Constructions" KindSub="Roundabout Patches"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Road Access Patch" kind="roadAccess" KindMain="Special Constructions" KindSub="Road Access patches"/>
@@ -2844,7 +2844,7 @@
 			<size size="500" units="micrometer" isRelative="false"/>
 		</asDot>
 	</trafficSigns>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="afterRoads" KindMain="Other" KindSub="Extras above road"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above land" layerId="AfterRoads" KindMain="Other" KindSub="Extras above road"/>
 	<layer xsi:type="epsLayer" enabled="true" name="LAAG GRENZEN" KindMain="Layers" KindSub=""/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="City Outline" KindMain="Boundaries" KindSub="Cities">
 		<criteria>
@@ -6483,7 +6483,6 @@
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 	</userstyle>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="River / Channel Name" overwriteRoadclass="other" KindMain="Water" KindSub="River / Channel Names" namePattern="(.*)">
 		<criteria>
@@ -6513,7 +6512,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Special Building Name" overwriteRoadclass="motorway" KindMain="Landuse" KindSub="Special Buildings" namePattern="">
 		<criteria>
@@ -7136,5 +7135,5 @@
 		<namePosition name="partlyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="LAAG UGN-KWAD" KindMain="Layers" KindSub=""/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above name" layerId="afterNames" KindMain="Other" KindSub="Extras above name"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above name" layerId="AfterNames" KindMain="Other" KindSub="Extras above name"/>
 </mapStyle>

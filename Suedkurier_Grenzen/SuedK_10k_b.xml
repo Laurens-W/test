@@ -2659,9 +2659,21 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="0" overwriteRoadclass="motorway" KindMain="POIs" KindSub="Airport Terminals" namePattern="(.*)" id="pois.airports.symbol">
+	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="0" overwriteRoadclass="motorway" KindMain="POIs" KindSub="Airport Terminals" namePattern="(.*)" id="pois.airports.symbol" deduplicateNames="false" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport terminal"/>
+			<and>
+				<equation oper="eq" fieldname="SubCat" value="0"/>
+				<and>
+					<inset fieldname="Importance">
+						<item value="International"/>
+						<item value="National"/>
+						<item value="Regional"/>
+						<item value="Local"/>
+						<item value="Sublocal"/>
+					</inset>
+				</and>
+			</and>
 		</criteria>
 		<textDraw enabled="false" alignment="downleft" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
@@ -3923,7 +3935,6 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer River / Channel Name" KindMain="EPS_layers" id="epslayer.generic.93"/>
@@ -3955,7 +3966,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer Extra above name" KindMain="EPS_layers" id="epslayer.generic.94"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above name" layerId="AfterNames" KindMain="Landuse" KindSub="Extras above name" id="includelayer.extraabovename"/>

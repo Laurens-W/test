@@ -5378,7 +5378,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Special Building Name" overwriteRoadclass="motorway" KindMain="Landuse" KindSub="Special Buildings" namePattern="">
 		<criteria>
@@ -5448,7 +5448,6 @@
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 	</userstyle>
 	<admistyle enabled="true" name="Country Name" KindMain="Boundaries" KindSub="Countries">
 		<criteria>

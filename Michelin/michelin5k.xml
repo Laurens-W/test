@@ -22977,7 +22977,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Neighbourhood line" KindMain="Boundaries" KindSub="Neighbourhoods" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>

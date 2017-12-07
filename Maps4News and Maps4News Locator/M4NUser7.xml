@@ -168,7 +168,7 @@
 	</chainstyle>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
 	<layer xsi:type="epsLayer" enabled="true" name="roads" KindMain="EPS-layers" KindSub="" id="epslayer.roads"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Motorway Normal Fill Simple Chain Style" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Roadclass" value="Motorway"/>
 			<and>

@@ -2639,7 +2639,6 @@
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="fullyInside"/>
 	</userstyle>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="River / Channel Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="River / Channel Names" id="landuse.waters.rivers.label" deduplicateNames="false">
@@ -2669,6 +2668,6 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 </mapStyle>

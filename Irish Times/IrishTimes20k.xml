@@ -2008,7 +2008,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative boundaries" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundaries" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary Line" KindMain="Boundaries" KindSub="Provinces" id="boundaries.provinces.line.1">

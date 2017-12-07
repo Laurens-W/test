@@ -2828,7 +2828,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative boundary names" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundarynames"/>
 	<userstyle xsi:type="admilinearuserstyle" enabled="true" name="Country Name" KindMain="Boundaries" KindSub="Countries" overwriteRoadclass="highway" namePattern="(.*)" id="boundaries.countries.label">

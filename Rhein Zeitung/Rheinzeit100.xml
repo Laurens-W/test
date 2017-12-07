@@ -2191,7 +2191,6 @@
 			<flexSize min="100" max="300"/>
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="Straight Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas">
@@ -2254,7 +2253,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Country" KindMain="eps lagen" KindSub="" id="epslayer.generic.37"/>

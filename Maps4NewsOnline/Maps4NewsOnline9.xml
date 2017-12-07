@@ -735,7 +735,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="area names" KindMain="EPS-layers" KindSub="" id="epslayer.areanames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Island Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Landuse" KindSub="Islands" id="landuse.islands.label" deduplicateNames="false">

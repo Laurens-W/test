@@ -5266,7 +5266,6 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer River / Channel Name" KindMain="epslayers" id="epslayer.generic.141"/>
@@ -5298,7 +5297,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer After Landuse" KindMain="epslayers" id="epslayer.generic.142"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>

@@ -283,6 +283,9 @@
 				<equation oper="eq" fieldname="Roaduse" value="Car"/>
 				<and>
 					<equation oper="eq" fieldname="Roadtype" value="Motortype"/>
+					<and>
+						<equation oper="eq" fieldname="Roadclass" value="Motorway"/>
+					</and>
 				</and>
 			</and>
 		</criteria>
@@ -291,36 +294,6 @@
 			<size size="350" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="75" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="75" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="0" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>

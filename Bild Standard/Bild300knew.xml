@@ -20804,7 +20804,6 @@
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
 		<namePosition name="onCenterLine"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Big City Name Country Capital Symbol" KindMain="EPS-layers" KindSub="" id="epslayer.generic.16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>

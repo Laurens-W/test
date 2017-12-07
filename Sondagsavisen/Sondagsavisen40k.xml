@@ -2587,7 +2587,6 @@
 			<flexSize min="100" max="300"/>
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="partlyInside"/>
 		<namePosition name="fullyInside"/>
 	</userstyle>

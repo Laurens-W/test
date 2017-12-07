@@ -3116,7 +3116,6 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer River / Channel Name" KindMain="EPS_layers" id="epslayer.generic.89"/>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="River / Channel Name" overwriteRoadclass="local road" KindMain="Water" KindSub="River / Channel Names" namePattern="(.*)" id="landuse.waters.rivers.label">
@@ -3147,7 +3146,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer Extra above name" KindMain="EPS_layers" id="epslayer.generic.90"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above name" layerId="AfterNames" KindMain="Landuse" KindSub="Extras above name" id="includelayer.extraabovename"/>

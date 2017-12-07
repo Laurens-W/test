@@ -55,7 +55,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="Water" KindMain="EPS-layers" KindSub="" id="epslayer.water" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="afterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="AfterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Islands" KindMain="EPS-layers" KindSub="" id="epslayer.islands" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<polygongroup name="Landphase 1" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase1">
 		<polygonstyle enabled="true" name="Island" KindMain="Landuse" KindSub="Islands" id="landuse.islands.fill">
@@ -72,7 +72,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="afterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Forest/park" KindMain="Unknown" id="epslayer.generic.2" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<polygongroup name="Landphase 2" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase2">
 		<polygonstyle enabled="true" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
@@ -102,7 +102,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="afterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Urban area" KindMain="Unknown" id="epslayer.generic.3" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<polygongroup name="Landphase 3" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase3">
 		<polygonstyle enabled="true" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
@@ -150,8 +150,8 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="afterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="afterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="AfterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
 	<polygongroup name="Landphase sea ocean" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphaseseaocean">
 		<polygonstyle enabled="true" name="Water Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.seas.fill">
 			<criteria>
@@ -170,12 +170,12 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="afterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="afterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="afterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="afterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="afterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="afterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="AfterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="AfterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="AfterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
 	<layer xsi:type="epsLayer" enabled="true" name="water small" KindMain="EPS-layers" KindSub="" id="epslayer.water.small"/>
 	<polygongroup name="Landphase11" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase11">
 		<polygonstyle enabled="true" name="Water no Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.noseas.fill">
@@ -201,7 +201,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="EPS-layers" KindSub="" id="epslayer.generic.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="afterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Country Outline" KindMain="Unknown" id="epslayer.generic.5" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary Outline" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
@@ -315,10 +315,10 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="Unknown" id="epslayer.generic.9" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="vectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="vectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="vectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="afterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames"/>
 	<slocgroup maxFillpercentage="15" name="CityNames Group" KindMain="Placenames" KindSub="Placenames POIs" id="pois.placenamesgroup">
 		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
@@ -878,6 +878,6 @@
 		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="After Names" KindMain="Unknown" id="epslayer.generic.12" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="afterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
 	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" KindMain="EPS-layers" KindSub="" id="epslayer.maplayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 </mapStyle>

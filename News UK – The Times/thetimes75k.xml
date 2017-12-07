@@ -130,10 +130,42 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="230" g="230" b="209" overprint="false"/>
+				<fillColor enabled="true" r="240" g="240" b="219" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="Urban Area USA" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Urban Area USA" id="landuse.residential.OSM.fill" KindMain="Landuse" KindSub="Urban Area" source="Here\buausa.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="74" g="74" b="74" overprint="false"/>
+				<size size="100" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="240" g="240" b="219" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="helvetica" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+			</fontDraw>
+			<size size="2187" units="micrometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name=" After Land 3" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.9"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
 	<layer xsi:type="epsLayer" enabled="true" name=" After Land 4" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.10"/>
@@ -238,7 +270,7 @@
 				<fillColor enabled="true" r="217" g="247" b="176" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
-		<polygonstyle enabled="true" name="Golf Course" KindMain="Landuse" KindSub="Golf Courses" id="landuse.golfcourses.fill">
+		<polygonstyle enabled="false" name="Golf Course" KindMain="Landuse" KindSub="Golf Courses" id="landuse.golfcourses.fill">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="Golf course"/>
 			</criteria>
@@ -413,7 +445,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name=" Road Access Patch" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.26"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Road Access Patch" kind="roadAccess" KindMain="Special Constructions" KindSub="Road Access Patches" id="patch.roadaccess"/>
 	<layer xsi:type="epsLayer" enabled="true" name=" Rail Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.27"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
 			<and>
@@ -430,25 +462,8 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Fill" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-		<criteria>
-			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
-			<and>
-				<equation oper="eq" fieldname="UserPresent" value="Rail:nn"/>
-				<or>
-					<equation oper="neq" fieldname="UserCatPresent" value="Rail"/>
-				</or>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="200" units="micrometer" isRelative="false"/>
-			<style size="35" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
-			<extension size="0" units="kilometer" isRelative="false"/>
-		</lineDraw>
-	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Rail Cargo Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.28"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Cargo Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
 			<and>
@@ -463,7 +478,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Rail Secundary Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.29"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Secundary Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.line">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
 			<and>
@@ -537,7 +552,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Minor Road Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.35"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Minor Road Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -602,7 +617,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="242" g="153" b="242" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="2" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="13" units="micrometer" isRelative="false"/>
@@ -644,7 +659,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="242" g="153" b="242" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="2" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="13" units="micrometer" isRelative="false"/>
@@ -689,7 +704,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="242" g="153" b="242" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="2" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="13" units="micrometer" isRelative="false"/>
@@ -723,7 +738,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="13" g="140" b="140" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="811" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="13" units="micrometer" isRelative="false"/>
@@ -861,7 +876,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Motorway Normal Fill" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.46"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill" maxRound="25">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -876,7 +891,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="13" g="140" b="140" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="88" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
@@ -889,7 +904,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name=" Vectorlayer Line" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.49"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="epsLayer" enabled="true" name=" Railway Station Symbol all" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.50"/>
-	<slocstyle enabled="true" name="Railway Station Symbol all" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Railway Station Symbol all" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
 			<and>
@@ -935,7 +950,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Railway Station symbol uk" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.51"/>
-	<slocstyle enabled="true" name="Railway Station symbol uk" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol.uk" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Railway Station symbol uk" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol.uk" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
 			<and>
@@ -983,7 +998,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name=" Grid Layer" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.52"/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
 	<layer xsi:type="epsLayer" enabled="true" name=" Metro Station Symbol all" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.53"/>
-	<slocstyle enabled="true" name="Metro Station Symbol all" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros" deduplicateNames="false" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol all" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros" deduplicateNames="false" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -1035,7 +1050,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Metro Station Symbol S" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.54"/>
-	<slocstyle enabled="true" name="Metro Station Symbol S" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros" deduplicateNames="false" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol S" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros" deduplicateNames="false" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -1083,7 +1098,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name=" After Roads" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.56"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name=" Hospital Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.57"/>
-	<slocstyle enabled="true" name="Hospital Symbol" mergedistance="500" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Hospitals" id="pois.hospitals.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Hospital Symbol" mergedistance="500" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Hospitals" id="pois.hospitals.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Hospital"/>
 			<and>
@@ -1203,7 +1218,7 @@
 		</symbolDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Hospital Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.59"/>
-	<slocstyle enabled="true" name="Hospital Name" mergedistance="500" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Hospitals" id="pois.hospitals.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Hospital Name" mergedistance="500" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Hospitals" id="pois.hospitals.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Hospital"/>
 			<and>
@@ -1250,7 +1265,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Railway Station Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.60"/>
-	<slocstyle enabled="true" name="Railway Station Name" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Railway Station Name" mergedistance="250" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
 			<and>
@@ -19842,7 +19857,7 @@
 		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name=" Golf Course Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.578"/>
-	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Golf Course Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Golf Courses" id="landuse.golfcourses.label" deduplicateNames="true">
+	<userstyle xsi:type="polygonaluserstyle" enabled="false" name="Golf Course Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Golf Courses" id="landuse.golfcourses.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Golf course"/>
 		</criteria>
@@ -20071,7 +20086,7 @@
 				</and>
 			</criteria>
 		</streetNameStyle>
-		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="stagSans-Book" relHeight="100" spacing="0" slant="0" underline="false" name="Minor Road Name" KindMain="Roads" KindSub="Minor Roads" minNameLength="0" minSyllableLength="3" textInside="true" id="roads.minorroads.label">
+		<streetNameStyle enabled="false" alignment="left" capitalMode="as_is" font="stagSans-Book" relHeight="100" spacing="0" slant="0" underline="false" name="Minor Road Name" KindMain="Roads" KindSub="Minor Roads" minNameLength="0" minSyllableLength="3" textInside="true" id="roads.minorroads.label">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>

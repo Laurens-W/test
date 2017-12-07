@@ -712,11 +712,17 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer Airport Terminal Symbol" KindMain="EPS_layers" id="epslayer.generic.24"/>
-	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.symbol">
+	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.symbol" deduplicateNames="false" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport terminal"/>
 			<and>
-				<equation oper="matches" fieldname="Name" value="*flughafen*"/>
+				<equation oper="eq" fieldname="SubCat" value="0"/>
+				<and>
+					<inset fieldname="Importance">
+						<item value="International"/>
+						<item value="Local"/>
+					</inset>
+				</and>
 			</and>
 		</criteria>
 		<textDraw enabled="false" alignment="downleft" capitalMode="as_is" font="helvetica" relHeight="0" spacing="0" slant="0" underline="false">

@@ -21204,7 +21204,6 @@
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
 		<namePosition name="onCenterLine"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="partlyInside"/>
 		<namePosition name="fullyInside"/>
 	</userstyle>

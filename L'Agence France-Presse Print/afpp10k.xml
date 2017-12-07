@@ -2086,7 +2086,6 @@
 			</boxDraw>
 		</textDraw>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="fullyInside"/>
 	</userstyle>
 </mapStyle>

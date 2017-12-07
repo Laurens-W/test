@@ -22333,7 +22333,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Country Outline" KindMain="Unknown" id="epslayer.generic.665" KindSub=""/>
 	<chainstyle enabled="true" name="Country Boundary Line" KindMain="Boundaries" KindSub="Countries">

@@ -2307,7 +2307,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Extra above name" layerId="AfterNames" KindMain="Landuse" KindSub="Extras above name" id="includelayer.extraabovename"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Layeradmiboundaries" KindMain="epslayers" KindSub="" id="epslayer.administrativeboundaries"/>

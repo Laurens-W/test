@@ -21189,7 +21189,6 @@
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
 		<namePosition name="onCenterLine"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="River / Channel Name" KindMain="Unknown" id="epslayer.generic.662" KindSub=""/>

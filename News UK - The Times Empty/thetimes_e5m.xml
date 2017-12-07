@@ -402,7 +402,7 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name="CityNames Group" KindMain="EPS-layers" KindSub="" id="epslayer.cities" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocgroup maxFillpercentage="15" name="CityNames Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
-		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -433,7 +433,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -451,7 +451,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -482,7 +482,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -500,7 +500,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -531,7 +531,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -549,7 +549,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -580,7 +580,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -598,7 +598,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Small City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -629,7 +629,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -647,7 +647,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Small City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -678,7 +678,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -696,7 +696,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -727,7 +727,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -745,7 +745,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Village Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Village Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -776,7 +776,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -794,7 +794,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Small Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -825,7 +825,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -843,7 +843,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small Village Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Small Village Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -874,7 +874,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -892,7 +892,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -923,7 +923,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -941,7 +941,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -972,7 +972,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -990,7 +990,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Smaller than Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Smaller than Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1021,7 +1021,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1039,7 +1039,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Smaller than Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="false" name="Smaller than Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1070,7 +1070,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="false" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1120,6 +1120,75 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
+	</userstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Island Name" KindMain="EPS-layers" KindSub="" id="epslayer.areanames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<userstyle xsi:type="polygonaluserstyle" enabled="false" name="Island Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Islands" id="landuse.islands.label" deduplicateNames="false">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Island"/>
+			<and>
+				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
+			</and>
+		</criteria>
+		<textDraw xsi:type="flexTextDraw" enabled="true" alignment="left" capitalMode="as_is" font="stagSans-Book" relHeight="100" spacing="0" slant="15" underline="false" flexEnabled="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="3" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="2646" units="micrometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="1" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="95" g="95" b="95" overprint="false"/>
+				</shape>
+			</boxDraw>
+			<flexSize min="100" max="200"/>
+			<flexSpacing min="100" max="667"/>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</userstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Lake / Sea Name" KindMain="EPS-layers" KindSub="" id="epslayer.waternames"/>
+	<userstyle xsi:type="wateruserstyle" enabled="false" name="Lake / Sea Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.label" deduplicateNames="false">
+		<criteria>
+			<inset fieldname="Categ">
+				<item value="Sea   ."/>
+				<item value="Ocean"/>
+			</inset>
+			<and>
+				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
+			</and>
+		</criteria>
+		<textDraw xsi:type="flexTextDraw" enabled="true" alignment="left" capitalMode="as_is" font="stagSans-BookItalic" relHeight="100" spacing="0" slant="0" underline="false" flexEnabled="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="1" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="105" g="152" b="169" overprint="false"/>
+			</fontDraw>
+			<size size="2646" units="micrometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="1" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+				</shape>
+			</boxDraw>
+			<flexSize min="100" max="300"/>
+			<flexSpacing min="100" max="667"/>
+		</textDraw>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="After Names" KindMain="Unknown" id="epslayer.generic.666" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>

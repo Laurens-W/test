@@ -3,7 +3,7 @@
 <mapStyle includeBackgrounddatabases="false" scale="300000" fileVersion="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<roadAlgorithm splitKetens="false"/>
 	<nameAlgorithm unplacableEnabled="false" textOnPath="true" unplacableBlockOrder="grid Nr Name" unplacableAbbreviate="false" unplacableWithLines="true" unplacableNumbersUnique="false" lineSpacing="98">
-		<unplacableBlockText xsi:type="textDraw" enabled="false" alignment="downleft" capitalMode="noCaps" font="helvetica" relHeight="140" spacing="50" slant="0" underline="false">
+		<unplacableBlockText xsi:type="textDraw" enabled="false" alignment="downleft" capitalMode="noCaps" font="conduitITCStd-Light" relHeight="140" spacing="50" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -233,7 +233,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -282,7 +282,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -331,7 +331,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -380,7 +380,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -429,7 +429,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -478,7 +478,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -527,7 +527,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -576,7 +576,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -625,7 +625,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -673,7 +673,7 @@
 				<equation oper="neq" fieldname="Name" value="nn"/>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITC-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="130" g="130" b="130" overprint="false"/>
@@ -707,7 +707,7 @@
 				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITC-Bold" relHeight="100" spacing="0" slant="15" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>

@@ -1055,8 +1055,151 @@
 	</chainstyle>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<layer xsi:type="epsLayer" enabled="false" name="rails" KindMain="EPS-layers" KindSub="" id="epslayer.rails" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line">
+	<layer xsi:type="epsLayer" enabled="true" name="rails" KindMain="EPS-layers" KindSub="" id="epslayer.rails" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Tunnel" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.tunnel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserPresent" value="Rail:gs"/>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="200" units="micrometer" isRelative="false"/>
+			<style size="2000" units="micrometer" isRelative="false" style="dash5_5"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Tunnel" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.tunnel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserCatPresent" value="Rail"/>
+					<and>
+						<inset fieldname="UserPresent" negate="true">
+							<item value="Rail:gs"/>
+							<item value="Rail:nn"/>
+							<item value="Rail:tram"/>
+						</inset>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="200" units="micrometer" isRelative="false"/>
+			<style size="2000" units="micrometer" isRelative="false" style="dash5_5"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Tunnel" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.tunnel" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserPresent" value="Rail:nn"/>
+					<or>
+						<equation oper="neq" fieldname="UserCatPresent" value="Rail"/>
+					</or>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="200" units="micrometer" isRelative="false"/>
+			<style size="2000" units="micrometer" isRelative="false" style="dash5_5"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserPresent" value="Rail:gs"/>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="600" units="micrometer" isRelative="false"/>
+			<style size="6000" units="micrometer" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserPresent" value="Rail:gs"/>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="300" units="micrometer" isRelative="false"/>
+			<style size="6000" units="micrometer" isRelative="false" style="dash5_5"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserCatPresent" value="Rail"/>
+					<and>
+						<inset fieldname="UserPresent" negate="true">
+							<item value="Rail:gs"/>
+							<item value="Rail:nn"/>
+							<item value="Rail:tram"/>
+						</inset>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="600" units="micrometer" isRelative="false"/>
+			<style size="7500" units="micrometer" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<and>
+					<equation oper="eq" fieldname="UserCatPresent" value="Rail"/>
+					<and>
+						<inset fieldname="UserPresent" negate="true">
+							<item value="Rail:gs"/>
+							<item value="Rail:nn"/>
+							<item value="Rail:tram"/>
+						</inset>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="300" units="micrometer" isRelative="false"/>
+			<style size="6000" units="micrometer" isRelative="false" style="dash5_5"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
 			<and>
@@ -1072,7 +1215,7 @@
 		<lineDraw enabled="true">
 			<color r="77" g="77" b="77" overprint="false"/>
 			<size size="600" units="micrometer" isRelative="false"/>
-			<style size="667" units="micrometer" isRelative="false" style="solid"/>
+			<style size="7500" units="micrometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
@@ -1103,6 +1246,7 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
+	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois" alwaysOutput="false"/>
 	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport terminal"/>
@@ -1154,6 +1298,52 @@
 			<eps name="20_airtransportation" width="69" height="71" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: -35 -241 35 -169&#xA;%%HiResBoundingBox: -34.8398 -240.8604 34.3525 -169.4019&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 12.5 -225.5 12.5 -225.5&#xA;%AI8_OpenToView: -139.2466 -143.6899 5.4335 1602 922 26 0 0 1751 119 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;0 O&#xA;0 g&#xA;0 R&#xA;0 0 0 0 K&#xA;0 J 0 j 2 w 10 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;-4.30322 -174.209 m&#xA;-4.29443 -169.1089 3.39307 -169.1089 3.3877 -174.3525 C&#xA;3.3877 -195.7563 l&#xA;33.3525 -213.7661 l&#xA;33.3525 -221.6738 l&#xA;3.53174 -211.8589 l&#xA;3.53174 -227.8564 l&#xA;10.4331 -233.248 l&#xA;10.4331 -239.502 l&#xA;-0.206055 -236.1943 l&#xA;-10.8452 -239.502 l&#xA;-10.8452 -233.248 l&#xA;-4.01563 -227.8564 l&#xA;-4.01563 -211.8589 l&#xA;-33.8398 -221.6738 l&#xA;-33.8398 -213.7661 l&#xA;-4.30322 -195.7563 l&#xA;-4.30322 -174.209 l&#xA;b&#xA;U&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
 			<width size="35" units="1/10th millimeter" isRelative="false"/>
 			<height size="35" units="1/10th millimeter" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="false" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Railway station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+			</and>
+		</criteria>
+		<textDraw enabled="false" alignment="downleft" capitalMode="allCaps" font="theSansBold-Plain" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="54" g="54" b="54" overprint="false"/>
+					<size size="0" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
+			</fontDraw>
+			<size size="1660" units="micrometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="130" slocProjection="projectOnCritChains" horizontal="false">
+			<shape shapekind="rectangle">
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
+			</shape>
+			<width size="46" units="1/10th millimeter" isRelative="false"/>
+			<height size="12" units="1/10th millimeter" isRelative="false"/>
 		</symbolDraw>
 		<lineDraw enabled="false">
 			<color r="255" g="255" b="255" overprint="true"/>
@@ -1518,53 +1708,6 @@
 			</lineDraw>
 		</slocstyle>
 	</slocgroup>
-	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois"/>
-	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Railway station"/>
-			<and>
-				<equation oper="neq" fieldname="SubCat" value="1"/>
-			</and>
-		</criteria>
-		<textDraw enabled="false" alignment="downleft" capitalMode="allCaps" font="theSansBold-Plain" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="54" g="54" b="54" overprint="false"/>
-					<size size="0" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
-			</fontDraw>
-			<size size="1660" units="micrometer" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="54" g="54" b="54" overprint="false"/>
-						<size size="0" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="true" extraHeight="130" slocProjection="projectOnCritChains" horizontal="false">
-			<shape shapekind="rectangle">
-				<line enabled="false">
-					<color r="255" g="255" b="255" overprint="true"/>
-					<size size="0" units="kilometer" isRelative="false"/>
-					<style size="0" units="kilometer" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
-			</shape>
-			<width size="46" units="1/10th millimeter" isRelative="false"/>
-			<height size="12" units="1/10th millimeter" isRelative="false"/>
-		</symbolDraw>
-		<lineDraw enabled="false">
-			<color r="255" g="255" b="255" overprint="true"/>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<style size="0" units="kilometer" isRelative="false" style="solid"/>
-		</lineDraw>
-	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="road numbers" KindMain="EPS-layers" KindSub="" id="epslayer.roadnumbers"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr A" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="4000" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries" id="roads.roadnumber.a.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>

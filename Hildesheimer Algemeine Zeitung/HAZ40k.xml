@@ -888,7 +888,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -937,13 +937,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="550" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.serviceroad.line">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="675" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Restriction" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.restriction.line">
 				<criteria>
@@ -1034,7 +1034,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1058,7 +1058,7 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="850" units="micrometer" isRelative="false"/>
+			<size size="700" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.oneway.fill">
@@ -1077,13 +1077,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="510" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="638" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.construction.fill">
 				<criteria>
@@ -1129,13 +1129,13 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Ebene Hauptstraßen" KindMain="EPS layers" KindSub="" id="epslayer.generic.10"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.line">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{mt}"/>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="135" g="136" b="138" overprint="false"/>
-			<size size="900" units="micrometer" isRelative="false"/>
+			<size size="650" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="25" units="micrometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.construction.line">
@@ -1160,13 +1160,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="550" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.serviceroad.line">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="675" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Restriction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.restriction.line">
 				<criteria>
@@ -1188,13 +1188,13 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.line">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{hw}"/>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="135" g="136" b="138" overprint="false"/>
-			<size size="900" units="micrometer" isRelative="false"/>
+			<size size="650" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="75" units="micrometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.construction.line">
@@ -1219,13 +1219,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="602" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.serviceroad.line">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="675" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Restriction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.restriction.line">
 				<criteria>
@@ -1247,13 +1247,13 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.line">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{th}"/>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="135" g="136" b="138" overprint="false"/>
-			<size size="750" units="micrometer" isRelative="false"/>
+			<size size="650" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="75" units="micrometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.construction.line">
@@ -1278,13 +1278,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="503" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.serviceroad.line">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="562" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Restriction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.restriction.line">
 				<criteria>
@@ -1306,7 +1306,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1355,13 +1355,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="503" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.serviceroad.line">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="562" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Restriction" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.restriction.line">
 				<criteria>
@@ -1383,7 +1383,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1432,13 +1432,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="503" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.serviceroad.line">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="562" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Restriction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.restriction.line">
 				<criteria>
@@ -1460,7 +1460,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1512,13 +1512,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="602" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.line">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="675" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Restriction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.restriction.line">
 				<criteria>
@@ -1540,7 +1540,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1581,13 +1581,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="550" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.line">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="675" units="micrometer" isRelative="false"/>
+				<size size="650" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Restriction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.restriction.line">
 				<criteria>
@@ -1644,13 +1644,13 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{mt}"/>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="0" b="0" overprint="false"/>
-			<size size="850" units="micrometer" isRelative="false"/>
+			<size size="500" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.oneway.fill">
@@ -1669,13 +1669,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="510" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="638" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.construction.fill">
 				<criteria>
@@ -1685,13 +1685,13 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{hw}"/>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="179" b="0" overprint="false"/>
-			<size size="750" units="micrometer" isRelative="false"/>
+			<size size="500" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.oneway.fill">
@@ -1710,13 +1710,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="450" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="562" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.construction.fill">
 				<criteria>
@@ -1726,13 +1726,13 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{th}"/>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="179" b="0" overprint="false"/>
-			<size size="600" units="micrometer" isRelative="false"/>
+			<size size="500" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.oneway.fill">
@@ -1751,13 +1751,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="360" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="450" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.construction.fill">
 				<criteria>
@@ -1767,7 +1767,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1810,13 +1810,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="360" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="450" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.construction.fill">
 				<criteria>
@@ -1826,7 +1826,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1869,13 +1869,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="360" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="450" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.construction.fill">
 				<criteria>
@@ -1885,7 +1885,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1931,13 +1931,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="450" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="562" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.fill">
 				<criteria>
@@ -1947,7 +1947,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1982,13 +1982,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="510" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="638" units="micrometer" isRelative="false"/>
+				<size size="500" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.fill">
 				<criteria>
@@ -3871,7 +3871,6 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>

@@ -87,7 +87,7 @@
 				</inset>
 			</criteria>
 			<polyDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="13" g="140" b="140" overprint="false"/>
 					<size size="88" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
@@ -160,7 +160,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.17"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Motorway Normal Fill" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.18"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -175,7 +175,7 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="242" g="153" b="242" overprint="false"/>
+			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="50" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>

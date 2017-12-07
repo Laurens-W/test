@@ -166,7 +166,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Country Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.22"/>
-	<userstyle xsi:type="polygonaluserstyle" enabled="false" name="Country Name" KindMain="Boundaries" KindSub="Countries" overwriteRoadclass="other" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="false">
+	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Country Name" KindMain="Boundaries" KindSub="Countries" overwriteRoadclass="other" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Country boundary"/>
 			<and>
@@ -191,6 +191,40 @@
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="false" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</userstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Lake / Sea Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.23"/>
+	<userstyle xsi:type="wateruserstyle" enabled="true" name="Lake / Sea Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.label" deduplicateNames="false">
+		<criteria>
+			<inset fieldname="Categ">
+				<item value="Sea   ."/>
+				<item value="Ocean"/>
+			</inset>
+			<and>
+				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="stagSans-BookItalic" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="3" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="105" g="152" b="169" overprint="false"/>
+			</fontDraw>
+			<size size="2646" units="micrometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="false"/>
+						<size size="1" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
 				</shape>
 			</boxDraw>
 		</textDraw>

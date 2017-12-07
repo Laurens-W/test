@@ -1228,7 +1228,6 @@
 			<flexSize min="100" max="200"/>
 			<flexSpacing min="100" max="667"/>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>

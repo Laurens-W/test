@@ -3419,7 +3419,7 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
-		<namePosition name="curvedOnContour"/>
+		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer MapLayout" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.45" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 </mapStyle>
