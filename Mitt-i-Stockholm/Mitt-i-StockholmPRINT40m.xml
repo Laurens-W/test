@@ -166,7 +166,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Highway" KindMain="EPS-layers" KindSub="" id="epslayer.roads" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" maxRound="25" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -188,12 +188,6 @@
 			<size size="50" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="3" units="micrometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.line">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<style size="20" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="Unknown" id="epslayer.generic.59" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>

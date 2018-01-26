@@ -171,7 +171,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Small  Land Boundary Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Small  Land Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Small  Land Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>
@@ -340,7 +340,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon" KindMain="EPS-layers" KindSub="" id="epslayer.generic.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Polygon" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Polygon" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>
@@ -510,6 +510,37 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Urban Area USA" id="landuse.residentials.fill" KindMain="Landuse" KindSub="Urban Area" source="Here\buausa.lim" namePattern="(.*)" deduplicateNames="false">
+		<polyDraw>
+			<line enabled="false">
+				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="0" units="kilometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="224" g="235" b="228" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="courier" relHeight="255" spacing="255" slant="255" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+			</fontDraw>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+	</layer>
 	<layer enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3" xsi:type="includeFileLayer"/>
 	<polygongroup name="Landphase 4" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase4">
 		<polygonstyle enabled="true" name="Dune" KindMain="Landuse" KindSub="Dunes" id="landuse.dunes">
@@ -1815,7 +1846,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="subway line" KindMain="Unknown" id="epslayer.generic.49" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Metro Lines" KindMain="Unknown" id="epslayer.generic.51" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="lineVectorLayer" enabled="true" name="subway line" id="railways.subway.OSM.line" KindMain="Rails" KindSub="Subway" source="osm\latest\subway.lim">
 		<lineDraw enabled="true">
 			<color r="150" g="158" b="171" overprint="false"/>
@@ -1823,6 +1854,21 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Tram Lines" KindMain="Unknown" id="epslayer.generic.51" KindSub="" alwaysOutput="false"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Tramrail Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Tramrails" id="railways.tram.OSM.line" maxRound="25">
+		<criteria>
+			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
+			<and>
+				<equation oper="eq" fieldname="UserPresent" value="Rail:tram"/>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="173" g="173" b="173" overprint="false"/>
+			<size size="500" units="micrometer" isRelative="false"/>
+			<style size="12000" units="micrometer" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Tramrail Tunnel" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Tramrails" id="railways.tram.OSM.label">
 		<criteria>
 			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1837,7 +1883,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Cargo Tunnel" KindMain="Unknown" id="epslayer.generic.49" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Railway Lines" KindMain="Unknown" id="epslayer.generic.49" KindSub="" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Tunnel" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.tunnel">
 		<criteria>
 			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1855,7 +1901,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Secundary Tunnel" KindMain="Unknown" id="epslayer.generic.50" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Tunnel" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.tunnel">
 		<criteria>
 			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1880,7 +1925,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Tunnel" KindMain="Unknown" id="epslayer.generic.51" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Tunnel" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.tunnel">
 		<criteria>
 			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1901,22 +1945,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Tramrail Outline" KindMain="Unknown" id="epslayer.generic.51" KindSub=""/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Tramrail Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Tramrails" id="railways.tram.OSM.line">
-		<criteria>
-			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
-			<and>
-				<equation oper="eq" fieldname="UserPresent" value="Rail:tram"/>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="173" g="173" b="173" overprint="false"/>
-			<size size="500" units="micrometer" isRelative="false"/>
-			<style size="12000" units="micrometer" isRelative="false" style="solid"/>
-			<extension size="0" units="kilometer" isRelative="false"/>
-		</lineDraw>
-	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Cargo Outline" KindMain="Unknown" id="epslayer.generic.52" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1934,7 +1962,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Cargo Fill" KindMain="Unknown" id="epslayer.generic.53" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Fill" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.fill">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1952,7 +1979,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Secundary Outline" KindMain="Unknown" id="epslayer.generic.54" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.line">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1977,7 +2003,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Secundary Fill" KindMain="Unknown" id="epslayer.generic.55" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Fill" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
@@ -2002,7 +2027,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Outline" KindMain="Unknown" id="epslayer.generic.56" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Outline" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
@@ -2023,7 +2047,6 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Fill" KindMain="Unknown" id="epslayer.generic.57" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Fill" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
@@ -2184,7 +2207,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon Line" KindMain="EPS-layers" KindSub="" id="epslayer.generic.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Polygon Line" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Polygon Line" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="true">
 				<color r="0" g="0" b="0" overprint="false"/>
@@ -2238,7 +2261,40 @@
 	</chainstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Symbol" KindMain="Unknown" id="epslayer.generic.61" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Country-Land-Pays-País-Land polygons" KindMain="EPS-layers" id="epslayer.administrativeboundaries" KindSub="" alwaysOutput="false"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Country boundaries" id="boundaries.countries.line" KindMain="Admin" source="Here\Admin\Country.lim" namePattern="(.*)" deduplicateNames="false" KindSub="">
+		<polyDraw>
+			<line enabled="true">
+				<color r="59" g="85" b="166" overprint="false"/>
+				<size size="3" units="1/10th millimeter" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="false" r="59" g="85" b="166" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="59" g="85" b="166" overprint="false"/>
+			</fontDraw>
+			<size size="5" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="true">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="1" units="points" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Railway Stations" KindMain="Unknown" id="epslayer.generic.61" KindSub="" alwaysOutput="false"/>
 	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="500" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
@@ -2329,7 +2385,6 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Railway Station name" KindMain="Unknown" id="epslayer.generic.61" KindSub=""/>
 	<slocstyle enabled="true" name="Railway Station name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
@@ -2402,6 +2457,11 @@
 				</shape>
 			</boxDraw>
 		</textDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
 	</layer>
 	<layer enabled="true" name="Airport Terminal" id="epslayer.pois.symbol" KindMain="POIs" KindSub="" xsi:type="epsLayer"/>
 	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="500" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.symbol" deduplicateNames="false">
@@ -2494,7 +2554,94 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol Name" KindMain="Unknown" id="epslayer.generic.65" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="S-Train Stations" KindMain="Unknown" id="epslayer.generic.65" KindSub="" alwaysOutput="false"/>
+	<slocstyle enabled="true" name="Metro Station symbol ger s" mergedistance="100" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="matches" fieldname="Name" value="S-Bahn*"/>
+				<and>
+					<equation oper="eq" fieldname="SubCat" value="0"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="false" alignment="center" capitalMode="as_is" font="gothamXNarrow-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="11" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="100" slocProjection="undef" horizontal="true">
+			<svg xsi:type="symbolBase" name="bildsbahn" width="14" height="14" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;&#xA;  viewBox=&quot;0 0 14.3153992 14.3155003&quot; style=&quot;enable-background:new 0 0 14.3153992 14.3155003;&quot; xml:space=&quot;preserve&quot;&gt;&#xA; &lt;path style=&quot;fill:#0F141F;&quot; d=&quot;M14.3153992,7.1573h-0.999999c0-3.3950999-2.7637005-6.1573-6.1601925-6.1573&#xA;  C3.7612076,1,1,3.7622001,1,7.1573H0C0,3.211,3.2098999,0,7.1552076,0C11.1034994,0,14.3153992,3.211,14.3153992,7.1573z&quot;/&gt;&#xA; &lt;path style=&quot;fill:#0F141F;&quot; d=&quot;M7.1552076,14.3155003C3.2098999,14.3155003,0,11.1044998,0,7.1573h1&#xA;  c0,3.3955002,2.7612076,6.1582003,6.1552076,6.1582003c3.396492,0,6.1601925-2.7627001,6.1601925-6.1582003h0.999999&#xA;  C14.3153992,11.1044998,11.1034994,14.3155003,7.1552076,14.3155003z&quot;/&gt;&#xA;  &lt;path style=&quot;fill:#0F141F;&quot; d=&quot;M4.5995998,10.2530003l0.9131002-1.1866007&#xA;   c0.3427,0.3301001,0.8563995,0.8321009,1.5292997,0.8321009C7.6015,9.8985004,7.9326,9.5332003,7.9326,9.0771999&#xA;   c0-0.3535004-0.1826-0.6280003-1.085-1.1641002C5.6385999,7.1939001,4.9305997,6.5664001,4.9305997,5.4478002V5.4247999&#xA;   c0-1.3466001,0.9815001-2.2596998,2.4082003-2.2596998c0.6845994,0,1.5175996,0.2508998,2.1572995,0.9242997L8.5605001,5.2652001&#xA;   C8.2743998,4.9570999,7.8299999,4.5801001,7.2704997,4.5801001c-0.4570999,0-0.7988997,0.2739-0.7988997,0.6963&#xA;   c0,0.3768997,0.1826997,0.6508999,1.2890997,1.3354001c1.1299005,0.6963,1.7128997,1.3125,1.7128997,2.3745995v0.0223999&#xA;   c0,1.3701-1.0614996,2.3057003-2.4091997,2.3057003C6.2655997,11.3144999,5.3866997,11.0410004,4.5995998,10.2530003z&quot;/&gt;&#xA;&lt;/svg&gt;"/>
+			<eps name="bildsbahn" width="14" height="14" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 297 -403 312 -388&#xA;%%HiResBoundingBox: 297.5518 -402.3311 311.8672 -388.0156&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 305.0518 -395.5156 305.0518 -395.5156&#xA;%AI8_OpenToView: 267.6677 -357.6677 13.6034 930 924 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0.824219 0.734375 0.578125 0.765625 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;311.8672 -395.1729 m&#xA;310.8672 -395.1729 L&#xA;310.8672 -391.7778 308.1035 -389.0156 304.707 -389.0156 c&#xA;301.313 -389.0156 298.5518 -391.7778 298.5518 -395.1729 C&#xA;297.5518 -395.1729 L&#xA;297.5518 -391.2266 300.7617 -388.0156 304.707 -388.0156 c&#xA;308.6553 -388.0156 311.8672 -391.2266 311.8672 -395.1729 C&#xA;f&#xA;%Plot f&#xA;304.707 -402.3311 m&#xA;300.7617 -402.3311 297.5518 -399.1201 297.5518 -395.1729 C&#xA;298.5518 -395.1729 L&#xA;298.5518 -398.5684 301.313 -401.3311 304.707 -401.3311 c&#xA;308.1035 -401.3311 310.8672 -398.5684 310.8672 -395.1729 C&#xA;311.8672 -395.1729 L&#xA;311.8672 -399.1201 308.6553 -402.3311 304.707 -402.3311 C&#xA;f&#xA;u&#xA;*u&#xA;%Plot f&#xA;302.1514 -398.2686 m&#xA;303.0645 -397.082 L&#xA;303.4072 -397.4121 303.9209 -397.9141 304.5938 -397.9141 c&#xA;305.1533 -397.9141 305.4844 -397.5488 305.4844 -397.0928 c&#xA;305.4844 -396.7393 305.3018 -396.4648 304.3994 -395.9287 c&#xA;303.1904 -395.2095 302.4824 -394.582 302.4824 -393.4634 C&#xA;302.4824 -393.4404 L&#xA;302.4824 -392.0938 303.4639 -391.1807 304.8906 -391.1807 c&#xA;305.5752 -391.1807 306.4082 -391.4316 307.0479 -392.105 C&#xA;306.1123 -393.2808 L&#xA;305.8262 -392.9727 305.3818 -392.5957 304.8223 -392.5957 c&#xA;304.3652 -392.5957 304.0234 -392.8696 304.0234 -393.292 c&#xA;304.0234 -393.6689 304.2061 -393.9429 305.3125 -394.6274 c&#xA;306.4424 -395.3237 307.0254 -395.9399 307.0254 -397.002 C&#xA;307.0254 -397.0244 L&#xA;307.0254 -398.3945 305.9639 -399.3301 304.6162 -399.3301 c&#xA;303.8174 -399.3301 302.9385 -399.0566 302.1514 -398.2686 C&#xA;f&#xA;*U&#xA;U&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="49" units="1/10th millimeter" isRelative="false"/>
+			<height size="49" units="1/10th millimeter" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="true" name="Metro Station Name ger s" mergedistance="100" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="eq" fieldname="SubCat" value="0"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="S-Bahn*"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="gothamXNarrow-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+			</fontDraw>
+			<size size="11" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="false" extraHeight="100" slocProjection="undef" horizontal="true">
+			<svg xsi:type="symbolBase" name="bildubahn" width="14" height="14" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;&#xA;  viewBox=&quot;0 0 13.6806993 13.6816998&quot; style=&quot;enable-background:new 0 0 13.6806993 13.6816998;&quot; xml:space=&quot;preserve&quot;&gt;&#xA;  &lt;path style=&quot;fill:#0F141F;&quot; d=&quot;M13.6806993,13.6816998H0V0h13.6806993V13.6816998z M1,12.6816998h11.6806993V1H1V12.6816998z&quot;/&gt;&#xA;   &lt;path style=&quot;fill:#0F141F;&quot; d=&quot;M4.2939997,8.1778002v-5.25h1.5293002v5.3299999&#xA;    c0,0.9238997,0.3993998,1.3575001,1.0155997,1.3575001s1.0166078-0.4218998,1.0166078-1.3462v-5.3413h1.517592v5.2386999&#xA;    c0,1.9517002-1.0273991,2.8647995-2.5449996,2.8647995C5.3213,11.0312996,4.2939997,10.1064997,4.2939997,8.1778002z&quot;/&gt;&#xA;&lt;/svg&gt;"/>
+			<eps name="bildubahn" width="14" height="14" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 297 -402 312 -388&#xA;%%HiResBoundingBox: 297.4365 -401.8555 311.1172 -388.1738&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 304.9365 -395.6738 304.9365 -395.6738&#xA;%AI8_OpenToView: 280.2482 -364.8646 15.6032 930 924 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;*u&#xA;0 O&#xA;0.824219 0.734375 0.578125 0.765625 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;311.1172 -401.8555 m&#xA;297.4365 -401.8555 L&#xA;297.4365 -388.1738 L&#xA;311.1172 -388.1738 L&#xA;311.1172 -401.8555 L&#xA;f&#xA;1 D&#xA;%Plot f&#xA;298.4365 -400.8555 m&#xA;310.1172 -400.8555 L&#xA;310.1172 -389.1738 L&#xA;298.4365 -389.1738 L&#xA;298.4365 -400.8555 L&#xA;f&#xA;*U&#xA;u&#xA;*u&#xA;0 D&#xA;%Plot f&#xA;301.7305 -396.3516 m&#xA;301.7305 -391.1016 L&#xA;303.2598 -391.1016 L&#xA;303.2598 -396.4316 L&#xA;303.2598 -397.3555 303.6592 -397.7891 304.2754 -397.7891 c&#xA;304.8916 -397.7891 305.292 -397.3672 305.292 -396.4429 C&#xA;305.292 -391.1016 L&#xA;306.8096 -391.1016 L&#xA;306.8096 -396.3403 L&#xA;306.8096 -398.292 305.7822 -399.2051 304.2646 -399.2051 c&#xA;302.7578 -399.2051 301.7305 -398.2803 301.7305 -396.3516 C&#xA;f&#xA;*U&#xA;U&#xA;U&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="49" units="1/10th millimeter" isRelative="false"/>
+			<height size="49" units="1/10th millimeter" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Metro Stations" KindMain="Unknown" id="epslayer.generic.65" KindSub="" alwaysOutput="false"/>
 	<slocstyle enabled="true" name="Metro Station Symbol Name" mergedistance="100" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2547,7 +2694,6 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station symbol ger u" KindMain="Unknown" id="epslayer.generic.65" KindSub=""/>
 	<slocstyle enabled="true" name="Metro Station symbol ger u" mergedistance="100" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2591,17 +2737,13 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name ger u or s" KindMain="Unknown" id="epslayer.generic.65" KindSub=""/>
-	<slocstyle enabled="true" name="Metro Station Name ger u or s" mergedistance="100" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
+	<slocstyle enabled="true" name="Metro Station Name ger u" mergedistance="100" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
 				<equation oper="eq" fieldname="SubCat" value="0"/>
 				<and>
 					<equation oper="matches" fieldname="Name" value="U-Bahn*"/>
-					<or>
-						<equation oper="matches" fieldname="Name" value="S-Bahn*"/>
-					</or>
 				</and>
 			</and>
 		</criteria>
@@ -2638,51 +2780,6 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station symbol ger s" KindMain="Unknown" id="epslayer.generic.65" KindSub=""/>
-	<slocstyle enabled="true" name="Metro Station symbol ger s" mergedistance="100" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Metro station"/>
-			<and>
-				<equation oper="matches" fieldname="Name" value="S-Bahn*"/>
-				<and>
-					<equation oper="eq" fieldname="SubCat" value="0"/>
-				</and>
-			</and>
-		</criteria>
-		<textDraw enabled="false" alignment="center" capitalMode="as_is" font="gothamXNarrow-Bold" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="255" g="255" b="255" overprint="false"/>
-					<size size="2" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
-			</fontDraw>
-			<size size="11" units="points" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="54" g="54" b="54" overprint="false"/>
-						<size size="0" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="true" extraHeight="100" slocProjection="undef" horizontal="true">
-			<svg xsi:type="symbolBase" name="bildsbahn" width="14" height="14" data="&lt;svg version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot;&#xA;  viewBox=&quot;0 0 14.3153992 14.3155003&quot; style=&quot;enable-background:new 0 0 14.3153992 14.3155003;&quot; xml:space=&quot;preserve&quot;&gt;&#xA; &lt;path style=&quot;fill:#0F141F;&quot; d=&quot;M14.3153992,7.1573h-0.999999c0-3.3950999-2.7637005-6.1573-6.1601925-6.1573&#xA;  C3.7612076,1,1,3.7622001,1,7.1573H0C0,3.211,3.2098999,0,7.1552076,0C11.1034994,0,14.3153992,3.211,14.3153992,7.1573z&quot;/&gt;&#xA; &lt;path style=&quot;fill:#0F141F;&quot; d=&quot;M7.1552076,14.3155003C3.2098999,14.3155003,0,11.1044998,0,7.1573h1&#xA;  c0,3.3955002,2.7612076,6.1582003,6.1552076,6.1582003c3.396492,0,6.1601925-2.7627001,6.1601925-6.1582003h0.999999&#xA;  C14.3153992,11.1044998,11.1034994,14.3155003,7.1552076,14.3155003z&quot;/&gt;&#xA;  &lt;path style=&quot;fill:#0F141F;&quot; d=&quot;M4.5995998,10.2530003l0.9131002-1.1866007&#xA;   c0.3427,0.3301001,0.8563995,0.8321009,1.5292997,0.8321009C7.6015,9.8985004,7.9326,9.5332003,7.9326,9.0771999&#xA;   c0-0.3535004-0.1826-0.6280003-1.085-1.1641002C5.6385999,7.1939001,4.9305997,6.5664001,4.9305997,5.4478002V5.4247999&#xA;   c0-1.3466001,0.9815001-2.2596998,2.4082003-2.2596998c0.6845994,0,1.5175996,0.2508998,2.1572995,0.9242997L8.5605001,5.2652001&#xA;   C8.2743998,4.9570999,7.8299999,4.5801001,7.2704997,4.5801001c-0.4570999,0-0.7988997,0.2739-0.7988997,0.6963&#xA;   c0,0.3768997,0.1826997,0.6508999,1.2890997,1.3354001c1.1299005,0.6963,1.7128997,1.3125,1.7128997,2.3745995v0.0223999&#xA;   c0,1.3701-1.0614996,2.3057003-2.4091997,2.3057003C6.2655997,11.3144999,5.3866997,11.0410004,4.5995998,10.2530003z&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-			<eps name="bildsbahn" width="14" height="14" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 297 -403 312 -388&#xA;%%HiResBoundingBox: 297.5518 -402.3311 311.8672 -388.0156&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 305.0518 -395.5156 305.0518 -395.5156&#xA;%AI8_OpenToView: 267.6677 -357.6677 13.6034 930 924 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0.824219 0.734375 0.578125 0.765625 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;311.8672 -395.1729 m&#xA;310.8672 -395.1729 L&#xA;310.8672 -391.7778 308.1035 -389.0156 304.707 -389.0156 c&#xA;301.313 -389.0156 298.5518 -391.7778 298.5518 -395.1729 C&#xA;297.5518 -395.1729 L&#xA;297.5518 -391.2266 300.7617 -388.0156 304.707 -388.0156 c&#xA;308.6553 -388.0156 311.8672 -391.2266 311.8672 -395.1729 C&#xA;f&#xA;%Plot f&#xA;304.707 -402.3311 m&#xA;300.7617 -402.3311 297.5518 -399.1201 297.5518 -395.1729 C&#xA;298.5518 -395.1729 L&#xA;298.5518 -398.5684 301.313 -401.3311 304.707 -401.3311 c&#xA;308.1035 -401.3311 310.8672 -398.5684 310.8672 -395.1729 C&#xA;311.8672 -395.1729 L&#xA;311.8672 -399.1201 308.6553 -402.3311 304.707 -402.3311 C&#xA;f&#xA;u&#xA;*u&#xA;%Plot f&#xA;302.1514 -398.2686 m&#xA;303.0645 -397.082 L&#xA;303.4072 -397.4121 303.9209 -397.9141 304.5938 -397.9141 c&#xA;305.1533 -397.9141 305.4844 -397.5488 305.4844 -397.0928 c&#xA;305.4844 -396.7393 305.3018 -396.4648 304.3994 -395.9287 c&#xA;303.1904 -395.2095 302.4824 -394.582 302.4824 -393.4634 C&#xA;302.4824 -393.4404 L&#xA;302.4824 -392.0938 303.4639 -391.1807 304.8906 -391.1807 c&#xA;305.5752 -391.1807 306.4082 -391.4316 307.0479 -392.105 C&#xA;306.1123 -393.2808 L&#xA;305.8262 -392.9727 305.3818 -392.5957 304.8223 -392.5957 c&#xA;304.3652 -392.5957 304.0234 -392.8696 304.0234 -393.292 c&#xA;304.0234 -393.6689 304.2061 -393.9429 305.3125 -394.6274 c&#xA;306.4424 -395.3237 307.0254 -395.9399 307.0254 -397.002 C&#xA;307.0254 -397.0244 L&#xA;307.0254 -398.3945 305.9639 -399.3301 304.6162 -399.3301 c&#xA;303.8174 -399.3301 302.9385 -399.0566 302.1514 -398.2686 C&#xA;f&#xA;*U&#xA;U&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
-			<width size="49" units="1/10th millimeter" isRelative="false"/>
-			<height size="49" units="1/10th millimeter" isRelative="false"/>
-		</symbolDraw>
-		<lineDraw enabled="false">
-			<color r="255" g="255" b="255" overprint="true"/>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<style size="0" units="kilometer" isRelative="false" style="solid"/>
-		</lineDraw>
-	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name s-tog-" KindMain="Unknown" id="epslayer.generic.65" KindSub=""/>
 	<slocstyle enabled="true" name="Metro Station Name s-tog-" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-tog-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -22243,7 +22340,7 @@
 		<namePosition name="fullyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Polygon Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Polygon Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>

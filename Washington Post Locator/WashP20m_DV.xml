@@ -320,8 +320,8 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="cities" KindMain="EPS-layers" KindSub="" id="epslayer.cities"/>
-	<slocgroup maxFillpercentage="7" name="CityNames Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
-		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false">
+	<slocgroup maxFillpercentage="7" name="City Names Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
+		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>

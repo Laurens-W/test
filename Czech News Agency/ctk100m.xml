@@ -132,7 +132,8 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="EPS-layers" KindSub="" id="epslayer.cities"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Boundary Outline" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line">
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Country Outline" KindMain="Unknown" id="epslayer.generic.665" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Line" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
 			<and>

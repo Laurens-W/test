@@ -22160,7 +22160,7 @@
 		<namePosition name="fullyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Streetnames" KindMain="Unknown" id="epslayer.generic.660" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<streetNamegroup enabled="true" nameMargin="5" maxSyllableDistance="0" nameCompression="0" longNamesFirst="false" abbrAllStanEnd="true" abbreviations="true" textOutside="false" forceAllNames="not" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="false" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="All" prohibitEmptyLineAtStackedNames="false" KindMain="Roads" KindSub="Setting" id="streetnamegroup" languageMode="none">
+	<streetNamegroup enabled="true" nameMargin="5" maxSyllableDistance="0" nameCompression="0" longNamesFirst="false" abbrAllStanEnd="false" abbreviations="true" textOutside="false" forceAllNames="not" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="false" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="All" prohibitEmptyLineAtStackedNames="false" KindMain="Roads" KindSub="Setting" id="streetnamegroup" languageMode="none">
 		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Regular" relHeight="100" spacing="0" slant="10" underline="false" name="Throughway Name" KindMain="Roads" KindSub="Throughways" minNameLength="0" minSyllableLength="3" textInside="true" id="roads.throughways.label">
 			<fontDraw>
 				<line enabled="false">
@@ -22314,7 +22314,7 @@
 			</line>
 			<fillColor enabled="false" r="179" g="255" b="255" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -22346,7 +22346,7 @@
 			</line>
 			<fillColor enabled="false" r="179" g="255" b="255" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -22378,7 +22378,7 @@
 			</line>
 			<fillColor enabled="false" r="179" g="255" b="255" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>

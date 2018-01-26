@@ -3,7 +3,7 @@
 <mapStyle includeBackgrounddatabases="false" scale="300000" fileVersion="2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<roadAlgorithm splitKetens="false"/>
 	<nameAlgorithm unplacableEnabled="false" textOnPath="true" unplacableBlockOrder="grid Nr Name" unplacableAbbreviate="false" unplacableWithLines="true" unplacableNumbersUnique="false" lineSpacing="98">
-		<unplacableBlockText xsi:type="textDraw" enabled="false" alignment="downleft" capitalMode="noCaps" font="conduitITCStd-Light" relHeight="140" spacing="50" slant="0" underline="false">
+		<unplacableBlockText xsi:type="textDraw" enabled="false" alignment="downleft" capitalMode="noCaps" font="times-Roman" relHeight="140" spacing="50" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -12,7 +12,7 @@
 				</line>
 				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
 			</fontDraw>
-			<size size="100" units="micrometer" isRelative="false"/>
+			<size size="2646" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -38,7 +38,6 @@
 		<lineGeneralization size="0" units="meter" isRelative="true"/>
 		<polygonGeneralization size="0" units="meter" isRelative="true"/>
 	</generalization>
-	<layer xsi:type="epsLayer" enabled="true" name="Digarea" KindMain="EPS-layers" KindSub="" id="epslayer.background" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<polygongroup name="Landphase 0" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase0">
 		<polygonstyle enabled="true" name="Digarea" KindMain="Landuse" KindSub="Digarea" id="landuse.digareas.fill">
 			<criteria>
@@ -50,31 +49,13 @@
 					<size size="0" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="240" g="245" b="219" overprint="false"/>
+				<fillColor enabled="true" r="255" g="242" b="214" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Water" KindMain="EPS-layers" KindSub="" id="epslayer.water" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<polygongroup name="Landphase sea ocean" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphaseseaocean">
-		<polygonstyle enabled="true" name="Water Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.seas.fill">
-			<criteria>
-				<inset fieldname="Categ">
-					<item value="Sea   ."/>
-					<item value="Ocean"/>
-				</inset>
-			</criteria>
-			<polyDraw>
-				<line enabled="false">
-					<color r="179" g="229" b="255" overprint="false"/>
-					<size size="10" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="191" g="255" b="255" overprint="false"/>
-			</polyDraw>
-		</polygonstyle>
-	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 0" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.2"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="AfterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Islands" KindMain="EPS-layers" KindSub="" id="epslayer.islands" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Island" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.3"/>
 	<polygongroup name="Landphase 1" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase1">
 		<polygonstyle enabled="true" name="Island" KindMain="Landuse" KindSub="Islands" id="landuse.islands.fill">
 			<criteria>
@@ -86,13 +67,45 @@
 					<size size="0" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="240" g="245" b="219" overprint="false"/>
+				<fillColor enabled="true" r="255" g="242" b="214" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="administrative shapes provinces/states" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeshapesprovinces" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 1" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.4"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Forest/park" KindMain="Unknown" id="epslayer.generic.3" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Urban Area USA" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.8"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Urban Area USA" id="landuse.residential.OSM.fill" KindMain="Landuse" KindSub="Urban Area" source="Here\buausa.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="true">
+				<color r="158" g="112" b="33" overprint="false"/>
+				<size size="88" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="219" g="173" b="94" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="times-Roman" relHeight="255" spacing="255" slant="255" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+			</fontDraw>
+			<size size="2646" units="micrometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Forest / State Park" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.5"/>
 	<polygongroup name="Landphase 2" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase2">
 		<polygonstyle enabled="true" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
 			<criteria>
@@ -104,16 +117,12 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="191" g="255" b="125" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="97" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
-	</polygongroup>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Urban area" KindMain="Unknown" id="epslayer.generic.4" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<polygongroup name="Landphase 3" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase3">
-		<polygonstyle enabled="true" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
+		<polygonstyle enabled="true" name="State Park" KindMain="Landuse" KindSub="State Parks" id="landuse.stateparks.fill">
 			<criteria>
-				<equation oper="eq" fieldname="Categ" value="Residential"/>
+				<equation oper="eq" fieldname="Categ" value="State park"/>
 			</criteria>
 			<polyDraw>
 				<line enabled="false">
@@ -121,19 +130,89 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="236" g="213" b="170" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="97" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 2" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.6"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Urban Area" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.7"/>
+	<polygongroup name="Landphase 3" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase3">
+		<polygonstyle enabled="true" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
+			<criteria>
+				<equation oper="eq" fieldname="Categ" value="Residential"/>
+			</criteria>
+			<polyDraw>
+				<line enabled="false">
+					<color r="158" g="112" b="33" overprint="false"/>
+					<size size="88" units="micrometer" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="219" g="173" b="94" overprint="false"/>
+			</polyDraw>
+		</polygonstyle>
+	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 3" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.9"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Land / Sea / Lake Contour" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.10"/>
+	<polygongroup name="Landphase wateroutlines" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.wateroutlines">
+		<polygonstyle enabled="false" name="Land / Sea / Lake Contour" KindMain="Water contour land / sea / Lake / River" KindSub="" id="landuse.waters.line">
+			<criteria>
+				<inset fieldname="Categ">
+					<item value="Lake"/>
+					<item value="River outline"/>
+					<item value="Harbour outline"/>
+					<item value="Yacht-basin"/>
+					<item value="Bay"/>
+					<item value="Delta"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</criteria>
+			<polyDraw>
+				<line enabled="true">
+					<color r="13" g="140" b="140" overprint="false"/>
+					<size size="176" units="micrometer" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="212" g="235" b="242" overprint="false"/>
+			</polyDraw>
+		</polygonstyle>
+	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 4" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.11"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="AfterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Water Sea/Ocean" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.12"/>
+	<polygongroup name="Landphase sea ocean" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphaseseaocean">
+		<polygonstyle enabled="true" name="Water Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.seas.fill">
+			<criteria>
+				<inset fieldname="Categ">
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</criteria>
+			<polyDraw>
+				<line enabled="true">
+					<color r="166" g="232" b="255" overprint="false"/>
+					<size size="50" units="micrometer" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="166" g="232" b="255" overprint="false"/>
+			</polyDraw>
+		</polygonstyle>
+	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 5" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.13"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="AfterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 6" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.14"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 7" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.15"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 8" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.16"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 9" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.17"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="AfterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 10" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.18"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="AfterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
-	<layer xsi:type="epsLayer" enabled="true" name="water small" KindMain="EPS-layers" KindSub="" id="epslayer.water.small"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Water no Sea/Ocean" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.19"/>
 	<polygongroup name="Landphase11" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase11">
 		<polygonstyle enabled="true" name="Water no Sea/Ocean" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.noseas.fill">
 			<criteria>
@@ -148,57 +227,21 @@
 				</inset>
 			</criteria>
 			<polyDraw>
-				<line enabled="false">
-					<color r="179" g="229" b="255" overprint="false"/>
-					<size size="10" units="1/10th millimeter" isRelative="false"/>
+				<line enabled="true">
+					<color r="166" g="232" b="255" overprint="false"/>
+					<size size="50" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="191" g="255" b="255" overprint="false"/>
+				<fillColor enabled="true" r="166" g="232" b="255" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="EPS-layers" KindSub="" id="epslayer.hillshading" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.20"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Outline" KindMain="Unknown" id="epslayer.generic.665" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country line" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.2">
-		<criteria>
-			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
-			<and>
-				<inset fieldname="UserCatPresent" negate="true">
-					<item value="Harbour outline"/>
-					<item value="Sea   ."/>
-					<item value="Ocean"/>
-				</inset>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="217" g="217" b="217" overprint="false"/>
-			<size size="5" units="1/10th millimeter" isRelative="false"/>
-			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="0" units="kilometer" isRelative="false"/>
-		</lineDraw>
-	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Fill" KindMain="Unknown" id="epslayer.generic.664" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country fill" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.2">
-		<criteria>
-			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
-			<and>
-				<inset fieldname="UserCatPresent" negate="true">
-					<item value="Harbour outline"/>
-					<item value="Sea   ."/>
-					<item value="Ocean"/>
-				</inset>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="89" g="89" b="89" overprint="false"/>
-			<size size="1" units="1/10th millimeter" isRelative="false"/>
-			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="0" units="kilometer" isRelative="false"/>
-		</lineDraw>
-	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary" KindMain="Unknown" id="epslayer.generic.664" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary" KindMain="Boundaries" KindSub="Provinces" id="boundaries.provinces.line.2">
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poly" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.21"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Outline" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.22"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Province Boundary Outline" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
 			<and>
@@ -211,13 +254,70 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="125" b="0" overprint="false"/>
-			<size size="3" units="1/10th millimeter" isRelative="false"/>
-			<style size="10" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			<size size="2" units="1/10th millimeter" isRelative="false"/>
+			<style size="25" units="1/10th millimeter" isRelative="false" style="dash3_7"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Highway" KindMain="EPS-layers" KindSub="" id="epslayer.roads" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Fill" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.23"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="false" name="Province Boundary Fill" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="false">
+			<color r="217" g="217" b="217" overprint="false"/>
+			<size size="2" units="1/10th millimeter" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Country Boundary Outline" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.24"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Outline" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="89" g="89" b="89" overprint="false"/>
+			<size size="3" units="1/10th millimeter" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Country Boundary Fill" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.25"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Fill" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="247" g="252" b="252" overprint="false"/>
+			<size size="25" units="micrometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Highway Outline" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.26"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="false" name="Highway Outline" KindMain="Roads" KindSub="Highways" id="roads.highways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -243,19 +343,45 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="161" g="92" b="97" overprint="false"/>
-			<size size="150" units="micrometer" isRelative="false"/>
-			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="83" units="micrometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.line">
+			<color r="102" g="102" b="102" overprint="false"/>
+			<size size="750" units="micrometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			<extension size="13" units="micrometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.highways.construction.line">
 				<criteria>
 					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
 				</criteria>
-				<style size="20" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+				<style size="10" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="Departement Boundary Outline" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.27" KindSub=""/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Departement Boundary Outline" KindMain="Boundaries and Area's" KindSub="Regions" id="boundaries.regions.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Region boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+					<item value="Island"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="125" b="0" overprint="false"/>
+			<size size="2" units="1/10th millimeter" isRelative="false"/>
+			<style size="25" units="1/10th millimeter" isRelative="false" style="dash3_7"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Motorway Outline" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -265,24 +391,34 @@
 			<and>
 				<equation oper="eq" fieldname="Roaduse" value="Car"/>
 				<and>
-					<equation oper="eq" fieldname="RoadType" value="MotorType"/>
+					<equation oper="eq" fieldname="Roadtype" value="Motortype"/>
+					<and>
+						<equation oper="eq" fieldname="Roadclass" value="Motorway"/>
+					</and>
 				</and>
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="143" b="18" overprint="false"/>
-			<size size="400" units="micrometer" isRelative="false"/>
-			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="3" units="micrometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.line">
+			<size size="750" units="micrometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			<extension size="13" units="micrometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.motorways.construction.line">
 				<criteria>
 					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
 				</criteria>
-				<style size="20" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+				<style size="10" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="Highway Fill" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.28"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="false" name="Highway Fill" KindMain="Roads" KindSub="Highways" id="roads.highways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -290,14 +426,14 @@
 				<item value="{mt}"/>
 			</inset>
 			<and>
-				<inset fieldname="RoadClass">
+				<inset fieldname="Roadclass">
 					<item value="Motorway"/>
 					<item value="Highway"/>
 				</inset>
 				<and>
 					<equation oper="eq" fieldname="Roaduse" value="Car"/>
 					<and>
-						<inset fieldname="RoadType" negate="true">
+						<inset fieldname="Roadtype" negate="true">
 							<item value="MotorType"/>
 							<item value="Bosweg/pad"/>
 							<item value="Ferry"/>
@@ -309,42 +445,25 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="112" b="163" overprint="false"/>
-			<size size="50" units="micrometer" isRelative="false"/>
-			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<size size="5" units="1/10th millimeter" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="50" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="50" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.fill">
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.highways.construction.fill">
 				<criteria>
 					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
 				</criteria>
-				<color r="255" g="112" b="163" overprint="false"/>
+				<style size="10" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="Motorway Fill" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.29"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Motorway Fill" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -354,75 +473,77 @@
 			<and>
 				<equation oper="eq" fieldname="Roaduse" value="Car"/>
 				<and>
-					<equation oper="eq" fieldname="RoadType" value="MotorType"/>
+					<equation oper="eq" fieldname="Roadtype" value="Motortype"/>
+					<and>
+						<equation oper="eq" fieldname="Roadclass" value="Motorway"/>
+					</and>
 				</and>
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="242" g="255" b="173" overprint="false"/>
-			<size size="150" units="micrometer" isRelative="false"/>
-			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<size size="5" units="1/10th millimeter" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="150" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="150" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.fill">
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.motorways.construction.fill">
 				<criteria>
 					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
 				</criteria>
-				<color r="242" g="255" b="173" overprint="false"/>
+				<style size="10" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Centerline Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.centerline.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
-			<equation oper="neq" fieldname="BridgeStat" value="Tunnel"/>
+			<inset fieldname="Access" negate="true">
+				<item value="{th}"/>
+				<item value="{hw}"/>
+				<item value="{mt}"/>
+			</inset>
 			<and>
-				<equation oper="eq" fieldname="RoadUse" value="Rail"/>
+				<equation oper="eq" fieldname="Roaduse" value="Car"/>
 				<and>
-					<equation oper="eq" fieldname="UserPresent" value="Rail:nn"/>
-					<or>
-						<equation oper="neq" fieldname="UserCatPresent" value="Rail"/>
-					</or>
+					<equation oper="eq" fieldname="Roadtype" value="Motortype"/>
+					<and>
+						<equation oper="eq" fieldname="Roadclass" value="Motorway"/>
+					</and>
 				</and>
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="300" units="micrometer" isRelative="false"/>
-			<style size="40" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			<color r="209" g="132" b="81" overprint="false"/>
+			<size size="50" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.motorways.construction.centerline.line">
+				<criteria>
+					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
+				</criteria>
+				<style size="20" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="Unknown" id="epslayer.generic.59" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Line" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.30"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poi" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.31"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.32"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocgroup maxFillpercentage="15" name="CityNames Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
-		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+	<layer xsi:type="epsLayer" enabled="true" name="CityNames Group" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.33"/>
+	<slocgroup maxFillpercentage="15" name="CityNames Group" KindMain="Placenames" KindSub="Placenames POIs" id="pois.placenamesgroup">
+		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -432,7 +553,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -441,7 +562,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -457,13 +578,13 @@
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="88" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="7" units="1/10th millimeter" isRelative="false"/>
-				<height size="7" units="1/10th millimeter" isRelative="false"/>
+				<width size="20" units="1/10th millimeter" isRelative="false"/>
+				<height size="20" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -471,7 +592,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -490,7 +611,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -506,13 +627,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="176" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="4" units="1/10th millimeter" isRelative="false"/>
-				<height size="4" units="1/10th millimeter" isRelative="false"/>
+				<width size="15" units="1/10th millimeter" isRelative="false"/>
+				<height size="15" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -520,7 +641,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.cities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -530,7 +651,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -539,7 +660,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -555,13 +676,13 @@
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="88" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="7" units="1/10th millimeter" isRelative="false"/>
-				<height size="7" units="1/10th millimeter" isRelative="false"/>
+				<width size="20" units="1/10th millimeter" isRelative="false"/>
+				<height size="20" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -569,7 +690,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -588,7 +709,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -604,13 +725,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="176" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="4" units="1/10th millimeter" isRelative="false"/>
-				<height size="4" units="1/10th millimeter" isRelative="false"/>
+				<width size="15" units="1/10th millimeter" isRelative="false"/>
+				<height size="15" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -618,7 +739,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Small City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.smallcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -628,7 +749,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -637,7 +758,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -653,13 +774,13 @@
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="88" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="7" units="1/10th millimeter" isRelative="false"/>
-				<height size="7" units="1/10th millimeter" isRelative="false"/>
+				<width size="20" units="1/10th millimeter" isRelative="false"/>
+				<height size="20" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -667,7 +788,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Small City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.smallcities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -686,7 +807,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -702,13 +823,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="176" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="4" units="1/10th millimeter" isRelative="false"/>
-				<height size="4" units="1/10th millimeter" isRelative="false"/>
+				<width size="15" units="1/10th millimeter" isRelative="false"/>
+				<height size="15" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -716,7 +837,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.villages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -726,7 +847,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -735,7 +856,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -751,13 +872,13 @@
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="88" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="7" units="1/10th millimeter" isRelative="false"/>
-				<height size="7" units="1/10th millimeter" isRelative="false"/>
+				<width size="20" units="1/10th millimeter" isRelative="false"/>
+				<height size="20" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -765,7 +886,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Village Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Village Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.villages" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -775,7 +896,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Light" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -784,7 +905,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="9" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -800,13 +921,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="176" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="4" units="1/10th millimeter" isRelative="false"/>
-				<height size="4" units="1/10th millimeter" isRelative="false"/>
+				<width size="12" units="1/10th millimeter" isRelative="false"/>
+				<height size="12" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -814,7 +935,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Small Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.smallvillages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -824,7 +945,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -833,7 +954,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -849,13 +970,13 @@
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="88" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="7" units="1/10th millimeter" isRelative="false"/>
-				<height size="7" units="1/10th millimeter" isRelative="false"/>
+				<width size="20" units="1/10th millimeter" isRelative="false"/>
+				<height size="20" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -863,7 +984,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small Village Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Small Village Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.smallvillages" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -873,7 +994,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Light" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -882,7 +1003,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="9" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -898,13 +1019,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="176" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="4" units="1/10th millimeter" isRelative="false"/>
-				<height size="4" units="1/10th millimeter" isRelative="false"/>
+				<width size="12" units="1/10th millimeter" isRelative="false"/>
+				<height size="12" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -912,7 +1033,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.hamlets.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -922,7 +1043,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -931,7 +1052,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -947,13 +1068,13 @@
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="88" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="7" units="1/10th millimeter" isRelative="false"/>
-				<height size="7" units="1/10th millimeter" isRelative="false"/>
+				<width size="20" units="1/10th millimeter" isRelative="false"/>
+				<height size="20" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -961,7 +1082,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.hamlets" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -971,7 +1092,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Light" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -980,7 +1101,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="9" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -996,13 +1117,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="176" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="4" units="1/10th millimeter" isRelative="false"/>
-				<height size="4" units="1/10th millimeter" isRelative="false"/>
+				<width size="12" units="1/10th millimeter" isRelative="false"/>
+				<height size="12" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1010,7 +1131,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Smaller than Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Smaller than Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.threehouses.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1020,7 +1141,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1029,7 +1150,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="11" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -1045,13 +1166,13 @@
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="88" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="247" g="255" b="84" overprint="false"/>
 				</shape>
-				<width size="7" units="1/10th millimeter" isRelative="false"/>
-				<height size="7" units="1/10th millimeter" isRelative="false"/>
+				<width size="20" units="1/10th millimeter" isRelative="false"/>
+				<height size="20" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1059,7 +1180,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Smaller than Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Smaller than Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.threehouses" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1069,7 +1190,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Light" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1078,7 +1199,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="5" units="points" isRelative="false"/>
+				<size size="9" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -1094,13 +1215,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="25" units="micrometer" isRelative="false"/>
+						<size size="176" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="4" units="1/10th millimeter" isRelative="false"/>
-				<height size="4" units="1/10th millimeter" isRelative="false"/>
+				<width size="12" units="1/10th millimeter" isRelative="false"/>
+				<height size="12" units="1/10th millimeter" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1109,8 +1230,8 @@
 			</lineDraw>
 		</slocstyle>
 	</slocgroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Name" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundarynames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Country Name" KindMain="Boundaries" KindSub="Countries" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="false">
+	<layer xsi:type="epsLayer" enabled="true" name="Country Name" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.34"/>
+	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Country Name" KindMain="Boundaries and Area's" KindSub="Countries" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Country boundary"/>
 			<and>
@@ -1120,13 +1241,13 @@
 		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
-					<color r="130" g="130" b="130" overprint="false"/>
-					<size size="3" units="1/10th millimeter" isRelative="false"/>
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="kilometer" isRelative="false" style="solid"/>
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="9" units="points" isRelative="false"/>
+			<size size="4057" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="10">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -1141,7 +1262,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Island Name" KindMain="EPS-layers" KindSub="" id="epslayer.areanames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Island Name" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.35"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Island Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Islands" id="landuse.islands.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Island"/>
@@ -1149,16 +1270,16 @@
 				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
 			</and>
 		</criteria>
-		<textDraw xsi:type="flexTextDraw" enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Light" relHeight="100" spacing="0" slant="15" underline="false" flexEnabled="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="conduitITCStd-Light" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
-					<size size="3" units="1/10th millimeter" isRelative="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="102" g="102" b="18" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -1169,13 +1290,11 @@
 					<fillColor enabled="true" r="95" g="95" b="95" overprint="false"/>
 				</shape>
 			</boxDraw>
-			<flexSize min="100" max="200"/>
-			<flexSpacing min="100" max="667"/>
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Lake / Sea Name" KindMain="EPS-layers" KindSub="" id="epslayer.waternames"/>
-	<userstyle xsi:type="wateruserstyle" enabled="true" name="Lake / Sea Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.label">
+	<layer xsi:type="epsLayer" enabled="true" name="Sea Name" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.36"/>
+	<userstyle xsi:type="wateruserstyle" enabled="true" name="Sea Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.seas.label" deduplicateNames="true">
 		<criteria>
 			<inset fieldname="Categ">
 				<item value="Sea   ."/>
@@ -1185,16 +1304,16 @@
 				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
 			</and>
 		</criteria>
-		<textDraw xsi:type="flexTextDraw" enabled="true" alignment="left" capitalMode="as_is" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="15" underline="false" flexEnabled="true">
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="times-Roman" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
-					<size size="1" units="1/10th millimeter" isRelative="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="69" g="229" b="255" overprint="false"/>
+				<fillColor enabled="true" r="112" g="191" b="255" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="2646" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -1205,12 +1324,41 @@
 					<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
 				</shape>
 			</boxDraw>
-			<flexSize min="100" max="300"/>
-			<flexSpacing min="100" max="667"/>
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="After Names" KindMain="Unknown" id="epslayer.generic.666" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="State Boundary Polygon Name" KindMain="EPS-layers" KindSub="" alwaysOutput="false" id="epslayer.generic.1061" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Departement Boundary Polygon Name" KindMain="Boundaries and Area's" KindSub="Provinces" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.provinces.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Region boundary"/>
+			<and>
+				<equation oper="neq" fieldname="Name" value="Nn"/>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="conduitITCStd-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="130" g="130" b="130" overprint="false"/>
+					<size size="3" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="201" g="175" b="104" overprint="false"/>
+			</fontDraw>
+			<size size="20" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</userstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="After Names" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.37"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
-	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" KindMain="EPS-layers" KindSub="" id="epslayer.maplayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.38"/>
 </mapStyle>

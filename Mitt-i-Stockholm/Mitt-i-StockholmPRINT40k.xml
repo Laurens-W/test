@@ -34,7 +34,7 @@
 		</overrideUnplacableColor>
 		<deduplicateNamesDistance size="5" units="centimeter" isRelative="false"/>
 	</nameAlgorithm>
-	<layer xsi:type="epsLayer" enabled="true" name="Dig area" KindMain="Unknown" id="epslayer.generic.1" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Digarea" KindMain="Unknown" id="epslayer.generic.1" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<polygongroup name="Landphase 0" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase0">
 		<polygonstyle enabled="true" name="Digarea" KindMain="Landuse" KindSub="Digarea" id="landuse.digareas.fill">
 			<criteria>
@@ -50,8 +50,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 0" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="AfterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Island" KindMain="Unknown" id="epslayer.generic.1" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Island" KindMain="Unknown" id="epslayer.generic.1" KindSub=""/>
 	<polygongroup name="Landphase 1" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase1">
 		<polygonstyle enabled="true" name="Island" KindMain="Landuse" KindSub="Islands" id="landuse.islands.fill">
 			<criteria>
@@ -67,7 +68,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Dim Other Munis" KindMain="Unknown" id="epslayer.generic.2" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Dim Other Munis" KindMain="Unknown" id="epslayer.generic.2" KindSub=""/>
 	<admiPolygonstyle enabled="true" name="Dim Other Munis" KindMain="Landuse" KindSub="Dim Other Munis" id="landuse.dimothermunis.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Level" value="8192"/>
@@ -84,8 +85,9 @@
 			<fillColor enabled="true" r="247" g="252" b="252" overprint="false"/>
 		</polyDraw>
 	</admiPolygonstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 1" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Urban area" KindMain="Unknown" id="epslayer.generic.4" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Urban Area / Urban Area Construction / Bungalow Park / Amusement Park" KindMain="Unknown" id="epslayer.generic.4" KindSub=""/>
 	<polygongroup name="Landphase 3" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase3">
 		<polygonstyle enabled="true" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
 			<criteria>
@@ -140,7 +142,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 3" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Forest / State Park Fill" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 2" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase2">
 		<polygonstyle enabled="true" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
 			<criteria>
@@ -169,7 +173,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Forest/park" KindMain="Unknown" id="epslayer.generic.3" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer National park" KindMain="Unknown" id="epslayer.generic.3" KindSub=""/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="National park" id="landuse.national_park.OSM.fill" KindMain="Landuse" KindSub="National park" source="osm\latest\landuse\national_park.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -203,6 +207,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer nature reserve" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="nature reserve" id="landuse.nature_reserve.OSM.fill" KindMain="Landuse" KindSub="nature reserve" source="osm\latest\landuse\nature_reserve.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -236,6 +241,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer forest OSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="forest OSM" id="landuse.forest.OSM.fill" KindMain="Landuse" KindSub="Forests" source="osm\latest\landuse\forest.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -267,8 +273,9 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 2" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Beach" KindMain="Unknown" id="epslayer.generic.5" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Beach / Dune" KindMain="Unknown" id="epslayer.generic.5" KindSub=""/>
 	<polygongroup name="Landphase 4" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase4">
 		<polygonstyle enabled="true" name="Beach" KindMain="Landuse" KindSub="Beaches" id="landuse.beaches.fill">
 			<criteria>
@@ -297,8 +304,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Industry" KindMain="Unknown" id="epslayer.generic.6" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 4" KindMain="Unknown" id="epslayer.generic.6" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="AfterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Industry / Industry (Construction)" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 5" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase5">
 		<polygonstyle enabled="true" name="Industry" KindMain="Landuse" KindSub="Industry" id="landuse.industries.fill">
 			<criteria>
@@ -327,8 +335,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Hospital/University/Shopping/Airport" KindMain="Unknown" id="epslayer.generic.7" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 5" KindMain="Unknown" id="epslayer.generic.7" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="AfterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Hospital / University / Shopping Center / Airport" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 6" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase6">
 		<polygonstyle enabled="true" name="Hospital" KindMain="Landuse" KindSub="Hospitals" id="landuse.hospitals.fill">
 			<criteria>
@@ -383,8 +392,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Green area" KindMain="Unknown" id="epslayer.generic.8" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 6" KindMain="Unknown" id="epslayer.generic.8" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer park" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="park" id="landuse.park.OSM.fill" KindMain="Landuse" KindSub="Park / Garden" source="osm\latest\landuse\park.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -418,6 +428,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer City Park / Cemetery / Sports Ground / Village Green / Vegetable Garden / Golf Course / Moor / Orchard / Recreation Area / Match Area" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 7" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase7">
 		<polygonstyle enabled="true" name="City Park" KindMain="Landuse" KindSub="City Parks" id="landuse.cityparks.fill">
 			<criteria>
@@ -550,8 +561,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Buildings/Runway" KindMain="Unknown" id="epslayer.generic.9" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 7" KindMain="Unknown" id="epslayer.generic.9" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Special Buildings / Parking House / Municipal Building / Parking Garage / Runway" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 8" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase8">
 		<polygonstyle enabled="true" name="Special Buildings" KindMain="Landuse" KindSub="Special Buildings" id="landuse.buildings.fill">
 			<criteria>
@@ -622,6 +634,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Buildings" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="polygonVectorLayer" enabled="false" name="Buildings" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings" source=" OSM\latest\buildings.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -653,8 +666,9 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="Waste land" KindMain="Unknown" id="epslayer.generic.10" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 8" KindMain="Unknown" id="epslayer.generic.10" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer waste land" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 9" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase9">
 		<polygonstyle enabled="true" name="waste land" KindMain="Landuse" KindSub="Waste Land" id="landuse.unusedareas.fill">
 			<criteria>
@@ -670,8 +684,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Parking" KindMain="Unknown" id="epslayer.generic.12" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 9" KindMain="Unknown" id="epslayer.generic.12" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="AfterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Parking Area / Car Square / Private Parking" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase 10" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase10">
 		<polygonstyle enabled="true" name="Parking Area" KindMain="Landuse" KindSub="Parking Areas" id="landuse.parkingareas.fill">
 			<criteria>
@@ -713,8 +728,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Water" KindMain="Unknown" id="epslayer.generic.13" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 10" KindMain="Unknown" id="epslayer.generic.13" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="AfterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Waterways_CanalOSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="Waterways_CanalOSM" id="landuse.waters.linear.canals.OSM" KindMain="Water" source="osm\latest\waterways\canal.lim" KindSub="" xsi:type="lineVectorLayer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<lineDraw enabled="true">
 			<color r="217" g="255" b="255" overprint="false"/>
@@ -722,6 +738,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Waterways_DrainOSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="Waterways_DrainOSM" id="landuse.waters.linear.drains.OSM" KindMain="Water" source="osm\latest\waterways\drain.lim" KindSub="" xsi:type="lineVectorLayer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<lineDraw enabled="true">
 			<color r="217" g="255" b="255" overprint="false"/>
@@ -729,6 +746,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Waterways_StreamOSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="Waterways_StreamOSM" id="landuse.waters.linear.streams.OSM" KindMain="Water" source="osm\latest\waterways\stream.lim" KindSub="" xsi:type="lineVectorLayer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<lineDraw enabled="true">
 			<color r="217" g="255" b="255" overprint="false"/>
@@ -736,6 +754,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Waterways_RiverOSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="Waterways_RiverOSM" id="landuse.waters.linear.rivers.OSM" KindMain="Water" source="osm\latest\waterways\river.lim" KindSub="" xsi:type="lineVectorLayer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<lineDraw enabled="true">
 			<color r="217" g="255" b="255" overprint="false"/>
@@ -743,6 +762,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Water_WaterOSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="Water_WaterOSM" id="landuse.waters.waters.OSM" KindMain="Water" KindSub="" source="osm\latest\water\water.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -774,6 +794,7 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Water_GlacierOSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="Water_GlacierOSM" id="landuse.waters.glaciers.OSM" KindMain="Water" KindSub="" source="osm\latest\water\glacier.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -805,6 +826,7 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Water_ReservoirOSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="Water_ReservoirOSM" id="landuse.waters.reservoirs.OSM" KindMain="Water" KindSub="" source="osm\latest\water\reservoir.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -836,6 +858,7 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Water_RiverOSM" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer enabled="true" name="Water_RiverOSM" id="landuse.waters.rivers.OSM" KindMain="Water" KindSub="" source="osm\latest\water\river.lim" xsi:type="polygonVectorLayer" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -867,7 +890,7 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="Water" KindMain="Unknown" id="epslayer.generic.13" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Water Chains Fill" KindMain="Unknown" id="epslayer.generic.13" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Water Chains Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Water" KindSub="Water" id="landuse.waters.linear.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Water"/>
@@ -893,6 +916,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Lake / Sea / Island" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Landphase11" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase11">
 		<polygonstyle enabled="true" name="Lake / Sea" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.fill">
 			<criteria>
@@ -931,7 +955,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Island" KindMain="Unknown" id="epslayer.generic.1" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Island OSM" KindMain="Unknown" id="epslayer.generic.1" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="Island OSM" id="landuse.islands.fill" KindMain="Landuse" KindSub="Islands" source="OSM\latest\fennoscandia.lim" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -963,7 +987,7 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="National park" KindMain="Unknown" id="epslayer.generic.3" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer National park" KindMain="Unknown" id="epslayer.generic.3" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="National park" id="landuse.national_park.OSM.line" KindMain="Landuse" KindSub="National park" source="osm\latest\landuse\national_park.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="true">
@@ -997,14 +1021,15 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="nature reserve" KindMain="Unknown" id="epslayer.generic.3" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Vectorlayer Poly" KindMain="Unknown" id="epslayer.generic.3" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="EPS-layers" KindSub="" id="epslayer.generic.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Landuse" KindMain="EPS-layers" KindSub="" id="epslayer.generic.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Patch" KindMain="Unknown" id="epslayer.generic.16" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roundabout Patch" KindMain="Unknown" id="epslayer.generic.16" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Roundabout Patch" kind="roundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.roundabout"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Road Access Patch" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Road Access Patch" kind="roadAccess" KindMain="Special Constructions" KindSub="Road Access Patches" id="patch.roadaccess"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Secundary Fill" KindMain="Unknown" id="epslayer.generic.55" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Rail Secundary Fill" KindMain="Unknown" id="epslayer.generic.55" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Secundary Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Secundary" id="rails.secondary.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
@@ -1026,7 +1051,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Ferry Chains" KindMain="Unknown" id="epslayer.generic.19" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Ferry Chains" KindMain="Unknown" id="epslayer.generic.19" KindSub=""/>
 	<chainstyle enabled="true" name="Ferry Chains" KindMain="Roads" KindSub="Ferries" id="roads.ferries">
 		<criteria>
 			<equation oper="le" fieldname="RoadClass" value="Local road"/>
@@ -1042,6 +1067,27 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Parking Area Fill" KindMain="Unknown" id="epslayer.generic.23" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Pedestrian Zone Chainoutline" KindMain="Unknown" id="epslayer.generic.24" KindSub="" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Bike Path Outline" KindMain="Unknown" id="epslayer.generic.18" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Bike Path Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Bike Paths" id="roads.bicycles.line">
+		<criteria>
+			<inset fieldname="Roadtype" negate="true">
+				<item value="Ferry"/>
+				<item value="Bosweg/pad"/>
+				<item value="Pedestrian Zone"/>
+			</inset>
+			<and>
+				<equation oper="eq" fieldname="Roaduse" value="Bicycle"/>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="265" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Squares" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Squares Fill" perDb="false" KindMain="Landuse" KindSub="Squares" id="landusegroup.squares">
 		<polygonstyle enabled="true" name="Squares" KindMain="Landuse" KindSub="Squares" id="landuse.squares.fill">
 			<criteria>
@@ -1061,7 +1107,22 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Pedestrian Zone Chainoutline" KindMain="Unknown" id="epslayer.generic.24" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Pedestrian Zone Chainoutline" KindMain="Unknown" id="epslayer.generic.24" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Pedestrian Zone Chainoutline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Pedestrian Zones" id="roads.pedestrianzones.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="Roadtype" value="Pedestrian Zone"/>
+			<or>
+				<equation oper="eq" fieldname="UserCatPresent" value="Ped. Square"/>
+			</or>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="265" units="micrometer" isRelative="false"/>
+			<style size="6" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="100" units="micrometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Pedestrian Square" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<polygongroup name="Pedestrian Square Fill" perDb="false" KindMain="Landuse" KindSub="Pedestrian Squares" id="landusegroup.pedestriansquares">
 		<polygonstyle enabled="true" name="Pedestrian Square" KindMain="Landuse" KindSub="Pedestrian Squares" id="landuse.squares.pedestrian.fill">
 			<criteria>
@@ -1077,12 +1138,12 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Patch" KindMain="Unknown" id="epslayer.generic.36" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Forks Patch" KindMain="Unknown" id="epslayer.generic.36" KindSub=""/>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Patch" KindMain="Unknown" id="epslayer.generic.37" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Mini Roundabout Patch" KindMain="Unknown" id="epslayer.generic.37" KindSub=""/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Bike Path Outline" KindMain="Unknown" id="epslayer.generic.18" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Bike Path Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Bike Paths" id="roads.bicycles.line">
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roads not for Car Fills" KindMain="Unknown" id="epslayer.generic.38" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Roads not for Car Fills" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Roads not for Car" id="roads.roadnotcars.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" maxRound="25">
 		<criteria>
 			<inset fieldname="Roadtype" negate="true">
 				<item value="Ferry"/>
@@ -1090,7 +1151,16 @@
 				<item value="Pedestrian Zone"/>
 			</inset>
 			<and>
-				<equation oper="eq" fieldname="Roaduse" value="Bicycle"/>
+				<equation oper="eq" fieldname="Roaduse" value="Road, not car"/>
+				<or>
+					<equation oper="eq" fieldname="Roaduse" value="Car"/>
+					<and>
+						<inset fieldname="Surface">
+							<item value="Unpaved"/>
+							<item value="Bad paved"/>
+						</inset>
+					</and>
+				</or>
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
@@ -1098,14 +1168,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.bicycles.construction.line">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Forest- / Narrow Road Fill" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Forest- / Narrow Road Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Forest- / Narrow Roads" id="roads.forestroads.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Roadtype" value="Bosweg/pad"/>
@@ -1115,15 +1180,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.forestroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Motorway Access Fill" KindMain="Unknown" id="epslayer.generic.40" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Motorway Access Fill" KindMain="Unknown" id="epslayer.generic.40" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{mt}"/>
@@ -1133,39 +1192,9 @@
 			<size size="2" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="2" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="2" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Highway Access Fill" KindMain="Unknown" id="epslayer.generic.41" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Highway Access Fill" KindMain="Unknown" id="epslayer.generic.41" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{hw}"/>
@@ -1175,39 +1204,9 @@
 			<size size="2" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="2" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="2" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Throughway Access Fill" KindMain="Unknown" id="epslayer.generic.42" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Throughway Access Fill" KindMain="Unknown" id="epslayer.generic.42" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{th}"/>
@@ -1217,39 +1216,9 @@
 			<size size="500" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="500" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="5" units="1/10th millimeter" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Local Road Normal Fill" KindMain="Unknown" id="epslayer.generic.43" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Local Road Normal Fill" KindMain="Unknown" id="epslayer.generic.43" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Local Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Local Roads" id="roads.localroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -1284,42 +1253,12 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="1" units="points" isRelative="false"/>
+			<size size="353" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="300" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Minor Road Fill" KindMain="Unknown" id="epslayer.generic.44" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Minor Road Fill" KindMain="Unknown" id="epslayer.generic.44" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -1347,39 +1286,9 @@
 			<size size="600" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="1" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Main Road Normal Fill" KindMain="Unknown" id="epslayer.generic.45" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Main Road Normal Fill" KindMain="Unknown" id="epslayer.generic.45" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -1407,39 +1316,9 @@
 			<size size="2" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="1" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Throughway Normal Fill" KindMain="Unknown" id="epslayer.generic.46" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Throughway Normal Fill" KindMain="Unknown" id="epslayer.generic.46" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -1483,23 +1362,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="2" units="points" isRelative="false"/>
+				<size size="1" units="points" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="2" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="1" units="points" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Highway Fill" KindMain="Unknown" id="epslayer.generic.47" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Highway Fill" KindMain="Unknown" id="epslayer.generic.47" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -1546,23 +1419,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="2" units="points" isRelative="false"/>
+				<size size="1" units="points" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="2" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="1" units="points" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Motorway Normal Fill" KindMain="Unknown" id="epslayer.generic.48" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Motorway Normal Fill" KindMain="Unknown" id="epslayer.generic.48" KindSub=""/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -1598,27 +1465,23 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="3" units="points" isRelative="false"/>
+				<size size="1" units="points" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="3" units="points" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="1" units="points" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Forks Patch" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Mini Roundabout Patch" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Patch" KindMain="Unknown" id="epslayer.generic.58" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Vectorlayer Line" KindMain="Unknown" id="epslayer.generic.58" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Outline" KindMain="Unknown" id="epslayer.generic.56" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Rail Outline" KindMain="Unknown" id="epslayer.generic.56" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Outline" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.line">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
@@ -1636,7 +1499,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Fill" KindMain="Unknown" id="epslayer.generic.57" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Rail Fill" KindMain="Unknown" id="epslayer.generic.57" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
@@ -1654,7 +1517,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rail Cargo Fill" KindMain="Unknown" id="epslayer.generic.53" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Rail Cargo Fill" KindMain="Unknown" id="epslayer.generic.53" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Rail"/>
@@ -1669,7 +1532,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="OSM Subways" KindMain="Unknown" id="epslayer.generic.54" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer OSM Subways" KindMain="Unknown" id="epslayer.generic.54" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="lineVectorLayer" enabled="true" name="OSM Subways" id="railways.subway.OSM.line" KindMain="Rails" KindSub="Lightrails" source="OSM\latest\Subway.lim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<lineDraw enabled="true">
 			<color r="64" g="64" b="64" overprint="false"/>
@@ -1679,6 +1542,7 @@
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer Grid Layer" KindMain="Unknown" id="epslayer.generic.60"/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Airport Terminal Symbol" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<slocstyle enabled="false" name="Airport Terminal Symbol" mergedistance="1000" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.symbol" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport terminal"/>
@@ -1731,6 +1595,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Stadium Symbol" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<slocstyle enabled="false" name="Stadium Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Stadiums" id="pois.stadiums.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Stadium"/>
@@ -1763,7 +1628,7 @@
 			<height size="2500" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Symbol se" KindMain="Unknown" id="epslayer.generic.61" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Railway Station Symbol se" KindMain="Unknown" id="epslayer.generic.61" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Railway Station Symbol se" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
@@ -1809,7 +1674,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Symbol ALL" KindMain="Unknown" id="epslayer.generic.61" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Railway Station Symbol ALL" KindMain="Unknown" id="epslayer.generic.61" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Railway Station Symbol ALL" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
@@ -1855,7 +1720,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb ALL" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb ALL" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb ALL" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.symbol" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -1905,7 +1770,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se Tunnelbanan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se Tunnelbanan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se Tunnelbanan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -1954,7 +1819,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se tvarbanan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se tvarbanan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se tvarbanan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2003,7 +1868,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se Pendelt*g" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se Pendelt*g" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se Pendelt*g" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2052,7 +1917,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se Roslagsbanan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se Roslagsbanan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se Roslagsbanan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2101,7 +1966,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se Saltsj*banan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se Saltsj*banan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se Saltsj*banan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2150,7 +2015,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se Nockebybanan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se Nockebybanan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se Nockebybanan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2199,7 +2064,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se Liding*banan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se Liding*banan" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se Liding*banan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2248,7 +2113,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se Djurg*rdslinjen" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se Djurg*rdslinjen" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se Djurg*rdslinjen" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2297,7 +2162,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb se Metro ALL" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb se Metro ALL" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb se Metro ALL" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2367,7 +2232,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb ger u" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb ger u" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb ger u" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2416,7 +2281,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb ger s" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb ger s" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb ger s" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2465,7 +2330,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb fre" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb fre" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb fre" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2514,7 +2379,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb metro spain" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb metro spain" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb metro spain" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2563,7 +2428,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb eng underground" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb eng underground" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb eng underground" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2612,7 +2477,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb eng dlr" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb eng dlr" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb eng dlr" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2661,7 +2526,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symb s-tog-" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Symb s-tog-" KindMain="Unknown" id="epslayer.generic.62" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Symb s-tog-" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-tog-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2710,9 +2575,11 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Vectorlayer Poi" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer After Roads" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Name" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Railway Station Name" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Railway Station Name" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
@@ -2759,7 +2626,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name ALL" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name ALL" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name ALL" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.symbol" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2809,7 +2676,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se Tunnelbanan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se Tunnelbanan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se Tunnelbanan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2858,7 +2725,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se tvarbanan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se tvarbanan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se tvarbanan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2907,7 +2774,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se Pendelt*g" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se Pendelt*g" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se Pendelt*g" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2956,7 +2823,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se Roslagsbanan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se Roslagsbanan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se Roslagsbanan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3005,7 +2872,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se Saltsj*banan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se Saltsj*banan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se Saltsj*banan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3054,7 +2921,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se Nockebybanan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se Nockebybanan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se Nockebybanan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3103,7 +2970,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se Liding*banan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se Liding*banan" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se Liding*banan" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3152,7 +3019,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se Djurg*rdslinjen" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se Djurg*rdslinjen" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se Djurg*rdslinjen" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3201,7 +3068,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name se Metro ALL" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name se Metro ALL" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name se Metro ALL" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3271,7 +3138,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name ger u" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name ger u" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name ger u" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3320,7 +3187,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name ger s" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name ger s" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name ger s" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3369,7 +3236,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name fre" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name fre" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name fre" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3418,7 +3285,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name metro spain" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name metro spain" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name metro spain" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3467,7 +3334,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name eng underground" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name eng underground" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name eng underground" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3516,7 +3383,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name eng dlr" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name eng dlr" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name eng dlr" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3565,7 +3432,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name s-tog-" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Metro Station Name s-tog-" KindMain="Unknown" id="epslayer.generic.64" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Metro Station Name s-tog-" mergedistance="200" overwriteRoadclass="motorway" namePattern=".-tog-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -3722,7 +3589,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr M uk" KindMain="Unknown" id="epslayer.generic.69"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr A(M) uk" KindMain="Unknown" id="epslayer.generic.69"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr A(M) uk" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|Uk" id="Roadnr.A(M).uk.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -4879,7 +4746,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr B es" KindMain="Unknown" id="epslayer.generic.100"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr Bmt es" KindMain="Unknown" id="epslayer.generic.100"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr Bmt es" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|Es" id="Roadnr.Bmt.es.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -5143,7 +5010,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr State us" KindMain="Unknown" id="epslayer.generic.400" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr state" KindMain="Unknown" id="epslayer.generic.400" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr state" overwriteRoadclass="motorway" namePattern=".-(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="motorway" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|Us" id="roads.roadnumber.ak.us.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -5356,7 +5223,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr _ GR" KindMain="Unknown" id="epslayer.generic.112"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr _A GR" KindMain="Unknown" id="epslayer.generic.112"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr _A GR" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|Gr" id="Roadnr._A.GR.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -5391,7 +5258,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr E GR" KindMain="Unknown" id="epslayer.generic.113"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr E GE" KindMain="Unknown" id="epslayer.generic.113"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr E GE" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|GE" id="Roadnr.E.GE.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -5639,7 +5506,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr sh al" KindMain="Unknown" id="epslayer.generic.120"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr cs al" KindMain="Unknown" id="epslayer.generic.120"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr cs al" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|AL" id="Roadnr.cs.al.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -5989,7 +5856,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr m az" KindMain="Unknown" id="epslayer.generic.130"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr m am" KindMain="Unknown" id="epslayer.generic.130"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr m am" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|Am" id="Roadnr.m.am.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -10159,7 +10026,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr Ra ir" KindMain="Unknown" id="epslayer.generic.254"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr Ra it" KindMain="Unknown" id="epslayer.generic.254"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr Ra it" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|It" id="roads.roadnumber.ra.ir.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -10194,7 +10061,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr t ir" KindMain="Unknown" id="epslayer.generic.255"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr t it" KindMain="Unknown" id="epslayer.generic.255"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr t it" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|It" id="roads.roadnumber.t.ir.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -18341,7 +18208,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr SE roads es" KindMain="Unknown" id="epslayer.generic.543"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Roadnr SEmt roads es" KindMain="Unknown" id="epslayer.generic.543"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr SEmt roads es" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="400" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries|Es" id="Roadnr.SEmt.es.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -21634,7 +21501,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="Unknown" id="epslayer.generic.653" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Urban Area Name" KindMain="Unknown" id="epslayer.generic.653" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<usergroup name="Urban Area Name" KindMain="Landuse" KindSub="Urban Area" id="landusegroup.residentials">
 		<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Big City Name" overwriteRoadclass="minor road" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames Landuse" id="places.bigcities.label" deduplicateNames="true">
 			<criteria>
@@ -21826,7 +21693,7 @@
 			<namePosition name="partlyInside"/>
 		</userstyle>
 	</usergroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Village Name" KindMain="Unknown" id="epslayer.generic.656" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Village Name POI" KindMain="Unknown" id="epslayer.generic.656" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Village Name POI" mergedistance="0" overwriteRoadclass="throughway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="City center"/>
@@ -21876,7 +21743,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Small Village Name" KindMain="Unknown" id="epslayer.generic.654" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Small Village Name POI" KindMain="Unknown" id="epslayer.generic.654" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Small Village Name POI" mergedistance="0" overwriteRoadclass="throughway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="City center"/>
@@ -21926,7 +21793,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Hamlet Name" KindMain="Unknown" id="epslayer.generic.658" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Hamlet Name POI" KindMain="Unknown" id="epslayer.generic.658" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Hamlet Name POI" mergedistance="0" overwriteRoadclass="throughway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="City center"/>
@@ -21976,7 +21843,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Smaller than Hamlet Name" KindMain="Unknown" id="epslayer.generic.659" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Smaller than Hamlet Name" KindMain="Unknown" id="epslayer.generic.659" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle enabled="true" name="Smaller than Hamlet Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="City center"/>
@@ -22023,7 +21890,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Forest Name" KindMain="Unknown" id="epslayer.generic.642" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer nature reserve name" KindMain="Unknown" id="epslayer.generic.642" KindSub=""/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="nature reserve name" id="landuse.nature_reserve.OSM.label" KindMain="Landuse" KindSub="nature reserve" source="osm\latest\landuse\nature_reserve.lim" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -22057,6 +21924,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</layer>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer National park name" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="National park name" id="landuse.national_park.OSM.label" KindMain="Landuse" KindSub="National park" source="osm\latest\landuse\national_park.lim" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -22090,7 +21958,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="Cemetary Name" KindMain="Unknown" id="epslayer.generic.643" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Cemetery Name" KindMain="Unknown" id="epslayer.generic.643" KindSub=""/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Cemetery Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Cemeteries" id="landuse.cemeteries.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Cemetery"/>
@@ -22120,7 +21988,7 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Sports Ground Name" KindMain="Unknown" id="epslayer.generic.645" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Sports Ground Name" KindMain="Unknown" id="epslayer.generic.645" KindSub=""/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Sports Ground Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Sports Grounds" id="landuse.sportsgrounds.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Sports ground"/>
@@ -22150,7 +22018,7 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Golf Course Name" KindMain="Unknown" id="epslayer.generic.646" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Golf Course Name" KindMain="Unknown" id="epslayer.generic.646" KindSub=""/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Golf Course Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Golf Courses" id="landuse.golfcourses.label" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Golf course"/>
@@ -22180,7 +22048,7 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Island Name" KindMain="Unknown" id="epslayer.generic.650" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Island Name" KindMain="Unknown" id="epslayer.generic.650" KindSub=""/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Island Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Islands" id="landuse.islands.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Island"/>
@@ -22210,7 +22078,7 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="State Park Name" KindMain="Unknown" id="epslayer.generic.651" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer State Park Name" KindMain="Unknown" id="epslayer.generic.651" KindSub=""/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="State Park Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="State Parks" id="landuse.stateparks.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="State park"/>
@@ -22241,7 +22109,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Streetnames" KindMain="Unknown" id="epslayer.generic.660" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer streetNamegroup" KindMain="Unknown" id="epslayer.generic.660" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<streetNamegroup enabled="true" useOfficialLanguage="true" nameMargin="5" maxSyllableDistance="1" nameCompression="0" longNamesFirst="false" abbrAllStanEnd="false" abbreviations="true" textOutside="false" forceAllNames="not" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="false" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="AllWords" prohibitEmptyLineAtStackedNames="true" KindMain="Roads" KindSub="Setting" id="streetnamegroup">
 		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="realHeadOT-Semilight" relHeight="100" spacing="13" slant="0" underline="false" name="Motorway Name" KindMain="Roads" KindSub="Motorways" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.motorways.label">
 			<fontDraw>
@@ -22414,7 +22282,7 @@
 			</criteria>
 		</streetNameStyle>
 	</streetNamegroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Lake / Sea Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.661"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Lake / Sea Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.661"/>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="Lake / Sea Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.label" deduplicateNames="true">
 		<criteria>
 			<inset fieldname="Categ">
@@ -22455,6 +22323,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer City Outline" id="st_b_1" KindMain="EPS-layers" alwaysOutput="false"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="City Outline" KindMain="Boundaries" KindSub="Cities" id="boundaries.cities.line">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="City boundary"/>
@@ -22469,7 +22338,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Line" KindMain="Unknown" id="epslayer.generic.663" KindSub=""/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Province Boundary Line" KindMain="Unknown" id="epslayer.generic.663" KindSub=""/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary Line" KindMain="Boundaries" KindSub="Provinces" id="boundaries.provinces.line.1">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
@@ -22488,7 +22357,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Outline Fill" KindMain="Unknown" id="epslayer.generic.664" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Country fill" KindMain="Unknown" id="epslayer.generic.664" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country fill" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.2">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
@@ -22507,7 +22376,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Layer Country Outline" KindMain="Unknown" id="epslayer.generic.665"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Country Line" KindMain="Unknown" id="epslayer.generic.665"/>
 	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Line" KindMain="Boundaries" KindSub="Countries" id="boundaries.countries.line.1">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
@@ -22528,5 +22397,5 @@
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer After Names" KindMain="Unknown" id="epslayer.generic.666"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Mapboundary" KindMain="Unknown" id="epslayer.generic.665" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer MapLayout" KindMain="Unknown" id="epslayer.generic.665" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 </mapStyle>

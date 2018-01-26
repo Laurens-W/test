@@ -64,7 +64,7 @@
 					<size size="10" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="179" g="229" b="255" overprint="false"/>
+				<fillColor enabled="true" r="153" g="229" b="255" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
@@ -130,6 +130,38 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="AfterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Buildings OSM" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="false" name="Buildings OSM" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings OSM" source="OSM\latest\buildings.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="212" g="232" b="230" overprint="false"/>
+				<size size="100" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="153" g="153" b="153" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="gothamNarrow-Bold" relHeight="255" spacing="255" slant="255" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+			</fontDraw>
+			<size size="7" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+	</layer>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
 	<polygongroup name="Landphase 9" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase9">
 		<polygonstyle enabled="true" name="Unused Area Fill" KindMain="Landuse" KindSub="Unused Areas" id="landuse.unusedareas.fill">
@@ -168,7 +200,7 @@
 					<size size="10" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="179" g="229" b="255" overprint="false"/>
+				<fillColor enabled="true" r="153" g="229" b="255" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
@@ -238,7 +270,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="3500" units="micrometer" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -287,7 +319,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="3500" units="micrometer" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -336,7 +368,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="2800" units="micrometer" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -385,7 +417,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="2800" units="micrometer" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -434,7 +466,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -483,7 +515,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -532,7 +564,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -581,7 +613,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="7" units="points" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -630,7 +662,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="6" units="points" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -679,7 +711,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="6" units="points" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -728,7 +760,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="6" units="points" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -795,7 +827,7 @@
 	</userstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative names countries" KindMain="EPS-layers" KindSub="" id="epslayer.generic.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Countries Names" KindMain="Boundaries" KindSub="Countries" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.countries.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Countries Names" KindMain="Boundaries" KindSub="Countries" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Country boundary"/>
 			<and>
@@ -809,9 +841,9 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="kilometer" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="100" g="100" b="220" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="8" units="points" isRelative="false"/>
+			<size size="10" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="10">
 				<shape shapekind="rectangle">
 					<line enabled="false">

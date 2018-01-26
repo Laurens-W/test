@@ -89,6 +89,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
+	<layer xsi:type="epsLayer" enabled="true" name="highlightpolygon" id="epslayer.highlightpolygons" KindMain="EPS-layers" KindSub="" alwaysOutput="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="epsLayer" enabled="true" name="water fill large" KindMain="EPS-layers" KindSub="" id="epslayer.generic.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<polygongroup name="Landphase sea ocean Fill" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse">
 		<polygonstyle enabled="true" name="Water Sea/Ocean Fill" KindMain="Water" KindSub="Lakes / Seas">

@@ -23632,12 +23632,12 @@
 		</criteria>
 		<textDraw xsi:type="flexTextDraw" enabled="true" alignment="center" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false" flexEnabled="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="38" g="145" b="26" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -23663,12 +23663,12 @@
 		</criteria>
 		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="38" g="145" b="26" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -23692,12 +23692,12 @@
 		</criteria>
 		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="38" g="145" b="26" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -23721,12 +23721,12 @@
 		</criteria>
 		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="38" g="145" b="26" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -23813,12 +23813,12 @@
 		</criteria>
 		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="38" g="145" b="26" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -23842,12 +23842,12 @@
 		</criteria>
 		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="38" g="145" b="26" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -24089,7 +24089,7 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -24146,12 +24146,12 @@
 		</criteria>
 		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="38" g="145" b="26" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -24309,7 +24309,7 @@
 					<size size="0" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -24340,7 +24340,7 @@
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2187" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -27561,14 +27561,14 @@
 				<item value="Ocean"/>
 			</inset>
 		</criteria>
-		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="helvetica" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="85" g="197" b="242" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="255" overprint="false"/>
 			</fontDraw>
 			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -27628,14 +27628,14 @@
 				<item value="Channel"/>
 			</inset>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="15" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
-				<line enabled="true">
+				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="kilometer" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="85" g="197" b="242" overprint="false"/>
+				<fillColor enabled="true" r="0" g="255" b="255" overprint="false"/>
 			</fontDraw>
 			<size size="6" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="10">

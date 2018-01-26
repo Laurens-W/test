@@ -594,6 +594,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="hill shading" KindMain="EPS-layers" KindSub="" id="epslayer.hillshading" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<layer xsi:type="epsLayer" enabled="true" name="roads" KindMain="EPS-layers" KindSub="" id="epslayer.roads"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Roundabout Patch" kind="roundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.roundabout"/>
@@ -648,7 +649,7 @@
 	</polygongroup>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{mt}"/>
 		</criteria>
@@ -657,39 +658,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="1600" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1600" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{hw}"/>
 		</criteria>
@@ -698,39 +669,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="700" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1050" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{th}"/>
 		</criteria>
@@ -739,39 +680,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="700" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1050" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -814,23 +725,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="400" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="600" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -873,23 +778,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="600" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="900" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -932,23 +831,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="700" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="1050" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -994,23 +887,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="700" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="1050" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1045,19 +932,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="850" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="1275" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
@@ -1206,51 +1087,8 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="bridge &amp; oneway symbols" KindMain="EPS-layers" KindSub="" id="epslayer.bridge&amp;onewaysymbols"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Bridge Patch" kind="bridge" KindMain="Special Constructions" KindSub="Bridges" id="patch.bridges"/>
-	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="false">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Railway station"/>
-			<and>
-				<equation oper="neq" fieldname="SubCat" value="1"/>
-			</and>
-		</criteria>
-		<textDraw enabled="false" alignment="downleft" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="54" g="54" b="54" overprint="false"/>
-					<size size="0" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
-			</fontDraw>
-			<size size="1660" units="micrometer" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="54" g="54" b="54" overprint="false"/>
-						<size size="0" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="true" extraHeight="130" slocProjection="projectOnCritChains" horizontal="true">
-			<svg xsi:type="symbolBase" name="railwayStationSymbol_DailyTelegraph" width="25" height="25" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 25 25&quot; xml:space=&quot;preserve&quot;&gt;&#xA; &lt;path fill=&quot;#010101&quot; d=&quot;M0,12.485C0,5.594,5.593,0,12.485,0C19.376,0,25,5.594,25,12.485S19.407,25,12.485,25&#xA;  C5.593,25,0,19.407,0,12.485z&quot;/&gt;&#xA;  &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M18.4,6.912v9.475c0,0.642-0.521,1.16-1.162,1.16H7.761c-0.64,0-1.161-0.519-1.161-1.16V6.912&#xA;   c0-1.824,1.542-2.519,2.062-2.519h1.509V4.087c0-0.272,0.221-0.493,0.494-0.493h3.67c0.273,0,0.493,0.221,0.493,0.493v0.306h1.51&#xA;   C16.858,4.393,18.4,5.033,18.4,6.912z M17.352,6.787c0-0.019-0.002-0.042-0.003-0.063V6.699c0-0.059-0.007-0.114-0.021-0.171&#xA;   c-0.121-0.695-0.729-1.226-1.46-1.226H9.133c-0.721,0-1.323,0.513-1.458,1.195C7.658,6.563,7.648,6.632,7.648,6.699v0.088v0.874&#xA;   v2.23c0,0.398,0.324,0.724,0.724,0.724h8.254c0.4,0,0.723-0.325,0.723-0.724V7.725c0.001-0.02,0.003-0.041,0.003-0.063V6.787z&#xA;    M9.335,13.718c-0.608,0-1.102,0.491-1.102,1.101c0,0.61,0.494,1.104,1.102,1.104c0.609,0,1.102-0.493,1.102-1.104&#xA;   C10.438,14.209,9.944,13.718,9.335,13.718z M15.664,13.718c-0.609,0-1.101,0.491-1.101,1.101c0,0.61,0.493,1.104,1.101,1.104&#xA;   c0.609,0,1.104-0.493,1.104-1.104C16.768,14.209,16.273,13.718,15.664,13.718z&quot;/&gt;&#xA;   &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M8.129,18.279h1.824L8.016,20.94c0,0-0.154,0.38-0.743,0.38H5.905c0,0-0.227-0.146,0.02-0.393&#xA;    L8.129,18.279z&quot;/&gt;&#xA;   &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M16.872,18.279h-1.824l1.938,2.661c0,0,0.152,0.38,0.741,0.38h1.37c0,0,0.226-0.146-0.021-0.393&#xA;    L16.872,18.279z&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-			<eps name="railwayStationSymbol_DailyTelegraph" width="25" height="25" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 294 -409 320 -383&#xA;%%HiResBoundingBox: 294.2837 -408.3164 319.2837 -383.3164&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.5 -396.5 306.5 -396.5&#xA;%AI8_OpenToView: -468 63 1 1557 904 18 0 0 78 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;0 O&#xA;0.746094 0.675781 0.667969 0.898438 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;294.2837 -395.8018 m&#xA;294.2837 -388.9102 299.877 -383.3164 306.769 -383.3164 c&#xA;313.6597 -383.3164 319.2837 -388.9102 319.2837 -395.8018 c&#xA;319.2837 -402.6934 313.6904 -408.3164 306.769 -408.3164 c&#xA;299.877 -408.3164 294.2837 -402.7236 294.2837 -395.8018 c&#xA;f&#xA;u&#xA;*u&#xA;0 0 0 0 k&#xA;%Plot f&#xA;312.6841 -390.2285 m&#xA;312.6841 -399.7031 L&#xA;312.6841 -400.3447 312.1636 -400.8633 311.522 -400.8633 C&#xA;302.0449 -400.8633 L&#xA;301.4048 -400.8633 300.8843 -400.3447 300.8843 -399.7031 C&#xA;300.8843 -390.2285 L&#xA;300.8843 -388.4043 302.4263 -387.709 302.9463 -387.709 C&#xA;304.4556 -387.709 L&#xA;304.4556 -387.4033 L&#xA;304.4556 -387.1309 304.6763 -386.9102 304.9492 -386.9102 C&#xA;308.6191 -386.9102 L&#xA;308.8921 -386.9102 309.1123 -387.1309 309.1123 -387.4033 C&#xA;309.1123 -387.709 L&#xA;310.6221 -387.709 L&#xA;311.1416 -387.709 312.6841 -388.3496 312.6841 -390.2285 C&#xA;f&#xA;u&#xA;1 D&#xA;%Plot f&#xA;311.6362 -390.1035 m&#xA;311.6362 -390.084 311.6343 -390.0615 311.6328 -390.04 C&#xA;311.6328 -390.0156 L&#xA;311.6328 -389.957 311.6255 -389.9014 311.6118 -389.8447 C&#xA;311.4912 -389.1494 310.8828 -388.6191 310.1514 -388.6191 C&#xA;303.417 -388.6191 L&#xA;302.6958 -388.6191 302.0938 -389.1318 301.9595 -389.8145 C&#xA;301.9419 -389.8789 301.9312 -389.9482 301.9312 -390.0156 C&#xA;301.9312 -390.1035 L&#xA;301.9312 -390.9775 L&#xA;301.9312 -393.208 L&#xA;301.9312 -393.6064 302.2549 -393.9316 302.6553 -393.9316 C&#xA;310.9097 -393.9316 L&#xA;311.3096 -393.9316 311.6328 -393.6064 311.6328 -393.208 C&#xA;311.6328 -391.041 L&#xA;311.6343 -391.0205 311.6362 -391 311.6362 -390.9775 C&#xA;311.6362 -390.1035 L&#xA;f&#xA;u&#xA;1 Ap&#xA;%Plot f&#xA;303.6187 -397.0342 m&#xA;303.0103 -397.0342 302.5166 -397.5254 302.5166 -398.1357 c&#xA;302.5166 -398.7461 303.0103 -399.2393 303.6187 -399.2393 c&#xA;304.228 -399.2393 304.7212 -398.7461 304.7212 -398.1357 c&#xA;304.7212 -397.5254 304.228 -397.0342 303.6187 -397.0342 c&#xA;f&#xA;%Plot f&#xA;309.9482 -397.0342 m&#xA;309.3394 -397.0342 308.8467 -397.5254 308.8467 -398.1357 c&#xA;308.8467 -398.7461 309.3394 -399.2393 309.9482 -399.2393 c&#xA;310.5571 -399.2393 311.0518 -398.7461 311.0518 -398.1357 c&#xA;311.0518 -397.5254 310.5571 -397.0342 309.9482 -397.0342 c&#xA;f&#xA;U&#xA;U&#xA;*U&#xA;u&#xA;0 Ap&#xA;0 D&#xA;%Plot f&#xA;302.4126 -401.5957 m&#xA;304.2368 -401.5957 l&#xA;302.2993 -404.2568 l&#xA;302.1455 -404.6367 301.5566 -404.6367 v&#xA;300.1885 -404.6367 l&#xA;299.9614 -404.4902 300.2085 -404.2432 v&#xA;302.4126 -401.5957 l&#xA;f&#xA;%Plot f&#xA;311.1558 -401.5957 m&#xA;309.3315 -401.5957 l&#xA;311.269 -404.2568 l&#xA;311.4214 -404.6367 312.0103 -404.6367 v&#xA;313.3799 -404.6367 l&#xA;313.606 -404.4902 313.3594 -404.2432 v&#xA;311.1558 -401.5957 l&#xA;f&#xA;U&#xA;U&#xA;U&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
-			<width size="4445" units="micrometer" isRelative="false"/>
-			<height size="4445" units="micrometer" isRelative="false"/>
-		</symbolDraw>
-		<lineDraw enabled="false">
-			<color r="255" g="255" b="255" overprint="true"/>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<style size="0" units="kilometer" isRelative="false" style="solid"/>
-		</lineDraw>
-	</slocstyle>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
 	<layer xsi:type="epsLayer" enabled="true" name="city&amp;town names" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
@@ -1645,6 +1483,47 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="false" storeExtraSlocs="0">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Railway station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+			</and>
+		</criteria>
+		<textDraw enabled="false" alignment="downleft" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="54" g="54" b="54" overprint="false"/>
+					<size size="0" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
+			</fontDraw>
+			<size size="1660" units="micrometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="true" extraHeight="130" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="railwayStationSymbol_DailyTelegraph" width="25" height="25" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 25 25&quot; xml:space=&quot;preserve&quot;&gt;&#xA; &lt;path fill=&quot;#010101&quot; d=&quot;M0,12.485C0,5.594,5.593,0,12.485,0C19.376,0,25,5.594,25,12.485S19.407,25,12.485,25&#xA;  C5.593,25,0,19.407,0,12.485z&quot;/&gt;&#xA;  &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M18.4,6.912v9.475c0,0.642-0.521,1.16-1.162,1.16H7.761c-0.64,0-1.161-0.519-1.161-1.16V6.912&#xA;   c0-1.824,1.542-2.519,2.062-2.519h1.509V4.087c0-0.272,0.221-0.493,0.494-0.493h3.67c0.273,0,0.493,0.221,0.493,0.493v0.306h1.51&#xA;   C16.858,4.393,18.4,5.033,18.4,6.912z M17.352,6.787c0-0.019-0.002-0.042-0.003-0.063V6.699c0-0.059-0.007-0.114-0.021-0.171&#xA;   c-0.121-0.695-0.729-1.226-1.46-1.226H9.133c-0.721,0-1.323,0.513-1.458,1.195C7.658,6.563,7.648,6.632,7.648,6.699v0.088v0.874&#xA;   v2.23c0,0.398,0.324,0.724,0.724,0.724h8.254c0.4,0,0.723-0.325,0.723-0.724V7.725c0.001-0.02,0.003-0.041,0.003-0.063V6.787z&#xA;    M9.335,13.718c-0.608,0-1.102,0.491-1.102,1.101c0,0.61,0.494,1.104,1.102,1.104c0.609,0,1.102-0.493,1.102-1.104&#xA;   C10.438,14.209,9.944,13.718,9.335,13.718z M15.664,13.718c-0.609,0-1.101,0.491-1.101,1.101c0,0.61,0.493,1.104,1.101,1.104&#xA;   c0.609,0,1.104-0.493,1.104-1.104C16.768,14.209,16.273,13.718,15.664,13.718z&quot;/&gt;&#xA;   &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M8.129,18.279h1.824L8.016,20.94c0,0-0.154,0.38-0.743,0.38H5.905c0,0-0.227-0.146,0.02-0.393&#xA;    L8.129,18.279z&quot;/&gt;&#xA;   &lt;path fill=&quot;#FFFFFF&quot; d=&quot;M16.872,18.279h-1.824l1.938,2.661c0,0,0.152,0.38,0.741,0.38h1.37c0,0,0.226-0.146-0.021-0.393&#xA;    L16.872,18.279z&quot;/&gt;&#xA;&lt;/svg&gt;"/>
+			<eps name="railwayStationSymbol_DailyTelegraph" width="25" height="25" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 294 -409 320 -383&#xA;%%HiResBoundingBox: 294.2837 -408.3164 319.2837 -383.3164&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.5 -396.5 306.5 -396.5&#xA;%AI8_OpenToView: -468 63 1 1557 904 18 0 0 78 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;0 O&#xA;0.746094 0.675781 0.667969 0.898438 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;294.2837 -395.8018 m&#xA;294.2837 -388.9102 299.877 -383.3164 306.769 -383.3164 c&#xA;313.6597 -383.3164 319.2837 -388.9102 319.2837 -395.8018 c&#xA;319.2837 -402.6934 313.6904 -408.3164 306.769 -408.3164 c&#xA;299.877 -408.3164 294.2837 -402.7236 294.2837 -395.8018 c&#xA;f&#xA;u&#xA;*u&#xA;0 0 0 0 k&#xA;%Plot f&#xA;312.6841 -390.2285 m&#xA;312.6841 -399.7031 L&#xA;312.6841 -400.3447 312.1636 -400.8633 311.522 -400.8633 C&#xA;302.0449 -400.8633 L&#xA;301.4048 -400.8633 300.8843 -400.3447 300.8843 -399.7031 C&#xA;300.8843 -390.2285 L&#xA;300.8843 -388.4043 302.4263 -387.709 302.9463 -387.709 C&#xA;304.4556 -387.709 L&#xA;304.4556 -387.4033 L&#xA;304.4556 -387.1309 304.6763 -386.9102 304.9492 -386.9102 C&#xA;308.6191 -386.9102 L&#xA;308.8921 -386.9102 309.1123 -387.1309 309.1123 -387.4033 C&#xA;309.1123 -387.709 L&#xA;310.6221 -387.709 L&#xA;311.1416 -387.709 312.6841 -388.3496 312.6841 -390.2285 C&#xA;f&#xA;u&#xA;1 D&#xA;%Plot f&#xA;311.6362 -390.1035 m&#xA;311.6362 -390.084 311.6343 -390.0615 311.6328 -390.04 C&#xA;311.6328 -390.0156 L&#xA;311.6328 -389.957 311.6255 -389.9014 311.6118 -389.8447 C&#xA;311.4912 -389.1494 310.8828 -388.6191 310.1514 -388.6191 C&#xA;303.417 -388.6191 L&#xA;302.6958 -388.6191 302.0938 -389.1318 301.9595 -389.8145 C&#xA;301.9419 -389.8789 301.9312 -389.9482 301.9312 -390.0156 C&#xA;301.9312 -390.1035 L&#xA;301.9312 -390.9775 L&#xA;301.9312 -393.208 L&#xA;301.9312 -393.6064 302.2549 -393.9316 302.6553 -393.9316 C&#xA;310.9097 -393.9316 L&#xA;311.3096 -393.9316 311.6328 -393.6064 311.6328 -393.208 C&#xA;311.6328 -391.041 L&#xA;311.6343 -391.0205 311.6362 -391 311.6362 -390.9775 C&#xA;311.6362 -390.1035 L&#xA;f&#xA;u&#xA;1 Ap&#xA;%Plot f&#xA;303.6187 -397.0342 m&#xA;303.0103 -397.0342 302.5166 -397.5254 302.5166 -398.1357 c&#xA;302.5166 -398.7461 303.0103 -399.2393 303.6187 -399.2393 c&#xA;304.228 -399.2393 304.7212 -398.7461 304.7212 -398.1357 c&#xA;304.7212 -397.5254 304.228 -397.0342 303.6187 -397.0342 c&#xA;f&#xA;%Plot f&#xA;309.9482 -397.0342 m&#xA;309.3394 -397.0342 308.8467 -397.5254 308.8467 -398.1357 c&#xA;308.8467 -398.7461 309.3394 -399.2393 309.9482 -399.2393 c&#xA;310.5571 -399.2393 311.0518 -398.7461 311.0518 -398.1357 c&#xA;311.0518 -397.5254 310.5571 -397.0342 309.9482 -397.0342 c&#xA;f&#xA;U&#xA;U&#xA;*U&#xA;u&#xA;0 Ap&#xA;0 D&#xA;%Plot f&#xA;302.4126 -401.5957 m&#xA;304.2368 -401.5957 l&#xA;302.2993 -404.2568 l&#xA;302.1455 -404.6367 301.5566 -404.6367 v&#xA;300.1885 -404.6367 l&#xA;299.9614 -404.4902 300.2085 -404.2432 v&#xA;302.4126 -401.5957 l&#xA;f&#xA;%Plot f&#xA;311.1558 -401.5957 m&#xA;309.3315 -401.5957 l&#xA;311.269 -404.2568 l&#xA;311.4214 -404.6367 312.0103 -404.6367 v&#xA;313.3799 -404.6367 l&#xA;313.606 -404.4902 313.3594 -404.2432 v&#xA;311.1558 -401.5957 l&#xA;f&#xA;U&#xA;U&#xA;U&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="4445" units="micrometer" isRelative="false"/>
+			<height size="4445" units="micrometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
 	<slocstyle enabled="true" name="Metro Station Symbol" mergedistance="200" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.symbol" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -1959,7 +1838,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="road numbers" KindMain="EPS-layers" KindSub="" id="epslayer.roadnumbers"/>
+	<layer xsi:type="epsLayer" enabled="true" name="area names" KindMain="EPS-layers" KindSub="" id="epslayer.areanames"/>
 	<slocstyle xsi:type="quarterNameSlocstyle" enabled="true" name="Local Quarter Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.local.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Quarter name"/>
@@ -2006,7 +1885,6 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="area names" KindMain="EPS-layers" KindSub="" id="epslayer.areanames"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Industry Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Industry" id="landuse.industries.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Industry"/>

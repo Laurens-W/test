@@ -1097,7 +1097,7 @@
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<shape shapekind="oval">
+				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="true"/>
 						<size size="0" units="kilometer" isRelative="false"/>
@@ -1169,7 +1169,7 @@
 				<and>
 					<equation oper="eq" fieldname="Importance" value="National"/>
 					<and>
-						<equation oper="ge" fieldname="SubCat" value="4"/>
+						<equation oper="eq" fieldname="SubCat" value="5"/>
 					</and>
 				</and>
 			</criteria>
@@ -1267,7 +1267,7 @@
 				<and>
 					<equation oper="eq" fieldname="Importance" value="Provincial"/>
 					<and>
-						<equation oper="ge" fieldname="SubCat" value="4"/>
+						<equation oper="eq" fieldname="SubCat" value="5"/>
 					</and>
 				</and>
 			</criteria>
@@ -1365,7 +1365,7 @@
 				<and>
 					<equation oper="eq" fieldname="Importance" value="Regional"/>
 					<and>
-						<equation oper="ge" fieldname="SubCat" value="4"/>
+						<equation oper="eq" fieldname="SubCat" value="5"/>
 					</and>
 				</and>
 			</criteria>
@@ -1463,7 +1463,7 @@
 				<and>
 					<equation oper="eq" fieldname="Importance" value="Local"/>
 					<and>
-						<equation oper="ge" fieldname="SubCat" value="4"/>
+						<equation oper="eq" fieldname="SubCat" value="5"/>
 					</and>
 				</and>
 			</criteria>
@@ -1561,7 +1561,7 @@
 				<and>
 					<equation oper="eq" fieldname="Importance" value="Sublocal"/>
 					<and>
-						<equation oper="ge" fieldname="SubCat" value="4"/>
+						<equation oper="eq" fieldname="SubCat" value="5"/>
 					</and>
 				</and>
 			</criteria>
@@ -1659,7 +1659,7 @@
 				<and>
 					<equation oper="eq" fieldname="Importance" value="Private"/>
 					<and>
-						<equation oper="ge" fieldname="SubCat" value="4"/>
+						<equation oper="eq" fieldname="SubCat" value="5"/>
 					</and>
 				</and>
 			</criteria>

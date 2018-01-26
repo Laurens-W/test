@@ -202,8 +202,8 @@
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="EPS-layers" KindSub="" id="epslayer.generic.5"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Outline" KindMain="Unknown" id="epslayer.generic.6" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary Outline" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line">
+	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Line" KindMain="Unknown" id="epslayer.generic.663" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Province Boundary Line" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
 			<and>
@@ -216,13 +216,14 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="217" g="217" b="217" overprint="false"/>
-			<size size="3" units="1/10th millimeter" isRelative="false"/>
+			<color r="153" g="153" b="153" overprint="false"/>
+			<size size="302" units="micrometer" isRelative="false"/>
 			<style size="30" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Boundary Outline" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line">
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Country Outline" KindMain="Unknown" id="epslayer.generic.665" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Line" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
 			<and>
@@ -235,13 +236,13 @@
 		</criteria>
 		<lineDraw enabled="true">
 			<color r="217" g="217" b="217" overprint="false"/>
-			<size size="4" units="1/10th millimeter" isRelative="false"/>
+			<size size="402" units="micrometer" isRelative="false"/>
 			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Fill" KindMain="Unknown" id="epslayer.generic.7" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Boundary Fill" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.fill">
+	<layer xsi:type="epsLayer" enabled="true" name="Country Outline Fill" KindMain="Unknown" id="epslayer.generic.664" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Fill" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
 			<and>
@@ -253,8 +254,8 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="89" g="89" b="89" overprint="false"/>
-			<size size="1" units="1/10th millimeter" isRelative="false"/>
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="101" units="micrometer" isRelative="false"/>
 			<style size="3" units="millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>

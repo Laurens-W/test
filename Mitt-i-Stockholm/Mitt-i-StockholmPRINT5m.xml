@@ -198,71 +198,6 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Highway" KindMain="EPS-layers" KindSub="" id="epslayer.roads" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-		<criteria>
-			<inset fieldname="Access" negate="true">
-				<item value="{th}"/>
-				<item value="{hw}"/>
-				<item value="{mt}"/>
-			</inset>
-			<and>
-				<inset fieldname="Roadclass">
-					<item value="Motorway"/>
-					<item value="Highway"/>
-				</inset>
-				<and>
-					<equation oper="eq" fieldname="Roaduse" value="Car"/>
-					<and>
-						<inset fieldname="Roadtype" negate="true">
-							<item value="MotorType"/>
-							<item value="Bosweg/pad"/>
-							<item value="Ferry"/>
-							<item value="Pedestrian Zone"/>
-						</inset>
-					</and>
-				</and>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="150" units="micrometer" isRelative="false"/>
-			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="83" units="micrometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.line">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<style size="20" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
-			</modifier>
-		</lineDraw>
-	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-		<criteria>
-			<inset fieldname="Access" negate="true">
-				<item value="{th}"/>
-				<item value="{hw}"/>
-				<item value="{mt}"/>
-			</inset>
-			<and>
-				<equation oper="eq" fieldname="Roaduse" value="Car"/>
-				<and>
-					<equation oper="eq" fieldname="RoadType" value="MotorType"/>
-				</and>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="250" units="micrometer" isRelative="false"/>
-			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="3" units="micrometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.line">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<style size="20" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
-			</modifier>
-		</lineDraw>
-	</chainstyle>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -293,36 +228,6 @@
 			<size size="50" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="50" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="50" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -344,36 +249,6 @@
 			<size size="150" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="150" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="150" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="255" g="255" b="255" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
 	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Rail Fill" overwriteByNames="false" maxRound="25" roadPolyMode="false" KindMain="Rails" KindSub="Rails Normal" id="rails.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

@@ -771,7 +771,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="center" capitalMode="as_is" font="sourceSansPro-Light" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="center" capitalMode="as_is" font="sourceSansPro-Regular" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -793,7 +793,7 @@
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<shape shapekind="oval">
+				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="true"/>
 						<size size="0" units="kilometer" isRelative="false"/>
@@ -810,13 +810,13 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false">
+		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
 					<equation oper="eq" fieldname="Importance" value="International"/>
 					<and>
-						<equation oper="le" fieldname="SubCat" value="5"/>
+						<equation oper="le" fieldname="SubCat" value="3"/>
 					</and>
 				</and>
 			</criteria>
@@ -908,7 +908,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false">
+		<slocstyle enabled="true" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>

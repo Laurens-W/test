@@ -163,9 +163,9 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publikBeta-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publik-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
-					<line enabled="true">
+					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
 						<size size="3" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
@@ -212,9 +212,9 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publikBeta-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publik-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
-					<line enabled="true">
+					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
 						<size size="3" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
@@ -261,9 +261,9 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publikBeta-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publik-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
-					<line enabled="true">
+					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
 						<size size="3" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
@@ -310,9 +310,9 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publikBeta-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publik-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
-					<line enabled="true">
+					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
 						<size size="3" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
@@ -359,9 +359,9 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publikBeta-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publik-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
-					<line enabled="true">
+					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
 						<size size="3" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
@@ -408,9 +408,9 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publikBeta-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publik-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
-					<line enabled="true">
+					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
 						<size size="3" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
@@ -456,7 +456,7 @@
 				<equation oper="neq" fieldname="Name" value="nn"/>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="publikBeta-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="publik-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="130" g="130" b="130" overprint="false"/>
@@ -490,7 +490,7 @@
 				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publikBeta-Italic" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="publik-Italic" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -512,6 +512,7 @@
 			</boxDraw>
 		</textDraw>
 		<namePosition name="fullyInside"/>
+		<namePosition name="onCenterLine"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="After Names" KindMain="Unknown" id="epslayer.generic.666" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>

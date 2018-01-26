@@ -171,7 +171,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Small  Land Boundary Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Small  Land Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Small  Land Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>
@@ -340,7 +340,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon" KindMain="EPS-layers" KindSub="" id="epslayer.generic.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Polygon" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Polygon" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>
@@ -508,8 +508,39 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Beach" KindMain="Unknown" id="epslayer.generic.5" KindSub=""/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Urban Area USA" id="landuse.residentials.fill" KindMain="Landuse" KindSub="Urban Area" source="Here\buausa.lim" namePattern="(.*)" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="255" g="255" b="255" overprint="false"/>
+				<size size="0" units="kilometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="224" g="235" b="228" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="courier" relHeight="255" spacing="255" slant="255" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+			</fontDraw>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+	</layer>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Beach" KindMain="Unknown" id="epslayer.generic.5" KindSub="" alwaysOutput="false"/>
 	<polygongroup name="Landphase 4" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase4">
 		<polygonstyle enabled="true" name="Dune" KindMain="Landuse" KindSub="Dunes" id="landuse.dunes">
 			<criteria>
@@ -1938,7 +1969,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon Line" KindMain="EPS-layers" KindSub="" id="epslayer.generic.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Polygon Line" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Polygon Line" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="true">
 				<color r="0" g="0" b="0" overprint="false"/>
@@ -1992,6 +2023,39 @@
 	</chainstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Country-Land-Pays-País-Land polygons" KindMain="EPS-layers" id="epslayer.administrativeboundaries" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Country boundaries" id="boundaries.countries.line" KindMain="Admin" source="Here\Admin\Country.lim" namePattern="(.*)" deduplicateNames="false" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="true">
+				<color r="59" g="85" b="166" overprint="false"/>
+				<size size="3" units="1/10th millimeter" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="false" r="59" g="85" b="166" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="59" g="85" b="166" overprint="false"/>
+			</fontDraw>
+			<size size="5" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="true">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="1" units="points" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Symbol" KindMain="Unknown" id="epslayer.generic.61" KindSub=""/>
 	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="500" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="true">
 		<criteria>
@@ -21568,7 +21632,7 @@
 		<namePosition name="fullyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Polygon Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Polygon Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>

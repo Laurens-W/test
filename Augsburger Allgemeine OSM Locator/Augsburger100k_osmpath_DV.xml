@@ -3240,7 +3240,7 @@
 		</textDraw>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer Big City Name" KindMain="eps layers" id="epslayer.generic.164"/>
-	<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.label">
+	<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.label" deduplicateNames="false" storeExtraSlocs="30">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="City center"/>
 			<and>
@@ -3280,6 +3280,11 @@
 			<width size="0" units="kilometer" isRelative="false"/>
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer City Name" KindMain="eps layers" id="epslayer.generic.165"/>
 	<slocstyle enabled="true" name="City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities.label">

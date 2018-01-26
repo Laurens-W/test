@@ -526,7 +526,7 @@
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="Buildings/Runway" KindMain="Unknown" id="epslayer.generic.9" KindSub=""/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
-	<layer xsi:type="polygonVectorLayer" enabled="true" name="Buildings" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings" source="OSM\latest\boi.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" namePattern="(.*)">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Buildings" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings" source="OSM\latest\boi.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="212" g="232" b="230" overprint="false"/>
@@ -2400,7 +2400,7 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Buildings of Interest Names" id="epslayer.buildings&amp;land.label" KindMain="EPS-layers" alwaysOutput="false" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="true" name="Buildings" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings" source="OSM\latest\boi.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" namePattern="(.*)">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Buildings" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings" source="OSM\latest\boi.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="212" g="232" b="230" overprint="false"/>
@@ -21114,7 +21114,7 @@
 			</line>
 			<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Regular" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Regular" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21178,7 +21178,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer enabled="true" name="Water_WaterOSM" id="landuse.waters.waters.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\water.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer enabled="true" name="Water_WaterOSM" id="landuse.waters.waters.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\water.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="204" g="204" b="204" overprint="false"/>
@@ -21187,7 +21187,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21210,9 +21210,8 @@
 		</textDraw>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
-		<namePosition name="partlyInside"/>
 	</layer>
-	<layer enabled="true" name="Water_GlacierOSM" id="landuse.waters.glaciers.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\glacier.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer enabled="true" name="Water_GlacierOSM" id="landuse.waters.glaciers.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\glacier.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="204" g="204" b="204" overprint="false"/>
@@ -21221,7 +21220,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21244,9 +21243,8 @@
 		</textDraw>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
-		<namePosition name="partlyInside"/>
 	</layer>
-	<layer enabled="true" name="Water_ReservoirOSM" id="landuse.waters.reservoirs.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\reservoir.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer enabled="true" name="Water_ReservoirOSM" id="landuse.waters.reservoirs.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\reservoir.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="204" g="204" b="204" overprint="false"/>
@@ -21255,7 +21253,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21278,7 +21276,6 @@
 		</textDraw>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
-		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="River / Channel Name" KindMain="Unknown" id="epslayer.generic.662" KindSub=""/>
 	<layer enabled="true" name="Water_RiverOSM" id="landuse.waters.rivers.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\river.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">

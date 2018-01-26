@@ -321,7 +321,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -370,7 +370,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -419,7 +419,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -468,7 +468,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -517,7 +517,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -566,7 +566,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -615,7 +615,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -664,7 +664,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -713,7 +713,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -762,7 +762,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -811,7 +811,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -860,7 +860,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -909,7 +909,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="rectangle">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -958,7 +958,7 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
+			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>

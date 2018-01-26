@@ -611,6 +611,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="hill shading" KindMain="EPS-layers" KindSub="" id="epslayer.hillshading" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<layer xsi:type="epsLayer" enabled="true" name="roads" KindMain="EPS-layers" KindSub="" id="epslayer.roads"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Roundabout Patch" kind="roundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.roundabout"/>
@@ -659,7 +660,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Sidewalk Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Sidewalks" id="roads.pedestrians.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Sidewalk Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Sidewalks" id="roads.pedestrians.fill">
 		<criteria>
 			<inset fieldname="Roadtype" negate="true">
 				<item value="Ferry"/>
@@ -675,15 +676,9 @@
 			<size size="1" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.pedestrians.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Noway Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Noways" id="roads.noways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Noway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Noways" id="roads.noways.fill">
 		<criteria>
 			<inset fieldname="Surface" negate="true">
 				<item value="Unpaved"/>
@@ -707,15 +702,9 @@
 			<size size="1" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.noways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Parking Area Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Parking Areas" id="roads.parkingareas.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Parking Area Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Parking Areas" id="roads.parkingareas.line">
 		<criteria>
 			<inset fieldname="UserCatPresent">
 				<item value="Parking"/>
@@ -741,7 +730,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Parking Area Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Parking Areas" id="roads.parkingareas.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Parking Area Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Parking Areas" id="roads.parkingareas.fill">
 		<criteria>
 			<inset fieldname="UserCatPresent">
 				<item value="Parking"/>
@@ -759,12 +748,6 @@
 			<size size="1" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.parkingareas.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
 	<polygongroup name="Squares Fill" perDb="false" KindMain="Landuse" KindSub="Squares" id="landusegroup.squares">
@@ -786,7 +769,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Pedestrian Zone Chainoutline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Pedestrian Zones" id="roads.pedestrianzones.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Pedestrian Zone Chainoutline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Pedestrian Zones" id="roads.pedestrianzones.line">
 		<criteria>
 			<equation oper="eq" fieldname="Roadtype" value="Pedestrian Zone"/>
 			<or>
@@ -806,7 +789,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Pedestrian Zone Chainfill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Pedestrian Zones" id="roads.pedestrianzones.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Pedestrian Zone Chainfill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Pedestrian Zones" id="roads.pedestrianzones.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Roadtype" value="Pedestrian Zone"/>
 			<or>
@@ -818,12 +801,6 @@
 			<size size="1" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.pedestrianzones.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
 	<polygongroup name="Pedestrian Square Fill" perDb="false" KindMain="Landuse" KindSub="Pedestrian Squares" id="landusegroup.pedestriansquares">
@@ -843,7 +820,7 @@
 	</polygongroup>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Roads not for Car Fills" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Roads not for Car" id="roads.roadnotcars.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Roads not for Car Fills" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Roads not for Car" id="roads.roadnotcars.fill">
 		<criteria>
 			<inset fieldname="Roadtype" negate="true">
 				<item value="Ferry"/>
@@ -868,15 +845,9 @@
 			<size size="1" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.roadnotcars.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Forest- / Narrow Road Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Forest- / Narrow Roads" id="roads.forestroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Forest- / Narrow Road Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Forest- / Narrow Roads" id="roads.forestroads.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Roadtype" value="Bosweg/pad"/>
 		</criteria>
@@ -885,15 +856,9 @@
 			<size size="1" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.forestroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{mt}"/>
 		</criteria>
@@ -902,39 +867,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="1200" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1200" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{hw}"/>
 		</criteria>
@@ -943,39 +878,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="1200" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1200" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{th}"/>
 		</criteria>
@@ -984,39 +889,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="700" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="1050" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Local Road Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Local Roads" id="roads.localroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Local Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Local Roads" id="roads.localroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1053,36 +928,9 @@
 			<size size="1" units="points" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Parking" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.parking.fill">
-				<criteria>
-					<inset fieldname="Access">
-						<item value="Road access"/>
-						<item value="{mt}"/>
-						<item value="{hw}"/>
-						<item value="{th}"/>
-						<item value="Parking access"/>
-					</inset>
-					<or>
-						<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-					</or>
-				</criteria>
-				<size size="800" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="900" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1125,23 +973,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="600" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="900" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.minorroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1184,23 +1026,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="700" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="1050" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1243,23 +1079,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="700" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="1050" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1305,23 +1135,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="1400" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="1400" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -1356,19 +1180,13 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="1600" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="1600" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
@@ -1517,9 +1335,12 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="bridge &amp; oneway symbols" KindMain="EPS-layers" KindSub="" id="epslayer.bridge&amp;onewaysymbols"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Bridge Patch" kind="bridge" KindMain="Special Constructions" KindSub="Bridges" id="patch.bridges"/>
-	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="false">
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
+	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
+	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois"/>
+	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="false" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
 			<and>
@@ -1559,12 +1380,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
-	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois"/>
 	<slocstyle enabled="true" name="Metro Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.symbol" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -2071,6 +1887,49 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
+	<slocstyle xsi:type="quarterNameSlocstyle" enabled="true" name="Quarter Name" mergedistance="0" overwriteRoadclass="highway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.label" deduplicateNames="false">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Quarter name"/>
+		</criteria>
+		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="austinNewsDeck-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="3" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="110" g="111" b="114" overprint="false"/>
+			</fontDraw>
+			<size size="8" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="95" g="95" b="95" overprint="false"/>
+						<size size="1" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="false" extraHeight="0" slocProjection="undef" horizontal="true">
+			<shape shapekind="rectangle">
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+			</shape>
+			<width size="0" units="kilometer" isRelative="false"/>
+			<height size="0" units="kilometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Industry Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Industry" id="landuse.industries.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Industry"/>
@@ -2372,49 +2231,6 @@
 		<namePosition name="partlyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="city&amp;town names" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames"/>
-	<slocstyle xsi:type="quarterNameSlocstyle" enabled="true" name="Quarter Name" mergedistance="0" overwriteRoadclass="highway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.label" deduplicateNames="false">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Quarter name"/>
-		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="austinNewsDeck-Roman" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="255" g="255" b="255" overprint="false"/>
-					<size size="3" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="110" g="111" b="114" overprint="false"/>
-			</fontDraw>
-			<size size="8" units="points" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="95" g="95" b="95" overprint="false"/>
-						<size size="1" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="false" extraHeight="0" slocProjection="undef" horizontal="true">
-			<shape shapekind="rectangle">
-				<line enabled="true">
-					<color r="255" g="255" b="255" overprint="true"/>
-					<size size="0" units="kilometer" isRelative="false"/>
-					<style size="0" units="kilometer" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
-			</shape>
-			<width size="0" units="kilometer" isRelative="false"/>
-			<height size="0" units="kilometer" isRelative="false"/>
-		</symbolDraw>
-		<lineDraw enabled="false">
-			<color r="255" g="255" b="255" overprint="true"/>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<style size="0" units="kilometer" isRelative="false" style="solid"/>
-		</lineDraw>
-	</slocstyle>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Big City Name" overwriteRoadclass="other" namePattern="" KindMain="Place- and Area Names" KindSub="Placenames Landuse" id="places.bigcities.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Residential"/>

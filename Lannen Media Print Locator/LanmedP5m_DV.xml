@@ -403,8 +403,8 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocgroup maxFillpercentage="15" name="CityNames Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
-		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false">
+	<slocgroup maxFillpercentage="15" name="City Names Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
+		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>

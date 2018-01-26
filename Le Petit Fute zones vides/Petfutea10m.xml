@@ -1321,7 +1321,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Country Name" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundarynames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="true" name="Country Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Country Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>

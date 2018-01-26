@@ -831,7 +831,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -880,7 +880,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -929,7 +929,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -978,7 +978,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1027,7 +1027,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1076,7 +1076,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1125,7 +1125,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1174,7 +1174,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1223,7 +1223,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1272,7 +1272,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1321,7 +1321,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1370,7 +1370,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="allCaps" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="true">
 						<color r="255" g="255" b="255" overprint="false"/>

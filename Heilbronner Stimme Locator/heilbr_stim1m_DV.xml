@@ -511,7 +511,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name="Grid Layer" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.88"/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
 	<layer xsi:type="epsLayer" enabled="true" name="City Names Group" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.89"/>
-	<slocgroup maxFillpercentage="10" name="CityNames Group" KindMain="Placenames" KindSub="Placenames POIs" id="pois.placenamesgroup">
+	<slocgroup maxFillpercentage="10" name="City Names Group" KindMain="Placenames" KindSub="Placenames POIs" id="pois.placenamesgroup">
 		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>

@@ -1561,7 +1561,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -1619,7 +1619,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Country Name" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundarynames"/>
-	<layer xsi:type="polygonVectorLayer" enabled="true" name="Country Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Country Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>
@@ -1637,7 +1637,7 @@
 				</line>
 				<fillColor enabled="true" r="140" g="25" b="255" overprint="false"/>
 			</fontDraw>
-			<size size="11" units="points" isRelative="false"/>
+			<size size="10" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="10">
 				<shape shapekind="rectangle">
 					<line enabled="true">

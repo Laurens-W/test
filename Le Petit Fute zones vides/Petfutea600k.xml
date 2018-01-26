@@ -21070,7 +21070,7 @@
 			</line>
 			<fillColor enabled="false" r="179" g="255" b="255" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21103,7 +21103,7 @@
 			</line>
 			<fillColor enabled="false" r="179" g="255" b="255" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>

@@ -2393,7 +2393,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name="Grid Layer" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.102"/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.103"/>
-	<slocstyle enabled="true" name="Metro Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -2443,7 +2443,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol de u" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.104"/>
-	<slocstyle enabled="true" name="Metro Station Symbol de u" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.u.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol de u" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.u.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -2492,7 +2492,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol de s" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.105"/>
-	<slocstyle enabled="true" name="Metro Station Symbol de s" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.s.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol de s" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.s.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -2541,7 +2541,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol fr" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.106"/>
-	<slocstyle enabled="true" name="Metro Station Symbol fr" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.fr.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol fr" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.fr.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -2587,7 +2587,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol es" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.107"/>
-	<slocstyle enabled="true" name="Metro Station Symbol es" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.es.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol es" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.es.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -2633,7 +2633,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol uk" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.108"/>
-	<slocstyle enabled="true" name="Metro Station Symbol uk" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.uk.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol uk" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.uk.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -2679,7 +2679,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol dk" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.109"/>
-	<slocstyle enabled="true" name="Metro Station Symbol dk" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-tog-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.dk.symbol" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Symbol dk" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-tog-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.dk.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -3730,7 +3730,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.174" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle enabled="true" name="Metro Station Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -3780,7 +3780,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name de u" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.175" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle enabled="true" name="Metro Station Name de u" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.u.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Name de u" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.u.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -3829,7 +3829,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name de s" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.176" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle enabled="true" name="Metro Station Name de s" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.s.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Name de s" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-bahn.(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.de.s.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -3878,7 +3878,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name fr" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.177" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle enabled="true" name="Metro Station Name fr" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.fr.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Name fr" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.fr.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -3924,7 +3924,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name es" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.178" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle enabled="true" name="Metro Station Name es" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.es.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Name es" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.es.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -3970,7 +3970,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name uk" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.179" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle enabled="true" name="Metro Station Name uk" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.uk.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Name uk" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.uk.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>
@@ -4016,7 +4016,7 @@
 		</lineDraw>
 	</slocstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name dk" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.180" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle enabled="true" name="Metro Station Name dk" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-tog-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.dk.label" deduplicateNames="true" storeExtraSlocs="0">
+	<slocstyle enabled="false" name="Metro Station Name dk" mergedistance="0" overwriteRoadclass="motorway" namePattern=".-tog-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.dk.label" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
 			<and>

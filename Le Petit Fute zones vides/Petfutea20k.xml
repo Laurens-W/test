@@ -20791,7 +20791,7 @@
 		<namePosition name="partlyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Streetnames" KindMain="Unknown" id="epslayer.generic.660" KindSub=""/>
-	<streetNamegroup enabled="true" nameMargin="5" maxSyllableDistance="1" nameCompression="0" longNamesFirst="true" abbrAllStanEnd="true" abbreviations="true" textOutside="true" forceAllNames="not" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="false" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="All" prohibitEmptyLineAtStackedNames="true" KindMain="Roads" KindSub="Setting" id="streetnamegroup" languageMode="none">
+	<streetNamegroup enabled="true" nameMargin="5" maxSyllableDistance="1" nameCompression="0" longNamesFirst="true" abbrAllStanEnd="false" abbreviations="true" textOutside="true" forceAllNames="not" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="false" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="All" prohibitEmptyLineAtStackedNames="true" KindMain="Roads" KindSub="Setting" id="streetnamegroup" languageMode="none">
 		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Regular" relHeight="100" spacing="0" slant="10" underline="false" name="Highway Name" KindMain="Roads" KindSub="Highways" minNameLength="0" minSyllableLength="3" textInside="true" id="roads.highways.label">
 			<fontDraw>
 				<line enabled="true">
@@ -21172,7 +21172,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer enabled="true" name="Water_WaterOSM" id="landuse.waters.waters.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\water.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer enabled="true" name="Water_WaterOSM" id="landuse.waters.waters.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\water.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="204" g="204" b="204" overprint="false"/>
@@ -21181,7 +21181,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21204,9 +21204,8 @@
 		</textDraw>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
-		<namePosition name="partlyInside"/>
 	</layer>
-	<layer enabled="true" name="Water_GlacierOSM" id="landuse.waters.glaciers.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\glacier.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer enabled="true" name="Water_GlacierOSM" id="landuse.waters.glaciers.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\glacier.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="204" g="204" b="204" overprint="false"/>
@@ -21215,7 +21214,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21238,9 +21237,8 @@
 		</textDraw>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
-		<namePosition name="partlyInside"/>
 	</layer>
-	<layer enabled="true" name="Water_ReservoirOSM" id="landuse.waters.reservoirs.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\reservoir.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer enabled="true" name="Water_ReservoirOSM" id="landuse.waters.reservoirs.OSM" KindMain="Water" KindSub="" source="OSM\latest\water\reservoir.lim" xsi:type="polygonVectorLayer" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="204" g="204" b="204" overprint="false"/>
@@ -21249,7 +21247,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21272,7 +21270,6 @@
 		</textDraw>
 		<namePosition name="onCenterLine"/>
 		<namePosition name="fullyInside"/>
-		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="River / Channel Name" KindMain="Unknown" id="epslayer.generic.662" KindSub=""/>
 	<userstyle xsi:type="wateruserstyle" enabled="true" name="River / Channel Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Water" KindSub="River / Channel Names" id="landuse.waters.rivers.label" deduplicateNames="true">

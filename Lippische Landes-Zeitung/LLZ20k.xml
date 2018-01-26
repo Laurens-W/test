@@ -150,7 +150,7 @@
 					<size size="150" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="204" g="217" b="194" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="State Park Fill" KindMain="Landuse" KindSub="State Parks" id="landuse.stateparks.fill">
@@ -163,7 +163,7 @@
 					<size size="0" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="176" g="196" b="145" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
@@ -180,7 +180,7 @@
 					<size size="150" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="230" g="227" b="217" overprint="false"/>
+				<fillColor enabled="true" r="204" g="204" b="204" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Urban Area Construction" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.construction.fill">
@@ -193,7 +193,7 @@
 					<size size="0" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="230" g="227" b="217" overprint="false"/>
+				<fillColor enabled="true" r="204" g="204" b="204" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
@@ -236,11 +236,11 @@
 			</criteria>
 			<polyDraw>
 				<line enabled="false">
-					<color r="84" g="84" b="84" overprint="false"/>
+					<color r="179" g="179" b="179" overprint="false"/>
 					<size size="100" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="204" g="204" b="204" overprint="false"/>
+				<fillColor enabled="true" r="179" g="179" b="179" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Industry (Construction)" KindMain="Landuse" KindSub="Industry" id="landuse.industries.construction.fill">
@@ -249,11 +249,11 @@
 			</criteria>
 			<polyDraw>
 				<line enabled="false">
-					<color r="84" g="84" b="84" overprint="false"/>
+					<color r="179" g="179" b="179" overprint="false"/>
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="204" g="204" b="204" overprint="false"/>
+				<fillColor enabled="true" r="179" g="179" b="179" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
@@ -309,11 +309,11 @@
 			</criteria>
 			<polyDraw>
 				<line enabled="false">
-					<color r="145" g="181" b="84" overprint="false"/>
+					<color r="153" g="255" b="77" overprint="false"/>
 					<size size="125" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="181" g="209" b="156" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Cemetery" KindMain="Landuse" KindSub="Cemeteries" id="landuse.cemeteries.fill">
@@ -326,7 +326,7 @@
 					<size size="150" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="204" g="217" b="194" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Sports Ground" KindMain="Landuse" KindSub="Sports Grounds" id="landuse.sportsgrounds.fill">
@@ -339,7 +339,7 @@
 					<size size="150" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="199" g="214" b="209" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Village Green Fill" KindMain="Landuse" KindSub="Village Greens" id="landuse.villagegreens.fill">
@@ -348,11 +348,11 @@
 			</criteria>
 			<polyDraw>
 				<line enabled="false">
-					<color r="145" g="181" b="84" overprint="false"/>
+					<color r="153" g="255" b="77" overprint="false"/>
 					<size size="150" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="204" g="217" b="194" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Vegetable Garden" KindMain="Landuse" KindSub="Vegetable Gardens" id="landuse.vegetablegardens.fill">
@@ -365,7 +365,7 @@
 					<size size="150" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="176" g="196" b="145" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Golf Course Fill" KindMain="Landuse" KindSub="Golf Courses" id="landuse.golfcourses.fill">
@@ -374,11 +374,11 @@
 			</criteria>
 			<polyDraw>
 				<line enabled="false">
-					<color r="145" g="181" b="84" overprint="false"/>
+					<color r="153" g="255" b="77" overprint="false"/>
 					<size size="100" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="181" g="209" b="156" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Orchard" KindMain="Landuse" KindSub="Orchards" id="landuse.orchards.fill">
@@ -391,11 +391,43 @@
 					<size size="150" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="181" g="209" b="156" overprint="false"/>
+				<fillColor enabled="true" r="153" g="255" b="77" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Buildings OSM" KindMain="eps layers" alwaysOutput="false" id="epslayer.generic.18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="false" name="Buildings OSM" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings OSM" source="OSM\latest\buildings.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="212" g="232" b="230" overprint="false"/>
+				<size size="100" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="153" g="153" b="153" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="gothamNarrow-Bold" relHeight="255" spacing="255" slant="255" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+			</fontDraw>
+			<size size="7" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="other areas" KindMain="EPS-layers" KindSub="" id="epslayer.otherareas"/>
 	<polygongroup name="Landphase 8" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase8">
 		<polygonstyle enabled="true" name="Special Buildings Fill" KindMain="Landuse" KindSub="Special Buildings" id="landuse.buildings.fill">
@@ -504,13 +536,13 @@
 			</or>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="153" g="178" b="204" overprint="false"/>
+			<color r="153" g="229" b="255" overprint="false"/>
 			<size size="800" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="100" units="micrometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Water Chains Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Water" KindSub="Water" id="landuse.waters.linear.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Water Chains Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Water" KindSub="Water" id="landuse.waters.linear.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Roaduse" value="Water"/>
 			<or>
@@ -529,7 +561,7 @@
 			</or>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="153" g="178" b="204" overprint="false"/>
+			<color r="153" g="229" b="255" overprint="false"/>
 			<size size="600" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
@@ -556,7 +588,7 @@
 					<size size="125" units="micrometer" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="153" g="178" b="204" overprint="false"/>
+				<fillColor enabled="true" r="153" g="229" b="255" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
 		<polygonstyle enabled="true" name="Island" KindMain="Landuse" KindSub="Islands" id="landuse.islands">
@@ -2629,7 +2661,7 @@
 		</textDraw>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="city&amp;town names" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle xsi:type="quarterNameSlocstyle" enabled="true" name="National Quarter Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.national.label">
+	<slocstyle xsi:type="quarterNameSlocstyle" enabled="true" name="National Quarter Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.national.label" deduplicateNames="false" storeExtraSlocs="-1">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Quarter name"/>
 			<and>
@@ -2643,7 +2675,7 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="48" g="48" b="48" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="2970" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -2738,7 +2770,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="3860" units="micrometer" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -2768,7 +2800,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="3860" units="micrometer" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -2798,7 +2830,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="3115" units="micrometer" isRelative="false"/>
+				<size size="10" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -3100,7 +3132,7 @@
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="street names" KindMain="EPS-layers" KindSub="" id="epslayer.streetnames"/>
 	<streetNamegroup enabled="true" useOfficialLanguage="false" nameMargin="5" maxSyllableDistance="0" nameCompression="0" longNamesFirst="true" abbrAllStanEnd="false" abbreviations="true" textOutside="true" forceAllNames="not" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="true" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="All" prohibitEmptyLineAtStackedNames="true" KindMain="Roads" KindSub="Setting" id="streetnamegroup">
-		<streetNameStyle enabled="true" alignment="downleft" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Roads not for Car Name" KindMain="Roads" KindSub="Roads not for Car" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.roadnotcars.label">
+		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Roads not for Car Name" KindMain="Roads" KindSub="Roads not for Car" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.roadnotcars.label">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -3109,7 +3141,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3140,7 +3172,7 @@
 				</and>
 			</criteria>
 		</streetNameStyle>
-		<streetNameStyle enabled="true" alignment="downleft" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Bike Path Name" KindMain="Roads" KindSub="Bike Paths" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.bicycles.label">
+		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Bike Path Name" KindMain="Roads" KindSub="Bike Paths" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.bicycles.label">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -3149,7 +3181,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3171,7 +3203,7 @@
 				</and>
 			</criteria>
 		</streetNameStyle>
-		<streetNameStyle enabled="true" alignment="downleft" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Sidewalk Name" KindMain="Roads" KindSub="Sidewalks" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.pedestrians.label">
+		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Sidewalk Name" KindMain="Roads" KindSub="Sidewalks" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.pedestrians.label">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -3180,7 +3212,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3211,7 +3243,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3238,7 +3270,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3276,7 +3308,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3311,7 +3343,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3346,7 +3378,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3372,7 +3404,7 @@
 				</and>
 			</criteria>
 		</streetNameStyle>
-		<streetNameStyle enabled="true" alignment="downleft" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Local Road Name" KindMain="Roads" KindSub="Local Roads" minNameLength="0" minSyllableLength="3" textInside="true" id="roads.localroads.label">
+		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Local Road Name" KindMain="Roads" KindSub="Local Roads" minNameLength="0" minSyllableLength="3" textInside="true" id="roads.localroads.label">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -3381,7 +3413,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3417,7 +3449,7 @@
 				</and>
 			</criteria>
 		</streetNameStyle>
-		<streetNameStyle enabled="true" alignment="downleft" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Forest- / Narrow Road Name" KindMain="Roads" KindSub="Forest- / Narrow Roads" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.forestroads.label">
+		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Forest- / Narrow Road Name" KindMain="Roads" KindSub="Forest- / Narrow Roads" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.forestroads.label">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -3426,7 +3458,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3441,7 +3473,7 @@
 				<equation oper="eq" fieldname="Roadtype" value="Bosweg/pad"/>
 			</criteria>
 		</streetNameStyle>
-		<streetNameStyle enabled="true" alignment="downleft" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Pedestrian Zone Name" KindMain="Roads" KindSub="Pedestrian Zones" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.pedestrianzones.label">
+		<streetNameStyle enabled="true" alignment="left" capitalMode="as_is" font="bureauRoxyMedium" relHeight="100" spacing="0" slant="0" underline="false" name="Pedestrian Zone Name" KindMain="Roads" KindSub="Pedestrian Zones" minNameLength="0" minSyllableLength="0" textInside="true" id="roads.pedestrianzones.label">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -3450,7 +3482,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3477,7 +3509,7 @@
 				</line>
 				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="8" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3522,7 +3554,7 @@
 					</line>
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
-				<size size="6" units="points" isRelative="false"/>
+				<size size="8" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
 					<shape shapekind="rectangle">
 						<line enabled="false">
@@ -3581,7 +3613,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name="administrative boundaries" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundaries" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative names Residential" KindMain="EPS-layers" KindSub="" id="epslayer.generic.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Residential name" overwriteRoadclass="other" namePattern="(.*)" KindMain="Boundaries" KindSub="Residential" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Residential name" overwriteRoadclass="other" namePattern="(.*)" KindMain="Boundaries" KindSub="Residential" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Residential"/>
 		</criteria>
@@ -3592,7 +3624,7 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="194" g="184" b="130" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="6" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -3612,7 +3644,7 @@
 		<namePosition name="partlyInside"/>
 	</userstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative names Neighbourhood" KindMain="EPS-layers" KindSub="" id="epslayer.generic.11" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Neighbourhood Name" overwriteRoadclass="other" namePattern="(.*)" KindMain="Boundaries" KindSub="Neighbourhood" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Neighbourhood Name" overwriteRoadclass="other" namePattern="(.*)" KindMain="Boundaries" KindSub="Neighbourhood" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Neighbourhood"/>
 		</criteria>
@@ -3623,7 +3655,7 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="194" g="184" b="130" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="6" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -3654,9 +3686,9 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="kilometer" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="194" g="184" b="130" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
-			<size size="6" units="points" isRelative="false"/>
+			<size size="10" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="10">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -3681,7 +3713,7 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="kilometer" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="194" g="184" b="130" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="6" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="10">
@@ -3697,7 +3729,7 @@
 		</textDraw>
 	</admistyle>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative names provinces/states" KindMain="EPS-layers" KindSub="" id="epslayer.generic.14" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<admistyle enabled="true" name="Procvince Boundary Name" KindMain="Boundaries" overwriteRoadclass="motorway" KindSub="Provinces">
+	<admistyle enabled="true" name="Procvince Boundary Name" KindMain="Boundaries" overwriteRoadclass="motorway" KindSub="Provinces" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Level" value="16384"/>
 		</criteria>
@@ -3708,7 +3740,7 @@
 					<size size="3" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="kilometer" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="194" g="184" b="130" overprint="false"/>
+				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 			</fontDraw>
 			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="10">

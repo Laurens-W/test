@@ -951,7 +951,7 @@
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<shape shapekind="oval">
+				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="true"/>
 						<size size="0" units="kilometer" isRelative="false"/>

@@ -789,7 +789,7 @@
 		</lineDraw>
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="bridge &amp; oneway symbols" KindMain="EPS-layers" KindSub="" id="epslayer.bridge&amp;onewaysymbols"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary" KindMain="Boundaries" KindSub="Provinces" id="boundaries.provinces.line.2">
+	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary" KindMain="Boundaries" KindSub="Provinces" id="boundaries.provinces.line.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
 			<and>
@@ -802,9 +802,9 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="188" g="190" b="169" overprint="false"/>
-			<size size="176" units="micrometer" isRelative="false"/>
-			<style size="1" units="points" isRelative="false" style="dash5_5"/>
+			<color r="125" g="130" b="125" overprint="false"/>
+			<size size="88" units="micrometer" isRelative="false"/>
+			<style size="176" units="micrometer" isRelative="false" style="dash5_5"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
@@ -929,11 +929,11 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<svg xsi:type="symbolBase" name="captialcityN" width="2.353" height="2.352" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 2.353 2.352&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;  &lt;path d=&quot;M2.353,2.352H0V0h2.353V2.352z M0.353,2H2V0.353H0.353V2z&quot;/&gt;&#xA; &lt;rect x=&quot;0.176&quot; y=&quot;0.176&quot; fill=&quot;#FFFFFF&quot; width=&quot;2&quot; height=&quot;2&quot;/&gt;&#xA; &lt;rect x=&quot;0.919&quot; y=&quot;0.909&quot; width=&quot;0.553&quot; height=&quot;0.553&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-				<eps name="captialcityN" width="2" height="2" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 305 -398 308 -395&#xA;%%HiResBoundingBox: 305.355 -397.4653 307.708 -395.1128&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.855 -396.6128 306.855 -396.6128&#xA;%AI8_OpenToView: 300.2381 -392.1165 64 1469 894 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;u&#xA;*u&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;307.708 -397.4653 m&#xA;305.355 -397.4653 L&#xA;305.355 -395.1128 L&#xA;307.708 -395.1128 L&#xA;307.708 -397.4653 L&#xA;f&#xA;1 D&#xA;%Plot f&#xA;305.7078 -397.1125 m&#xA;307.3552 -397.1125 L&#xA;307.3552 -395.4656 L&#xA;305.7078 -395.4656 L&#xA;305.7078 -397.1125 L&#xA;f&#xA;*U&#xA;U&#xA;1 Ap&#xA;0 D&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.5318 -397.2889 m&#xA;305.5314 -397.2889 L&#xA;305.5314 -395.2892 L&#xA;307.5318 -395.2892 L&#xA;307.5318 -397.2889 L&#xA;f&#xA;0 0 0 1 k&#xA;4 M&#xA;%Plot f&#xA;306.2742 -396.0217 m&#xA;306.8268 -396.0217 L&#xA;306.8268 -396.5744 L&#xA;306.2742 -396.5744 L&#xA;306.2742 -396.0217 L&#xA;f&#xA;U&#xA;%%PageTrailer&#xA;%%EOF"/>
-				<width size="6" units="points" isRelative="false"/>
-				<height size="2117" units="micrometer" isRelative="false"/>
+			<symbolDraw enabled="true" extraHeight="100" slocProjection="atSlocCoord" horizontal="true">
+				<svg xsi:type="symbolBase" name="capitalmedium" width="11" height="11" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 11 11&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA; &lt;rect x=&quot;0.4&quot; y=&quot;0.4&quot; fill=&quot;#FFF&quot; stroke=&quot;#000&quot; stroke-width=&quot;0.8&quot; width=&quot;10.2&quot; height=&quot;10.2&quot;&gt;&lt;/rect&gt;&#xA; &lt;rect x=&quot;4.1&quot; y=&quot;4.1&quot; width=&quot;3&quot; height=&quot;3&quot;&gt;&lt;/rect&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				<eps name="capitalmedium" width="11" height="11" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 0 0 11 12&#xA;%%HiResBoundingBox: 0 0.000015 11 11&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 5.5 5.5 5.5 5.5&#xA;%AI8_OpenToView: -10.8918 13.4678 42.4743 1589 884 26 0 0 -1634 121 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0 0 0 0 1 1 1 Xa&#xA;0 R&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 XA&#xA;0 J 0 j 0.8 w 4 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;0.4 10.6 m&#xA;10.6 10.6 L&#xA;10.6 0.400015 L&#xA;0.4 0.400015 L&#xA;0.4 10.6 L&#xA;b&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 Xa&#xA;1 w 10 M&#xA;%Plot f&#xA;4.1 6.90001 m&#xA;7.1 6.90001 L&#xA;7.1 3.90001 L&#xA;4.1 3.90001 L&#xA;4.1 6.90001 L&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+				<width size="2140" units="micrometer" isRelative="false"/>
+				<height size="2140" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -951,7 +951,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Regular" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Medium" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -976,13 +976,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="209" units="micrometer" isRelative="false"/>
+						<size size="145" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="1555" units="micrometer" isRelative="false"/>
-				<height size="1555" units="micrometer" isRelative="false"/>
+				<width size="1455" units="micrometer" isRelative="false"/>
+				<height size="1455" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -990,7 +990,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.cities.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1010,7 +1010,7 @@
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
 				<size size="3351" units="micrometer" isRelative="false"/>
-				<boxDraw enabled="true" extraHeight="10">
+				<boxDraw enabled="false" extraHeight="10">
 					<shape shapekind="rectangle">
 						<line enabled="false">
 							<color r="95" g="95" b="95" overprint="false"/>
@@ -1021,11 +1021,11 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<svg xsi:type="symbolBase" name="captialcityN" width="2.353" height="2.352" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 2.353 2.352&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;  &lt;path d=&quot;M2.353,2.352H0V0h2.353V2.352z M0.353,2H2V0.353H0.353V2z&quot;/&gt;&#xA; &lt;rect x=&quot;0.176&quot; y=&quot;0.176&quot; fill=&quot;#FFFFFF&quot; width=&quot;2&quot; height=&quot;2&quot;/&gt;&#xA; &lt;rect x=&quot;0.919&quot; y=&quot;0.909&quot; width=&quot;0.553&quot; height=&quot;0.553&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-				<eps name="captialcityN" width="2" height="2" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 305 -398 308 -395&#xA;%%HiResBoundingBox: 305.355 -397.4653 307.708 -395.1128&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.855 -396.6128 306.855 -396.6128&#xA;%AI8_OpenToView: 300.2381 -392.1165 64 1469 894 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;u&#xA;*u&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;307.708 -397.4653 m&#xA;305.355 -397.4653 L&#xA;305.355 -395.1128 L&#xA;307.708 -395.1128 L&#xA;307.708 -397.4653 L&#xA;f&#xA;1 D&#xA;%Plot f&#xA;305.7078 -397.1125 m&#xA;307.3552 -397.1125 L&#xA;307.3552 -395.4656 L&#xA;305.7078 -395.4656 L&#xA;305.7078 -397.1125 L&#xA;f&#xA;*U&#xA;U&#xA;1 Ap&#xA;0 D&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.5318 -397.2889 m&#xA;305.5314 -397.2889 L&#xA;305.5314 -395.2892 L&#xA;307.5318 -395.2892 L&#xA;307.5318 -397.2889 L&#xA;f&#xA;0 0 0 1 k&#xA;4 M&#xA;%Plot f&#xA;306.2742 -396.0217 m&#xA;306.8268 -396.0217 L&#xA;306.8268 -396.5744 L&#xA;306.2742 -396.5744 L&#xA;306.2742 -396.0217 L&#xA;f&#xA;U&#xA;%%PageTrailer&#xA;%%EOF"/>
-				<width size="6" units="points" isRelative="false"/>
-				<height size="2117" units="micrometer" isRelative="false"/>
+			<symbolDraw enabled="true" extraHeight="100" slocProjection="atSlocCoord" horizontal="true">
+				<svg xsi:type="symbolBase" name="capitalmedium" width="11" height="11" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 11 11&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA; &lt;rect x=&quot;0.4&quot; y=&quot;0.4&quot; fill=&quot;#FFF&quot; stroke=&quot;#000&quot; stroke-width=&quot;0.8&quot; width=&quot;10.2&quot; height=&quot;10.2&quot;&gt;&lt;/rect&gt;&#xA; &lt;rect x=&quot;4.1&quot; y=&quot;4.1&quot; width=&quot;3&quot; height=&quot;3&quot;&gt;&lt;/rect&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				<eps name="capitalmedium" width="11" height="11" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 0 0 11 12&#xA;%%HiResBoundingBox: 0 0.000015 11 11&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 5.5 5.5 5.5 5.5&#xA;%AI8_OpenToView: -10.8918 13.4678 42.4743 1589 884 26 0 0 -1634 121 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0 0 0 0 1 1 1 Xa&#xA;0 R&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 XA&#xA;0 J 0 j 0.8 w 4 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;0.4 10.6 m&#xA;10.6 10.6 L&#xA;10.6 0.400015 L&#xA;0.4 0.400015 L&#xA;0.4 10.6 L&#xA;b&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 Xa&#xA;1 w 10 M&#xA;%Plot f&#xA;4.1 6.90001 m&#xA;7.1 6.90001 L&#xA;7.1 3.90001 L&#xA;4.1 3.90001 L&#xA;4.1 6.90001 L&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+				<width size="2140" units="micrometer" isRelative="false"/>
+				<height size="2140" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1043,7 +1043,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Regular" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Medium" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1068,13 +1068,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="209" units="micrometer" isRelative="false"/>
+						<size size="145" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="1555" units="micrometer" isRelative="false"/>
-				<height size="1555" units="micrometer" isRelative="false"/>
+				<width size="1455" units="micrometer" isRelative="false"/>
+				<height size="1455" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1082,7 +1082,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Small City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallcities.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1102,7 +1102,7 @@
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
 				<size size="3351" units="micrometer" isRelative="false"/>
-				<boxDraw enabled="true" extraHeight="10">
+				<boxDraw enabled="false" extraHeight="10">
 					<shape shapekind="rectangle">
 						<line enabled="false">
 							<color r="95" g="95" b="95" overprint="false"/>
@@ -1113,11 +1113,11 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<svg xsi:type="symbolBase" name="captialcityN" width="2.353" height="2.352" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 2.353 2.352&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;  &lt;path d=&quot;M2.353,2.352H0V0h2.353V2.352z M0.353,2H2V0.353H0.353V2z&quot;/&gt;&#xA; &lt;rect x=&quot;0.176&quot; y=&quot;0.176&quot; fill=&quot;#FFFFFF&quot; width=&quot;2&quot; height=&quot;2&quot;/&gt;&#xA; &lt;rect x=&quot;0.919&quot; y=&quot;0.909&quot; width=&quot;0.553&quot; height=&quot;0.553&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-				<eps name="captialcityN" width="2" height="2" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 305 -398 308 -395&#xA;%%HiResBoundingBox: 305.355 -397.4653 307.708 -395.1128&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.855 -396.6128 306.855 -396.6128&#xA;%AI8_OpenToView: 300.2381 -392.1165 64 1469 894 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;u&#xA;*u&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;307.708 -397.4653 m&#xA;305.355 -397.4653 L&#xA;305.355 -395.1128 L&#xA;307.708 -395.1128 L&#xA;307.708 -397.4653 L&#xA;f&#xA;1 D&#xA;%Plot f&#xA;305.7078 -397.1125 m&#xA;307.3552 -397.1125 L&#xA;307.3552 -395.4656 L&#xA;305.7078 -395.4656 L&#xA;305.7078 -397.1125 L&#xA;f&#xA;*U&#xA;U&#xA;1 Ap&#xA;0 D&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.5318 -397.2889 m&#xA;305.5314 -397.2889 L&#xA;305.5314 -395.2892 L&#xA;307.5318 -395.2892 L&#xA;307.5318 -397.2889 L&#xA;f&#xA;0 0 0 1 k&#xA;4 M&#xA;%Plot f&#xA;306.2742 -396.0217 m&#xA;306.8268 -396.0217 L&#xA;306.8268 -396.5744 L&#xA;306.2742 -396.5744 L&#xA;306.2742 -396.0217 L&#xA;f&#xA;U&#xA;%%PageTrailer&#xA;%%EOF"/>
-				<width size="6" units="points" isRelative="false"/>
-				<height size="2117" units="micrometer" isRelative="false"/>
+			<symbolDraw enabled="true" extraHeight="100" slocProjection="atSlocCoord" horizontal="true">
+				<svg xsi:type="symbolBase" name="capitalmedium" width="11" height="11" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 11 11&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA; &lt;rect x=&quot;0.4&quot; y=&quot;0.4&quot; fill=&quot;#FFF&quot; stroke=&quot;#000&quot; stroke-width=&quot;0.8&quot; width=&quot;10.2&quot; height=&quot;10.2&quot;&gt;&lt;/rect&gt;&#xA; &lt;rect x=&quot;4.1&quot; y=&quot;4.1&quot; width=&quot;3&quot; height=&quot;3&quot;&gt;&lt;/rect&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				<eps name="capitalmedium" width="11" height="11" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 0 0 11 12&#xA;%%HiResBoundingBox: 0 0.000015 11 11&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 5.5 5.5 5.5 5.5&#xA;%AI8_OpenToView: -10.8918 13.4678 42.4743 1589 884 26 0 0 -1634 121 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0 0 0 0 1 1 1 Xa&#xA;0 R&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 XA&#xA;0 J 0 j 0.8 w 4 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;0.4 10.6 m&#xA;10.6 10.6 L&#xA;10.6 0.400015 L&#xA;0.4 0.400015 L&#xA;0.4 10.6 L&#xA;b&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 Xa&#xA;1 w 10 M&#xA;%Plot f&#xA;4.1 6.90001 m&#xA;7.1 6.90001 L&#xA;7.1 3.90001 L&#xA;4.1 3.90001 L&#xA;4.1 6.90001 L&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+				<width size="2140" units="micrometer" isRelative="false"/>
+				<height size="2140" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1135,7 +1135,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Regular" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Medium" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1160,13 +1160,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="209" units="micrometer" isRelative="false"/>
+						<size size="145" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="1555" units="micrometer" isRelative="false"/>
-				<height size="1555" units="micrometer" isRelative="false"/>
+				<width size="1455" units="micrometer" isRelative="false"/>
+				<height size="1455" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1174,7 +1174,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.villages.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1194,7 +1194,7 @@
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
 				<size size="3351" units="micrometer" isRelative="false"/>
-				<boxDraw enabled="true" extraHeight="10">
+				<boxDraw enabled="false" extraHeight="10">
 					<shape shapekind="rectangle">
 						<line enabled="false">
 							<color r="95" g="95" b="95" overprint="false"/>
@@ -1205,11 +1205,11 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<svg xsi:type="symbolBase" name="captialcityN" width="2.353" height="2.352" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 2.353 2.352&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;  &lt;path d=&quot;M2.353,2.352H0V0h2.353V2.352z M0.353,2H2V0.353H0.353V2z&quot;/&gt;&#xA; &lt;rect x=&quot;0.176&quot; y=&quot;0.176&quot; fill=&quot;#FFFFFF&quot; width=&quot;2&quot; height=&quot;2&quot;/&gt;&#xA; &lt;rect x=&quot;0.919&quot; y=&quot;0.909&quot; width=&quot;0.553&quot; height=&quot;0.553&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-				<eps name="captialcityN" width="2" height="2" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 305 -398 308 -395&#xA;%%HiResBoundingBox: 305.355 -397.4653 307.708 -395.1128&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.855 -396.6128 306.855 -396.6128&#xA;%AI8_OpenToView: 300.2381 -392.1165 64 1469 894 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;u&#xA;*u&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;307.708 -397.4653 m&#xA;305.355 -397.4653 L&#xA;305.355 -395.1128 L&#xA;307.708 -395.1128 L&#xA;307.708 -397.4653 L&#xA;f&#xA;1 D&#xA;%Plot f&#xA;305.7078 -397.1125 m&#xA;307.3552 -397.1125 L&#xA;307.3552 -395.4656 L&#xA;305.7078 -395.4656 L&#xA;305.7078 -397.1125 L&#xA;f&#xA;*U&#xA;U&#xA;1 Ap&#xA;0 D&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.5318 -397.2889 m&#xA;305.5314 -397.2889 L&#xA;305.5314 -395.2892 L&#xA;307.5318 -395.2892 L&#xA;307.5318 -397.2889 L&#xA;f&#xA;0 0 0 1 k&#xA;4 M&#xA;%Plot f&#xA;306.2742 -396.0217 m&#xA;306.8268 -396.0217 L&#xA;306.8268 -396.5744 L&#xA;306.2742 -396.5744 L&#xA;306.2742 -396.0217 L&#xA;f&#xA;U&#xA;%%PageTrailer&#xA;%%EOF"/>
-				<width size="6" units="points" isRelative="false"/>
-				<height size="2117" units="micrometer" isRelative="false"/>
+			<symbolDraw enabled="true" extraHeight="100" slocProjection="atSlocCoord" horizontal="true">
+				<svg xsi:type="symbolBase" name="capitalmedium" width="11" height="11" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 11 11&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA; &lt;rect x=&quot;0.4&quot; y=&quot;0.4&quot; fill=&quot;#FFF&quot; stroke=&quot;#000&quot; stroke-width=&quot;0.8&quot; width=&quot;10.2&quot; height=&quot;10.2&quot;&gt;&lt;/rect&gt;&#xA; &lt;rect x=&quot;4.1&quot; y=&quot;4.1&quot; width=&quot;3&quot; height=&quot;3&quot;&gt;&lt;/rect&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				<eps name="capitalmedium" width="11" height="11" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 0 0 11 12&#xA;%%HiResBoundingBox: 0 0.000015 11 11&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 5.5 5.5 5.5 5.5&#xA;%AI8_OpenToView: -10.8918 13.4678 42.4743 1589 884 26 0 0 -1634 121 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0 0 0 0 1 1 1 Xa&#xA;0 R&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 XA&#xA;0 J 0 j 0.8 w 4 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;0.4 10.6 m&#xA;10.6 10.6 L&#xA;10.6 0.400015 L&#xA;0.4 0.400015 L&#xA;0.4 10.6 L&#xA;b&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 Xa&#xA;1 w 10 M&#xA;%Plot f&#xA;4.1 6.90001 m&#xA;7.1 6.90001 L&#xA;7.1 3.90001 L&#xA;4.1 3.90001 L&#xA;4.1 6.90001 L&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+				<width size="2140" units="micrometer" isRelative="false"/>
+				<height size="2140" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1227,7 +1227,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Regular" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Medium" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1252,13 +1252,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="209" units="micrometer" isRelative="false"/>
+						<size size="145" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="1555" units="micrometer" isRelative="false"/>
-				<height size="1555" units="micrometer" isRelative="false"/>
+				<width size="1455" units="micrometer" isRelative="false"/>
+				<height size="1455" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1266,7 +1266,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Small Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Small Village Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.smallvillages.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1286,7 +1286,7 @@
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
 				<size size="3351" units="micrometer" isRelative="false"/>
-				<boxDraw enabled="true" extraHeight="10">
+				<boxDraw enabled="false" extraHeight="10">
 					<shape shapekind="rectangle">
 						<line enabled="false">
 							<color r="95" g="95" b="95" overprint="false"/>
@@ -1297,11 +1297,11 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<svg xsi:type="symbolBase" name="captialcityN" width="2.353" height="2.352" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 2.353 2.352&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;  &lt;path d=&quot;M2.353,2.352H0V0h2.353V2.352z M0.353,2H2V0.353H0.353V2z&quot;/&gt;&#xA; &lt;rect x=&quot;0.176&quot; y=&quot;0.176&quot; fill=&quot;#FFFFFF&quot; width=&quot;2&quot; height=&quot;2&quot;/&gt;&#xA; &lt;rect x=&quot;0.919&quot; y=&quot;0.909&quot; width=&quot;0.553&quot; height=&quot;0.553&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-				<eps name="captialcityN" width="2" height="2" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 305 -398 308 -395&#xA;%%HiResBoundingBox: 305.355 -397.4653 307.708 -395.1128&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.855 -396.6128 306.855 -396.6128&#xA;%AI8_OpenToView: 300.2381 -392.1165 64 1469 894 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;u&#xA;*u&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;307.708 -397.4653 m&#xA;305.355 -397.4653 L&#xA;305.355 -395.1128 L&#xA;307.708 -395.1128 L&#xA;307.708 -397.4653 L&#xA;f&#xA;1 D&#xA;%Plot f&#xA;305.7078 -397.1125 m&#xA;307.3552 -397.1125 L&#xA;307.3552 -395.4656 L&#xA;305.7078 -395.4656 L&#xA;305.7078 -397.1125 L&#xA;f&#xA;*U&#xA;U&#xA;1 Ap&#xA;0 D&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.5318 -397.2889 m&#xA;305.5314 -397.2889 L&#xA;305.5314 -395.2892 L&#xA;307.5318 -395.2892 L&#xA;307.5318 -397.2889 L&#xA;f&#xA;0 0 0 1 k&#xA;4 M&#xA;%Plot f&#xA;306.2742 -396.0217 m&#xA;306.8268 -396.0217 L&#xA;306.8268 -396.5744 L&#xA;306.2742 -396.5744 L&#xA;306.2742 -396.0217 L&#xA;f&#xA;U&#xA;%%PageTrailer&#xA;%%EOF"/>
-				<width size="6" units="points" isRelative="false"/>
-				<height size="2117" units="micrometer" isRelative="false"/>
+			<symbolDraw enabled="true" extraHeight="100" slocProjection="atSlocCoord" horizontal="true">
+				<svg xsi:type="symbolBase" name="capitalmedium" width="11" height="11" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 11 11&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA; &lt;rect x=&quot;0.4&quot; y=&quot;0.4&quot; fill=&quot;#FFF&quot; stroke=&quot;#000&quot; stroke-width=&quot;0.8&quot; width=&quot;10.2&quot; height=&quot;10.2&quot;&gt;&lt;/rect&gt;&#xA; &lt;rect x=&quot;4.1&quot; y=&quot;4.1&quot; width=&quot;3&quot; height=&quot;3&quot;&gt;&lt;/rect&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				<eps name="capitalmedium" width="11" height="11" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 0 0 11 12&#xA;%%HiResBoundingBox: 0 0.000015 11 11&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 5.5 5.5 5.5 5.5&#xA;%AI8_OpenToView: -10.8918 13.4678 42.4743 1589 884 26 0 0 -1634 121 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0 0 0 0 1 1 1 Xa&#xA;0 R&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 XA&#xA;0 J 0 j 0.8 w 4 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;0.4 10.6 m&#xA;10.6 10.6 L&#xA;10.6 0.400015 L&#xA;0.4 0.400015 L&#xA;0.4 10.6 L&#xA;b&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 Xa&#xA;1 w 10 M&#xA;%Plot f&#xA;4.1 6.90001 m&#xA;7.1 6.90001 L&#xA;7.1 3.90001 L&#xA;4.1 3.90001 L&#xA;4.1 6.90001 L&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+				<width size="2140" units="micrometer" isRelative="false"/>
+				<height size="2140" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1319,7 +1319,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Regular" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Medium" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1344,13 +1344,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="209" units="micrometer" isRelative="false"/>
+						<size size="145" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="1555" units="micrometer" isRelative="false"/>
-				<height size="1555" units="micrometer" isRelative="false"/>
+				<width size="1455" units="micrometer" isRelative="false"/>
+				<height size="1455" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1358,7 +1358,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.hamlets.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1378,7 +1378,7 @@
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
 				<size size="3351" units="micrometer" isRelative="false"/>
-				<boxDraw enabled="true" extraHeight="10">
+				<boxDraw enabled="false" extraHeight="10">
 					<shape shapekind="rectangle">
 						<line enabled="false">
 							<color r="95" g="95" b="95" overprint="false"/>
@@ -1389,11 +1389,11 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<svg xsi:type="symbolBase" name="captialcityN" width="2.353" height="2.352" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 2.353 2.352&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;  &lt;path d=&quot;M2.353,2.352H0V0h2.353V2.352z M0.353,2H2V0.353H0.353V2z&quot;/&gt;&#xA; &lt;rect x=&quot;0.176&quot; y=&quot;0.176&quot; fill=&quot;#FFFFFF&quot; width=&quot;2&quot; height=&quot;2&quot;/&gt;&#xA; &lt;rect x=&quot;0.919&quot; y=&quot;0.909&quot; width=&quot;0.553&quot; height=&quot;0.553&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-				<eps name="captialcityN" width="2" height="2" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 305 -398 308 -395&#xA;%%HiResBoundingBox: 305.355 -397.4653 307.708 -395.1128&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.855 -396.6128 306.855 -396.6128&#xA;%AI8_OpenToView: 300.2381 -392.1165 64 1469 894 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;u&#xA;*u&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;307.708 -397.4653 m&#xA;305.355 -397.4653 L&#xA;305.355 -395.1128 L&#xA;307.708 -395.1128 L&#xA;307.708 -397.4653 L&#xA;f&#xA;1 D&#xA;%Plot f&#xA;305.7078 -397.1125 m&#xA;307.3552 -397.1125 L&#xA;307.3552 -395.4656 L&#xA;305.7078 -395.4656 L&#xA;305.7078 -397.1125 L&#xA;f&#xA;*U&#xA;U&#xA;1 Ap&#xA;0 D&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.5318 -397.2889 m&#xA;305.5314 -397.2889 L&#xA;305.5314 -395.2892 L&#xA;307.5318 -395.2892 L&#xA;307.5318 -397.2889 L&#xA;f&#xA;0 0 0 1 k&#xA;4 M&#xA;%Plot f&#xA;306.2742 -396.0217 m&#xA;306.8268 -396.0217 L&#xA;306.8268 -396.5744 L&#xA;306.2742 -396.5744 L&#xA;306.2742 -396.0217 L&#xA;f&#xA;U&#xA;%%PageTrailer&#xA;%%EOF"/>
-				<width size="6" units="points" isRelative="false"/>
-				<height size="2117" units="micrometer" isRelative="false"/>
+			<symbolDraw enabled="true" extraHeight="100" slocProjection="atSlocCoord" horizontal="true">
+				<svg xsi:type="symbolBase" name="capitalmedium" width="11" height="11" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 11 11&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA; &lt;rect x=&quot;0.4&quot; y=&quot;0.4&quot; fill=&quot;#FFF&quot; stroke=&quot;#000&quot; stroke-width=&quot;0.8&quot; width=&quot;10.2&quot; height=&quot;10.2&quot;&gt;&lt;/rect&gt;&#xA; &lt;rect x=&quot;4.1&quot; y=&quot;4.1&quot; width=&quot;3&quot; height=&quot;3&quot;&gt;&lt;/rect&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				<eps name="capitalmedium" width="11" height="11" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 0 0 11 12&#xA;%%HiResBoundingBox: 0 0.000015 11 11&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 5.5 5.5 5.5 5.5&#xA;%AI8_OpenToView: -10.8918 13.4678 42.4743 1589 884 26 0 0 -1634 121 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0 0 0 0 1 1 1 Xa&#xA;0 R&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 XA&#xA;0 J 0 j 0.8 w 4 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;0.4 10.6 m&#xA;10.6 10.6 L&#xA;10.6 0.400015 L&#xA;0.4 0.400015 L&#xA;0.4 10.6 L&#xA;b&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 Xa&#xA;1 w 10 M&#xA;%Plot f&#xA;4.1 6.90001 m&#xA;7.1 6.90001 L&#xA;7.1 3.90001 L&#xA;4.1 3.90001 L&#xA;4.1 6.90001 L&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+				<width size="2140" units="micrometer" isRelative="false"/>
+				<height size="2140" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1411,7 +1411,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Regular" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Medium" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1436,13 +1436,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="209" units="micrometer" isRelative="false"/>
+						<size size="145" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="1555" units="micrometer" isRelative="false"/>
-				<height size="1555" units="micrometer" isRelative="false"/>
+				<width size="1455" units="micrometer" isRelative="false"/>
+				<height size="1455" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1450,7 +1450,7 @@
 				<style size="0" units="kilometer" isRelative="false" style="solid"/>
 			</lineDraw>
 		</slocstyle>
-		<slocstyle enabled="true" name="Smaller than Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
+		<slocstyle enabled="true" name="Smaller than Hamlet Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.threehouses.countrycapital" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>
@@ -1470,7 +1470,7 @@
 					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
 				</fontDraw>
 				<size size="3351" units="micrometer" isRelative="false"/>
-				<boxDraw enabled="true" extraHeight="10">
+				<boxDraw enabled="false" extraHeight="10">
 					<shape shapekind="rectangle">
 						<line enabled="false">
 							<color r="95" g="95" b="95" overprint="false"/>
@@ -1481,11 +1481,11 @@
 					</shape>
 				</boxDraw>
 			</textDraw>
-			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<svg xsi:type="symbolBase" name="captialcityN" width="2.353" height="2.352" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 2.353 2.352&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;  &lt;path d=&quot;M2.353,2.352H0V0h2.353V2.352z M0.353,2H2V0.353H0.353V2z&quot;/&gt;&#xA; &lt;rect x=&quot;0.176&quot; y=&quot;0.176&quot; fill=&quot;#FFFFFF&quot; width=&quot;2&quot; height=&quot;2&quot;/&gt;&#xA; &lt;rect x=&quot;0.919&quot; y=&quot;0.909&quot; width=&quot;0.553&quot; height=&quot;0.553&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-				<eps name="captialcityN" width="2" height="2" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 305 -398 308 -395&#xA;%%HiResBoundingBox: 305.355 -397.4653 307.708 -395.1128&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 306.855 -396.6128 306.855 -396.6128&#xA;%AI8_OpenToView: 300.2381 -392.1165 64 1469 894 18 0 0 5 111 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;u&#xA;*u&#xA;0 O&#xA;0 0 0 1 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;307.708 -397.4653 m&#xA;305.355 -397.4653 L&#xA;305.355 -395.1128 L&#xA;307.708 -395.1128 L&#xA;307.708 -397.4653 L&#xA;f&#xA;1 D&#xA;%Plot f&#xA;305.7078 -397.1125 m&#xA;307.3552 -397.1125 L&#xA;307.3552 -395.4656 L&#xA;305.7078 -395.4656 L&#xA;305.7078 -397.1125 L&#xA;f&#xA;*U&#xA;U&#xA;1 Ap&#xA;0 D&#xA;0 0 0 0 k&#xA;%Plot f&#xA;307.5318 -397.2889 m&#xA;305.5314 -397.2889 L&#xA;305.5314 -395.2892 L&#xA;307.5318 -395.2892 L&#xA;307.5318 -397.2889 L&#xA;f&#xA;0 0 0 1 k&#xA;4 M&#xA;%Plot f&#xA;306.2742 -396.0217 m&#xA;306.8268 -396.0217 L&#xA;306.8268 -396.5744 L&#xA;306.2742 -396.5744 L&#xA;306.2742 -396.0217 L&#xA;f&#xA;U&#xA;%%PageTrailer&#xA;%%EOF"/>
-				<width size="6" units="points" isRelative="false"/>
-				<height size="2117" units="micrometer" isRelative="false"/>
+			<symbolDraw enabled="true" extraHeight="100" slocProjection="atSlocCoord" horizontal="true">
+				<svg xsi:type="symbolBase" name="capitalmedium" width="11" height="11" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 11 11&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA; &lt;rect x=&quot;0.4&quot; y=&quot;0.4&quot; fill=&quot;#FFF&quot; stroke=&quot;#000&quot; stroke-width=&quot;0.8&quot; width=&quot;10.2&quot; height=&quot;10.2&quot;&gt;&lt;/rect&gt;&#xA; &lt;rect x=&quot;4.1&quot; y=&quot;4.1&quot; width=&quot;3&quot; height=&quot;3&quot;&gt;&lt;/rect&gt;&#xA;&lt;/svg&gt;" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+				<eps name="capitalmedium" width="11" height="11" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 0 0 11 12&#xA;%%HiResBoundingBox: 0 0.000015 11 11&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 5.5 5.5 5.5 5.5&#xA;%AI8_OpenToView: -10.8918 13.4678 42.4743 1589 884 26 0 0 -1634 121 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;0 0 0 0 1 1 1 Xa&#xA;0 R&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 XA&#xA;0 J 0 j 0.8 w 4 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;0.4 10.6 m&#xA;10.6 10.6 L&#xA;10.6 0.400015 L&#xA;0.4 0.400015 L&#xA;0.4 10.6 L&#xA;b&#xA;0.749721 0.679194 0.670497 0.901457 0 0 0 Xa&#xA;1 w 10 M&#xA;%Plot f&#xA;4.1 6.90001 m&#xA;7.1 6.90001 L&#xA;7.1 3.90001 L&#xA;4.1 3.90001 L&#xA;4.1 6.90001 L&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+				<width size="2140" units="micrometer" isRelative="false"/>
+				<height size="2140" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>
@@ -1503,7 +1503,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Regular" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="left" capitalMode="as_is" font="metric-Medium" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1528,13 +1528,13 @@
 				<shape shapekind="oval">
 					<line enabled="true">
 						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="209" units="micrometer" isRelative="false"/>
+						<size size="145" units="micrometer" isRelative="false"/>
 						<style size="0" units="kilometer" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
 				</shape>
-				<width size="1555" units="micrometer" isRelative="false"/>
-				<height size="1555" units="micrometer" isRelative="false"/>
+				<width size="1455" units="micrometer" isRelative="false"/>
+				<height size="1455" units="micrometer" isRelative="false"/>
 			</symbolDraw>
 			<lineDraw enabled="false">
 				<color r="255" g="255" b="255" overprint="true"/>

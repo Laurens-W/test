@@ -38,7 +38,7 @@
 		<lineGeneralization size="0" units="meter" isRelative="true"/>
 		<polygonGeneralization size="0" units="meter" isRelative="true"/>
 	</generalization>
-	<layer xsi:type="epsLayer" enabled="true" name="Digarea" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Digarea" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.1"/>
 	<polygongroup name="Landphase 0" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase0">
 		<polygonstyle enabled="true" name="Digarea" KindMain="Landuse" KindSub="Digarea" id="landuse.digareas.fill">
 			<criteria>
@@ -54,9 +54,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 0" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="AfterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Island" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 0" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.2"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 0" layerId="afterLand0" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland0"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Island" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.3"/>
 	<polygongroup name="Landphase 1" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase1">
 		<polygonstyle enabled="true" name="Island" KindMain="Landuse" KindSub="Islands" id="landuse.islands.fill">
 			<criteria>
@@ -72,9 +72,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 1" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Forest / State Park" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 1" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.4"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="afterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Forest / State Park Fill / Marsh" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.5"/>
 	<polygongroup name="Landphase 2" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase2">
 		<polygonstyle enabled="true" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
 			<criteria>
@@ -103,9 +103,9 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 2" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Urban Area" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 2" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.6"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="afterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Urban Area / Urban Area Construction / Bungalow Park / Amusement Park / Bungalow Park / Amusement Park" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.7"/>
 	<polygongroup name="Landphase 3" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase3">
 		<polygonstyle enabled="true" name="Urban Area" KindMain="Landuse" KindSub="Urban Area" id="landuse.residentials.fill">
 			<criteria>
@@ -121,7 +121,6 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Urban Area USA" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
 	<layer xsi:type="polygonVectorLayer" enabled="true" name="Urban Area USA" id="landuse.residential.OSM.fill" KindMain="Landuse" KindSub="Urban Area" source="Here\buausa.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -153,13 +152,13 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 3" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 4" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="AfterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 5" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="AfterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
-	<layer xsi:type="epsLayer" enabled="true" name="University / Airport" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 3" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.8"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="afterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 4" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.10"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 4" layerId="afterLand4" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland4"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 5" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.12"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 5" layerId="afterLand5" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland5"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Hospital / University / Shopping Center / Airport / School Fill" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.13"/>
 	<polygongroup name="Landphase 6" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase6">
 		<polygonstyle enabled="false" name="University" KindMain="Landuse" KindSub="Universities" id="landuse.universities.fill">
 			<criteria>
@@ -188,11 +187,11 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 6" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="AfterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 7" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="AfterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Runway" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 6" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.14"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 6" layerId="afterLand6" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland6"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 7" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.16"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 7" layerId="afterLand7" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland7"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Special Buildings / Parking House Optional Fill / Municipal Building Optional Fill / Parking Garage Optional Fill / Runway" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.17"/>
 	<polygongroup name="Landphase 8" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase8">
 		<polygonstyle enabled="true" name="Runway" KindMain="Landuse" KindSub="Runways" id="landuse.runways.fill">
 			<criteria>
@@ -208,7 +207,7 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Buildings OSM" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Buildings OSM" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.18"/>
 	<layer xsi:type="polygonVectorLayer" enabled="false" name="Buildings OSM" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="Special Buildings OSM" source=" OSM\latest\buildings.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
@@ -240,11 +239,11 @@
 			</boxDraw>
 		</textDraw>
 	</layer>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 8" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="AfterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 9" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="AfterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Lake / Sea / Island" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 8" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.19"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 8" layerId="afterLand8" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland8"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 9" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.21"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 9" layerId="afterLand9" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland9"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Lake / Sea / Island" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.24"/>
 	<polygongroup name="Landphase 10" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase10">
 		<polygonstyle enabled="true" name="Lake / Sea" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.fill">
 			<criteria>
@@ -283,13 +282,13 @@
 			</polyDraw>
 		</polygonstyle>
 	</polygongroup>
-	<layer xsi:type="epsLayer" enabled="true" name="After Land 10" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="AfterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poly" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Land 10" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.23"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 10" layerId="afterLand10" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland10"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.25"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="afterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poly" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.84"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoly"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Boundary Outline" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Country Boundary Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.410" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Outline" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
@@ -308,7 +307,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Ferry Chains" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Ferry Chains" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.31"/>
 	<chainstyle enabled="false" name="Ferry Chains" KindMain="Water" KindSub="Ferries" id="roads.ferries">
 		<criteria>
 			<equation oper="le" fieldname="RoadClass" value="Local road"/>
@@ -323,14 +322,14 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Motorway Access Outline" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Mini Roundabout Patch" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.40"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.line">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{mt}"/>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="176" units="micrometer" isRelative="false"/>
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="432" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="3" units="micrometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.construction.line">
@@ -347,7 +346,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Throughway Outline" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Throughway Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.45"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -389,7 +388,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Highway Outline" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Highway Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.46"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -416,8 +415,8 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="1" units="points" isRelative="false"/>
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="1058" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="3" units="micrometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.line">
@@ -434,7 +433,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Motorway Outline" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Motorway Outline" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.47"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.line">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -450,8 +449,8 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="255" g="255" b="255" overprint="false"/>
-			<size size="2" units="points" isRelative="false"/>
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="1058" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="3" units="micrometer" isRelative="false"/>
 			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="st_b_1" KindSub="st_b_1" id="roads.motorways.oneway.line">
@@ -492,15 +491,199 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Line" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Motorway Access Fill" id="roads.motorways.access.fill" KindMain="Unknown" alwaysOutput="false" KindSub=""/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="Access" value="{mt}"/>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="247" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.motorways.access.construction.fill">
+				<criteria>
+					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
+				</criteria>
+				<style size="15" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			</modifier>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Highway Access Fill" id="roads.highways.access.fill" KindMain="Unknown" KindSub="" alwaysOutput="false"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="Access" value="{hw}"/>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="247" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.highways.access.construction.fill">
+				<criteria>
+					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
+				</criteria>
+				<style size="15" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			</modifier>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Highway Fill" id="roads.highways.fill" KindMain="Unknown" alwaysOutput="false" KindSub=""/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<inset fieldname="Access" negate="true">
+				<item value="{th}"/>
+				<item value="{hw}"/>
+				<item value="{mt}"/>
+			</inset>
+			<and>
+				<inset fieldname="RoadClass">
+					<item value="Motorway"/>
+					<item value="Highway"/>
+				</inset>
+				<and>
+					<equation oper="eq" fieldname="Roaduse" value="Car"/>
+					<and>
+						<inset fieldname="RoadType" negate="true">
+							<item value="MotorType"/>
+							<item value="Bosweg/pad"/>
+							<item value="Ferry"/>
+							<item value="Pedestrian Zone"/>
+						</inset>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="882" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.oneway.fill">
+				<criteria>
+					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
+					<and>
+						<inset fieldname="Access">
+							<item value="Road access"/>
+							<item value="{mt}"/>
+							<item value="{hw}"/>
+							<item value="{th}"/>
+							<item value="Parking access"/>
+						</inset>
+						<or>
+							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
+						</or>
+					</and>
+				</criteria>
+				<size size="1" units="points" isRelative="false"/>
+			</modifier>
+			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.fill">
+				<criteria>
+					<equation oper="eq" fieldname="RoadType" value="Service road"/>
+				</criteria>
+				<size size="1" units="points" isRelative="false"/>
+			</modifier>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.highways.construction.fill">
+				<criteria>
+					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
+				</criteria>
+				<style size="15" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			</modifier>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Motorway Fill" id="roads.highways.fill" KindMain="Unknown" alwaysOutput="false" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<inset fieldname="Access" negate="true">
+				<item value="{th}"/>
+				<item value="{hw}"/>
+				<item value="{mt}"/>
+			</inset>
+			<and>
+				<equation oper="eq" fieldname="Roaduse" value="Car"/>
+				<and>
+					<equation oper="eq" fieldname="RoadType" value="MotorType"/>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="255" g="255" b="255" overprint="false"/>
+			<size size="882" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.oneway.fill">
+				<criteria>
+					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
+					<and>
+						<inset fieldname="Access">
+							<item value="Road access"/>
+							<item value="{mt}"/>
+							<item value="{hw}"/>
+							<item value="{th}"/>
+							<item value="Parking access"/>
+						</inset>
+						<or>
+							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
+						</or>
+					</and>
+				</criteria>
+				<size size="1" units="points" isRelative="false"/>
+			</modifier>
+			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
+				<criteria>
+					<equation oper="eq" fieldname="RoadType" value="Service road"/>
+				</criteria>
+				<size size="1" units="points" isRelative="false"/>
+			</modifier>
+			<modifier xsi:type="chainModifier" enabled="true" name="ConstructionTunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.motorways.construction.fill">
+				<criteria>
+					<equation oper="eq" fieldname="Construction" value="true"/>
+					<or>
+						<inset fieldname="Bridgestat">
+							<item value="Tunnel"/>
+							<item value="Underpass"/>
+						</inset>
+					</or>
+				</criteria>
+				<style size="30" units="1/10th millimeter" isRelative="false" style="dash5_5"/>
+			</modifier>
+			<modifier xsi:type="chainModifier" enabled="true" name="Tunnel" KindMain="st_b_1" KindSub="st_b_1" id="roads.motorways.tunnel.fill">
+				<criteria>
+					<inset fieldname="Bridgestat">
+						<item value="Tunnel"/>
+						<item value="Underpass"/>
+					</inset>
+				</criteria>
+				<style size="15" units="1/10th millimeter" isRelative="false" style="dotdash"/>
+			</modifier>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Line" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.85"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poi" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Vectorlayer Poi" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.86"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
-	<layer xsi:type="epsLayer" enabled="true" name="After Roads" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Grid Layer" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.87"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="afterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Grid Layer" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.88"/>
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
-	<layer xsi:type="epsLayer" enabled="true" name="CityNames Group" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="City Names Group" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.89"/>
 	<slocgroup maxFillpercentage="10" name="CityNames Group" KindMain="Placenames" KindSub="Placenames POIs" id="pois.placenamesgroup">
 		<slocstyle enabled="true" name="Big City Name Country Capital" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Placenames" KindSub="Placenames POIs" id="places.bigcities.countrycapital" deduplicateNames="false" storeExtraSlocs="0">
 			<criteria>
@@ -519,7 +702,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="2999" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -568,7 +751,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="2999" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -617,7 +800,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="2999" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -666,7 +849,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -715,7 +898,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="2999" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -764,7 +947,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -813,7 +996,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="2999" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -862,7 +1045,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -911,7 +1094,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="2999" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -960,7 +1143,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -1009,7 +1192,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="2999" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -1058,7 +1241,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -1107,7 +1290,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="2999" units="micrometer" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -1156,7 +1339,7 @@
 						<size size="2" units="1/10th millimeter" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
-					<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+					<fillColor enabled="true" r="25" g="25" b="25" overprint="false"/>
 				</fontDraw>
 				<size size="7" units="points" isRelative="false"/>
 				<boxDraw enabled="false" extraHeight="0">
@@ -1189,7 +1372,7 @@
 			</lineDraw>
 		</slocstyle>
 	</slocgroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.90"/>
 	<slocstyle enabled="false" name="Railway Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
@@ -1230,7 +1413,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.91"/>
 	<slocstyle enabled="false" name="Metro Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Metro station"/>
@@ -1271,7 +1454,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Lightrail Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Lightrail Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.92"/>
 	<slocstyle enabled="false" name="Lightrail Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Lightrails" id="pois.lightrails.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Lightrail"/>
@@ -1304,7 +1487,7 @@
 			<height size="7" units="meter" isRelative="true"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Parking Place Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Parking Place Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.93"/>
 	<slocstyle enabled="false" name="Parking Place Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Parking Places" id="pois.parkingplaces.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Parking place"/>
@@ -1337,7 +1520,7 @@
 			<height size="2400" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Parking House Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Parking House Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.94"/>
 	<slocstyle enabled="false" name="Parking House Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Parking Houses" id="pois.parkinghouses.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Parking house"/>
@@ -1370,7 +1553,7 @@
 			<height size="2400" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Bicycle Parking Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Bicycle Parking Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.95"/>
 	<slocstyle enabled="false" name="Bicycle Parking Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Bicycle Parkings" id="pois.bicycleparkings.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Bicycle parking"/>
@@ -1403,7 +1586,7 @@
 			<height size="2400" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Park &amp; Ride" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Park &amp; Ride" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.96"/>
 	<slocstyle enabled="false" name="Park &amp; Ride" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Park &amp; Ride" id="pois.parkandrides">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Park &amp; Ride"/>
@@ -1436,7 +1619,7 @@
 			<height size="3000" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Tourist Office Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Tourist Office Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.98"/>
 	<slocstyle enabled="false" name="Tourist Office Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Tourist Offices" id="pois.touristoffices.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Tourist office"/>
@@ -1469,7 +1652,7 @@
 			<height size="20" units="1/10th millimeter" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Amusement Park Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Amusement Park Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.99"/>
 	<slocstyle enabled="false" name="Amusement Park Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Amusement Parks" id="pois.amusementparks.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Amusement park"/>
@@ -1507,7 +1690,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Hospital Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Hospital Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.100"/>
 	<slocstyle enabled="false" name="Hospital Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Hospitals" id="pois.hospitals.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Hospital"/>
@@ -1540,7 +1723,7 @@
 			<height size="25" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Police Station Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Police Station Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.101"/>
 	<slocstyle enabled="false" name="Police Station Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Police Stations" id="pois.policestations.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Police"/>
@@ -1573,7 +1756,7 @@
 			<height size="4500" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Municipal Building Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Municipal Building Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.102"/>
 	<slocstyle enabled="false" name="Municipal Building Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Municipal Buildings" id="pois.municipalbuildings.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Municipal building"/>
@@ -1606,7 +1789,7 @@
 			<height size="3000" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Post Office Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Post Office Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.103"/>
 	<slocstyle enabled="false" name="Post Office Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Post Offices" id="pois.postoffices.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Post office"/>
@@ -1639,7 +1822,7 @@
 			<height size="3000" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Town Hall Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Town Hall Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.104"/>
 	<slocstyle enabled="false" name="Town Hall Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Town Halls" id="pois.townhalls.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Town hall"/>
@@ -1672,7 +1855,7 @@
 			<height size="2250" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Airport Terminal Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Airport Terminal Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.105"/>
 	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="5000" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.symbol" deduplicateNames="true" storeExtraSlocs="0">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport terminal"/>
@@ -1719,7 +1902,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Bus Station" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Bus Station" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.106"/>
 	<slocstyle enabled="false" name="Bus Station" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Bus Stations" id="pois.busstations">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Bus station"/>
@@ -1751,8 +1934,13 @@
 			<width size="4000" units="micrometer" isRelative="false"/>
 			<height size="3000" units="micrometer" isRelative="false"/>
 		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Swimming Pool Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Swimming Pool Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.107"/>
 	<slocstyle enabled="false" name="Swimming Pool Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Swimming Pools" id="pois.swimmingpools.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Swimming pool"/>
@@ -1785,7 +1973,7 @@
 			<height size="2400" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Carpool Point Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Carpool Point Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.108"/>
 	<slocstyle enabled="false" name="Carpool Point Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Carpool Points" id="pois.carpoolpoints.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Carpool"/>
@@ -1818,7 +2006,7 @@
 			<height size="3000" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Stadium Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Stadium Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.109"/>
 	<slocstyle enabled="false" name="Stadium Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Stadiums" id="pois.stadiums.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Stadium"/>
@@ -1851,7 +2039,7 @@
 			<height size="3000" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Shops Other Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Shops Other Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.113"/>
 	<slocstyle enabled="false" name="Shops Other Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Shops" id="pois.shops.symbol">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Shop"/>
@@ -1893,7 +2081,7 @@
 			<height size="3300" units="micrometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Vehicle Repair Names" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Vehicle Repair Names" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.125"/>
 	<slocstyle enabled="false" name="Vehicle Repair Names" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Vehicle Repairs" id="pois.vehiclerepairs.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Vehicle repair"/>
@@ -1932,7 +2120,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Petrol station Names" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Petrol station Names" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.126"/>
 	<slocstyle enabled="false" name="Petrol station Names" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Petrol Stations" id="pois.petrolstations.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Petrol station"/>
@@ -1971,7 +2159,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rent a Car Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Rent a Car Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.127"/>
 	<slocstyle enabled="false" name="Rent a Car Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Rent a Car" id="pois.rentacars.symbol.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Rent a car"/>
@@ -2010,7 +2198,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Parking Place Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Parking Place Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.128"/>
 	<slocstyle enabled="false" name="Parking Place Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Parking Places" id="pois.parkingplaces.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Parking place"/>
@@ -2049,7 +2237,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Parking House Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Parking House Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.129"/>
 	<slocstyle enabled="false" name="Parking House Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Parking Houses" id="pois.parkinghouses.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Parking house"/>
@@ -2088,7 +2276,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Bicycle Parking Symbol Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Bicycle Parking Symbol Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.130"/>
 	<slocstyle enabled="false" name="Bicycle Parking Symbol Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Bicycle Parkings" id="pois.bicycleparkings.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Bicycle parking"/>
@@ -2127,7 +2315,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Park+Ride Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Park+Ride Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.131"/>
 	<slocstyle enabled="false" name="Park+Ride Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Park &amp; Ride" id="pois.parkandrides.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Park &amp; Ride"/>
@@ -2166,7 +2354,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Rest Area Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Rest Area Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.132"/>
 	<slocstyle enabled="false" name="Rest Area Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Rest Areas" id="pois.restareas.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Rest area"/>
@@ -2205,7 +2393,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Hotel / Motel Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Hotel / Motel Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.135"/>
 	<slocstyle enabled="false" name="Hotel / Motel Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Hotels / Motels" id="pois.hotels.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Hotel/motel"/>
@@ -2244,7 +2432,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Restaurant Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Restaurant Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.136"/>
 	<slocstyle enabled="false" name="Restaurant Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Restaurants" id="pois.restaurants.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Restaurant"/>
@@ -2283,7 +2471,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Chapel Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Chapel Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.139"/>
 	<slocstyle enabled="false" name="Chapel Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Chapels" id="pois.chapels.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Chapel"/>
@@ -2322,7 +2510,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Castle Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Castle Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.140"/>
 	<slocstyle enabled="false" name="Castle Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Castles" id="pois.castles.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Castle"/>
@@ -2361,7 +2549,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Watertower Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Watertower Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.141"/>
 	<slocstyle enabled="false" name="Watertower Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Watertowers" id="pois.watertowers.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Watertower"/>
@@ -2400,7 +2588,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Windmill Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Windmill Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.142"/>
 	<slocstyle enabled="false" name="Windmill Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Windmills" id="pois.windmills.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Windmill"/>
@@ -2439,7 +2627,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Watermill Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Watermill Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.143"/>
 	<slocstyle enabled="false" name="Watermill Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Watermills" id="pois.watermills.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Watermill"/>
@@ -2478,7 +2666,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Tourist Office Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Tourist Office Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.145"/>
 	<slocstyle enabled="false" name="Tourist Office Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Tourist Offices" id="pois.touristoffices.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Tourist office"/>
@@ -2522,7 +2710,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Museum Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Museum Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.146"/>
 	<slocstyle enabled="false" name="Museum Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Museums" id="pois.museums.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Museum"/>
@@ -2560,7 +2748,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Theatre Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Theatre Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.147"/>
 	<slocstyle enabled="false" name="Theatre Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Theatres" id="pois.theatres.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Theatre"/>
@@ -2599,7 +2787,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Cultural Center Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Cultural Center Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.148"/>
 	<slocstyle enabled="false" name="Cultural Center Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Cultural Centers" id="pois.culturalcenters.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Cultural center"/>
@@ -2638,7 +2826,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Sports Facility Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Sports Facility Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.149"/>
 	<slocstyle enabled="false" name="Sports Facility Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Sports Facilities" id="pois.sport.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Sport"/>
@@ -2677,21 +2865,21 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Church Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Church Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.150"/>
 	<slocstyle enabled="false" name="Church Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Churches" id="pois.churches.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Church"/>
 		</criteria>
-		<textDraw enabled="true" alignment="downleft" capitalMode="allCaps" font="helvetica" relHeight="100" spacing="30" slant="0" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="newsGothicBT-Bold" relHeight="100" spacing="30" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="54" g="54" b="54" overprint="false"/>
 					<size size="0" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
+				<fillColor enabled="true" r="102" g="102" b="102" overprint="false"/>
 			</fontDraw>
-			<size size="1000" units="micrometer" isRelative="false"/>
+			<size size="6" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -2704,10 +2892,16 @@
 			</boxDraw>
 		</textDraw>
 		<symbolDraw enabled="true" extraHeight="10" slocProjection="undef" horizontal="true">
-			<svg xsi:type="symbolBase" name="ChurchReiseKnowHow" width="257" height="411" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 256.543 411.499&quot; xml:space=&quot;preserve&quot;&gt;&#xA; &lt;polygon fill=&quot;#FFFFFF&quot; points=&quot;256.543,411.499 0,411.499 0,0 256.543,0 256.543,411.499  &quot;/&gt;&#xA; &lt;rect x=&quot;28.345&quot; y=&quot;28.345&quot; width=&quot;199.829&quot; height=&quot;354.785&quot;/&gt;&#xA; &lt;polygon fill=&quot;#FFFFFF&quot; points=&quot;218.896,149.829 146.313,149.829 146.313,374.341 111.108,374.341 111.108,149.829 38.892,149.829 &#xA;  38.892,116.382 111.108,116.382 111.108,38.452 146.313,38.452 146.313,116.382 218.896,116.382  &quot;/&gt;&#xA;&lt;/svg&gt;"/>
-			<eps name="ChurchReiseKnowHow" width="257" height="411" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 169 214 426 627&#xA;%%HiResBoundingBox: 169.4004 214.7334 425.9434 626.2324&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 298.5 420.3896 298.5 420.3896&#xA;%AI8_OpenToView: -229 715.8896 1.5 1582 880 18 0 0 49 117 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;0 D&#xA;0 O&#xA;0 0 0 0 k&#xA;0 J 0 j 1 w 4 M []0 d&#xA;0 XR&#xA;%Plot f&#xA;425.9434 214.7334 m&#xA;169.4004 214.7334 L&#xA;169.4004 626.2324 L&#xA;425.9434 626.2324 L&#xA;425.9434 214.7334 L&#xA;425.9434 214.7334 L&#xA;f&#xA;1 D&#xA;0 0 0 1 k&#xA;%Plot f&#xA;397.5742 243.1025 m&#xA;397.5742 597.8877 l&#xA;197.7451 597.8877 l&#xA;197.7451 243.1025 l&#xA;397.5742 243.1025 l&#xA;f&#xA;0 D&#xA;0 0 0 0 k&#xA;%Plot f&#xA;388.2969 476.4033 m&#xA;315.7139 476.4033 l&#xA;315.7139 251.8916 l&#xA;280.5088 251.8916 l&#xA;280.5088 476.4033 l&#xA;208.292 476.4033 l&#xA;208.292 509.8506 l&#xA;280.5088 509.8506 l&#xA;280.5088 587.7803 l&#xA;315.7139 587.7803 l&#xA;315.7139 509.8506 l&#xA;388.2969 509.8506 l&#xA;388.2969 476.4033 l&#xA;f&#xA;U&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
-			<width size="2" units="millimeter" isRelative="false"/>
-			<height size="3" units="millimeter" isRelative="false"/>
+			<shape shapekind="oval">
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="127" g="127" b="127" overprint="false"/>
+			</shape>
+			<width size="8" units="1/10th millimeter" isRelative="false"/>
+			<height size="8" units="1/10th millimeter" isRelative="false"/>
 		</symbolDraw>
 		<lineDraw enabled="false">
 			<color r="255" g="255" b="255" overprint="true"/>
@@ -2715,7 +2909,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Monument Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Monument Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.151"/>
 	<slocstyle enabled="false" name="Monument Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Monuments" id="pois.monuments.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Monument"/>
@@ -2754,7 +2948,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Amusement Park Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Amusement Park Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.152"/>
 	<slocstyle enabled="false" name="Amusement Park Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Amusement Parks" id="pois.amusementparks.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Amusement park"/>
@@ -2793,7 +2987,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Park / Garden Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Park / Garden Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.153"/>
 	<slocstyle enabled="false" name="Park / Garden Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Park / Garden" id="pois.parkgardens.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Park/garden"/>
@@ -2832,7 +3026,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Abbey Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Abbey Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.154"/>
 	<slocstyle enabled="false" name="Abbey Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Abbey Names" id="pois.abbeys.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Abbey"/>
@@ -2871,7 +3065,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Hospital Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Hospital Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.155"/>
 	<slocstyle enabled="false" name="Hospital Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Hospitals" id="pois.hospitals.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Hospital"/>
@@ -2910,7 +3104,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Police Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Police Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.156"/>
 	<slocstyle enabled="false" name="Police Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Police Stations" id="pois.policestations.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Police"/>
@@ -2949,7 +3143,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Municipal Building Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Municipal Building Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.157"/>
 	<slocstyle enabled="false" name="Municipal Building Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Municipal Buildings" id="pois.municipalbuildings.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Municipal building"/>
@@ -2987,8 +3181,13 @@
 			<width size="0" units="kilometer" isRelative="false"/>
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Post Office Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Post Office Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.158"/>
 	<slocstyle enabled="false" name="Post Office Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Post Offices" id="pois.postoffices.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Post office"/>
@@ -3027,7 +3226,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Health Care Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Health Care Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.159"/>
 	<slocstyle enabled="false" name="Health Care Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Health Care" id="pois.healthcares.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Health care"/>
@@ -3066,7 +3265,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Pharmacy Names" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Pharmacy Names" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.160"/>
 	<slocstyle enabled="false" name="Pharmacy Names" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Pharmacies" id="pois.pharmacies.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Pharmacy"/>
@@ -3105,7 +3304,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Embassy Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Embassy Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.162"/>
 	<slocstyle enabled="false" name="Embassy Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Embassy" id="pois.embassies.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Embassy"/>
@@ -3144,7 +3343,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Town Hall Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Town Hall Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.163"/>
 	<slocstyle enabled="false" name="Town Hall Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Town Halls" id="pois.townhalls.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Town hall"/>
@@ -3183,7 +3382,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Railway Station Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.164"/>
 	<slocstyle enabled="false" name="Railway Station Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
@@ -3230,7 +3429,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Airport Terminal Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Airport Terminal Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.165"/>
 	<slocstyle enabled="false" name="Airport Terminal Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport terminal"/>
@@ -3269,7 +3468,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Sea-Ferry Terminal Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Sea-Ferry Terminal Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.166"/>
 	<slocstyle enabled="false" name="Sea-Ferry Terminal Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Sea-Ferry Terminals" id="pois.seaferryterminals.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Sea-ferry terminal"/>
@@ -3308,7 +3507,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Cruise Terminal Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Cruise Terminal Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.167"/>
 	<slocstyle enabled="false" name="Cruise Terminal Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Cruise Terminal" id="pois.cruiseterminals.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Cruise terminal"/>
@@ -3347,7 +3546,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Bus Station Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Bus Station Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.168"/>
 	<slocstyle enabled="false" name="Bus Station Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Bus Stations" id="pois.busstations.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Bus station"/>
@@ -3386,12 +3585,22 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Metro Station Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.169"/>
 	<slocstyle enabled="false" name="Metro Station Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label">
 		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<equation oper="eq" fieldname="Categ" value="metro station"/>
 			<and>
 				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<inset fieldname="Countrychar" negate="true">
+						<item value="de"/>
+						<item value="fr"/>
+						<item value="es"/>
+						<item value="uk"/>
+						<item value="dk"/>
+						<item value="at"/>
+					</inset>
+				</and>
 			</and>
 		</criteria>
 		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="newsGothicBT-Roman" relHeight="100" spacing="0" slant="0" underline="false">
@@ -3424,8 +3633,8 @@
 				</line>
 				<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
 			</shape>
-			<width size="0" units="kilometer" isRelative="false"/>
-			<height size="0" units="kilometer" isRelative="false"/>
+			<width size="3" units="kilometer" isRelative="false"/>
+			<height size="3" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 		<lineDraw enabled="false">
 			<color r="255" g="255" b="255" overprint="true"/>
@@ -3433,7 +3642,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Customs Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Customs Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.170"/>
 	<slocstyle enabled="false" name="Customs Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Customs" id="pois.customs.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Customs"/>
@@ -3472,7 +3681,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Lightrail Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Lightrail Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.172"/>
 	<slocstyle enabled="false" name="Lightrail Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Lightrails" id="pois.lightrails.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Lightrail"/>
@@ -3511,7 +3720,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Camping Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Camping Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.224"/>
 	<slocstyle enabled="false" name="Camping Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Campings" id="pois.campings.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Camping"/>
@@ -3550,7 +3759,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="School Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="School Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.225"/>
 	<slocstyle enabled="false" name="School Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Schools" id="pois.schools.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="School"/>
@@ -3589,7 +3798,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Tourist Attraction Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Tourist Attraction Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.226"/>
 	<slocstyle enabled="false" name="Tourist Attraction Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Tourist Attractions" id="pois.touristattractions.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Tourist attraction"/>
@@ -3627,7 +3836,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Riding School Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Riding School Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.227"/>
 	<slocstyle enabled="false" name="Riding School Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Riding schools" id="pois.ridingschools.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Riding school"/>
@@ -3666,7 +3875,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Swimming Pool Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Swimming Pool Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.228"/>
 	<slocstyle enabled="false" name="Swimming Pool Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Swimming Pools" id="pois.swimmingpools.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Swimming pool"/>
@@ -3705,7 +3914,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Tennis Court Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Tennis Court Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.229"/>
 	<slocstyle enabled="false" name="Tennis Court Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Tennis Courts" id="pois.tenniscourts.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Tennis"/>
@@ -3744,7 +3953,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Sportshall Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Sportshall Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.230"/>
 	<slocstyle enabled="false" name="Sportshall Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Sporthalls" id="pois.sporthalls.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Sportshall"/>
@@ -3783,7 +3992,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Ski Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Ski Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.231"/>
 	<slocstyle enabled="false" name="Ski Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Ski Facilities" id="pois.skifacilities.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Ski"/>
@@ -3822,7 +4031,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Government Building  Names" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Government Building  Names" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.232"/>
 	<slocstyle enabled="false" name="Government Building  Names" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Government Buildings" id="pois.governmentbuildings.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Government building"/>
@@ -3861,7 +4070,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Yacht Bassin Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Yacht Bassin Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.233"/>
 	<slocstyle enabled="false" name="Yacht Bassin Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Yacht Bassins" id="pois.yachtbassins.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Yacht bassin"/>
@@ -3900,7 +4109,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Golf Course Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Golf Course Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.237"/>
 	<slocstyle enabled="false" name="Golf Course Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Golf Courses" id="pois.golfcourses.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Golf course"/>
@@ -3939,7 +4148,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="ATM Symbol Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="ATM Symbol Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.238"/>
 	<slocstyle enabled="false" name="ATM Symbol Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="ATM names" id="pois.atms.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Atm"/>
@@ -3978,7 +4187,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Crematorium Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Crematorium Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.239"/>
 	<slocstyle enabled="false" name="Crematorium Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Crematoria" id="pois.crematoria.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Crematoria"/>
@@ -4017,7 +4226,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Firebrigade Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Firebrigade Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.240"/>
 	<slocstyle enabled="false" name="Firebrigade Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Firebrigades" id="pois.firebrigades.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Firebrigade"/>
@@ -4056,7 +4265,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Carpool Point Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Carpool Point Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.241"/>
 	<slocstyle enabled="false" name="Carpool Point Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Carpool Points" id="pois.carpoolpoints.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Carpool"/>
@@ -4095,7 +4304,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Zoo Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Zoo Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.242"/>
 	<slocstyle enabled="false" name="Zoo Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Zoos" id="pois.zoos.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Zoo"/>
@@ -4134,7 +4343,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Expo Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Expo Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.262"/>
 	<slocstyle enabled="false" name="Expo Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Expos" id="pois.expos.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Expo"/>
@@ -4173,7 +4382,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Congress Center Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Congress Center Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.263"/>
 	<slocstyle enabled="false" name="Congress Center Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Congress Centers" id="pois.congresscenters.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Congress center"/>
@@ -4212,7 +4421,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Ice Rink Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Ice Rink Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.264"/>
 	<slocstyle enabled="false" name="Ice Rink Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Ice Rinks" id="pois.icerinks.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Ice rink"/>
@@ -4251,7 +4460,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Concert Hall Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Concert Hall Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.265"/>
 	<slocstyle enabled="false" name="Concert Hall Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Concert Halls" id="pois.concerthalls.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Concert hall"/>
@@ -4290,7 +4499,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Stadium Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Stadium Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.266"/>
 	<slocstyle enabled="false" name="Stadium Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Stadiums" id="pois.stadiums.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Stadium"/>
@@ -4329,7 +4538,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Shop Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Shop Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.267"/>
 	<slocstyle enabled="false" name="Shop Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Shops" id="pois.shops.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Shop"/>
@@ -4368,7 +4577,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Institution Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Institution Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.268"/>
 	<slocstyle enabled="false" name="Institution Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Institutions" id="pois.institutions.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Institution"/>
@@ -4407,7 +4616,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Mosque Names" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Mosque Names" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.269"/>
 	<slocstyle enabled="false" name="Mosque Names" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Mosques" id="pois.mosques.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Mosque"/>
@@ -4446,7 +4655,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Temple Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Temple Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.270"/>
 	<slocstyle enabled="false" name="Temple Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Temples" id="pois.temples.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Temple"/>
@@ -4485,7 +4694,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Synagoge Names" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Synagoge Names" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.272"/>
 	<slocstyle enabled="false" name="Synagoge Names" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Synagoges" id="pois.synagoges.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Synagoge"/>
@@ -4524,7 +4733,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Recreation Area Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Recreation Area Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.273"/>
 	<slocstyle enabled="false" name="Recreation Area Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Recreation Areas" id="pois.recreationareas.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Recreation Area"/>
@@ -4563,7 +4772,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Cinema Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Cinema Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.274"/>
 	<slocstyle enabled="false" name="Cinema Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Cinemas" id="pois.cinemas.symbol.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Cinema"/>
@@ -4602,7 +4811,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Casino Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Casino Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.275"/>
 	<slocstyle enabled="false" name="Casino Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Casinos" id="pois.casinos.symbol.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Casino"/>
@@ -4641,7 +4850,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Lighthouse Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Lighthouse Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.277"/>
 	<slocstyle enabled="false" name="Lighthouse Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Lighthouses" id="pois.lighthouses.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Lighthouse"/>
@@ -4680,7 +4889,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Shopping Center Symbol" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Shopping Center Symbol" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.278"/>
 	<slocstyle enabled="false" name="Shopping Center Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Shopping Centers" id="pois.shoppingcenters.symbol.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Shopping center"/>
@@ -4719,7 +4928,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Bungalow Park Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Bungalow Park Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.279"/>
 	<slocstyle enabled="false" name="Bungalow Park Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Bungalowparks" id="pois.bungalowparks.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Bungalow park"/>
@@ -4758,7 +4967,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Winery Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Winery Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.280"/>
 	<slocstyle enabled="false" name="Winery Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Wineries" id="pois.wineries.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Winery"/>
@@ -4797,7 +5006,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Library Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Library Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.282"/>
 	<slocstyle enabled="false" name="Library Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Libraries" id="pois.libraries.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Library"/>
@@ -4836,7 +5045,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Observatory Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Observatory Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.283"/>
 	<slocstyle enabled="false" name="Observatory Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Observatories" id="pois.observatories.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Observatory"/>
@@ -4875,7 +5084,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Tax Authorities Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Tax Authorities Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.284"/>
 	<slocstyle enabled="false" name="Tax Authorities Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Tax Authorities" id="pois.taxauthorities.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Tax authorities"/>
@@ -4914,7 +5123,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Community Center" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Community Center" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.285"/>
 	<slocstyle enabled="false" name="Community Center" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Community Centers" id="pois.communitycenters.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Community center"/>
@@ -4953,7 +5162,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Fair Ground Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Fair Ground Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.286"/>
 	<slocstyle enabled="false" name="Fair Ground Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Fair grounds" id="pois.fairgrounds.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Fair ground"/>
@@ -4992,7 +5201,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Fort Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Fort Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.287"/>
 	<slocstyle enabled="false" name="Fort Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Forts" id="pois.forts.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Fort"/>
@@ -5031,7 +5240,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Law Court Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Law Court Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.288"/>
 	<slocstyle enabled="false" name="Law Court Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Law Courts" id="pois.lawcourts.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Law court"/>
@@ -5070,7 +5279,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Prison Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Prison Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.289"/>
 	<slocstyle enabled="false" name="Prison Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Prisons" id="pois.prisons.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Prison"/>
@@ -5109,7 +5318,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Burial Mount Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Burial Mount Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.290"/>
 	<slocstyle enabled="false" name="Burial Mount Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Burial Mounts" id="pois.burialmounts.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Burial mounts"/>
@@ -5148,7 +5357,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Barrack Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Barrack Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.291"/>
 	<slocstyle enabled="false" name="Barrack Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Barracks" id="pois.barracks.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Barracks"/>
@@ -5187,7 +5396,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Department Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Department Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.292"/>
 	<slocstyle enabled="false" name="Department Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Departments" id="pois.departments.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Department"/>
@@ -5226,7 +5435,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Studio Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Studio Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.293"/>
 	<slocstyle enabled="false" name="Studio Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Studios" id="pois.studios.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Studio"/>
@@ -5265,7 +5474,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Radartower Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Radartower Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.294"/>
 	<slocstyle enabled="false" name="Radartower Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Radartowers" id="pois.radartowers.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Radar tower"/>
@@ -5304,7 +5513,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Radiobroadcasting Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Radiobroadcasting Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.295"/>
 	<slocstyle enabled="false" name="Radiobroadcasting Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Radiobroadcasting" id="pois.radiobroadcastings.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Radiobroadcasting mast"/>
@@ -5343,7 +5552,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Archive Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Archive Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.296"/>
 	<slocstyle enabled="false" name="Archive Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Archives" id="pois.archives.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Archives"/>
@@ -5382,7 +5591,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Beach Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Beach Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.297"/>
 	<slocstyle enabled="false" name="Beach Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Beaches" id="pois.beaches.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Beach"/>
@@ -5421,7 +5630,7 @@
 			<height size="0" units="kilometer" isRelative="false"/>
 		</symbolDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Roadnr All" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Roadnr All" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.298"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr All" overwriteRoadclass="motorway" namePattern="(.*)" distance="0" minRoadLength="8000" onlyOne="false" lowestIntersectionClass="other" mode="horizontal" KindMain="Road Numbers" KindSub="Letters - Countries" id="roads.roadnumber.all" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -5435,21 +5644,21 @@
 				</and>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="center" capitalMode="allCaps" font="newsGothicBT-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="allCaps" font="newsGothicBT-RomanCondensed" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="0" g="0" b="0" overprint="false"/>
 					<size size="1" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="true" extraHeight="20">
 				<shape shapekind="rectangle">
 					<line enabled="true">
-						<color r="0" g="0" b="0" overprint="false"/>
-						<size size="1" units="1/10th millimeter" isRelative="false"/>
+						<color r="77" g="77" b="77" overprint="false"/>
+						<size size="176" units="micrometer" isRelative="false"/>
 						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 					</line>
 					<fillColor enabled="true" r="255" g="255" b="255" overprint="false"/>
@@ -5457,7 +5666,7 @@
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Roadnr I" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Roadnr I" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.299"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr I" KindMain="Road Numbers" KindSub="Letters - Countries" overwriteRoadclass="motorway" namePattern="(\d+)" distance="0" minRoadLength="8000" onlyOne="false" lowestIntersectionClass="motorway" mode="horizontal" removeChars="false" id="roads.roadnumber.i.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -5465,23 +5674,23 @@
 				<equation oper="matches" fieldname="Name" value="i[0-9-]*"/>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="newsGothicBT-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="newsGothicBT-RomanCondensed" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="0" units="kilometer" isRelative="false"/>
 					<style size="0" units="kilometer" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="true" extraHeight="100">
 				<svg xsi:type="symbolBase" name="InterstateBlack" width="294.4532" height="327.9757" data="&lt;svg version=&quot;1.1&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 294.4531555 327.975708&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;path fill=&quot;#FFFFFF&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2.37147&quot; d=&quot;M147.2078247,1.463596  c-20.245491,14.6494999-44.8741913,23.3118992-71.4751892,23.3118992c-18.5423012,0-36.0659027-4.2798996-51.8832016-11.7717991  C9.3905344,43.1836967,1.185735,77.1035995,1.185735,113.0441971c0,98.461998,61.0028992,182.1104126,146.059494,213.6668091  c85.0567017-31.5563965,146.0222015-115.2048035,146.0222015-213.6668091c0-35.9405975-8.2112122-69.8605042-22.6637878-100.0404968  c-15.8197021,7.4947987-33.3746033,11.7717991-51.9207153,11.7717991  C192.0819244,24.7754955,167.4533234,16.1130962,147.2078247,1.463596z&quot;/&gt;&#xA;&lt;g&gt;&#xA; &lt;path d=&quot;M147.6425323,11.6881962c-19.3419952,13.8038006-42.8740997,21.9550991-68.2879028,21.9550991   c-17.714695,0-34.4577942-4.0240002-49.5690956-11.0832996c-9.0739994,18.6802006-15.5031996,38.8902969-18.8924942,60.1525955   h273.5463867c-3.3905945-21.2622986-9.8382874-41.4723969-18.9082947-60.1525955   c-15.1136932,7.0620003-31.8824005,11.0832996-49.6006927,11.0832996   C190.5165253,33.6432953,166.9845276,25.4919968,147.6425323,11.6881962z&quot;/&gt;&#xA;&lt;/g&gt;&#xA;&lt;/svg&gt;"/>
 				<eps name="InterstateBlack" width="294" height="328" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%Creator: Adobe Illustrator(R) 8.0&#xA;%%AI8_CreatorVersion: 19.1.0&#xA;%%For: (Eelke de Haan) ()&#xA;%%Title: (InterstateBlack.eps)&#xA;%%CreationDate: 5/2/2017 3:28 PM&#xA;%%Canvassize: 16383&#xA;%%BoundingBox: 159 -560 454 -232&#xA;%%HiResBoundingBox: 159 -559.9757 453.4532 -232&#xA;%%DocumentProcessColors: Black&#xA;%%DocumentNeededResources: procset Adobe_level2_AI5 1.2 0&#xA;%%+ procset AGM_Gradient 1.0 0&#xA;%%+ procset Adobe_ColorImage_AI6 1.3 0&#xA;%%+ procset Adobe_Illustrator_AI5 1.3 0&#xA;%%+ procset Adobe_pattern_AI5 1.0 0&#xA;%%+ procset Adobe_cshow 2.0 8&#xA;%%+ procset Adobe_shading_AI8 1.0 0&#xA;%AI5_FileFormat 4.0&#xA;%AI3_ColorUsage: Color&#xA;%AI7_ImageSettings: 0&#xA;%%CMYKProcessColor: 1 1 1 1 ([Registration])&#xA;%%AI6_ColorSeparationSet: 1 1 (AI6 Default Color Separation Set) &#xA;%%+ Options: 1 16 0 1 1 1 0 0 0 0 1 1 1 18 0 0 0 0 0 0 0 0 -1 -1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 2 3 4&#xA;%%+ PPD: 1 21 0 0 60 45 2 2 1 0 0 1 0 0 0 0 0 0 0 0 1 0 () &#xA;%AI3_TemplateBox: 306.5 -396.5 306.5 -396.5&#xA;%AI3_TileBox: 20.7466 -805.0078 591.7065 13.0321&#xA;%AI3_DocumentPreview: PC_ColorTIFF&#xA;%AI5_ArtSize: 294.4532 327.9757&#xA;%AI5_RulerUnits: 6&#xA;%AI5_ArtFlags: 0 0 0 1 0 0 1 0 0&#xA;%AI5_TargetResolution: 800&#xA;%AI5_NumLayers: 1&#xA;%AI8_OpenToView: -505 58 1 1630 894 18 0 0 5 111 0 0&#xA;%AI5_OpenViewLayers: 7&#xA;%%PageOrigin:0 -792&#xA;%AI7_GridSettings: 72 8 72 8 1 0 0.8 0.8 0.8 0.9 0.9 0.9&#xA;%AI9_Flatten: 0&#xA;%AI12_CMSettings: 00.MS&#xA;%AI7_Thumbnail: 116 128 8&#xA;%%BeginData: 9687 Hex Bytes&#xA;%0000330000660000990000CC0033000033330033660033990033CC0033FF&#xA;%0066000066330066660066990066CC0066FF009900009933009966009999&#xA;%0099CC0099FF00CC0000CC3300CC6600CC9900CCCC00CCFF00FF3300FF66&#xA;%00FF9900FFCC3300003300333300663300993300CC3300FF333300333333&#xA;%3333663333993333CC3333FF3366003366333366663366993366CC3366FF&#xA;%3399003399333399663399993399CC3399FF33CC0033CC3333CC6633CC99&#xA;%33CCCC33CCFF33FF0033FF3333FF6633FF9933FFCC33FFFF660000660033&#xA;%6600666600996600CC6600FF6633006633336633666633996633CC6633FF&#xA;%6666006666336666666666996666CC6666FF669900669933669966669999&#xA;%6699CC6699FF66CC0066CC3366CC6666CC9966CCCC66CCFF66FF0066FF33&#xA;%66FF6666FF9966FFCC66FFFF9900009900339900669900999900CC9900FF&#xA;%9933009933339933669933999933CC9933FF996600996633996666996699&#xA;%9966CC9966FF9999009999339999669999999999CC9999FF99CC0099CC33&#xA;%99CC6699CC9999CCCC99CCFF99FF0099FF3399FF6699FF9999FFCC99FFFF&#xA;%CC0000CC0033CC0066CC0099CC00CCCC00FFCC3300CC3333CC3366CC3399&#xA;%CC33CCCC33FFCC6600CC6633CC6666CC6699CC66CCCC66FFCC9900CC9933&#xA;%CC9966CC9999CC99CCCC99FFCCCC00CCCC33CCCC66CCCC99CCCCCCCCCCFF&#xA;%CCFF00CCFF33CCFF66CCFF99CCFFCCCCFFFFFF0033FF0066FF0099FF00CC&#xA;%FF3300FF3333FF3366FF3399FF33CCFF33FFFF6600FF6633FF6666FF6699&#xA;%FF66CCFF66FFFF9900FF9933FF9966FF9999FF99CCFF99FFFFCC00FFCC33&#xA;%FFCC66FFCC99FFCCCCFFCCFFFFFF33FFFF66FFFF99FFFFCC110000001100&#xA;%000011111111220000002200000022222222440000004400000044444444&#xA;%550000005500000055555555770000007700000077777777880000008800&#xA;%000088888888AA000000AA000000AAAAAAAABB000000BB000000BBBBBBBB&#xA;%DD000000DD000000DDDDDDDDEE000000EE000000EEEEEEEE0000000000FF&#xA;%00FF0000FFFFFF0000FF00FFFFFF00FFFFFF&#xA;%524C45FD38FFA827A8FD6FFFA85227A82752A8FD6CFF7D4C7DFFFFFF5227&#xA;%7DFD69FFA82752A8FD05FFA85227A8FD3DFF7DFD27FF7D5252A8FD04FF7D&#xA;%FD04FFA85252A8FD27FF7DFD12FF7D27277DA8FD21FFA87D27527DFD05FF&#xA;%522727A8FD04FF7D52277DFD22FFA87D27277DFD11FF52A8FF52525284A8&#xA;%FD1CFFA8525252A8FD05FF7DF8272727F87DA8FD04FFA8525252A8FD1CFF&#xA;%A8A8525252FFA852FD10FF7D27FFFFFFA87D5252527DA8FD15FFA87D5252&#xA;%277DA8FD05FF7D52F827F827F827F8277DFD05FFA87D2852527DA8FD15FF&#xA;%7D7D525252A8FD04FF27A8FD0FFF52A8FFFFA8FFFFFFA8A853522E7D7DA8&#xA;%A8FD0BFFA8A87D7D5252527EA8FD06FFA8522727272027272720FD0427A8&#xA;%FD06FFA87E5252527D7DA8A8FD0BFFA8A87D7D275253A8FD04FFA8FFFFA8&#xA;%52FD0EFFA852FFFFFF52277DA8FD04FFA97D7D5252275227FD055227FD04&#xA;%527D7DA8FD08FF7D52F827F827F827F827F827F827F827F82752A8FD07FF&#xA;%A87D7D5252275228FD055227FD04527D7DFD05FFA8A82727A8FFFF52A8FD&#xA;%0DFF7D7DFFFFA82727F82752A8A9FD07FFA8FFFD05A8FFA8FD0BFF7D7D27&#xA;%27F8272727F8272727F8272727F8272727F82727527DFD0BFFA8FFFD05A8&#xA;%FFA8FD08FFA85952F827277DFFFF537DFD0DFF27FFFFFF5227F827F827F8&#xA;%27527DA8FD14FFA87D522727F827F827F827F827F827F827F827F827F827&#xA;%F827F827F827F8527DA8A8FD13FFA87E5227F827F827F82727FFFFA827FD&#xA;%0CFF7D7DFFFFA82727272027272720FD04277D7DA8A8FFA8FD07FFA8A87D&#xA;%7D5252202727272027272720272727202727272027272720272727202727&#xA;%2720272727204C527D7DA8A8FD09FFA8A87D7DFD04272027272720272727&#xA;%7DFFFF527DFD0BFF527DFFFF7DF827F827F827F827F827F827F827F827F8&#xA;%FD0427522727F827F827F827F827F827F827F827F827F827F827F827F827&#xA;%F827F827F827F827F827F827F827F827F827F827F827212721FD0527F827&#xA;%F827F827F827F827F827F827F827F852FFFF7D52FD0BFF28FFFFFF2727F8&#xA;%272727F8272727F8272727F8272727F8272727F8272727F8272727F82727&#xA;%27F8272727F8272727F8272727F8272727F8272727F8272727F8272727F8&#xA;%272727F8272727F8272727F8272727F8272727F8272727F8272727F82727&#xA;%27F82727A8FFFF27FD0AFF537DFFFF7D27F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F82752FFFF527DFD09&#xA;%FF52A8FFFF7D272720272727202727272027272720272727202727272027&#xA;%272720272727202727272027272720272727202727272027272720272727&#xA;%202727272027272720272727202727272027272720272727202727272027&#xA;%2727202727272027272720272727FFFF7D7DFD09FF27FFFFA8F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F884FFFF27FD08FF7D59FFFF7D27F8272727F8272727F8272727F8&#xA;%272727F8272727F8272727F8272727F8272727F8272727F8272727F82727&#xA;%27F8272727F8272727F8272727F8272727F8272727F8272727F8272727F8&#xA;%272727F8272727F8272727F8272727F8272727F8272727F82752FFFF527E&#xA;%FD07FF537DFFFF52F827F827F827F827F827F827F827F827F827F827F827&#xA;%F827F827F827F827F827F827F827F827F827F827F827F827F827F827F827&#xA;%F827F827F827F827F827F827F827F827F827F827F827F827F827F827F827&#xA;%F827F827F827F827F827F827F827F827F827A8FF527DFD07FF52FFFFFF27&#xA;%272027272720272727202727272027272720272727202727272027272720&#xA;%272727202727272027272720272727202727272027272720272727202727&#xA;%272027272720272727202727272027272720272727202727272027272720&#xA;%27272720272727202727A8FFFF52FD06FFA852FFFF7D27F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F82752FFFF52A8FD05FF7D52FFFF7DF8272727F8272727F8272727F827&#xA;%2727F8272727F8272727F8272727F8272727F8272727F8272727F8272727&#xA;%F8272727F8272727F8272727F8272727F8272727F8272727F8272727F827&#xA;%2727F8272727F8272727F8272727F8272727F8272727F8272727F852FFFF&#xA;%52A8FD05FF527DFFFF2727F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F8A8FF7D52FD05FF52&#xA;%A8FFA8272027272720272727202727272027272720272727202727272027&#xA;%272720272727202727272027272720272727202727272027272720272727&#xA;%202727272027272720272727202727272027272720272727202727272027&#xA;%272720272727202727272027272720277DFFA852FD05FF52FFFF7DF827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F852FFFF27FD04FF7D7DFFFF52272727F8272727F8&#xA;%272727F8272727F8272727F8272727F8272727F8272727F8272727F82727&#xA;%27F8272727F8272727F8272727F8272727F8272727F8272727F8272727F8&#xA;%272727F8272727F8272727F8272727F8272727F8272727F8272727F82727&#xA;%27F8FD0427FFFF5284FFFFFF7D52FFFF27F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27A8FF527DFFFFFF52A8FFFF202727272027272720272727202727272027&#xA;%272720272727202727272027272720272727202727272027272720272727&#xA;%202727272027272720272727202727272027272720272727202727272027&#xA;%272720272727202727272027272720272727202727272027272720A8FF7D&#xA;%52FFFFFF52A8FF7D27F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F82752FFA852FFFFFF&#xA;%28FFFF7D2727F8272727F8272727F8272727F8272727F8272727F8272727&#xA;%F8272727F8272727F8272727F8272727F8272727F8272727F8272727F827&#xA;%2727F8272727F8272727F8272727F8272727F8272727F8272727F8272727&#xA;%F8272727F8272727F8272727F8272727F8272752FFFF52FFFFA852FFFF52&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F827F827F827F827F827F827F827F8&#xA;%27F827F827F827F827F827F827F827F8FFFF52A8FFA852FFFFA87DA87DA8&#xA;%7DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA8&#xA;%7DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA8&#xA;%7DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA87DA8&#xA;%7DA87DA87DA87DA87DA87DA8FFFF52A8FF7D7DFD6FFF7D7DFF7D7DFD6FFF&#xA;%527DFF527DFD6FFF7D52FF7D7EFD6FFF7D7DFF52A8FD6FFFA852FF52A8FD&#xA;%6FFFA852FF27FD70FFA852FF52FD70FFA852FF27FD71FF28FF52FD70FFA8&#xA;%52FF27FD71FF27FF52FD70FFA852FF27FD71FF27FF52FD70FFAF52FF27FD&#xA;%71FF27FF52FD70FFA852FF27FD70FFA852FF52A8FD6FFF7D7DFF52A8FD6F&#xA;%FF7D52FF7D7DFD6FFF7D7DFF527DFD6FFF7D52FF7D7DFD6FFF527EFF7D7D&#xA;%FD6FFF527DFFA852FD6FFF52FFFFA852FD6EFFA852A9FFFF52FD6EFFA852&#xA;%FFFFFF527DFD6DFF7D53FFFFFF527DFD6DFF7D7DFFFFFF7D52FD6DFF52A8&#xA;%FFFFFFA852FD6DFF52A8FD04FF27FD6CFFA827FD05FF537EFD6BFF7D7DFD&#xA;%05FF527DFD6BFF7D59FD05FFA852FD6BFF52A8FD05FFA852A8FD69FFA852&#xA;%AFFD06FF52A8FD69FFA852FD07FF7D52FD69FF527DFD07FFA852FD69FF52&#xA;%A8FD08FF27A8FD67FFA852FD09FF7D7DFD67FF527DFD09FFA852FD66FFA8&#xA;%52A8FD0AFF27A8FD65FFA852FD0BFF7D52FD65FF527DFD0BFFA852FD65FF&#xA;%52A8FD0CFF52A8FD63FF7D52FD0DFFA852FD63FF27A8FD0EFF52A8FD61FF&#xA;%7E52FD0FFF7D7DFD61FF537DFD10FF27FD61FF27FD11FF7D59FD5FFF527D&#xA;%FD11FFA828A8FD5DFFA827A8FD12FF527DFD5DFF7D52FD13FFA827FD5DFF&#xA;%27FD15FF7D52FD5BFF527DFD15FFA827A8FD59FFA827A8FD16FF537DFD59&#xA;%FF527DFD18FF27A8FD57FFA827FD19FFA827FD57FF27A8FD1AFF527DFD55&#xA;%FF5252FD1BFFA852A9FD53FFA827A8FD1CFF5252FD53FF527DFD1EFF27A8&#xA;%FD51FF7D52FD1FFFA827FD50FFA827A8FD20FF7D52FD4FFF27A8FD22FF52&#xA;%59FD4DFF5252FD23FFA827A8FD4BFF7D52FD25FF7D27A8FD49FFA827A8FD&#xA;%26FF7D52FD49FF527DFD28FF5252FD47FF5252FD2AFF527DFD45FF7D52FD&#xA;%2CFF277DFD43FF7D27FD2EFF27A8FD41FFA827FD2FFFA8F8A8FD3FFFA827&#xA;%A8FD30FFA827A9FD3DFFA827FD33FFA827A8FD3BFFA8F8A8FD34FFA827A8&#xA;%FD39FFA827A8FD36FFA820A8FD37FF7D27A8FD38FFA82784FD35FF7D27A8&#xA;%FD3AFFA8277DFD33FF7D27FD3EFF277DFD31FF5352FD40FF5252A8FD2DFF&#xA;%A85252FD42FF5927A8FD2BFFA8277DFD44FF7D277DFD29FF52277EFD46FF&#xA;%A85252FD27FF5252FD4AFF7D27A8FD23FF7E277DFD4CFFA82753FD20FFA8&#xA;%5227AFFD4FFF52277DFD1DFF7D2752FD52FFA85252AFFD19FFA82752A8FD&#xA;%55FF7D277DA8FD15FFA853277DFD59FF52527DFD13FF595253FD5CFFA853&#xA;%277DA8FD0DFFA87D277DA8FD60FF52527DFD0BFF595252FD64FFA87D2752&#xA;%A8FD05FFA852277DA8FD68FF7D5252A8A87D27527DFD6DFFA8522752A8FD&#xA;%37FFFF&#xA;%%EndData&#xA;%%EndComments&#xA;%%BeginProlog&#xA;%%IncludeResource: procset Adobe_level2_AI5 1.2 0&#xA;%%IncludeResource: procset AGM_Gradient_Sep 1.0 0&#xA;%%IncludeResource: procset AGM_Gradient 1.0 0&#xA;%%IncludeResource: procset Adobe_Illustrator_AI5 1.3 0&#xA;%%IncludeResource: procset Adobe_pattern_AI5 1.1 0&#xA;%%IncludeResource: procset Adobe_cshow 2.0 8&#xA;%%IncludeResource: procset Adobe_shading_AI8 1.0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;userdict /_useSmoothShade true put&#xA;userdict /_aicmykps true put&#xA;userdict /_forceToCMYK true put&#xA;Adobe_level2_AI5 /initialize get exec&#xA;Adobe_cshow /initialize get exec&#xA;Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 AGM_Gradient /initializeAI get exec&#xA;Adobe_Illustrator_AI5_vars Adobe_Illustrator_AI5 Adobe_pattern_AI5 /initialize get exec&#xA;Adobe_ColorImage_AI6 /initialize get exec&#xA;Adobe_shading_AI8 /initialize get exec&#xA;Adobe_Illustrator_AI5 /initialize get exec&#xA;%AI3_BeginRider&#xA;currentpacking true setpacking&#xA;setpacking&#xA;%AI3_EndRider&#xA;%AI5_BeginPalette&#xA;0 0 Pb&#xA;1 1 1 1 ([Registration]) 0 Xs&#xA;([Registration])&#xA;Pc&#xA;0 0 0 0 k&#xA;(White)&#xA;Pc&#xA;0 0 0 1 k&#xA;(Black)&#xA;Pc&#xA;0 1 1 0 k&#xA;(CMYK Red)&#xA;Pc&#xA;0 0 1 0 k&#xA;(CMYK Yellow)&#xA;Pc&#xA;1 0 1 0 k&#xA;(CMYK Green)&#xA;Pc&#xA;1 0 0 0 k&#xA;(CMYK Cyan)&#xA;Pc&#xA;1 1 0 0 k&#xA;(CMYK Blue)&#xA;Pc&#xA;0 1 0 0 k&#xA;(CMYK Magenta)&#xA;Pc&#xA;0.15 1 0.9 0.1 k&#xA;(C=15 M=100 Y=90 K=10)&#xA;Pc&#xA;0 0.9 0.85 0 k&#xA;(C=0 M=90 Y=85 K=0)&#xA;Pc&#xA;0 0.8 0.95 0 k&#xA;(C=0 M=80 Y=95 K=0)&#xA;Pc&#xA;0 0.5 1 0 k&#xA;(C=0 M=50 Y=100 K=0)&#xA;Pc&#xA;0 0.35 0.85 0 k&#xA;(C=0 M=35 Y=85 K=0)&#xA;Pc&#xA;0.05 0 0.9 0 k&#xA;(C=5 M=0 Y=90 K=0)&#xA;Pc&#xA;0.2 0 1 0 k&#xA;(C=20 M=0 Y=100 K=0)&#xA;Pc&#xA;0.5 0 1 0 k&#xA;(C=50 M=0 Y=100 K=0)&#xA;Pc&#xA;0.75 0 1 0 k&#xA;(C=75 M=0 Y=100 K=0)&#xA;Pc&#xA;0.85 0.1 1 0.1 k&#xA;(C=85 M=10 Y=100 K=10)&#xA;Pc&#xA;0.9 0.3 0.95 0.3 k&#xA;(C=90 M=30 Y=95 K=30)&#xA;Pc&#xA;0.75 0 0.75 0 k&#xA;(C=75 M=0 Y=75 K=0)&#xA;Pc&#xA;0.8 0.1 0.45 0 k&#xA;(C=80 M=10 Y=45 K=0)&#xA;Pc&#xA;0.7 0.15 0 0 k&#xA;(C=70 M=15 Y=0 K=0)&#xA;Pc&#xA;0.85 0.5 0 0 k&#xA;(C=85 M=50 Y=0 K=0)&#xA;Pc&#xA;1 0.95 0.05 0 k&#xA;(C=100 M=95 Y=5 K=0)&#xA;Pc&#xA;1 1 0.25 0.25 k&#xA;(C=100 M=100 Y=25 K=25)&#xA;Pc&#xA;0.75 1 0 0 k&#xA;(C=75 M=100 Y=0 K=0)&#xA;Pc&#xA;0.5 1 0 0 k&#xA;(C=50 M=100 Y=0 K=0)&#xA;Pc&#xA;0.35 1 0.35 0.1 k&#xA;(C=35 M=100 Y=35 K=10)&#xA;Pc&#xA;0.1 1 0.5 0 k&#xA;(C=10 M=100 Y=50 K=0)&#xA;Pc&#xA;0 0.95 0.2 0 k&#xA;(C=0 M=95 Y=20 K=0)&#xA;Pc&#xA;0.25 0.25 0.4 0 k&#xA;(C=25 M=25 Y=40 K=0)&#xA;Pc&#xA;0.4 0.45 0.5 0.05 k&#xA;(C=40 M=45 Y=50 K=5)&#xA;Pc&#xA;0.5 0.5 0.6 0.25 k&#xA;(C=50 M=50 Y=60 K=25)&#xA;Pc&#xA;0.55 0.6 0.65 0.4 k&#xA;(C=55 M=60 Y=65 K=40)&#xA;Pc&#xA;0.25 0.4 0.65 0 k&#xA;(C=25 M=40 Y=65 K=0)&#xA;Pc&#xA;0.3 0.5 0.75 0.1 k&#xA;(C=30 M=50 Y=75 K=10)&#xA;Pc&#xA;0.35 0.6 0.8 0.25 k&#xA;(C=35 M=60 Y=80 K=25)&#xA;Pc&#xA;0.4 0.65 0.9 0.35 k&#xA;(C=40 M=65 Y=90 K=35)&#xA;Pc&#xA;0.4 0.7 1 0.5 k&#xA;(C=40 M=70 Y=100 K=50)&#xA;Pc&#xA;0.5 0.7 0.8 0.7 k&#xA;(C=50 M=70 Y=80 K=70)&#xA;Pc&#xA;Bb&#xA;2 (White, Black) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(White, Black)&#xA;Pc&#xA;Bb&#xA;2 (Orange, Yellow) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Orange, Yellow)&#xA;Pc&#xA;Bb&#xA;2 (Fading Sky) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Fading Sky)&#xA;Pc&#xA;Bb&#xA;0 0 0 0 Bh&#xA;2 (Super Soft Black Vignette) 0 0 0 1 1 0 0 1 0 0 Bg&#xA;0 BB&#xA;(Super Soft Black Vignette)&#xA;Pc&#xA;(Pompadour) 0 0 1 1 0 0 0 0 0 [1 0 0 1 0 0] p&#xA;(Pompadour)&#xA;Pc&#xA;0 0 0 1 k&#xA;(C=0 M=0 Y=0 K=100)&#xA;Pc&#xA;0 0 0 0.899994 k&#xA;(C=0 M=0 Y=0 K=90)&#xA;Pc&#xA;0 0 0 0.799988 k&#xA;(C=0 M=0 Y=0 K=80)&#xA;Pc&#xA;0 0 0 0.699997 k&#xA;(C=0 M=0 Y=0 K=70)&#xA;Pc&#xA;0 0 0 0.599991 k&#xA;(C=0 M=0 Y=0 K=60)&#xA;Pc&#xA;0 0 0 0.5 k&#xA;(C=0 M=0 Y=0 K=50)&#xA;Pc&#xA;0 0 0 0.399994 k&#xA;(C=0 M=0 Y=0 K=40)&#xA;Pc&#xA;0 0 0 0.299988 k&#xA;(C=0 M=0 Y=0 K=30)&#xA;Pc&#xA;0 0 0 0.199997 k&#xA;(C=0 M=0 Y=0 K=20)&#xA;Pc&#xA;0 0 0 0.099991 k&#xA;(C=0 M=0 Y=0 K=10)&#xA;Pc&#xA;0 0 0 0.049988 k&#xA;(C=0 M=0 Y=0 K=5)&#xA;Pc&#xA;0 1 1 0 k&#xA;(C=0 M=100 Y=100 K=0)&#xA;Pc&#xA;0 0.75 1 0 k&#xA;(C=0 M=75 Y=100 K=0)&#xA;Pc&#xA;0 0.1 0.95 0 k&#xA;(C=0 M=10 Y=95 K=0)&#xA;Pc&#xA;0.85 0.1 1 0 k&#xA;(C=85 M=10 Y=100 K=0)&#xA;Pc&#xA;1 0.9 0 0 k&#xA;(C=100 M=90 Y=0 K=0)&#xA;Pc&#xA;0.6 0.9 0.000031 0.000031 k&#xA;(C=60 M=90 Y=0 K=0)&#xA;Pc&#xA;PB&#xA;%AI5_EndPalette&#xA;%%EndSetup&#xA;0 A&#xA;u&#xA;u&#xA;1 D&#xA;0 O&#xA;0 0 0 0 k&#xA;0 R&#xA;0 0 0 1 K&#xA;0 J 0 j 2.37147 w 4 M []0 d&#xA;0 XR&#xA;%Plot b&#xA;306.2078 -233.4636 m&#xA;285.9623 -248.1131 261.3336 -256.7755 234.7326 -256.7755 C&#xA;216.1903 -256.7755 198.6667 -252.4956 182.8494 -245.0037 C&#xA;168.3905 -275.1837 160.1857 -309.1036 160.1857 -345.0442 c&#xA;160.1857 -443.5062 221.1886 -527.1546 306.2452 -558.711 C&#xA;391.3019 -527.1546 452.2674 -443.5062 452.2674 -345.0442 C&#xA;452.2674 -309.1036 444.0562 -275.1837 429.6036 -245.0037 C&#xA;413.7839 -252.4985 396.229 -256.7755 377.6829 -256.7755 c&#xA;351.0819 -256.7755 326.4533 -248.1131 306.2078 -233.4636 C&#xA;b&#xA;u&#xA;0 0 0 1 k&#xA;1 w 10 M&#xA;%Plot f&#xA;306.6425 -243.6882 m&#xA;287.3005 -257.492 263.7684 -265.6433 238.3546 -265.6433 c&#xA;220.6399 -265.6433 203.8968 -261.6193 188.7855 -254.56 C&#xA;179.7115 -273.2402 173.2823 -293.4503 169.893 -314.7126 C&#xA;443.4394 -314.7126 L&#xA;440.0488 -293.4503 433.6011 -273.2402 424.5311 -254.56 C&#xA;409.4174 -261.622 392.6487 -265.6433 374.9304 -265.6433 c&#xA;349.5165 -265.6433 325.9845 -257.492 306.6425 -243.6882 C&#xA;f&#xA;U&#xA;U&#xA;/AdobeObjectMatrix (0.660817 0.000000 0.000000 0.660817 -60.817307 -68.354607) XT&#xA;U&#xA;%%PageTrailer&#xA;gsave annotatepage grestore showpage&#xA;%%Trailer&#xA;Adobe_Illustrator_AI5 /terminate get exec&#xA;Adobe_shading_AI8 /terminate get exec&#xA;Adobe_ColorImage_AI6 /terminate get exec&#xA;Adobe_pattern_AI5 /terminate get exec&#xA;AGM_Gradient /terminate get exec&#xA;Adobe_cshow /terminate get exec&#xA;Adobe_level2_AI5 /terminate get exec&#xA;%%EOF&#xA;"/>
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Roadnr U" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Roadnr U" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.300"/>
 	<userstyle xsi:type="roadnruserstyle" enabled="true" name="Roadnr U" KindMain="Road Numbers" KindSub="Letters - Countries" overwriteRoadclass="motorway" namePattern="(\d+)" distance="0" minRoadLength="8000" onlyOne="false" lowestIntersectionClass="motorway" mode="horizontal" removeChars="false" id="roads.roadnumber.u.label" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Road number"/>
@@ -5489,23 +5698,23 @@
 				<equation oper="matches" fieldname="Name" value="us[0-9-]*"/>
 			</and>
 		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="newsGothicBT-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="newsGothicBT-RomanCondensed" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="true"/>
 					<size size="0" units="kilometer" isRelative="false"/>
 					<style size="0" units="kilometer" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="0" g="0" b="0" overprint="false"/>
+				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="2293" units="micrometer" isRelative="false"/>
 			<boxDraw enabled="true" extraHeight="100">
 				<svg xsi:type="symbolBase" name="MUSHI" width="187.7" height="196" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 187.7 196&quot; xml:space=&quot;preserve&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;&#xA;&lt;path fill=&quot;#FFFFFF&quot; stroke=&quot;#000000&quot; stroke-width=&quot;2.685&quot; d=&quot;M93.8,193.7c7.2-10.1,16.7-20,30.7-23.4c39-9.4,56.4-13.9,61.3-46.4  c4-26.1-15.8-38-15.8-54.9s6.8-21.1,12.6-27.9L161,13.6c-36.5,12.7-57.7-2.9-67.2-11.8l0,0c-9.5,8.9-30.7,24.5-67.2,11.9L5,41.2  c5.9,6.7,12.6,11,12.6,27.9S-2.1,97.8,1.9,123.9c5,32.5,22.3,37,61.3,46.4C77.2,173.7,86.6,183.5,93.8,193.7z&quot;/&gt;&#xA;&lt;/svg&gt;"/>
 				<eps name="MUSHI" width="188" height="196" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%Creator: Adobe Illustrator(TM) for Windows, version 4.0&#xA;%%AI8_CreatorVersion: 8&#xA;%%For: (paul ) ( )&#xA;%%Title: (mushi.eps)&#xA;%%CreationDate: (9/19/03) (3:45 PM)&#xA;%%BoundingBox: 206 305 394 502&#xA;%%HiResBoundingBox: 206.166 305.8662 393.8516 501.833&#xA;%%DocumentProcessColors: Black&#xA;%%DocumentNeededResources: procset Adobe_packedarray 2.0 0&#xA;%%+ procset Adobe_cshow 1.1 0&#xA;%%+ procset Adobe_customcolor 1.0 0&#xA;%%+ procset Adobe_pattern_AI3 1.0 0&#xA;%%+ procset Adobe_Illustrator_AI3 1.0 1&#xA;%AI3_ColorUsage: Black&amp;White&#xA;%AI3_IncludePlacedImages&#xA;%AI3_TemplateBox: 306.5 395.5 306.5 395.5&#xA;%AI3_TileBox: 11 11 601 781&#xA;%AI3_DocumentPreview: Header&#xA;%%PageOrigin:11 11&#xA;%%AI3_PaperRect:-11 781 601 -11&#xA;%%AI3_Margin:11 -11 -11 11&#xA;%AI7_GridSettings: 18 1 18 1 1 0 0.8333 0.8333 0.8333 0.8333 0.8333 0.8333&#xA;%%EndComments&#xA;%%BeginProlog&#xA;%%IncludeResource: procset Adobe_packedarray 2.0 0&#xA;Adobe_packedarray /initialize get exec&#xA;%%IncludeResource: procset Adobe_cshow 1.1 0&#xA;%%IncludeResource: procset Adobe_customcolor 1.0 0&#xA;%%IncludeResource: procset Adobe_pattern_AI3 1.1 0&#xA;%%IncludeResource: procset Adobe_Illustrator_AI3 1.1 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;Adobe_cshow /initialize get exec&#xA;Adobe_customcolor /initialize get exec&#xA;Adobe_pattern_AI3 /initialize get exec&#xA;Adobe_Illustrator_AI3 /initialize get exec&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;1 g&#xA;0 R&#xA;0 G&#xA;0 i&#xA;0 J 0 j 2.685 w 4 M []0 d&#xA;%AI3_Note:&#xA;0 D&#xA;%Plot b&#xA;300.0078 308.1826 m&#xA;307.2197 318.3193 316.6924 328.2314 330.667 331.6104 c&#xA;369.6367 341.0244 387.0244 345.5459 391.9805 378.0459 c&#xA;395.9551 404.1201 376.2041 416.0439 376.2041 432.9287 c&#xA;376.2041 449.8135 382.9668 454.0322 388.8262 460.79 C&#xA;367.1855 488.2314 L&#xA;330.667 475.5654 309.4756 491.127 300.0078 499.9941 C&#xA;300.0078 499.9941 L&#xA;290.54 491.127 269.3535 475.458 232.8369 488.124 C&#xA;211.1992 460.6826 L&#xA;217.0586 453.9395 223.8184 449.7061 223.8184 432.8213 c&#xA;223.8184 415.9365 204.0576 404.0127 208.0371 377.9482 c&#xA;212.998 345.4385 230.3838 340.9268 269.3535 331.5029 c&#xA;283.3281 328.1338 292.7959 318.3193 300.0078 308.1826 C&#xA;b&#xA;%%PageTrailer&#xA;gsave annotatepage grestore showpage&#xA;%%Trailer&#xA;Adobe_Illustrator_AI3 /terminate get exec&#xA;Adobe_pattern_AI3 /terminate get exec&#xA;Adobe_customcolor /terminate get exec&#xA;Adobe_cshow /terminate get exec&#xA;Adobe_packedarray /terminate get exec&#xA;%%EOF&#xA;"/>
 			</boxDraw>
 		</textDraw>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Forest Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Forest Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.368"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Forest Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Forests" id="landuse.forests.label" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Forest"/>
@@ -5517,7 +5726,7 @@
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
+				<fillColor enabled="true" r="138" g="232" b="138" overprint="false"/>
 			</fontDraw>
 			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
@@ -5533,7 +5742,7 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Hospital Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Hospital Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.369"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="false" name="Hospital Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Hospitals" id="landuse.hospitals.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Hospital"/>
@@ -5564,7 +5773,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Airport Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Airport Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.378"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="false" name="Airport Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Landuse" KindSub="Airports" id="landuse.airports.label">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport"/>
@@ -5595,7 +5804,7 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Island Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Sports Ground Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.383"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Island Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Landuse" KindSub="Islands" id="landuse.islands.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Island"/>
@@ -5622,23 +5831,22 @@
 			</boxDraw>
 		</textDraw>
 		<namePosition name="fullyInside"/>
-		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="State Park Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Village Green Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.388"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="State Park Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="State Parks" id="landuse.stateparks.label" deduplicateNames="true">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="State park"/>
 		</criteria>
-		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="newsGothicBT-Roman" relHeight="100" spacing="0" slant="0" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="newsGothicBT-Demi" relHeight="100" spacing="0" slant="0" underline="false">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
 					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
-				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
+				<fillColor enabled="true" r="138" g="232" b="138" overprint="false"/>
 			</fontDraw>
-			<size size="7" units="points" isRelative="false"/>
+			<size size="6" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5652,7 +5860,7 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="streetNamegroup" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Beach Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.399"/>
 	<streetNamegroup enabled="false" nameMargin="5" maxSyllableDistance="0" nameCompression="0" longNamesFirst="false" abbrAllStanEnd="false" abbreviations="false" textOutside="false" forceAllNames="not" tryWholeNames="false" prefLang="" enableExtend="false" enableDupnames="false" tryWithNoCrossing="false" nameSplitClass="throughway" nameToStreetDistanceFactor="100" synthModeForStreetnames="AllWords" prohibitEmptyLineAtStackedNames="false" KindMain="Roads" KindSub="Setting" id="streetnamegroup" languageMode="preferOfficial">
 		<streetNameStyle enabled="false" alignment="downleft" capitalMode="as_is" font="newsGothicBT-Roman" relHeight="100" spacing="30" slant="0" underline="false" name="Roads not for Car Name" KindMain="Roads" KindSub="Roads not for Car" minNameLength="0" minSyllableLength="0" textInside="false" id="roads.roadnotcars.label">
 			<fontDraw>
@@ -5663,7 +5871,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5694,7 +5902,7 @@
 				</and>
 			</criteria>
 		</streetNameStyle>
-		<streetNameStyle enabled="false" alignment="downleft" capitalMode="as_is" font="courier" relHeight="100" spacing="30" slant="0" underline="false" name="Bike Path Name" KindMain="Roads" KindSub="Bike Paths" minNameLength="0" minSyllableLength="0" textInside="false" id="roads.bicycles.label">
+		<streetNameStyle enabled="false" alignment="downleft" capitalMode="as_is" font="newsGothicBT-Roman" relHeight="100" spacing="30" slant="0" underline="false" name="Bike Path Name" KindMain="Roads" KindSub="Bike Paths" minNameLength="0" minSyllableLength="0" textInside="false" id="roads.bicycles.label">
 			<fontDraw>
 				<line enabled="false">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -5703,7 +5911,7 @@
 				</line>
 				<fillColor enabled="true" r="95" g="95" b="95" overprint="false"/>
 			</fontDraw>
-			<size size="80" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5734,7 +5942,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5765,7 +5973,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5792,7 +6000,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5830,7 +6038,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5865,7 +6073,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5900,7 +6108,7 @@
 				</line>
 				<fillColor enabled="false" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5935,7 +6143,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -5980,7 +6188,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -6004,7 +6212,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -6031,7 +6239,7 @@
 				</line>
 				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
 			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
+			<size size="7" units="points" isRelative="false"/>
 			<boxDraw enabled="false" extraHeight="0">
 				<shape shapekind="rectangle">
 					<line enabled="false">
@@ -6062,7 +6270,52 @@
 			</criteria>
 		</streetNameStyle>
 	</streetNamegroup>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="zip area" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeboundaries.fill" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<slocstyle xsi:type="areaNameSlocstyle" enabled="false" name="zip area" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Areanames" id="pois.areanames.local" deduplicateNames="false" storeExtraSlocs="-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Zip area"/>
+		</criteria>
+		<textDraw xsi:type="flexTextDraw" enabled="true" alignment="left" capitalMode="allCaps" font="newsGothicBT-Bold" relHeight="100" spacing="0" slant="0" underline="false" flexEnabled="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="77" g="77" b="77" overprint="false"/>
+			</fontDraw>
+			<size size="7" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="95" g="95" b="95" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
+				</shape>
+			</boxDraw>
+			<flexSize min="100" max="100"/>
+			<flexSpacing min="100" max="100"/>
+		</textDraw>
+		<symbolDraw enabled="false" extraHeight="0" slocProjection="undef" horizontal="true">
+			<shape shapekind="rectangle">
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+			</shape>
+			<width size="0" units="kilometer" isRelative="false"/>
+			<height size="0" units="kilometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
 	<userstyle xsi:type="polygonaluserstyle" enabled="false" name="Country Name" KindMain="Boundaries and Area's" KindSub="Countries" overwriteRoadclass="motorway" namePattern="(.*)" id="boundaries.countries.label" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Country boundary"/>
@@ -6094,8 +6347,8 @@
 		<namePosition name="fullyInside"/>
 		<namePosition name="partlyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Lake / Sea Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<userstyle xsi:type="wateruserstyle" enabled="true" name="Lake / Sea Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="epsLayer" enabled="true" name="State Park Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.400"/>
+	<userstyle xsi:type="wateruserstyle" enabled="true" name="Lake / Sea Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.lakes.label" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Categ">
 				<item value="Lake"/>
@@ -6105,49 +6358,15 @@
 				<item value="Yacht-basin"/>
 				<item value="Bay"/>
 				<item value="Delta"/>
-			</inset>
-		</criteria>
-		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="newsGothicBT-Bold" relHeight="100" spacing="0" slant="15" underline="false">
-			<fontDraw>
-				<line enabled="true">
-					<color r="229" g="255" b="255" overprint="false"/>
-					<size size="1" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="140" g="217" b="255" overprint="false"/>
-			</fontDraw>
-			<size size="2293" units="micrometer" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="255" g="255" b="255" overprint="false"/>
-						<size size="1" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="95" g="95" b="95" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<namePosition name="onCenterLine"/>
-		<namePosition name="fullyInside"/>
-		<namePosition name="curvedOnContour"/>
-	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Sea Name" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<userstyle xsi:type="wateruserstyle" enabled="true" name="Sea Name" overwriteRoadclass="local road" namePattern="(.*)" KindMain="Water" KindSub="Lakes / Seas" id="landuse.waters.seas.label" deduplicateNames="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-		<criteria>
-			<inset fieldname="Categ">
 				<item value="Sea   ."/>
 				<item value="Ocean"/>
 			</inset>
-			<and>
-				<equation oper="matchnot" fieldname="Name" value="*[?]*"/>
-			</and>
 		</criteria>
 		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="newsGothicBT-Bold" relHeight="100" spacing="0" slant="15" underline="false">
 			<fontDraw>
 				<line enabled="false">
-					<color r="229" g="255" b="255" overprint="false"/>
-					<size size="1" units="1/10th millimeter" isRelative="false"/>
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
 					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
 				</line>
 				<fillColor enabled="true" r="229" g="255" b="255" overprint="false"/>
@@ -6166,7 +6385,7 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="After Names" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
-	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" id="st_b_1" KindMain="eps layers" alwaysOutput="false"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Amusement Park Name" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.409"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="afterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
+	<layer xsi:type="epsLayer" enabled="true" name="MapLayout" KindMain="Unknown" alwaysOutput="false" id="epslayer.generic.410"/>
 </mapStyle>

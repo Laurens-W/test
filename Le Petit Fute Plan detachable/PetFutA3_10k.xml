@@ -2191,7 +2191,7 @@
 			<and>
 				<equation oper="eq" fieldname="Roaduse" value="Car"/>
 				<and>
-					<equation oper="neq" fieldname="MapStat" value="Complex"/>
+					<equation oper="neq" fieldname="Mapstat" value="Complex"/>
 					<and>
 						<equation oper="eq" fieldname="Access" value="No access function"/>
 						<and>
@@ -2204,19 +2204,32 @@
 								<item value="Pedestrian Zone"/>
 								<item value="Highway par."/>
 							</inset>
+							<and>
+								<inset fieldname="Countrychar">
+									<item value="fr"/>
+									<item value="es"/>
+									<item value="de"/>
+									<item value="it"/>
+									<item value="nl"/>
+									<item value="be"/>
+									<item value="lu"/>
+									<item value="gb"/>
+									<item value="pt"/>
+								</inset>
+							</and>
 						</and>
 					</and>
 				</and>
 			</and>
 		</criteria>
-		<length size="2" units="millimeter" isRelative="false"/>
-		<width size="900" units="micrometer" isRelative="false"/>
+		<length size="1600" units="micrometer" isRelative="false"/>
+		<width size="720" units="micrometer" isRelative="false"/>
 		<lineDraw enabled="false">
 			<color r="255" g="255" b="255" overprint="false"/>
 			<size size="0" units="kilometer" isRelative="false"/>
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
-		<fillColor enabled="true" r="255" g="0" b="0" overprint="false"/>
+		<fillColor enabled="true" r="255" g="51" b="51" overprint="false"/>
 	</arrowDraw>
 	<layer xsi:type="epsLayer" enabled="true" name="metro symbol" KindMain="Unknown" id="epslayer.generic.57" KindSub="" alwaysOutput="false"/>
 	<slocstyle enabled="false" name="Metro Station all" mergedistance="200" overwriteRoadclass="motorway" namePattern="mta-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true" storeExtraSlocs="0">
@@ -21222,7 +21235,7 @@
 			</line>
 			<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Regular" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Regular" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21295,7 +21308,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21328,7 +21341,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>
@@ -21361,7 +21374,7 @@
 			</line>
 			<fillColor enabled="false" r="161" g="201" b="227" overprint="false"/>
 		</polyDraw>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="myriadPro-Bold" relHeight="100" spacing="0" slant="10" underline="false">
 			<fontDraw>
 				<line enabled="true">
 					<color r="255" g="255" b="255" overprint="false"/>

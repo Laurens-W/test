@@ -452,6 +452,7 @@
 		</polygonstyle>
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="hill shading" KindMain="EPS-layers" KindSub="" id="epslayer.hillshading" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
 	<layer xsi:type="epsLayer" enabled="true" name="roads" KindMain="EPS-layers" KindSub="" id="epslayer.roads"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Roundabout Patch" kind="roundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.roundabout"/>
@@ -470,7 +471,7 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Parking Area Outline" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Parking Areas" id="roads.parkingareas.line">
+	<chainstyle xsi:type="roadchainstyle" enabled="false" name="Parking Area Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Parking Areas" id="roads.parkingareas.line">
 		<criteria>
 			<inset fieldname="UserCatPresent">
 				<item value="Parking"/>
@@ -517,7 +518,7 @@
 	</polygongroup>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{mt}"/>
 		</criteria>
@@ -526,39 +527,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="552" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="690" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{hw}"/>
 		</criteria>
@@ -567,39 +538,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="472" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="590" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{th}"/>
 		</criteria>
@@ -608,39 +549,9 @@
 			<size size="265" units="micrometer" isRelative="false"/>
 			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
-			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.oneway.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
-					<and>
-						<inset fieldname="Access">
-							<item value="Road access"/>
-							<item value="{mt}"/>
-							<item value="{hw}"/>
-							<item value="{th}"/>
-							<item value="Parking access"/>
-						</inset>
-						<or>
-							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
-						</or>
-					</and>
-				</criteria>
-				<size size="432" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.serviceroad.fill">
-				<criteria>
-					<equation oper="eq" fieldname="RoadType" value="Service road"/>
-				</criteria>
-				<size size="540" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.access.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
-			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -683,23 +594,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="400" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="400" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.mainroads.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -742,23 +647,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="432" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="540" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.throughways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -804,23 +703,17 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="472" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="590" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.highways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" maxRound="25" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
 				<item value="{th}"/>
@@ -855,25 +748,19 @@
 						</or>
 					</and>
 				</criteria>
-				<size size="552" units="micrometer" isRelative="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.serviceroad.fill">
 				<criteria>
 					<equation oper="eq" fieldname="RoadType" value="Service road"/>
 				</criteria>
-				<size size="690" units="micrometer" isRelative="false"/>
-			</modifier>
-			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.motorways.construction.fill">
-				<criteria>
-					<equation oper="eq" fieldname="Construction" value="true"/>
-				</criteria>
-				<color r="242" g="240" b="230" overprint="false"/>
+				<size size="176" units="micrometer" isRelative="false"/>
 			</modifier>
 		</lineDraw>
 	</chainstyle>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
-	<layer xsi:type="epsLayer" enabled="false" name="rails" KindMain="EPS-layers" KindSub="" id="epslayer.rails" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="rails" KindMain="EPS-layers" KindSub="" id="epslayer.rails" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Rail Cargo Tunnel" overwriteByNames="false" roadPolyMode="false" KindMain="Rails" KindSub="Rails only for Cargo" id="rails.cargo.tunnel">
 		<criteria>
 			<equation oper="eq" fieldname="BridgeStat" value="Tunnel"/>
@@ -1016,8 +903,10 @@
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="bridge &amp; oneway symbols" KindMain="EPS-layers" KindSub="" id="epslayer.bridge&amp;onewaysymbols"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Bridge Patch" kind="bridge" KindMain="Special Constructions" KindSub="Bridges" id="patch.bridges"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
+	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois" alwaysOutput="false"/>
 	<slocstyle enabled="true" name="Railway Station Symbol" mergedistance="10000" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.symbol" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Railway station"/>
@@ -1058,11 +947,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
-	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="epsLayer" enabled="true" name="poi's" KindMain="EPS-layers" KindSub="" id="epslayer.pois"/>
 	<slocstyle enabled="true" name="Airport Terminal Symbol" mergedistance="0" overwriteRoadclass="minor road" namePattern="(.*)" KindMain="POIs" KindSub="Airport Terminals" id="pois.airports.symbol" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Airport terminal"/>
@@ -1207,8 +1092,191 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
-	<layer xsi:type="epsLayer" enabled="true" name="city&amp;town names" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<slocstyle enabled="true" name="Railway Station Name" mergedistance="10000" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.label" deduplicateNames="false">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Railway station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="telesansText-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="54" g="54" b="54" overprint="false"/>
+					<size size="0" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
+			</fontDraw>
+			<size size="8" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="false" extraHeight="0" slocProjection="undef" horizontal="true">
+			<shape shapekind="rectangle">
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+			</shape>
+			<width size="0" units="kilometer" isRelative="false"/>
+			<height size="0" units="kilometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="true" name="Metro Station Name Eng" mergedistance="0" overwriteRoadclass="motorway" namePattern="underground-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="Underground-*"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="telesansText-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="54" g="54" b="54" overprint="false"/>
+					<size size="0" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
+			</fontDraw>
+			<size size="8" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="false" extraHeight="0" slocProjection="undef" horizontal="true">
+			<shape shapekind="rectangle">
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="true"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+			</shape>
+			<width size="0" units="kilometer" isRelative="false"/>
+			<height size="0" units="kilometer" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="true" name="Metro Station Name fre" mergedistance="0" overwriteRoadclass="motorway" namePattern="m.tro-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matches" fieldname="Name" value="*tro-*"/>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="telesansText-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
+			</fontDraw>
+			<size size="8" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="false" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
+			<svg xsi:type="symbolBase" name="metrohere" width="28" height="28" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot;&gt;&#xA;&lt;path fill=&quot;#5A6DA5&quot; d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208&#xA; C6.413,28.418,0,22.005,0,14.21C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;&lt;path fill=&quot;#EAECEB&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246&#xA; S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;&lt;polygon fill=&quot;#5A6DA5&quot; points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 &#xA; 19.991,22.027 23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366 &quot;/&gt;&#xA;&lt;/svg&gt;"/>
+			<eps name="metrohere" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 298 420 298 420&#xA;%AI8_OpenToView: 173.4862 500.8493 4.7636 1387 772 26 0 0 291 257 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0.73 0.59 0.11 0 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0.07 0.04 0.05 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0.73 0.59 0.11 0 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2" units="millimeter" isRelative="false"/>
+			<height size="2" units="millimeter" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<slocstyle enabled="true" name="Metro Station Name World" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
+		<criteria>
+			<equation oper="eq" fieldname="Categ" value="Metro station"/>
+			<and>
+				<equation oper="neq" fieldname="SubCat" value="1"/>
+				<and>
+					<equation oper="matchnot" fieldname="Name" value="*tro-*"/>
+					<and>
+						<equation oper="matchnot" fieldname="Name" value="underground-*"/>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="telesansText-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
+			</fontDraw>
+			<size size="8" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="0">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="54" g="54" b="54" overprint="false"/>
+						<size size="0" units="1/10th millimeter" isRelative="false"/>
+						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<symbolDraw enabled="false" extraHeight="100" slocProjection="undef" horizontal="true">
+			<svg xsi:type="symbolBase" name="metrohere" width="28" height="28" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot;&gt;&#xA;&lt;path fill=&quot;#5A6DA5&quot; d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208&#xA; C6.413,28.418,0,22.005,0,14.21C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;&lt;path fill=&quot;#EAECEB&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246&#xA; S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;&lt;polygon fill=&quot;#5A6DA5&quot; points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 &#xA; 19.991,22.027 23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366 &quot;/&gt;&#xA;&lt;/svg&gt;"/>
+			<eps name="metrohere" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 298 420 298 420&#xA;%AI8_OpenToView: 173.4862 500.8493 4.7636 1387 772 26 0 0 291 257 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0.73 0.59 0.11 0 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0.07 0.04 0.05 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0.73 0.59 0.11 0 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
+			<width size="2" units="millimeter" isRelative="false"/>
+			<height size="2" units="millimeter" isRelative="false"/>
+		</symbolDraw>
+		<lineDraw enabled="false">
+			<color r="255" g="255" b="255" overprint="true"/>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<style size="0" units="kilometer" isRelative="false" style="solid"/>
+		</lineDraw>
+	</slocstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="city&amp;town names" KindMain="EPS-layers" KindSub="" id="epslayer.city&amp;townnames" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocgroup maxFillpercentage="12" name="City Names Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
 		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.label" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
@@ -1493,223 +1561,7 @@
 			</lineDraw>
 		</slocstyle>
 	</slocgroup>
-	<slocstyle enabled="false" name="Stadium Symbol" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Stadiums" id="pois.stadiums.symbol">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Stadium"/>
-		</criteria>
-		<textDraw enabled="false" alignment="downleft" capitalMode="allCaps" font="helvetica" relHeight="100" spacing="30" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="54" g="54" b="54" overprint="false"/>
-					<size size="0" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="54" g="54" b="54" overprint="false"/>
-			</fontDraw>
-			<size size="1000" units="micrometer" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="54" g="54" b="54" overprint="false"/>
-						<size size="0" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="false" extraHeight="0" slocProjection="undef" horizontal="false">
-			<svg xsi:type="symbolBase" name="Msport" width="146" height="144" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 143.506 142.9&quot; xml:space=&quot;preserve&quot;&gt;&#xA;&lt;polygon fill=&quot;#00A651&quot; points=&quot;143.506,142.9 0,142.9 0,0 143.506,0 143.506,142.9 &quot;/&gt;&#xA;&lt;rect x=&quot;5.703&quot; y=&quot;6.104&quot; fill=&quot;#FFFFFF&quot; width=&quot;131.421&quot; height=&quot;129.389&quot;/&gt;&#xA;&lt;rect x=&quot;12.612&quot; y=&quot;13.921&quot; fill=&quot;#00A651&quot; width=&quot;117.852&quot; height=&quot;113.501&quot;/&gt;&#xA;&lt;path fill=&quot;#FFFFFF&quot; d=&quot;M46.338,70.796c0,13.408,10.903,24.312,24.311,24.312c13.409,0,24.312-10.904,24.312-24.312&#xA; c0-13.408-10.903-24.312-24.312-24.312C57.241,46.484,46.338,57.388,46.338,70.796z M52.002,70.796&#xA; c0-10.278,8.364-18.647,18.647-18.647c10.279,0,18.648,8.369,18.648,18.647c0,10.283-8.369,18.647-18.648,18.647&#xA; C60.366,89.443,52.002,81.079,52.002,70.796z&quot;/&gt;&#xA;&lt;path fill=&quot;#FFFFFF&quot; d=&quot;M118.701,66.968H9.665v6.391h122.262v-6.391H118.701z&quot;/&gt;&#xA;&lt;/svg&gt;"/>
-			<eps name="Msport" width="146" height="144" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%Creator: Adobe Illustrator(TM) for Windows, version 4.0&#xA;%%For: (Paul                                    ) (Andes VSP                               )&#xA;%%Title: (MSPORT.EPS)&#xA;%%CreationDate: (2/7/102) (11:41 AM)&#xA;%%BoundingBox: 365 462 511 606&#xA;%%DocumentProcessColors: Cyan Yellow&#xA;%%DocumentNeededResources: procset Adobe_packedarray 2.0 0&#xA;%%+ procset Adobe_cmykcolor 1.1 0&#xA;%%+ procset Adobe_cshow 1.1 0&#xA;%%+ procset Adobe_customcolor 1.0 0&#xA;%%+ procset Adobe_IllustratorA_AI3 1.0 0&#xA;%AI3_ColorUsage: Color&#xA;%AI3_TemplateBox: 298.5 420.3896 298.5 420.3896&#xA;%AI3_TileBox: 12.5 11.3896 583.5 829.3896&#xA;%AI3_DocumentPreview: Header&#xA;%%Template:&#xA;%%PageOrigin:12.5 11.3896&#xA;%%AI3_PaperRect:-12 830 583 -12&#xA;%%AI3_Margin:12 -12 -12 12&#xA;%%EndComments&#xA;%%BeginProlog&#xA;%%IncludeResource: procset Adobe_packedarray 2.0 0&#xA;Adobe_packedarray /initialize get exec&#xA;%%IncludeResource: procset Adobe_cmykcolor 1.1 0&#xA;%%IncludeResource: procset Adobe_cshow 1.1 0&#xA;%%IncludeResource: procset Adobe_customcolor 1.0 0&#xA;%%IncludeResource: procset Adobe_IllustratorA_AI3 1.0 0&#xA;%AI3-Grid.0 18 18 3 0.833333 0.833333 0.833333 3&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;Adobe_cmykcolor /initialize get exec&#xA;Adobe_cshow /initialize get exec&#xA;Adobe_customcolor /initialize get exec&#xA;Adobe_IllustratorA_AI3 /initialize get exec&#xA;%%EndSetup&#xA;0 A&#xA;0 O&#xA;1 0 1 0 k&#xA;8 i 0 J 0 j 10 w 4 M []0 d&#xA;%AI3_Note:&#xA;0 D&#xA;%Plot f&#xA;509.9244 462.6244 m&#xA;366.4184 462.6244 l&#xA;366.4184 605.5243 l&#xA;509.9244 605.5243 l&#xA;509.9244 462.6244 l&#xA;509.9244 462.6244 l&#xA;f&#xA;0 0 0 0 k&#xA;0 i&#xA;%Plot f&#xA;503.5423 470.0313 m&#xA;372.1214 470.0313 L&#xA;372.1214 599.4203 L&#xA;503.5423 599.4203 L&#xA;503.5423 470.0313 L&#xA;f&#xA;1 0 1 0 k&#xA;%Plot f&#xA;496.8823 478.1023 m&#xA;379.0304 478.1023 L&#xA;379.0304 591.6034 L&#xA;496.8823 591.6034 L&#xA;496.8823 478.1023 L&#xA;f&#xA;0 0 0 0 k&#xA;1 D&#xA;%Plot f&#xA;*u&#xA;412.7563 534.7284 m&#xA;412.7563 521.3204 423.6593 510.4163 437.0674 510.4163 c&#xA;450.4764 510.4163 461.3794 521.3204 461.3794 534.7284 c&#xA;461.3794 548.1363 450.4764 559.0404 437.0674 559.0404 c&#xA;423.6593 559.0404 412.7563 548.1363 412.7563 534.7284 c&#xA;f&#xA;0 D&#xA;%Plot f&#xA;418.4204 534.7284 m&#xA;418.4204 545.0063 426.7843 553.3754 437.0674 553.3754 c&#xA;447.3463 553.3754 455.7153 545.0063 455.7153 534.7284 c&#xA;455.7153 524.4454 447.3463 516.0814 437.0674 516.0814 c&#xA;426.7843 516.0814 418.4204 524.4454 418.4204 534.7284 c&#xA;f&#xA;*U&#xA;1 D&#xA;%Plot f&#xA;*u&#xA;485.1192 538.5564 m&#xA;376.0836 538.5564 L&#xA;376.0836 532.1654 L&#xA;498.3455 532.1654 L&#xA;498.3455 538.5564 L&#xA;485.1192 538.5564 L&#xA;f&#xA;*U&#xA;%%PageTrailer&#xA;gsave annotatepage grestore showpage&#xA;%%Trailer&#xA;Adobe_IllustratorA_AI3 /terminate get exec&#xA;Adobe_customcolor /terminate get exec&#xA;Adobe_cshow /terminate get exec&#xA;Adobe_cmykcolor /terminate get exec&#xA;Adobe_packedarray /terminate get exec&#xA;"/>
-			<width size="3040" units="micrometer" isRelative="false"/>
-			<height size="3000" units="micrometer" isRelative="false"/>
-		</symbolDraw>
-	</slocstyle>
-	<slocstyle enabled="true" name="Railway Station Name" mergedistance="10000" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Railway Stations" id="pois.railways.label" deduplicateNames="false">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Railway station"/>
-			<and>
-				<equation oper="neq" fieldname="SubCat" value="1"/>
-			</and>
-		</criteria>
-		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="telesansText-Bold" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="54" g="54" b="54" overprint="false"/>
-					<size size="0" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
-			</fontDraw>
-			<size size="8" units="points" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="54" g="54" b="54" overprint="false"/>
-						<size size="0" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="false" extraHeight="0" slocProjection="undef" horizontal="true">
-			<shape shapekind="rectangle">
-				<line enabled="true">
-					<color r="255" g="255" b="255" overprint="true"/>
-					<size size="0" units="kilometer" isRelative="false"/>
-					<style size="0" units="kilometer" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
-			</shape>
-			<width size="0" units="kilometer" isRelative="false"/>
-			<height size="0" units="kilometer" isRelative="false"/>
-		</symbolDraw>
-		<lineDraw enabled="false">
-			<color r="255" g="255" b="255" overprint="true"/>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<style size="0" units="kilometer" isRelative="false" style="solid"/>
-		</lineDraw>
-	</slocstyle>
-	<slocstyle enabled="true" name="Metro Station Name Eng" mergedistance="0" overwriteRoadclass="motorway" namePattern="underground-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Metro station"/>
-			<and>
-				<equation oper="neq" fieldname="SubCat" value="1"/>
-				<and>
-					<equation oper="matches" fieldname="Name" value="Underground-*"/>
-				</and>
-			</and>
-		</criteria>
-		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="telesansText-Bold" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="54" g="54" b="54" overprint="false"/>
-					<size size="0" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
-			</fontDraw>
-			<size size="8" units="points" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="54" g="54" b="54" overprint="false"/>
-						<size size="0" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="false" extraHeight="0" slocProjection="undef" horizontal="true">
-			<shape shapekind="rectangle">
-				<line enabled="true">
-					<color r="255" g="255" b="255" overprint="true"/>
-					<size size="0" units="kilometer" isRelative="false"/>
-					<style size="0" units="kilometer" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
-			</shape>
-			<width size="0" units="kilometer" isRelative="false"/>
-			<height size="0" units="kilometer" isRelative="false"/>
-		</symbolDraw>
-		<lineDraw enabled="false">
-			<color r="255" g="255" b="255" overprint="true"/>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<style size="0" units="kilometer" isRelative="false" style="solid"/>
-		</lineDraw>
-	</slocstyle>
-	<slocstyle enabled="true" name="Metro Station Name fre" mergedistance="0" overwriteRoadclass="motorway" namePattern="m.tro-(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Metro station"/>
-			<and>
-				<equation oper="neq" fieldname="SubCat" value="1"/>
-				<and>
-					<equation oper="matches" fieldname="Name" value="*tro-*"/>
-				</and>
-			</and>
-		</criteria>
-		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="telesansText-Bold" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="255" g="255" b="255" overprint="false"/>
-					<size size="2" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
-			</fontDraw>
-			<size size="8" units="points" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="54" g="54" b="54" overprint="false"/>
-						<size size="0" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="false" extraHeight="100" slocProjection="projectOnCritChains" horizontal="true">
-			<svg xsi:type="symbolBase" name="metrohere" width="28" height="28" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot;&gt;&#xA;&lt;path fill=&quot;#5A6DA5&quot; d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208&#xA; C6.413,28.418,0,22.005,0,14.21C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;&lt;path fill=&quot;#EAECEB&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246&#xA; S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;&lt;polygon fill=&quot;#5A6DA5&quot; points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 &#xA; 19.991,22.027 23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366 &quot;/&gt;&#xA;&lt;/svg&gt;"/>
-			<eps name="metrohere" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 298 420 298 420&#xA;%AI8_OpenToView: 173.4862 500.8493 4.7636 1387 772 26 0 0 291 257 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0.73 0.59 0.11 0 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0.07 0.04 0.05 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0.73 0.59 0.11 0 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
-			<width size="2" units="millimeter" isRelative="false"/>
-			<height size="2" units="millimeter" isRelative="false"/>
-		</symbolDraw>
-		<lineDraw enabled="false">
-			<color r="255" g="255" b="255" overprint="true"/>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<style size="0" units="kilometer" isRelative="false" style="solid"/>
-		</lineDraw>
-	</slocstyle>
-	<slocstyle enabled="true" name="Metro Station Name World" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="POIs" KindSub="Metro Stations" id="pois.metros.label" deduplicateNames="true">
-		<criteria>
-			<equation oper="eq" fieldname="Categ" value="Metro station"/>
-			<and>
-				<equation oper="neq" fieldname="SubCat" value="1"/>
-				<and>
-					<equation oper="matchnot" fieldname="Name" value="*tro-*"/>
-					<and>
-						<equation oper="matchnot" fieldname="Name" value="underground-*"/>
-					</and>
-				</and>
-			</and>
-		</criteria>
-		<textDraw enabled="true" alignment="center" capitalMode="as_is" font="telesansText-Bold" relHeight="100" spacing="0" slant="0" underline="false">
-			<fontDraw>
-				<line enabled="false">
-					<color r="255" g="255" b="255" overprint="false"/>
-					<size size="2" units="1/10th millimeter" isRelative="false"/>
-					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-				</line>
-				<fillColor enabled="true" r="35" g="31" b="32" overprint="false"/>
-			</fontDraw>
-			<size size="8" units="points" isRelative="false"/>
-			<boxDraw enabled="false" extraHeight="0">
-				<shape shapekind="rectangle">
-					<line enabled="false">
-						<color r="54" g="54" b="54" overprint="false"/>
-						<size size="0" units="1/10th millimeter" isRelative="false"/>
-						<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
-					</line>
-					<fillColor enabled="false" r="54" g="54" b="54" overprint="false"/>
-				</shape>
-			</boxDraw>
-		</textDraw>
-		<symbolDraw enabled="false" extraHeight="100" slocProjection="undef" horizontal="true">
-			<svg xsi:type="symbolBase" name="metrohere" width="28" height="28" data="&lt;svg version=&quot;1.2&quot; baseProfile=&quot;tiny&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&#xA;  x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 28.416 28.418&quot; xml:space=&quot;preserve&quot;&gt;&#xA;&lt;path fill=&quot;#5A6DA5&quot; d=&quot;M14.207,0c7.794,0,14.208,6.413,14.208,14.21c0,7.794-6.414,14.208-14.208,14.208&#xA; C6.413,28.418,0,22.005,0,14.21C0,6.413,6.413,0,14.207,0L14.207,0&quot;/&gt;&#xA;&lt;path fill=&quot;#EAECEB&quot; d=&quot;M14.207,0.962c7.267,0,13.247,5.979,13.247,13.249c0,7.267-5.979,13.246-13.247,13.246&#xA; S0.961,21.478,0.961,14.21C0.961,6.94,6.94,0.962,14.207,0.962L14.207,0.962&quot;/&gt;&#xA;&lt;polygon fill=&quot;#5A6DA5&quot; points=&quot;5.44,6.366 5.44,22.027 8.554,22.027 8.584,8.584 12.805,22.027 15.598,22.027 19.991,8.692 &#xA; 19.991,22.027 23.214,22.027 23.214,6.366 17.887,6.366 14.275,17.81 10.947,6.4 5.44,6.366 &quot;/&gt;&#xA;&lt;/svg&gt;"/>
-			<eps name="metrohere" width="28" height="28" eps="%!PS-Adobe-3.0 EPSF-3.0&#xA;%%BoundingBox: 270 415 299 444&#xA;%%HiResBoundingBox: 270.3828 415.2578 298.7988 443.6763&#xA;%AI5_FileFormat 4.0&#xA;%AI3_TemplateBox: 298 420 298 420&#xA;%AI8_OpenToView: 173.4862 500.8493 4.7636 1387 772 26 0 0 291 257 0 0&#xA;%%EndProlog&#xA;%%BeginSetup&#xA;%%EndSetup&#xA;0 A&#xA;300 Ar&#xA;0 O&#xA;0.73 0.59 0.11 0 k&#xA;0 J 0 j 1 w 10 M []0 d&#xA;0 XR&#xA;%Plot F&#xA;284.5903 443.6763 m&#xA;292.3848 443.6763 298.7988 437.2632 298.7988 429.4658 c&#xA;298.7988 421.6714 292.3848 415.2578 284.5903 415.2578 c&#xA;276.7959 415.2578 270.3828 421.6714 270.3828 429.4658 c&#xA;270.3828 437.2632 276.7959 443.6763 284.5903 443.6763 c&#xA;284.5903 443.6763 l&#xA;F&#xA;0.07 0.04 0.05 0 k&#xA;%Plot F&#xA;284.5903 442.7144 m&#xA;291.8574 442.7144 297.8369 436.7358 297.8369 429.4658 c&#xA;297.8369 422.1987 291.8574 416.2197 284.5903 416.2197 c&#xA;277.3232 416.2197 271.3442 422.1987 271.3442 429.4658 c&#xA;271.3442 436.7358 277.3232 442.7144 284.5903 442.7144 c&#xA;284.5903 442.7144 l&#xA;F&#xA;0.73 0.59 0.11 0 k&#xA;%Plot f&#xA;275.8232 437.3101 m&#xA;275.8232 421.6494 l&#xA;278.9365 421.6494 l&#xA;278.9673 435.0923 l&#xA;283.1875 421.6494 l&#xA;285.981 421.6494 l&#xA;290.3735 434.9844 l&#xA;290.3735 421.6494 l&#xA;293.5972 421.6494 l&#xA;293.5972 437.3101 l&#xA;288.2695 437.3101 l&#xA;284.6582 425.8667 l&#xA;281.3296 437.2764 l&#xA;275.8232 437.3101 l&#xA;275.8232 437.3101 l&#xA;f&#xA;%%PageTrailer&#xA;%%EOF&#xA;"/>
-			<width size="2" units="millimeter" isRelative="false"/>
-			<height size="2" units="millimeter" isRelative="false"/>
-		</symbolDraw>
-		<lineDraw enabled="false">
-			<color r="255" g="255" b="255" overprint="true"/>
-			<size size="0" units="kilometer" isRelative="false"/>
-			<style size="0" units="kilometer" isRelative="false" style="solid"/>
-		</lineDraw>
-	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="road numbers" KindMain="EPS-layers" KindSub="" id="epslayer.roadnumbers"/>
+	<layer xsi:type="epsLayer" enabled="true" name="area names" KindMain="EPS-layers" KindSub="" id="epslayer.areanames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocstyle xsi:type="quarterNameSlocstyle" enabled="true" name="Local Quarter Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.local.label" deduplicateNames="false">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Quarter name"/>
@@ -1756,7 +1608,6 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="area names" KindMain="EPS-layers" KindSub="" id="epslayer.areanames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<userstyle xsi:type="polygonaluserstyle" enabled="true" name="Forest Name" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Landuse" KindSub="Forests" id="landuse.forests.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Forest"/>

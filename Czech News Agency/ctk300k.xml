@@ -75,8 +75,103 @@
 	<layer xsi:type="epsLayer" enabled="true" name="Layer After Land 1" KindMain="Unknown" id="epslayer.generic.3"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Forest/park" KindMain="Unknown" id="epslayer.generic.3" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="National park" id="vectorlayer.buildings.OSM" KindMain="Landuse" KindSub="National park" source="osm\latest\landuse\national_park.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="226" g="233" b="237" overprint="false"/>
+				<size size="150" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="201" g="255" b="156" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="helvetica" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="60" g="60" b="60" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</layer>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="nature reserve" id="landuse.nature_reserve.OSM.fill" KindMain="Landuse" KindSub="nature reserve" source="osm\latest\landuse\nature_reserve.lim" deduplicateNames="true" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="226" g="233" b="237" overprint="false"/>
+				<size size="150" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="201" g="255" b="156" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="helvetica" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="true">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="2" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="60" g="60" b="60" overprint="false"/>
+			</fontDraw>
+			<size size="6" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</layer>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="forest OSM" id="landuse.forest.OSM.fill" KindMain="Landuse" KindSub="Forests" source="osm\latest\landuse\forest.lim" deduplicateNames="false" namePattern="(.*)" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="false">
+				<color r="226" g="233" b="237" overprint="false"/>
+				<size size="150" units="micrometer" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="true" r="201" g="255" b="156" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="false" alignment="left" capitalMode="as_is" font="nYTFranklin-Medium" relHeight="255" spacing="255" slant="255" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="false" r="255" g="255" b="255" overprint="false"/>
+			</fontDraw>
+			<size size="0" units="kilometer" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="false">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="0" units="kilometer" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+	</layer>
 	<polygongroup name="Landphase 2" perDb="true" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase2">
-		<polygonstyle enabled="true" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
+		<polygonstyle enabled="false" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="Forest"/>
 			</criteria>
@@ -89,7 +184,7 @@
 				<fillColor enabled="true" r="201" g="255" b="156" overprint="false"/>
 			</polyDraw>
 		</polygonstyle>
-		<polygonstyle enabled="true" name="State Park " KindMain="Landuse" KindSub="State Parks" id="landuse.stateparks.fill">
+		<polygonstyle enabled="false" name="State Park " KindMain="Landuse" KindSub="State Parks" id="landuse.stateparks.fill">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="State park"/>
 			</criteria>
@@ -333,6 +428,64 @@
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="After Landuse" KindMain="EPS-layers" KindSub="" id="epslayer.generic.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Landuse" layerId="AfterLanduse" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterlanduse"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Line" KindMain="Unknown" id="epslayer.generic.663" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Province Boundary Line" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+					<item value="Island"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="153" g="153" b="153" overprint="false"/>
+			<size size="3" units="1/10th millimeter" isRelative="false"/>
+			<style size="30" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Country Outline" KindMain="Unknown" id="epslayer.generic.665" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Line" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="217" g="217" b="217" overprint="false"/>
+			<size size="3" units="1/10th millimeter" isRelative="false"/>
+			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Country Outline Fill" KindMain="Unknown" id="epslayer.generic.664" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Fill" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="77" g="77" b="77" overprint="false"/>
+			<size size="1" units="1/10th millimeter" isRelative="false"/>
+			<style size="3" units="millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Local Road Normal Outline" KindMain="Unknown" id="epslayer.generic.30" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Local Road Outline" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Local Roads" id="roads.localroads.line">
 		<criteria>
@@ -21272,64 +21425,6 @@
 		</textDraw>
 		<namePosition name="fullyInside"/>
 	</userstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Province Boundary Line" KindMain="Unknown" id="epslayer.generic.663" KindSub=""/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Province Boundary Line" KindMain="Boundaries and Area's" KindSub="Provinces" id="boundaries.provinces.line.line">
-		<criteria>
-			<equation oper="eq" fieldname="UserCatPresent" value="Province boundary"/>
-			<and>
-				<inset fieldname="UserCatPresent" negate="true">
-					<item value="Harbour outline"/>
-					<item value="Sea   ."/>
-					<item value="Ocean"/>
-					<item value="Island"/>
-				</inset>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="153" g="153" b="153" overprint="false"/>
-			<size size="3" units="1/10th millimeter" isRelative="false"/>
-			<style size="30" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="0" units="kilometer" isRelative="false"/>
-		</lineDraw>
-	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Outline Fill" KindMain="Unknown" id="epslayer.generic.664" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle enabled="true" name="Country Boundary Outline" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line" xsi:type="noFillstoreOverlapChainstyle">
-		<criteria>
-			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
-			<and>
-				<inset fieldname="UserCatPresent" negate="true">
-					<item value="Harbour outline"/>
-					<item value="Sea   ."/>
-					<item value="Ocean"/>
-				</inset>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="217" g="217" b="217" overprint="false"/>
-			<size size="3" units="1/10th millimeter" isRelative="false"/>
-			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
-			<extension size="0" units="kilometer" isRelative="false"/>
-		</lineDraw>
-	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Outline" KindMain="Unknown" id="epslayer.generic.665" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Boundary Fill" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.fill">
-		<criteria>
-			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
-			<and>
-				<inset fieldname="UserCatPresent" negate="true">
-					<item value="Harbour outline"/>
-					<item value="Sea   ."/>
-					<item value="Ocean"/>
-				</inset>
-			</and>
-		</criteria>
-		<lineDraw enabled="true">
-			<color r="77" g="77" b="77" overprint="false"/>
-			<size size="1" units="1/10th millimeter" isRelative="false"/>
-			<style size="3" units="millimeter" isRelative="false" style="solid"/>
-			<extension size="0" units="kilometer" isRelative="false"/>
-		</lineDraw>
-	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer After Names" KindMain="Unknown" id="epslayer.generic.666"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Names" layerId="AfterNames" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afternames"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Mapboundary" KindMain="Unknown" id="epslayer.generic.665" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>

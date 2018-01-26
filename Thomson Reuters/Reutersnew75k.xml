@@ -1620,7 +1620,7 @@
 					</and>
 				</and>
 			</criteria>
-			<textDraw enabled="true" alignment="center" capitalMode="as_is" font="sourceSansPro-Light" relHeight="100" spacing="0" slant="0" underline="false">
+			<textDraw enabled="true" alignment="center" capitalMode="as_is" font="sourceSansPro-Regular" relHeight="100" spacing="0" slant="0" underline="false">
 				<fontDraw>
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="false"/>
@@ -1642,7 +1642,7 @@
 				</boxDraw>
 			</textDraw>
 			<symbolDraw enabled="true" extraHeight="10" slocProjection="atSlocCoord" horizontal="true">
-				<shape shapekind="oval">
+				<shape shapekind="rectangle">
 					<line enabled="false">
 						<color r="255" g="255" b="255" overprint="true"/>
 						<size size="0" units="kilometer" isRelative="false"/>

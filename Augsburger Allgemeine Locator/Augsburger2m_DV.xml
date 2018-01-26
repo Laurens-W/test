@@ -468,7 +468,7 @@
 	</chainstyle>
 	<layer xsi:type="epsLayer" enabled="true" name="Layer CityNames Group" KindMain="EPS-layers" KindSub="" id="epslayer.generic.31"/>
 	<slocgroup maxFillpercentage="15" name="CityNames Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
-		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" deduplicateNames="false" id="places.bigcities.important">
+		<slocstyle enabled="true" name="Big City Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" deduplicateNames="false" id="places.bigcities.important" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>

@@ -175,7 +175,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Small  Land Boundary Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Small  Land Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Small  Land Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>
@@ -344,7 +344,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon" KindMain="EPS-layers" KindSub="" id="epslayer.generic.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Polygon" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Polygon" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>
@@ -430,7 +430,22 @@
 	</polygongroup>
 	<layer xsi:type="epsLayer" enabled="true" name="administrative shapes provinces/states" KindMain="EPS-layers" KindSub="" id="epslayer.administrativeshapesprovinces" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 1" layerId="AfterLand1" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland1"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Forest/park" KindMain="Unknown" id="epslayer.generic.3" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Forest/park" KindMain="Unknown" id="epslayer.generic.3" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<polygongroup name="Landphase 2" perDb="false" KindMain="Landuse" KindSub="Landphase Landuse" id="landusegroup.landphase2">
+		<polygonstyle enabled="true" name="Forest" KindMain="Landuse" KindSub="Forests" id="landuse.forests.fill">
+			<criteria>
+				<equation oper="eq" fieldname="Categ" value="Forest"/>
+			</criteria>
+			<polyDraw>
+				<line enabled="false">
+					<color r="84" g="84" b="84" overprint="false"/>
+					<size size="1" units="1/10th millimeter" isRelative="false"/>
+					<style size="0" units="1/10th millimeter" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="199" g="217" b="180" overprint="false"/>
+			</polyDraw>
+		</polygonstyle>
+	</polygongroup>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 2" layerId="AfterLand2" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland2"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Urban area" KindMain="Unknown" id="epslayer.generic.4" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Land 3" layerId="AfterLand3" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterland3"/>
@@ -739,7 +754,7 @@
 		<namePosition name="partlyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon Line" KindMain="EPS-layers" KindSub="" id="epslayer.generic.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Polygon Line" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Polygon Line" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="true">
 				<color r="0" g="0" b="0" overprint="false"/>
@@ -793,11 +808,44 @@
 	</chainstyle>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poly" layerId="VectorlayerPoly" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoly"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerline"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Country-Land-Pays-País-Land polygons" KindMain="EPS-layers" id="epslayer.administrativeboundaries" KindSub="" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Country boundaries" id="boundaries.countries.line" KindMain="Admin" source="Here\Admin\Country.lim" namePattern="(.*)" deduplicateNames="false" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<polyDraw>
+			<line enabled="true">
+				<color r="59" g="85" b="166" overprint="false"/>
+				<size size="3" units="1/10th millimeter" isRelative="false"/>
+				<style size="0" units="kilometer" isRelative="false" style="solid"/>
+			</line>
+			<fillColor enabled="false" r="59" g="85" b="166" overprint="false"/>
+		</polyDraw>
+		<textDraw enabled="true" alignment="left" capitalMode="as_is" font="helvetica-Bold" relHeight="100" spacing="0" slant="0" underline="false">
+			<fontDraw>
+				<line enabled="false">
+					<color r="255" g="255" b="255" overprint="false"/>
+					<size size="0" units="kilometer" isRelative="false"/>
+					<style size="0" units="kilometer" isRelative="false" style="solid"/>
+				</line>
+				<fillColor enabled="true" r="59" g="85" b="166" overprint="false"/>
+			</fontDraw>
+			<size size="5" units="points" isRelative="false"/>
+			<boxDraw enabled="false" extraHeight="10">
+				<shape shapekind="rectangle">
+					<line enabled="true">
+						<color r="255" g="255" b="255" overprint="true"/>
+						<size size="1" units="points" isRelative="false"/>
+						<style size="0" units="kilometer" isRelative="false" style="solid"/>
+					</line>
+					<fillColor enabled="true" r="255" g="255" b="255" overprint="true"/>
+				</shape>
+			</boxDraw>
+		</textDraw>
+		<namePosition name="fullyInside"/>
+	</layer>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.vectorlayerpoi"/>
 	<layer xsi:type="epsLayer" enabled="true" name="After Roads" KindMain="Unknown" id="epslayer.generic.59" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Area Names" KindMain="EPS-layers" KindSub="" id="epslayer.areanames" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<slocstyle xsi:type="quarterNameSlocstyle" enabled="true" name="National Quarter Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.national.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<slocstyle xsi:type="quarterNameSlocstyle" enabled="false" name="National Quarter Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.national.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Quarter name"/>
 			<and>
@@ -843,7 +891,7 @@
 			<style size="0" units="kilometer" isRelative="false" style="solid"/>
 		</lineDraw>
 	</slocstyle>
-	<slocstyle xsi:type="quarterNameSlocstyle" enabled="true" name="Local Quarter Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.local.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<slocstyle xsi:type="quarterNameSlocstyle" enabled="false" name="Local Quarter Name" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Boundaries" KindSub="Quarter Names" id="pois.quarters.local.label" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<equation oper="eq" fieldname="Categ" value="Quarter name"/>
 			<and>
@@ -20699,7 +20747,7 @@
 		<namePosition name="fullyInside"/>
 	</layer>
 	<layer xsi:type="epsLayer" enabled="true" name="Land Boundary Polygon Name" KindMain="EPS-layers" KindSub="" id="epslayer.generic.29" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<layer xsi:type="polygonVectorLayer" enabled="false" name="Land Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<layer xsi:type="polygonVectorLayer" enabled="true" name="Land Boundary Name" id="boundaries.countries.chloro" KindMain="Boundaries" KindSub="Countries" source="Here\Admin\Country.lim" deduplicateNames="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<polyDraw>
 			<line enabled="false">
 				<color r="102" g="102" b="102" overprint="true"/>

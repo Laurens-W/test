@@ -1393,7 +1393,7 @@
 	<layer xsi:type="gridLayer" enabled="true" name="Grid Layer" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="layer.grid"/>
 	<layer xsi:type="epsLayer" enabled="true" name="Placenames" KindMain="Unknown" id="epslayer.generic.653" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 	<slocgroup maxFillpercentage="10" name="City Names Group" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="pois.placenamesgroup">
-		<slocstyle enabled="true" name="Big City Name irt" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.label" deduplicateNames="false">
+		<slocstyle enabled="true" name="Big City Name irt" mergedistance="0" overwriteRoadclass="motorway" namePattern="(.*)" KindMain="Place- and Area Names" KindSub="Placenames POIs" id="places.bigcities.label" deduplicateNames="false" storeExtraSlocs="30">
 			<criteria>
 				<equation oper="eq" fieldname="Categ" value="City center"/>
 				<and>

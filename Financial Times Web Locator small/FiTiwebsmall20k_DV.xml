@@ -1239,9 +1239,9 @@
 			</and>
 		</criteria>
 		<lineDraw enabled="true">
-			<color r="188" g="190" b="169" overprint="false"/>
-			<size size="176" units="micrometer" isRelative="false"/>
-			<style size="1" units="points" isRelative="false" style="dash5_5"/>
+			<color r="125" g="130" b="125" overprint="false"/>
+			<size size="88" units="micrometer" isRelative="false"/>
+			<style size="176" units="micrometer" isRelative="false" style="dash5_5"/>
 			<extension size="0" units="kilometer" isRelative="false"/>
 		</lineDraw>
 	</chainstyle>

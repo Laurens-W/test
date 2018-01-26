@@ -273,7 +273,7 @@
 	<layer xsi:type="epsLayer" enabled="true" name="roads" KindMain="EPS-layers" KindSub="" id="epslayer.roads"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Roundabout Patch" kind="roundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.roundabout"/>
 	<patch xsi:type="dbPatch" enabled="true" name="Road Access Patch" kind="roadAccess" KindMain="Special Constructions" KindSub="Road Access Patches" id="patch.roadaccess"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Squares" KindMain="Roads" KindSub="" id="epslayer.generic.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Squares" KindMain="EPS-layers" KindSub="" id="epslayer.generic.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<polygongroup name="Squares Fill" perDb="false" KindMain="Landuse" KindSub="Squares" id="landusegroup.squares">
 		<polygonstyle enabled="true" name="Squares Fill" KindMain="Landuse" KindSub="Squares" id="landuse.squares">
 			<criteria>
@@ -312,7 +312,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Roads not for Car" KindMain="Roads" KindSub="" id="epslayer.generic.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Roads not for Car" KindMain="EPS-layers" KindSub="" id="epslayer.generic.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Roads not for Car Fills" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Roads not for Car" id="roads.roadnotcars.fill" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 		<criteria>
 			<inset fieldname="Roadtype" negate="true">
@@ -448,7 +448,7 @@
 		</lineDraw>
 	</chainstyle>
 	<patch xsi:type="mapPatch" enabled="true" name="Forks Patch" kind="forks" KindMain="Special Constructions" KindSub="Forks Patches" id="patch.forks"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Motorway Access" KindMain="Roads" KindSub="" id="epslayer.generic.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Motorway Access" KindMain="EPS-layers" KindSub="" id="epslayer.generic.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<patch xsi:type="mapPatch" enabled="true" name="Mini Roundabout Patch" kind="miniRoundabout" KindMain="Special Constructions" KindSub="Roundabout Patches" id="patch.miniroundabout"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.access.fill">
 		<criteria>
@@ -491,7 +491,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Highway Access" KindMain="Roads" KindSub="" id="epslayer.generic.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Highway Access" KindMain="EPS-layers" KindSub="" id="epslayer.generic.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{hw}"/>
@@ -533,7 +533,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Throughway Access" KindMain="Roads" KindSub="" id="epslayer.generic.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Throughway Access" KindMain="EPS-layers" KindSub="" id="epslayer.generic.5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Access Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.access.fill">
 		<criteria>
 			<equation oper="eq" fieldname="Access" value="{th}"/>
@@ -575,7 +575,77 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Minor Road" KindMain="Roads" KindSub="" id="epslayer.generic.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Local Road" KindMain="EPS-layers" KindSub="" id="epslayer.generic.8" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Local Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Local Roads" id="roads.localroads.fill" maxRound="25" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<inset fieldname="Access" negate="true">
+				<item value="{th}"/>
+				<item value="{hw}"/>
+				<item value="{mt}"/>
+			</inset>
+			<and>
+				<equation oper="eq" fieldname="RoadClass" value="Local road"/>
+				<and>
+					<equation oper="eq" fieldname="Roaduse" value="Car"/>
+					<and>
+						<inset fieldname="Surface" negate="true">
+							<item value="Unpaved"/>
+							<item value="Bad paved"/>
+						</inset>
+						<and>
+							<inset fieldname="RoadType" negate="true">
+								<item value="Wide walkway"/>
+								<item value="MotorType"/>
+								<item value="Bosweg/pad"/>
+								<item value="Ferry"/>
+								<item value="Pedestrian Zone"/>
+							</inset>
+							<and>
+								<equation oper="neq" fieldname="Roaddir" value="Noway"/>
+							</and>
+						</and>
+					</and>
+				</and>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="209" g="211" b="210" overprint="false"/>
+			<size size="176" units="micrometer" isRelative="false"/>
+			<style size="10" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+			<modifier xsi:type="chainModifier" enabled="true" name="Oneway" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.oneway.fill">
+				<criteria>
+					<equation oper="eq" fieldname="RoadDir" value="Oneway"/>
+					<and>
+						<inset fieldname="Access">
+							<item value="Road access"/>
+							<item value="{mt}"/>
+							<item value="{hw}"/>
+							<item value="{th}"/>
+							<item value="Parking access"/>
+						</inset>
+						<or>
+							<equation oper="eq" fieldname="Roadtype" value="Parking"/>
+						</or>
+					</and>
+				</criteria>
+				<size size="176" units="micrometer" isRelative="false"/>
+			</modifier>
+			<modifier xsi:type="chainModifier" enabled="true" name="ServiceRoad" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.serviceroad.fill">
+				<criteria>
+					<equation oper="eq" fieldname="RoadType" value="Service road"/>
+				</criteria>
+				<size size="176" units="micrometer" isRelative="false"/>
+			</modifier>
+			<modifier xsi:type="chainModifier" enabled="true" name="Construction" KindMain="Roads" KindSub="Chain Modifier" id="roads.localroads.construction.fill">
+				<criteria>
+					<equation oper="eq" fieldname="Construction" value="true"/>
+				</criteria>
+				<color r="209" g="211" b="210" overprint="false"/>
+			</modifier>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="true" name="Minor Road" KindMain="EPS-layers" KindSub="" id="epslayer.generic.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Minor Road Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Minor Roads" id="roads.minorroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -635,7 +705,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Main Road" KindMain="Roads" KindSub="" id="epslayer.generic.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Main Road" KindMain="EPS-layers" KindSub="" id="epslayer.generic.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Main Road Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Main Roads" id="roads.mainroads.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -695,7 +765,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Throughway" KindMain="Roads" KindSub="" id="epslayer.generic.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Throughway" KindMain="EPS-layers" KindSub="" id="epslayer.generic.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Throughway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Throughways" id="roads.throughways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -755,7 +825,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Highway" KindMain="Roads" KindSub="" id="epslayer.generic.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Highway" KindMain="EPS-layers" KindSub="" id="epslayer.generic.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Highway Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Highways" id="roads.highways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">
@@ -818,7 +888,7 @@
 			</modifier>
 		</lineDraw>
 	</chainstyle>
-	<layer xsi:type="epsLayer" enabled="true" name="Motorway" KindMain="Roads" KindSub="" id="epslayer.generic.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<layer xsi:type="epsLayer" enabled="true" name="Motorway" KindMain="EPS-layers" KindSub="" id="epslayer.generic.10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" alwaysOutput="false"/>
 	<chainstyle xsi:type="roadchainstyle" enabled="true" name="Motorway Normal Fill" overwriteByNames="true" roadPolyMode="false" KindMain="Roads" KindSub="Motorways" id="roads.motorways.fill">
 		<criteria>
 			<inset fieldname="Access" negate="true">

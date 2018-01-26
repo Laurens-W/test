@@ -131,8 +131,27 @@
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Line" layerId="VectorlayerLine" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerline"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="Vectorlayer Poi" layerId="VectorlayerPoi" KindMain="Special Constructions" KindSub="Vector Layer" id="includelayer.vectorlayerpoi"/>
 	<layer xsi:type="includeFileLayer" enabled="true" name="After Roads" layerId="AfterRoads" KindMain="Special Constructions" KindSub="Layer in Node Draw Order" id="includelayer.afterroads"/>
-	<layer xsi:type="epsLayer" enabled="true" name="Country Outline" KindMain="Unknown" id="epslayer.generic.665" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="true" name="Country Boundary Outline" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line">
+	<layer xsi:type="epsLayer" enabled="true" name="Layer Country Outline" KindMain="Unknown" id="epslayer.generic.665" alwaysOutput="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="simpleChainstyle" enabled="true" name="Country Boundary Line" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<criteria>
+			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
+			<and>
+				<inset fieldname="UserCatPresent" negate="true">
+					<item value="Harbour outline"/>
+					<item value="Sea   ."/>
+					<item value="Ocean"/>
+				</inset>
+			</and>
+		</criteria>
+		<lineDraw enabled="true">
+			<color r="217" g="217" b="217" overprint="false"/>
+			<size size="101" units="micrometer" isRelative="false"/>
+			<style size="60" units="1/10th millimeter" isRelative="false" style="solid"/>
+			<extension size="0" units="kilometer" isRelative="false"/>
+		</lineDraw>
+	</chainstyle>
+	<layer xsi:type="epsLayer" enabled="false" name="Country Outline" KindMain="Unknown" id="epslayer.generic.665" KindSub="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+	<chainstyle xsi:type="noFillstoreOverlapChainstyle" enabled="false" name="Country Boundary Outline" KindMain="Boundaries and Area's" KindSub="Countries" id="boundaries.countries.line.line">
 		<criteria>
 			<equation oper="eq" fieldname="UserCatPresent" value="Country boundary"/>
 			<and>
